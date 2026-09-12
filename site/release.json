@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "v1.5-20260913-024801-cst",
+  "sourceVersion": "v1.5",
+  "generatedAt": "2026-09-12T18:48:01Z",
+  "buildingCount": 46,
+  "unscopedDirectoryCount": 1,
+  "unscopedDirectories": [
+    "mix_pool_1_grid7_review"
+  ],
+  "policy": {
+    "sourceOfTruth": "direct-child variants.json",
+    "included": [
+      "html",
+      "javascript",
+      "css",
+      "json",
+      "webp",
+      "license-text"
+    ],
+    "excluded": [
+      "archives",
+      "source-png-gif",
+      "models",
+      "diagnostics",
+      "unscoped-directories"
+    ]
+  },
+  "sourceRevision": "865d7afb9ea1136a3cb5f6d940d919294ef6f7e9"
+}

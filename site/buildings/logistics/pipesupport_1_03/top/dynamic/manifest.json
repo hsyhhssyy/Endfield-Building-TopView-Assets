@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "materialContractVersion": 2,
+  "gameVersion": "v1.5",
+  "taskId": "20260912-003436-logistics-fluid-cycle-48273196",
+  "building": "pipesupport_1_03",
+  "requiresBaseContract": 2,
+  "resources": {},
+  "shapes": {},
+  "parameters": {},
+  "resourceNamespace": "dynamic",
+  "materialSpecification": "material-computation.json",
+  "migrationFromContract1": {}
+}

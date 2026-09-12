@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "animations": {
+    "close": {
+      "partCount": 1,
+      "totalBytes": 351826,
+      "mib": 0.3355274200439453
+    },
+    "close_idle": {
+      "partCount": 1,
+      "totalBytes": 16392,
+      "mib": 0.01563262939453125
+    },
+    "open": {
+      "partCount": 1,
+      "totalBytes": 313092,
+      "mib": 0.2985877990722656
+    },
+    "open_idle": {
+      "partCount": 1,
+      "totalBytes": 98328,
+      "mib": 0.09377288818359375
+    }
+  },
+  "partCount": 4,
+  "totalBytes": 779638,
+  "pages": [
+    {
+      "animation": "close",
+      "index": 0,
+      "image": "animations/close/spritesheet_000.webp",
+      "width": 3840,
+      "height": 1920,
+      "columns": 10,
+      "rows": 5,
+      "frameStart": 0,
+      "frameCount": 49,
+      "bytes": 351826,
+      "sha256": "6b70c5c9deb7ea18653e1183bc79d6718d5dafbf6f539db98421e87eb130692b"
+    },
+    {
+      "animation": "close_idle",
+      "index": 0,
+      "image": "animations/close_idle/spritesheet_000.webp",
+      "width": 768,
+      "height": 384,
+      "columns": 2,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 2,
+      "bytes": 16392,
+      "sha256": "e5b073f66d7d4a60da2fa8b6bbad14738b1bc61a17d8c9af3ec0d7a8213bc1d7"
+    },
+    {
+      "animation": "open",
+      "index": 0,
+      "image": "animations/open/spritesheet_000.webp",
+      "width": 3840,
+      "height": 1920,
+      "columns": 10,
+      "rows": 5,
+      "frameStart": 0,
+      "frameCount": 44,
+      "bytes": 313092,
+      "sha256": "b57abc60b7efac3f180b34c03162658124d34dbc30e86cd920ad21fbf63af7d9"
+    },
+    {
+      "animation": "open_idle",
+      "index": 0,
+      "image": "animations/open_idle/spritesheet_000.webp",
+      "width": 3840,
+      "height": 768,
+      "columns": 10,
+      "rows": 2,
+      "frameStart": 0,
+      "frameCount": 14,
+      "bytes": 98328,
+      "sha256": "fb4b9a1e1829b744c9c2240b642e7e2546ad028d771ade57f675918c8495bfe4"
+    }
+  ],
+  "totalMiB": 0.7435207366943359
+}

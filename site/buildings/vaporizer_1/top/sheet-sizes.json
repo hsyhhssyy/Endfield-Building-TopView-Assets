@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "animations": {
+    "static": {
+      "partCount": 1,
+      "totalBytes": 13852,
+      "mib": 0.013210296630859375
+    }
+  },
+  "partCount": 1,
+  "totalBytes": 13852,
+  "pages": [
+    {
+      "animation": "static",
+      "index": 0,
+      "image": "animations/static/spritesheet_000.webp",
+      "width": 384,
+      "height": 384,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 13852,
+      "sha256": "8244c96a3dd24942d5cd2e2422cb1cc29d2aa7476493670af860197ce07fbaaa"
+    }
+  ],
+  "totalMiB": 0.013210296630859375
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="building-display-name" content="管道和传送带">
+  <meta name="building-task-id" content="20260912-235853-logistics-consolidate-layout">
+  <meta name="building-id" content="logistics">
+  <meta name="logistics-kind" content="collection">
+  <meta name="logistics-shape" content="all">
+  <link rel="icon" href="data:,">
+  <title>管道和传送带</title>
+  <style>
+    :root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#e7ece8;background:#141c1a;color-scheme:dark}
+    body{max-width:1160px;margin:28px auto;padding:0 22px}a{color:#9edcc0}
+    h1{font-size:28px;margin-bottom:8px}h2{font-size:18px;margin:0 0 12px}
+    p{line-height:1.65;color:#b5c4bc}.muted,.subtle{font-size:12px;color:#91a59a}
+    nav,fieldset,.downloads,.button-row,.fps-grid{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    fieldset{border:1px solid #3a4c42;border-radius:10px;padding:16px;margin:20px 0}
+    select,button,input{font:inherit}button,select{background:#27392f;border:1px solid #526959;border-radius:5px;padding:7px;color:#e8f6ed}
+    label{display:flex;gap:7px;align-items:center}.stage{background:#34463c;border:1px solid #526959;border-radius:10px;overflow:auto}
+    .stage canvas{display:block;width:100%;height:auto;min-width:650px}.status{font-variant-numeric:tabular-nums;padding:10px 0;color:#afc9ba}
+    .fps-grid{display:grid;grid-template-columns:auto auto;gap:5px 14px;font-variant-numeric:tabular-nums}
+    .card{background:#202c25;border-radius:8px;padding:14px;margin-top:20px}.links{line-height:1.9}
+    details{margin:20px 0;padding:12px;background:#202c25;border-radius:8px}#error{color:#ffb69a;white-space:pre-wrap}
+    a.download{display:inline-block;padding:8px 12px;background:#284b37;border-radius:5px}#loading{color:#f3d38b}
+  </style>
+</head>
+<body>
+  <nav><a href="/">返回总索引</a><span class="muted">v1.5 · materialContractVersion 2 · PixiJS</span></nav>
+  <h1>管道和传送带</h1>
+  <p class="subtle">物流素材集合 · 视图：top · renderer：pixi-logistics-material-v2</p>
+  <p>管道、端点接头、支架与传送带共用一个预览。各元素按实际资源 ID 收纳在 logistics 子目录中，并继续使用 material contract v2。</p>
+  <div class="downloads" hidden></div>
+
+  <section class="card">
+    <h2>实时预览</h2>
+    <fieldset>
+      <label id="family-control">类型 <select id="family"><option value="pipe">管道</option><option value="conveyor">传送带</option></select></label>
+      <label id="layout-control">布局 <select id="layout"><option value="snake">蛇形路线</option><option value="long">直线路线</option></select></label>
+      <label id="animate-control"><input type="checkbox" id="animate">启用动态材质</label>
+      <button id="pause" type="button" disabled>播放</button>
+      <label id="filled-control"><input type="checkbox" id="filled" checked>管内液体</label>
+      <label id="color-control">颜色 <select id="color"><option value="#36c3ee">青色</option><option value="#e9b93d">金色</option><option value="#57d47a">绿色</option></select></label>
+      <label id="spacing-control">支架间距 <select id="spacing"><option value="4">4</option><option value="6" selected>6</option><option value="8">8</option></select></label>
+    </fieldset>
+    <div id="loading">正在加载本地 PixiJS 资源…</div><div id="error"></div>
+    <div class="stage" id="stage"></div><div id="status" class="status" aria-live="polite"></div>
+    <div class="fps-grid"><span>素材帧率</span><strong id="source-fps">N/A（程序化材质）</strong><span>实时渲染帧率</span><strong id="render-fps">-- FPS</strong></div>
+  </section>
+
+  <details><summary>资源与材质契约</summary><div class="links"><strong>传送带直段</strong>：<a href="grid_belt_01_mid/top/static/manifest.json">static</a> · <a href="grid_belt_01_mid/top/dynamic/manifest.json">dynamic</a><br><strong>传送带左弯</strong>：<a href="grid_belt_01_left/top/static/manifest.json">static</a> · <a href="grid_belt_01_left/top/dynamic/manifest.json">dynamic</a><br><strong>传送带右弯</strong>：<a href="grid_belt_01_right/top/static/manifest.json">static</a> · <a href="grid_belt_01_right/top/dynamic/manifest.json">dynamic</a><br><strong>管道与可染色流体</strong>：<a href="log_pipe_02_mid/top/static/manifest.json">static</a> · <a href="log_pipe_02_mid/top/dynamic/manifest.json">dynamic</a><br><strong>管道直向支架</strong>：<a href="pipesupport_1_03/top/static/manifest.json">static</a> · <a href="pipesupport_1_03/top/dynamic/manifest.json">dynamic</a><br><strong>管道转角支架</strong>：<a href="pipesupport_1_04/top/static/manifest.json">static</a> · <a href="pipesupport_1_04/top/dynamic/manifest.json">dynamic</a><br><strong>计算规范</strong>：<a href="log_pipe_02_mid/top/dynamic/material-computation.json">material-computation.json</a></div>
+    <p>各组件的 static/manifest.json 和 dynamic/manifest.json 继续使用独立命名空间；页面只负责把它们组合为管道或传送带路线。动态效果由本地 dynamic.js / GLSL shader 计算。</p>
+  </details>
+  <script type="module" src="preview.js"></script>
+<a href="integrity.json" style="position:fixed;right:12px;bottom:10px;z-index:20;color:#9bc7ff;font:12px sans-serif">SHA-256 索引</a>
+</body>
+</html>

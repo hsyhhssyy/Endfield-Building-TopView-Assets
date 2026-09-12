@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "building": "logistics",
+  "displayName": "管道和传送带",
+  "taskId": "20260912-235853-logistics-consolidate-layout",
+  "defaultVariant": "collection",
+  "variants": [
+    {
+      "key": "collection",
+      "view": "collection",
+      "label": "完整物流套件",
+      "root": "./",
+      "package": "package.json",
+      "collection": "collection.json"
+    }
+  ],
+  "releaseId": "v1.5-20260913-024801-cst",
+  "integrity": "integrity.json"
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="building-display-name" content="多口暗管入口">
+  <meta name="building-variant" content="液体模式">
+  <meta name="building-task-id" content="20260913-single-device-pages-all">
+  <meta name="building-id" content="udpipe_loader_2">
+  <meta name="building-view" content="top">
+  <title>多口暗管入口 · 建筑预览</title>
+  <link rel="stylesheet" href="preview/preview.css">
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="/">← 返回总览首页</a>
+    <h1 id="page-title">多口暗管入口 · 建筑预览</h1>
+    <p class="subtle">任务 ID：<span id="page-task-id">20260913-single-device-pages-all</span> · 由 PixiJS 直接播放 WebP spritesheet，不加载 GIF。</p>
+    <nav id="delivery-variant-navigation" class="variant-navigation" aria-label="设备运行模式" hidden><label for="delivery-variant-select">运行模式</label><select id="delivery-variant-select"><option value="top" selected>液体模式</option></select><span class="subtle">切换模式会在本页加载对应素材包。</span></nav>
+    <a id="delivery-archive" class="download" hidden></a>
+
+    <div class="preview-layout">
+      <section class="stage-card" aria-label="PixiJS 建筑预览">
+        <div id="pixi-stage"><p id="loading">正在读取图集元数据…</p></div>
+        <p id="stage-status" class="stage-status subtle" aria-live="polite">等待 PixiJS 初始化。</p>
+      </section>
+
+      <aside class="controls">
+        <section class="panel" id="animation-panel">
+          <h2>建筑动画</h2>
+          <div class="control-row">
+            <label for="clip-select">片段</label>
+            <select id="clip-select"></select>
+          </div>
+          <div class="button-row">
+            <button id="play-toggle" type="button" aria-pressed="true">暂停</button>
+            <button id="restart" type="button">从头播放</button>
+          </div>
+          <div class="fps-grid" aria-label="帧率">
+            <span>素材帧率</span><strong id="source-fps">-- FPS</strong>
+            <span>实时渲染</span><strong id="render-fps">-- FPS</strong>
+          </div>
+          <p id="animation-info" class="subtle"></p>
+        </section>
+
+        <section class="panel" id="background-panel">
+          <h2>预览背景</h2>
+          <div class="control-row">
+            <label for="background-select">背景样式</label>
+            <select id="background-select">
+              <option value="transparent">透明（黑白棋盘）</option>
+              <option value="grass">草地</option>
+            </select>
+          </div>
+          <p id="background-info" class="subtle">设备四周各外扩 1 格，用于完整展示端口和端口环。</p>
+        </section>
+
+        <section class="panel" id="effects-panel" hidden>
+          <h2>流体端口</h2>
+          <div id="variant-control" class="control-row" hidden>
+            <label for="variant-select">设备模式</label>
+            <select id="variant-select"></select>
+          </div>
+          <div class="button-row" id="all-port-actions">
+            <button id="all-off" type="button">全部 OFF</button>
+            <button id="all-on" type="button">全部 ON</button>
+          </div>
+          <div id="port-list" class="port-list"></div>
+          <div id="ring-control" class="ring-row" hidden>
+            <label class="switch"><input id="ring-visible" type="checkbox" checked> 显示端口环</label>
+            <div id="ring-status-row" class="control-row" hidden>
+              <label for="ring-status">环状态</label>
+              <select id="ring-status"></select>
+            </div>
+          </div>
+          <p class="subtle">端口 ON/OFF 与建筑动画使用独立时钟；端口环按状态绑定去重叠加。</p>
+        </section>
+
+        <section class="panel">
+          <h2>资源</h2>
+          <p id="identity" class="subtle"></p>
+          <p id="sheet-summary" class="subtle"></p>
+          <p id="metadata-links" class="metadata"></p>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <script type="module" src="preview/pixi-building-preview.js"></script>
+<a href="integrity.json" style="position:fixed;right:12px;bottom:10px;z-index:20;color:#9bc7ff;font:12px sans-serif">SHA-256 索引</a>
+</body>
+</html>

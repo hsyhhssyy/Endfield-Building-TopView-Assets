@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "file": "grass-base.webp",
+  "sourceKit": "pixi-ground-v1",
+  "sourceTextureVersion": "v1.4",
+  "pixelsPerWorldUnit": 64,
+  "worldWidth": 16,
+  "worldHeight": 16,
+  "repeat": true,
+  "encoding": "lossless WebP, baked display sRGB"
+}
