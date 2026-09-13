@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "liquid_cleaner_1",
   "fileCount": 36,
-  "totalBytes": 3682033,
-  "contentHash": "516f488b9fa5594b2e88a0f6956b841c18404cec01128ef9b11c9d42dfc13e81",
+  "totalBytes": 3682457,
+  "contentHash": "8267c099805433f0faed93d6b7d327efc9a8a1d0fe933d7945250f90d82d325c",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

@@ -1057,5 +1057,7 @@
     "pipe.right.support-middle": "static/pipe.right.support-middle",
     "pipe.right.support-back": "static/pipe.right.support-back",
     "pipe.right.assembly": "static/pipe.right.assembly"
-  }
+  },
+  "spatialMetadata": "../spatial.json",
+  "occlusionMetadata": "../occlusion/occlusion.json"
 }

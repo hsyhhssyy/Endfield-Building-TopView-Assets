@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "gas_pump_1",
   "fileCount": 27,
-  "totalBytes": 2896275,
-  "contentHash": "d15b2394a07bc1f257b5e3ee737cd67c97dc59e58bd95cfb2ace1e1788b46c83",
+  "totalBytes": 2896699,
+  "contentHash": "f5f44cd953f4652c4dc7874e93d160046174c3c89499c497104bc8d368701afc",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

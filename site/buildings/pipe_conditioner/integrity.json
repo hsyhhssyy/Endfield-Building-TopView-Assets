@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "pipe_conditioner",
   "fileCount": 20,
-  "totalBytes": 1832139,
-  "contentHash": "e8b523d8e12b6cd89f11fb37e6fa550095c27a226513ff06dab6e1be23f7385b",
+  "totalBytes": 1832563,
+  "contentHash": "60575cb6f1f0abd8241dea5e9eddc0011e5d283c797a6fcfecc08c400557864b",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

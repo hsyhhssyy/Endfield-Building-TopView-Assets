@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "building": "logistics",
   "displayName": "管道和传送带",
-  "taskId": "20260913-170902-logistics-tabs",
+  "taskId": "20260913-logistics-height-publication",
   "defaultVariant": "collection",
   "variants": [
     {

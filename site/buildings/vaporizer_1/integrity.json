@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "vaporizer_1",
   "fileCount": 39,
-  "totalBytes": 3593647,
-  "contentHash": "0302fc54221122c5fe7616d18c404471475ba58183ab08932ed8b403ba42a418",
+  "totalBytes": 3594071,
+  "contentHash": "ad3cfad6cc259f48ef95d0547bb82979e032d538616830a96d3f1a189d065122",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

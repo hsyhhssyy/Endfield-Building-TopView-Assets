@@ -44,5 +44,7 @@
   "materialSpecification": "material-computation.json",
   "migrationFromContract1": {
     "support.corner": "static/support.corner"
-  }
+  },
+  "spatialMetadata": "../spatial.json",
+  "occlusionMetadata": "../occlusion/occlusion.json"
 }

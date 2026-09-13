@@ -241,6 +241,7 @@ class StaticHeightMasker {
     this.onWarning = onWarning;
     this.scene = null;
     this.sceneField = null;
+    this.occlusion = null;
     this.epsilon = 0.001;
     this.imageCache = new Map();
     this.maskCache = new Map();
@@ -251,6 +252,7 @@ class StaticHeightMasker {
     if (!relative) return;
     try {
       const occlusion = await readJson(assetUrl(relative, this.packageDoc.url));
+      this.occlusion = occlusion;
       const fields = occlusion.value.fields ?? [];
       const pose = occlusion.value.staticPose;
       this.sceneField = fields.find((item) => item.name === pose) ?? fields[0] ?? null;
@@ -796,6 +798,12 @@ class BuildingPreview {
     ];
     if (packageData.portMetadata) links.push(['ports.json', packageData.portMetadata]);
     if (packageData.effectResources) links.push(['effects', packageData.effectResources]);
+    if (packageData.occlusionMetadata) links.push(['高度元数据 JSON', packageData.occlusionMetadata]);
+    const occlusion = this.masker.occlusion;
+    for (const field of occlusion?.value.fields ?? []) {
+      const file = field.file ?? field.image;
+      if (file) links.push([`高度图 ${field.name ?? file}`, assetUrl(file, occlusion.url).href]);
+    }
     $('#metadata-links').replaceChildren(...links.flatMap(([label, relative], index) => {
       const link = document.createElement('a');
       link.href = assetUrl(relative, this.package.url);

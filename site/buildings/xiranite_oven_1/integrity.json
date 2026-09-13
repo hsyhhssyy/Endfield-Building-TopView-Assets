@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "xiranite_oven_1",
   "fileCount": 109,
-  "totalBytes": 41697881,
-  "contentHash": "1e3610b70553e566c9b01cfd268f9c4991ad4b030ac8f1d47aa1a9176872edc3",
+  "totalBytes": 41698305,
+  "contentHash": "3c7f830241b35c16572dac33cd031503d826d5fc2d0f8b8d71da1ff584531989",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

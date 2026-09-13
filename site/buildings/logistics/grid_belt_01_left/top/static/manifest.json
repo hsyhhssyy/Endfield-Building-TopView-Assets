@@ -161,5 +161,7 @@
     "conveyor.left.arrow-static": "static/conveyor.left.arrow-static",
     "conveyor.left.base": "static/conveyor.left.base",
     "conveyor.left.static": "static/conveyor.left.static"
-  }
+  },
+  "spatialMetadata": "../spatial.json",
+  "occlusionMetadata": "../occlusion/occlusion.json"
 }

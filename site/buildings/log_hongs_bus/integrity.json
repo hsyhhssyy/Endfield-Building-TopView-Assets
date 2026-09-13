@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "log_hongs_bus",
   "fileCount": 20,
-  "totalBytes": 1869427,
-  "contentHash": "bac52148a800c4a2d186f8764c2cb931e6911631a6d4c700922a18c0670f7641",
+  "totalBytes": 1869851,
+  "contentHash": "a0afe2fa5cad82e0d670f05c13974a9d42fc9a5c8a4c668a7f1b53a797bf3129",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

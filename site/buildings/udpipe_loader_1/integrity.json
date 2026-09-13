@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "udpipe_loader_1",
   "fileCount": 29,
-  "totalBytes": 4153892,
-  "contentHash": "404c8927f2c4082f1cf1b50cba6e41c89d109bdd98ed0d54fc18e07f4a004ecb",
+  "totalBytes": 4154316,
+  "contentHash": "e5062d35c7121e4da897649c78ccbcf7ba25df4dce62c2a54d642a6e16725dda",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

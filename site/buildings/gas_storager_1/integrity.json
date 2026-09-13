@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "gas_storager_1",
   "fileCount": 35,
-  "totalBytes": 3872000,
-  "contentHash": "84ac980d2ffb2581fa7aff26e38fb5165ffd6e356b2fc4db4603879a07bc2bd6",
+  "totalBytes": 3872424,
+  "contentHash": "0d5a8fac17362d2681e7dcce44a58800470e94cb6392e4c9e0699287d08d8f8b",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

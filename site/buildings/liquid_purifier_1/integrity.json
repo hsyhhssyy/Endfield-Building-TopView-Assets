@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "liquid_purifier_1",
   "fileCount": 115,
-  "totalBytes": 25455268,
-  "contentHash": "914c1f92459e6ab4367909d7415a95d04a43cb81940bd6e9945ea98216ef1226",
+  "totalBytes": 25455692,
+  "contentHash": "96d4a33503189e87d8b855544459edee12a1c871d1b1a36f71e3011acf1b67bf",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

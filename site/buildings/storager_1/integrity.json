@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "storager_1",
   "fileCount": 20,
-  "totalBytes": 1839772,
-  "contentHash": "9ef4fb26bb1c55ef2b350de029907fd43b95b2689dbb1b2d5407b5f161e53a0d",
+  "totalBytes": 1840196,
+  "contentHash": "5a17767e6883ff1d274b79c3878391afd0bc520df57857e6517dd8889f16b4ac",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

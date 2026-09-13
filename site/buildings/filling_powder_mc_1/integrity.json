@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "filling_powder_mc_1",
   "fileCount": 39,
-  "totalBytes": 6902414,
-  "contentHash": "46b1d0e7ed7cc26cba3bee9276fee019dd925d08baeb3199d1d11edc0f4b4fec",
+  "totalBytes": 6902838,
+  "contentHash": "21066e4fa25653f617501dc78125d18818aa21ffee7def0a8ffb1f5a2dbfcb57",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

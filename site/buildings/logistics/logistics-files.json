@@ -11,7 +11,8 @@
       "groups": [
         "shared",
         "static-materials",
-        "draw-materials"
+        "draw-materials",
+        "height-data"
       ]
     },
     {
@@ -21,7 +22,8 @@
         "shared",
         "static-materials",
         "baked-runtime",
-        "baked-materials"
+        "baked-materials",
+        "height-data"
       ]
     }
   ],
@@ -169,6 +171,29 @@
       "baked/pipe-marks-0.webp",
       "baked/static-0.webp",
       "logistics-baked.json"
+    ],
+    "height-data": [
+      "grid_belt_01_left/top/occlusion/height_left.webp",
+      "grid_belt_01_left/top/occlusion/occlusion.json",
+      "grid_belt_01_left/top/spatial.json",
+      "grid_belt_01_mid/top/occlusion/height_straight.webp",
+      "grid_belt_01_mid/top/occlusion/occlusion.json",
+      "grid_belt_01_mid/top/spatial.json",
+      "grid_belt_01_right/top/occlusion/height_right.webp",
+      "grid_belt_01_right/top/occlusion/occlusion.json",
+      "grid_belt_01_right/top/spatial.json",
+      "log_pipe_02_mid/top/occlusion/height_left_support.webp",
+      "log_pipe_02_mid/top/occlusion/height_right_support.webp",
+      "log_pipe_02_mid/top/occlusion/height_straight_support.webp",
+      "log_pipe_02_mid/top/occlusion/occlusion.json",
+      "log_pipe_02_mid/top/spatial.json",
+      "logistics-height.json",
+      "pipesupport_1_03/top/occlusion/height_straight.webp",
+      "pipesupport_1_03/top/occlusion/occlusion.json",
+      "pipesupport_1_03/top/spatial.json",
+      "pipesupport_1_04/top/occlusion/height_corner.webp",
+      "pipesupport_1_04/top/occlusion/occlusion.json",
+      "pipesupport_1_04/top/spatial.json"
     ],
     "publication": [
       "integrity.json",

@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "seedcollector_1",
   "fileCount": 40,
-  "totalBytes": 17728539,
-  "contentHash": "fa67c69a7716682898cd6435e67e25928a2a6beb3d88296bd603eb24665c31ae",
+  "totalBytes": 17728963,
+  "contentHash": "e084e472ef51d355325abdfc5ba5aa4b9606b0847b170397756b237b6af1a842",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",

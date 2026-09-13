@@ -3,8 +3,8 @@
   "algorithm": "sha256",
   "building": "tools_assebling_mc_1",
   "fileCount": 32,
-  "totalBytes": 8599443,
-  "contentHash": "c9d67019d52945067c873849d006a62e5edd7ebe0336fc4a6ec57abe6b13f911",
+  "totalBytes": 8599867,
+  "contentHash": "912f01789b05c3dc8d30908ac6e68e67519a1b32245bf280a9da9330c0994b90",
   "files": [
     {
       "path": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36004,
-      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
+      "bytes": 36428,
+      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
     },
     {
       "path": "preview/preview-data.js",
