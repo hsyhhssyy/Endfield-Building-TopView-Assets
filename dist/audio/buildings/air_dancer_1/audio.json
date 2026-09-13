@@ -1,0 +1,127 @@
+{
+  "buildingId": "air_dancer_1",
+  "clipStateMap": {
+    "build": [
+      "build"
+    ],
+    "close": [
+      "vatClose"
+    ],
+    "close_idle": [
+      "vatCloseIdle",
+      "idle",
+      "closed"
+    ],
+    "open": [
+      "vatOpen"
+    ],
+    "open_idle": [
+      "vatOpenIdle",
+      "working"
+    ],
+    "remove": [
+      "remove"
+    ],
+    "working": [
+      "working"
+    ]
+  },
+  "clockModel": "state-entry-independent-loop",
+  "profile": "endfield-building-audio-v1",
+  "schemaVersion": 1,
+  "sourceVersion": "v1.5",
+  "states": {
+    "build": {
+      "available": true,
+      "configField": "audioBuild",
+      "eventId": 2393545091,
+      "signedEventId": -1901422205,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 29348,
+          "channels": 2,
+          "durationMs": 1940,
+          "file": "../../events/2393545091/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            37086069,
+            54541547,
+            184508734,
+            404972512,
+            725231966,
+            889318397
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "ec0f4439b1af24cc365d2309949293577c889a8070048239696131f1e3495a89"
+        }
+      ]
+    },
+    "remove": {
+      "available": true,
+      "configField": "audioRemove",
+      "eventId": 3625993014,
+      "signedEventId": -668974282,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 20540,
+          "channels": 2,
+          "durationMs": 1000,
+          "file": "../../events/3625993014/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            227068524,
+            431693506,
+            823221066,
+            845923717
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "5dc48314465da0bdbcfa94bd1e178e7d6d3a54a4fcf39284a925cdaa97d67024"
+        }
+      ]
+    },
+    "working": {
+      "available": true,
+      "configField": "audioWorking",
+      "eventId": 1879428054,
+      "signedEventId": 1879428054,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 361292,
+          "channels": 2,
+          "durationMs": 30990,
+          "file": "../../events/1879428054/default.mp3",
+          "key": "default",
+          "loop": true,
+          "loopEndMs": 30990,
+          "loopStartMs": 0,
+          "mediaIds": [
+            4195871,
+            192022525,
+            343077692,
+            457356453,
+            585772766,
+            672935843,
+            878600666
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "b0a6c7ed38625b65a4964e9a7c9b92f628153115b67206614e12be289696a2cb"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "buildingId": "power_pole_3",
+  "clipStateMap": {
+    "build": [
+      "build"
+    ],
+    "close": [
+      "vatClose"
+    ],
+    "close_idle": [
+      "vatCloseIdle",
+      "idle",
+      "closed"
+    ],
+    "open": [
+      "vatOpen"
+    ],
+    "open_idle": [
+      "vatOpenIdle",
+      "working"
+    ],
+    "remove": [
+      "remove"
+    ]
+  },
+  "clockModel": "state-entry-independent-loop",
+  "profile": "endfield-building-audio-v1",
+  "schemaVersion": 1,
+  "sourceVersion": "v1.5",
+  "states": {
+    "build": {
+      "available": true,
+      "configField": "audioBuild",
+      "eventId": 3310400359,
+      "signedEventId": -984566937,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 38732,
+          "channels": 2,
+          "durationMs": 2000,
+          "file": "../../events/3310400359/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            64223352,
+            572619988,
+            926121708
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "b5f57a20a57c5c07ab7bfc454721f133ccf43a43e1c11af88fd22ab02b64fa92"
+        }
+      ]
+    },
+    "remove": {
+      "available": true,
+      "configField": "audioRemove",
+      "eventId": 4255815553,
+      "signedEventId": -39151743,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 30764,
+          "channels": 2,
+          "durationMs": 1600,
+          "file": "../../events/4255815553/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            248257325,
+            790926546,
+            835476596
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "ae9cfc5b70910b9b43c3baaf45355cf6fc9dd651d86d12118fc833b2b2914d2d"
+        }
+      ]
+    }
+  }
+}

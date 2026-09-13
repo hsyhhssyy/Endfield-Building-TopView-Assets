@@ -1,0 +1,156 @@
+{
+  "buildingId": "chubby_lung_balloon_1",
+  "clipStateMap": {
+    "build": [
+      "build"
+    ],
+    "close": [
+      "vatClose"
+    ],
+    "close_idle": [
+      "vatCloseIdle",
+      "idle",
+      "closed"
+    ],
+    "open": [
+      "vatOpen"
+    ],
+    "open_idle": [
+      "vatOpenIdle",
+      "working"
+    ],
+    "remove": [
+      "remove"
+    ],
+    "uiOpen": [
+      "uiOpen"
+    ],
+    "working": [
+      "working"
+    ]
+  },
+  "clockModel": "state-entry-independent-loop",
+  "profile": "endfield-building-audio-v1",
+  "schemaVersion": 1,
+  "sourceVersion": "v1.5",
+  "states": {
+    "build": {
+      "available": true,
+      "configField": "audioBuild",
+      "eventId": 560328091,
+      "signedEventId": 560328091,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 30716,
+          "channels": 2,
+          "durationMs": 1994,
+          "file": "../../events/560328091/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            54541547,
+            184508734,
+            436945998,
+            725231966,
+            889318397
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "41e5bcae31ebecd3250ab39f66fe791101d577f83a0325cb26655c0a91860b26"
+        }
+      ]
+    },
+    "remove": {
+      "available": true,
+      "configField": "audioRemove",
+      "eventId": 3625993014,
+      "signedEventId": -668974282,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 20540,
+          "channels": 2,
+          "durationMs": 1000,
+          "file": "../../events/3625993014/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            227068524,
+            431693506,
+            823221066,
+            845923717
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "5dc48314465da0bdbcfa94bd1e178e7d6d3a54a4fcf39284a925cdaa97d67024"
+        }
+      ]
+    },
+    "uiOpen": {
+      "available": true,
+      "configField": "audioUiOpen",
+      "eventId": 1459709335,
+      "signedEventId": 1459709335,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 32996,
+          "channels": 2,
+          "durationMs": 2511,
+          "file": "../../events/1459709335/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            503092991,
+            576527960,
+            988091948,
+            989955112
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "0e64b6b4194fe5b67f003218256e516ea74f20bdf8183bdb325c10289e1b0d02"
+        }
+      ]
+    },
+    "working": {
+      "available": true,
+      "configField": "audioWorking",
+      "eventId": 1270699854,
+      "signedEventId": 1270699854,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 405884,
+          "channels": 2,
+          "durationMs": 24370,
+          "file": "../../events/1270699854/default.mp3",
+          "key": "default",
+          "loop": true,
+          "loopEndMs": 24370,
+          "loopStartMs": 0,
+          "mediaIds": [
+            195756584,
+            412862980,
+            723870967,
+            765175543,
+            1002001695
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "36321c96c2faf36b053b038ed831200de9d84d73fd148f3d9d56d73057c44de9"
+        }
+      ]
+    }
+  }
+}

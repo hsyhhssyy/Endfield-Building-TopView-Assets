@@ -1,0 +1,170 @@
+{
+  "buildingId": "gas_reactor_1",
+  "clipStateMap": {
+    "build": [
+      "build"
+    ],
+    "close": [
+      "vatClose"
+    ],
+    "close_idle": [
+      "vatCloseIdle",
+      "idle",
+      "closed"
+    ],
+    "closed": [
+      "closed"
+    ],
+    "open": [
+      "vatOpen"
+    ],
+    "open_idle": [
+      "vatOpenIdle",
+      "working"
+    ],
+    "remove": [
+      "remove"
+    ],
+    "uiOpen": [
+      "uiOpen"
+    ],
+    "vatClose": [
+      "vatClose"
+    ],
+    "vatOpenIdle": [
+      "vatOpenIdle"
+    ]
+  },
+  "clockModel": "state-entry-independent-loop",
+  "profile": "endfield-building-audio-v1",
+  "schemaVersion": 1,
+  "sourceVersion": "v1.5",
+  "states": {
+    "build": {
+      "available": true,
+      "configField": "audioBuild",
+      "eventId": 1127497802,
+      "signedEventId": 1127497802,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 22556,
+          "channels": 2,
+          "durationMs": 1100,
+          "file": "../../events/1127497802/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            254366408,
+            384640792,
+            806409147,
+            817836507
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "83e1f0d14b842058144cf142df99379e0970a4f7fc202afff3b9e093b6aef9f8"
+        }
+      ]
+    },
+    "closed": {
+      "available": false,
+      "configField": "audioClosed",
+      "eventId": 4108810818,
+      "signedEventId": -186156478,
+      "variants": []
+    },
+    "remove": {
+      "available": true,
+      "configField": "audioRemove",
+      "eventId": 3625993014,
+      "signedEventId": -668974282,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 20540,
+          "channels": 2,
+          "durationMs": 1000,
+          "file": "../../events/3625993014/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            227068524,
+            431693506,
+            823221066,
+            845923717
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "5dc48314465da0bdbcfa94bd1e178e7d6d3a54a4fcf39284a925cdaa97d67024"
+        }
+      ]
+    },
+    "uiOpen": {
+      "available": true,
+      "configField": "audioUiOpen",
+      "eventId": 3799906164,
+      "signedEventId": -495061132,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 84740,
+          "channels": 2,
+          "durationMs": 4932,
+          "file": "../../events/3799906164/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            904754645
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "02e6eaef647fac97bd11e62ca182a0c27711c963e85049c9808785c927c55b32"
+        }
+      ]
+    },
+    "vatClose": {
+      "available": false,
+      "configField": "audioVatClose",
+      "eventId": 4108810818,
+      "signedEventId": -186156478,
+      "variants": []
+    },
+    "vatOpenIdle": {
+      "available": true,
+      "configField": "audioVatOpenIdle",
+      "eventId": 4023357475,
+      "signedEventId": -271609821,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 59540,
+          "channels": 2,
+          "durationMs": 3122,
+          "file": "../../events/4023357475/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            183054909,
+            501549866,
+            1042973901
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "7bc231fad1d443414c61e82db1ecf5558b4e9e14849d59339203311932b39877"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "buildingId": "power_port_1",
+  "clipStateMap": {
+    "build": [
+      "build"
+    ],
+    "close": [
+      "vatClose"
+    ],
+    "close_idle": [
+      "vatCloseIdle",
+      "idle",
+      "closed"
+    ],
+    "open": [
+      "vatOpen"
+    ],
+    "open_idle": [
+      "vatOpenIdle",
+      "working"
+    ],
+    "remove": [
+      "remove"
+    ]
+  },
+  "clockModel": "state-entry-independent-loop",
+  "profile": "endfield-building-audio-v1",
+  "schemaVersion": 1,
+  "sourceVersion": "v1.5",
+  "states": {
+    "build": {
+      "available": true,
+      "configField": "audioBuild",
+      "eventId": 1163719606,
+      "signedEventId": 1163719606,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 31460,
+          "channels": 2,
+          "durationMs": 1600,
+          "file": "../../events/1163719606/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            251532352,
+            460038190,
+            500302245,
+            701459014
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "8f1a081f77e3b58097f7562639ca2cc9716559c16cbbe30a5f47c302986b9915"
+        }
+      ]
+    },
+    "remove": {
+      "available": true,
+      "configField": "audioRemove",
+      "eventId": 3654253642,
+      "signedEventId": -640713654,
+      "variants": [
+        {
+          "available": true,
+          "bytes": 23708,
+          "channels": 2,
+          "durationMs": 1100,
+          "file": "../../events/3654253642/default.mp3",
+          "key": "default",
+          "loop": false,
+          "loopEndMs": null,
+          "loopStartMs": null,
+          "mediaIds": [
+            225492706,
+            257818426,
+            412868486,
+            845287971
+          ],
+          "missingMediaIds": [],
+          "sampleRate": 48000,
+          "selector": null,
+          "sha256": "37df32c5356f396a62ad8a6d478abbc7020f38f3f14a0bf892a404811ee1dd82"
+        }
+      ]
+    }
+  }
+}
