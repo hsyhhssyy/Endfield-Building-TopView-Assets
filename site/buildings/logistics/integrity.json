@@ -1,46 +1,45 @@
 {
   "schemaVersion": 1,
   "algorithm": "sha256",
-  "releaseId": "v1.5-20260913-024801-cst",
   "building": "logistics",
-  "fileCount": 119,
-  "totalBytes": 2409460,
-  "contentHash": "5b2935faa380c0964030482146f3f216601fd56009ec10317e827a97360a4151",
+  "fileCount": 123,
+  "totalBytes": 2794888,
+  "contentHash": "e84dd51e9e18d6ee1ca26d15eb5e7e8244fe1b1d50c822f4f41332d46b90bfc6",
   "files": [
     {
       "path": "collection.json",
-      "bytes": 3022,
-      "sha256": "48430db720f914d11d3444dbc8ab3143391a1abb1d320c3e7c03ea432f62be6d"
+      "bytes": 3031,
+      "sha256": "94d95941cc85a8e5956b6fabe5a572ae23778a405cdbe83062f9a686d2406e4e"
     },
     {
       "path": "dynamic.js",
-      "bytes": 7289,
-      "sha256": "f0596f0aa344487a9a16cbdbaa8072f5802a254e9d5ee02aae579f55e733a7a5"
+      "bytes": 9514,
+      "sha256": "9e1d8ab3a1a734f43058b1ff1de40b424d68e9f65e132011085a1347532adc7a"
     },
     {
       "path": "index.html",
-      "bytes": 5545,
-      "sha256": "e839af2bf7f596acdcd66df73d66d2b1e1b31964636544f4f2fff60ffc3bc050"
+      "bytes": 5869,
+      "sha256": "196d3e173b0aa6ed5b99892d7100e07ec0c2857b6fcb350307d0ba0dabb1b4f3"
     },
     {
       "path": "package.json",
-      "bytes": 537,
-      "sha256": "56860871dea278b0ee59ddd149fb54671fa0fac800df45c69366c3fb7f62797e"
+      "bytes": 517,
+      "sha256": "1da0f85937c1fd1340a6659feaf1d67b31168df24a6db38115c484f3883e199a"
     },
     {
       "path": "preview.js",
-      "bytes": 14689,
-      "sha256": "a64dca315c852ddb8d8fa2868140c8e967cfc9abd98c934912757a426e827934"
+      "bytes": 15678,
+      "sha256": "84495a8d281a42654236e80b9fe71c07bbe344977bc8d33756d5980473eff66d"
     },
     {
       "path": "variants.json",
-      "bytes": 496,
-      "sha256": "edc915fce7c22c38efc0e98677980ffe103c3e7aea8c0f671586fccf815ae1b7"
+      "bytes": 443,
+      "sha256": "dccda8436a67d9ff81edb3c752596da12c65ff83ccdf54b2823a2b1a756170f1"
     },
     {
       "path": "grid_belt_01_left/top/package.json",
-      "bytes": 745,
-      "sha256": "2f588758be39735e49d16fdf098598529341bf0b6642d863ea3ab6ac878c3639"
+      "bytes": 725,
+      "sha256": "f2fb645c5f407714b308d92d2372fe4534d5c1c2777ff8084097213868961a8d"
     },
     {
       "path": "grid_belt_01_left/top/dynamic/conveyor-arrow.webp",
@@ -64,13 +63,13 @@
     },
     {
       "path": "grid_belt_01_left/top/dynamic/manifest.json",
-      "bytes": 3553,
-      "sha256": "8f6eb7e58986420e50aeb9b700f131cacf1f290995ffd41d529031c17cd91c3c"
+      "bytes": 3542,
+      "sha256": "3c1d76146e842618c4b2c08d68157577f58fc8a11f6a2d79b2b18193d2f9ddc7"
     },
     {
       "path": "grid_belt_01_left/top/dynamic/material-computation.json",
-      "bytes": 21584,
-      "sha256": "5fffe502420864646903badad039b51e6a71f7e7a35957570b73281add422f09"
+      "bytes": 24997,
+      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
     },
     {
       "path": "grid_belt_01_left/top/static/conveyor-left-arrow-static.webp",
@@ -104,18 +103,18 @@
     },
     {
       "path": "grid_belt_01_left/top/static/manifest.json",
-      "bytes": 4517,
-      "sha256": "ebcf209a06e587d97cf68230c0edc6ca1aa281581bb57e7d6e0b77e8c0d84d42"
+      "bytes": 4506,
+      "sha256": "2c5894bc2e2f0870de1bc1f4f6077997792e2fb83bd9df33adc2eff44e6e97c1"
     },
     {
       "path": "grid_belt_01_left/top/static/material-computation.json",
-      "bytes": 21583,
-      "sha256": "1d3a2759d216604624a0e02820ef79a6c765ca9501837d436b1a94c4ddc21ced"
+      "bytes": 24996,
+      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
     },
     {
       "path": "grid_belt_01_mid/top/package.json",
-      "bytes": 748,
-      "sha256": "e4905bc25d1971cea5fcc36cbfa077982fc33e5a6d0b69125f30bfab6a27228c"
+      "bytes": 728,
+      "sha256": "c6bd5b665abc415539f7a59c6731b79c43f566c1e0f093cd5d7e4ba0fda546a0"
     },
     {
       "path": "grid_belt_01_mid/top/dynamic/conveyor-arrow.webp",
@@ -139,13 +138,13 @@
     },
     {
       "path": "grid_belt_01_mid/top/dynamic/manifest.json",
-      "bytes": 3578,
-      "sha256": "ba262c6638363279c4237e658cd78e41913c56ae7b06455120de449ce712a99d"
+      "bytes": 3567,
+      "sha256": "27b00ce706f8bd4150720d57cad230aa271456ed51a54fc69cc24f7b64a5f203"
     },
     {
       "path": "grid_belt_01_mid/top/dynamic/material-computation.json",
-      "bytes": 21584,
-      "sha256": "5fffe502420864646903badad039b51e6a71f7e7a35957570b73281add422f09"
+      "bytes": 24997,
+      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
     },
     {
       "path": "grid_belt_01_mid/top/static/conveyor-straight-arrow-static.webp",
@@ -179,18 +178,18 @@
     },
     {
       "path": "grid_belt_01_mid/top/static/manifest.json",
-      "bytes": 4638,
-      "sha256": "917ab1f4ea7931c1dc759bf66de638d930e41f406472766c72ab49226abc0df0"
+      "bytes": 4627,
+      "sha256": "39de8ca2109780599e786dc0512080fc1a9d92ea5fd23a916dea085852d10ccf"
     },
     {
       "path": "grid_belt_01_mid/top/static/material-computation.json",
-      "bytes": 21583,
-      "sha256": "1d3a2759d216604624a0e02820ef79a6c765ca9501837d436b1a94c4ddc21ced"
+      "bytes": 24996,
+      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
     },
     {
       "path": "grid_belt_01_right/top/package.json",
-      "bytes": 747,
-      "sha256": "25f4e7917b07d22ebeb6d1e26d0d9a0455fa374faebd2f67b4854527580bd6b4"
+      "bytes": 727,
+      "sha256": "8d9461dbf5c7d4a6315a950095b4f763a5745570ebb47666ce99270f147dbe4d"
     },
     {
       "path": "grid_belt_01_right/top/dynamic/conveyor-arrow.webp",
@@ -214,13 +213,13 @@
     },
     {
       "path": "grid_belt_01_right/top/dynamic/manifest.json",
-      "bytes": 3561,
-      "sha256": "c4e78b40ac099e85a8ca56bff90b1632af8779b6731933833b9deff9415ff51e"
+      "bytes": 3550,
+      "sha256": "32d981698304e8cabc4f60c9d97210875f4c24774ab058ef7f4827fbb859c8c4"
     },
     {
       "path": "grid_belt_01_right/top/dynamic/material-computation.json",
-      "bytes": 21584,
-      "sha256": "5fffe502420864646903badad039b51e6a71f7e7a35957570b73281add422f09"
+      "bytes": 24997,
+      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
     },
     {
       "path": "grid_belt_01_right/top/static/conveyor-right-arrow-static.webp",
@@ -254,28 +253,28 @@
     },
     {
       "path": "grid_belt_01_right/top/static/manifest.json",
-      "bytes": 4549,
-      "sha256": "1866a768e943011e7d661b230c4944986fbe70cde39d53e87587ab0169195bc5"
+      "bytes": 4538,
+      "sha256": "22ff42dee847110e2377231ef45d0b516194d34f0a36c3295557eb2d9309daf1"
     },
     {
       "path": "grid_belt_01_right/top/static/material-computation.json",
-      "bytes": 21583,
-      "sha256": "1d3a2759d216604624a0e02820ef79a6c765ca9501837d436b1a94c4ddc21ced"
+      "bytes": 24996,
+      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
     },
     {
       "path": "log_pipe_02_mid/top/package.json",
-      "bytes": 756,
-      "sha256": "f9cc2766bb9abc14062b0ed4b0f9ddd72b355673a5c3834f1e09bac20335c08f"
+      "bytes": 736,
+      "sha256": "66ba43f5c88e6b97bc6bb7e85561aa27f9ea47a4f182d713d72c23e9caa88324"
     },
     {
       "path": "log_pipe_02_mid/top/dynamic/manifest.json",
-      "bytes": 10859,
-      "sha256": "b5cb6b8d8519b10e555e0db5802ffa02d8d371e69f5007b7bb61114d3541638f"
+      "bytes": 16453,
+      "sha256": "84e6cb8049a4e73db956d6ece5d445cc2fdc4008d6281b7fa03674080972c9c4"
     },
     {
       "path": "log_pipe_02_mid/top/dynamic/material-computation.json",
-      "bytes": 21950,
-      "sha256": "4c1cad7e47328b62b27ce7c0b6c7b8a47cadbbe8c021a1af564d6d85c6fc612e"
+      "bytes": 30380,
+      "sha256": "8d201e6fbe1412a503e30ecf353d0748ca397da9be85abc861cc0cc54eca0c43"
     },
     {
       "path": "log_pipe_02_mid/top/dynamic/pipe-chevron.webp",
@@ -333,6 +332,11 @@
       "sha256": "b56b5223ad5fc96b03c98f2bb3bfcedc8bc0a572ba0f2a0bbc8682fbc07d2577"
     },
     {
+      "path": "log_pipe_02_mid/top/dynamic/pipe-splash-noise.webp",
+      "bytes": 310438,
+      "sha256": "94251ab71aa1b3fea75c47a0a1369189fe3c1648ffe96f5e8c08aa63108eabb4"
+    },
+    {
       "path": "log_pipe_02_mid/top/dynamic/pipe-straight-fluid-mapping.json",
       "bytes": 136679,
       "sha256": "653f388929937d9a9a56c2cab3873597ec0d20597f508599a0bdad379ff81ccb"
@@ -354,13 +358,13 @@
     },
     {
       "path": "log_pipe_02_mid/top/static/manifest.json",
-      "bytes": 23710,
-      "sha256": "237ef20768cbc0f13aef708d290a1291dbf416f7b7bb8fa73fb124b3b7fb267e"
+      "bytes": 29580,
+      "sha256": "d858264e436d3f76410db23625f9fb279443338907c2746bdc3634f6570d29eb"
     },
     {
       "path": "log_pipe_02_mid/top/static/material-computation.json",
-      "bytes": 21949,
-      "sha256": "509133fd67d4942a4e632d55697eea06540518035778a4890ae266d0047bbb0c"
+      "bytes": 30379,
+      "sha256": "0b01707e78d942198c585466117c3ce5a2dac559d2f716e5a06fa5b08bab7617"
     },
     {
       "path": "log_pipe_02_mid/top/static/pipe-chevron.webp",
@@ -401,6 +405,11 @@
       "path": "log_pipe_02_mid/top/static/pipe-left-fluid-specular.webp",
       "bytes": 1000,
       "sha256": "f072183288bdb66b0e49d6ba34ff9b2e3391d477e8c1dba421dee8c7c1ba9707"
+    },
+    {
+      "path": "log_pipe_02_mid/top/static/pipe-left-gas-body.webp",
+      "bytes": 3326,
+      "sha256": "bc4241a37c93f13e99b263587f09ce6efbf9871aa57318cf0e4b1846c8188d86"
     },
     {
       "path": "log_pipe_02_mid/top/static/pipe-left-shell.webp",
@@ -453,6 +462,11 @@
       "sha256": "2e17e25fd1e4944a70c0aebf30b9bb1182ef9edae94963977198f164e0a4b15f"
     },
     {
+      "path": "log_pipe_02_mid/top/static/pipe-right-gas-body.webp",
+      "bytes": 3378,
+      "sha256": "11bea6f8f6a18875a19785e98eff55e5aaab70c101c1b0a10a51bc3e442ccdd6"
+    },
+    {
       "path": "log_pipe_02_mid/top/static/pipe-right-shell.webp",
       "bytes": 1670,
       "sha256": "abd5cd7bee0688a716d612dff241e67f2e4969e5da7b894d27471c8027ba30b2"
@@ -491,6 +505,11 @@
       "path": "log_pipe_02_mid/top/static/pipe-straight-fluid-specular.webp",
       "bytes": 198,
       "sha256": "972ebbdb3f763a8993ff7cc854cfd5214e9ba3759fa010772e6ddc9624188f17"
+    },
+    {
+      "path": "log_pipe_02_mid/top/static/pipe-straight-gas-body.webp",
+      "bytes": 2588,
+      "sha256": "d94c238fb44352448c4a5a64d0be5ecf07cde110a038df057f457ba6d3763559"
     },
     {
       "path": "log_pipe_02_mid/top/static/pipe-straight-shell.webp",
@@ -534,28 +553,28 @@
     },
     {
       "path": "pipesupport_1_03/top/package.json",
-      "bytes": 753,
-      "sha256": "3e0fa6e6615aba54a30b956621e4001f330c9802b22dfd54819aa3c535be6a69"
+      "bytes": 733,
+      "sha256": "b81b9f670fc05fdaa07a0522a1f59ea64d4f4d35fad44f19cc4d547389bb00b1"
     },
     {
       "path": "pipesupport_1_03/top/dynamic/manifest.json",
-      "bytes": 384,
-      "sha256": "30a9126bc24036bcacfb85802893138bf3609f67dee8e61b4f5dd4d927d5a4cf"
+      "bytes": 373,
+      "sha256": "b99d648b8532b6de1a01f0716b3aa02606278aa4a69c09c4da81870a4e53906a"
     },
     {
       "path": "pipesupport_1_03/top/dynamic/material-computation.json",
-      "bytes": 21292,
-      "sha256": "22a8ff609c70fc5a6e4d60894196361ce75b96d7506f0c67f34c211e32c61232"
+      "bytes": 24705,
+      "sha256": "b7598066689652d11291cdade6bed484abf35f187b9f8951858fcdd4eeacb6d6"
     },
     {
       "path": "pipesupport_1_03/top/static/manifest.json",
-      "bytes": 1120,
-      "sha256": "8f7c03ebe1aa9e58d33be38b8b3889c3c43d554dc1bf30fe626805809674ad33"
+      "bytes": 1109,
+      "sha256": "80d64935a3af1ddd0b01fd6f6d2a91fd3088f67cca9eaae949db99d5227ebba4"
     },
     {
       "path": "pipesupport_1_03/top/static/material-computation.json",
-      "bytes": 21291,
-      "sha256": "e00fd081fc057598e2bc706415ea3a7e720503e1e0ec92e02c834fb70de0112f"
+      "bytes": 24704,
+      "sha256": "5ef8f17cea6a4608246452eb3a28cf665ddba6ead972adc1f27217cf4defa1f2"
     },
     {
       "path": "pipesupport_1_03/top/static/support-straight.webp",
@@ -564,28 +583,28 @@
     },
     {
       "path": "pipesupport_1_04/top/package.json",
-      "bytes": 751,
-      "sha256": "620c0a3f03e6abe0f4e7e0c70163a49bff1dee86953090600ba2b4084ea3231b"
+      "bytes": 731,
+      "sha256": "93c83f0def949281240316ba59ba3a38c3e3e140c91754881dabde472a6de2c0"
     },
     {
       "path": "pipesupport_1_04/top/dynamic/manifest.json",
-      "bytes": 384,
-      "sha256": "3cffc1c9ef1ef4c9c33b959326fbe55129d12db8d9b64dbfb55063beca5a91fc"
+      "bytes": 373,
+      "sha256": "a42dc5de3faf95ae8a61325a2194b26b6c6c89e64acf70414d94afd92347fed1"
     },
     {
       "path": "pipesupport_1_04/top/dynamic/material-computation.json",
-      "bytes": 21292,
-      "sha256": "22a8ff609c70fc5a6e4d60894196361ce75b96d7506f0c67f34c211e32c61232"
+      "bytes": 24705,
+      "sha256": "b7598066689652d11291cdade6bed484abf35f187b9f8951858fcdd4eeacb6d6"
     },
     {
       "path": "pipesupport_1_04/top/static/manifest.json",
-      "bytes": 1108,
-      "sha256": "272a79e6200b589b7d566e1c64c254c0d6ff49a76540160eae86ae7842817e1f"
+      "bytes": 1097,
+      "sha256": "e490316ca4eb0318a4ed8d97ca5820da9d0e0b5b404148137a5f08b2050c5132"
     },
     {
       "path": "pipesupport_1_04/top/static/material-computation.json",
-      "bytes": 21291,
-      "sha256": "e00fd081fc057598e2bc706415ea3a7e720503e1e0ec92e02c834fb70de0112f"
+      "bytes": 24704,
+      "sha256": "5ef8f17cea6a4608246452eb3a28cf665ddba6ead972adc1f27217cf4defa1f2"
     },
     {
       "path": "pipesupport_1_04/top/static/support-corner.webp",

@@ -44,7 +44,7 @@
     "mode": "transparent",
     "representativeApproximateControl": "passed visual comparison for glass-bearing storage assets"
   },
-  "taskId": "20260911-building-port-delivery",
+  "taskId": "20260913-endpoint-port-regeneration",
   "beautyTaskId": "20260910-163029-building-e52e2a8c",
   "portEffectsProfile": "top-sprite-height-v1",
   "portMetadata": "ports.json",

@@ -29,5 +29,46 @@
       "pivotPixels": "per-resource effect.json projection.worldToPixel.pivotPixels"
     }
   },
-  "resources": []
+  "resources": [
+    {
+      "id": "v1.5/fx/P_interactive_large_pipeoff_in_01",
+      "path": "P_interactive_large_pipeoff_in_01/effect.json",
+      "kind": "pipe",
+      "sourcePrefab": "P_interactive_large_pipeoff_in_01",
+      "state": "off",
+      "color": "orange",
+      "size": "large",
+      "bend": "straight",
+      "direction": "in",
+      "frameCount": 185,
+      "cell": [
+        165,
+        74
+      ],
+      "height": "P_interactive_large_pipeoff_in_01/height.webp",
+      "spritesheet": "P_interactive_large_pipeoff_in_01/spritesheet.json",
+      "heightEncoding": "RG16-packed-R-high-G-low,B=0,alpha=binary occupancy",
+      "motionProvenance": "authored UV speeds"
+    },
+    {
+      "id": "v1.5/fx/P_interactive_large_pipeon_in_01",
+      "path": "P_interactive_large_pipeon_in_01/effect.json",
+      "kind": "pipe",
+      "sourcePrefab": "P_interactive_large_pipeon_in_01",
+      "state": "on",
+      "color": "orange",
+      "size": "large",
+      "bend": "straight",
+      "direction": "in",
+      "frameCount": 120,
+      "cell": [
+        232,
+        74
+      ],
+      "height": "P_interactive_large_pipeon_in_01/height.webp",
+      "spritesheet": "P_interactive_large_pipeon_in_01/spritesheet.json",
+      "heightEncoding": "RG16-packed-R-high-G-low,B=0,alpha=binary occupancy",
+      "motionProvenance": "authored UV speeds"
+    }
+  ]
 }

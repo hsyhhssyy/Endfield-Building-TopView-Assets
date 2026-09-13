@@ -31,19 +31,19 @@
           "M_pump+1_001_01_variant_com_alphatest+1_001_03_vat",
           "M_pump+1_001_01_variant_transparency+1_001_01_vat"
         ],
-        "policy": "Alpha-test material is retained in source audit; standalone evaluated mesh exposes one render material slot, so no texture-to-submesh assignment was inferred. Height mask is validated against the formal current delivery silhouette."
+        "policy": "Evaluated visible source triangles are projected; no beauty-alpha-derived height fill is used."
       },
       "alphaTestProjection": {
-        "rulesApplied": 2,
+        "rulesApplied": 0,
         "filteredPixels": 0,
         "missingUVTriangles": 0
       },
       "cropCompatibility": {
         "status": "verified-existing-color-crop",
-        "sourceCanvas": "formal output/v1.5 pump_1/top open_idle 384x384 color alpha",
-        "retainedVisibleScope": "height retains evaluated opaque source geometry pixels inside the declared 3x3 spatial canvas; in-canvas silhouette compared to formal color alpha",
-        "formalAlphaThreshold": 16,
-        "clippedTrianglesPolicy": "retain diagnostic count 84; do not zero or rescale"
+        "sourceCanvas": "current-run 5x3 formal color alpha",
+        "retainedVisibleScope": "height uses the same current Alpha-union whole-cell crop as color",
+        "formalAlphaThreshold": 1,
+        "clippedTrianglesPolicy": "up to two pixels per side follow the declared color edge tolerance"
       },
       "geometryProjection": "frontmost opaque evaluated triangle; max sourceY per pixel",
       "encoding": {
@@ -65,7 +65,7 @@
         "y": "pixelY = pivotPixels.y + (sourceZ - cameraCenterSource.z) * pixelsPerCell.y",
         "sample": "pixel-center; source top view +X right, +Z down",
         "pivotPixels": {
-          "x": 192.0,
+          "x": 448.0,
           "y": 192.0
         },
         "cameraCenterSource": {
@@ -78,18 +78,18 @@
         }
       },
       "validCoverage": {
-        "pixels": 91003,
-        "fraction": 0.6171535915798612,
+        "pixels": 106429,
+        "fraction": 0.43306070963541665,
         "boundsPixels": [
-          0,
+          24,
           7,
-          383,
+          639,
           377
         ]
       },
-      "triangleCount": 2448,
-      "clippedTriangles": 84,
-      "fullyOutsideTriangles": 562,
+      "triangleCount": 2767,
+      "clippedTriangles": 0,
+      "fullyOutsideTriangles": 0,
       "excludedObjects": []
     }
   ],

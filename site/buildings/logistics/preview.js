@@ -1,6 +1,6 @@
 import * as PIXI from './vendor/pixi.min.js';
 
-const ids = ['family', 'layout', 'animate', 'filled', 'color', 'spacing', 'pause', 'status', 'loading', 'error', 'render-fps', 'source-fps'];
+const ids = ['family', 'layout', 'animate', 'fluid', 'spacing', 'pause', 'status', 'loading', 'error', 'render-fps', 'source-fps'];
 const ui = Object.fromEntries(ids.map((id) => [id, document.getElementById(id)]));
 let targetKind = ui.family?.value || 'pipe';
 const audit = window.logisticsAudit = {
@@ -27,12 +27,12 @@ let nodes = [];
 let fpsStarted = performance.now();
 let fpsFrames = 0;
 const PIPE_ROUTE_ORIGIN = 5;
-const FALLBACK_FLUID_CYCLE = { fillCellsPerSecond: 8, drainCellsPerSecond: 8, edgeWidth: 0.04 };
+const FALLBACK_FLUID_CYCLE = { fillCellsPerSecond: 2, drainCellsPerSecond: 2, edgeWidth: 0.04 };
 
 function fluidCycleState() {
   const total = nodes.length;
-  if (!animation) return { state: ui.filled.checked ? 'static-full' : 'disabled', supply: ui.filled.checked, occupancy: ui.filled.checked ? 1 : 0, start: PIPE_ROUTE_ORIGIN - 1, end: PIPE_ROUTE_ORIGIN + total + 1, total, cycle: 0, progress: ui.filled.checked ? 1 : 0 };
-  if (!ui.filled.checked || !total) return { state: 'disabled', supply: false, occupancy: 0, start: PIPE_ROUTE_ORIGIN, end: PIPE_ROUTE_ORIGIN, total, cycle: 0, progress: 0 };
+  if (!animation) return { state: (ui.fluid.value !== 'none') ? 'static-full' : 'disabled', supply: (ui.fluid.value !== 'none'), occupancy: (ui.fluid.value !== 'none') ? 1 : 0, start: PIPE_ROUTE_ORIGIN - 1, end: PIPE_ROUTE_ORIGIN + total + 1, total, cycle: 0, progress: (ui.fluid.value !== 'none') ? 1 : 0 };
+  if (!(ui.fluid.value !== 'none') || !total) return { state: 'disabled', supply: false, occupancy: 0, start: PIPE_ROUTE_ORIGIN, end: PIPE_ROUTE_ORIGIN, total, cycle: 0, progress: 0 };
   const config = animation.cycle || FALLBACK_FLUID_CYCLE;
   const fillDuration = total / config.fillCellsPerSecond;
   const drainDuration = total / config.drainCellsPerSecond;
@@ -41,11 +41,14 @@ function fluidCycleState() {
   const cycle = Math.floor(fluidCycleTime / duration);
   if (phase < fillDuration) {
     const progress = phase / fillDuration;
-    return { state: 'filling', supply: true, occupancy: progress, start: PIPE_ROUTE_ORIGIN - config.edgeWidth, end: PIPE_ROUTE_ORIGIN + total * progress, total, cycle, progress, fillDuration, drainDuration };
+    return { state: 'filling', supply: true, occupancy: progress, start: PIPE_ROUTE_ORIGIN - 1, end: PIPE_ROUTE_ORIGIN + total * progress, total, cycle, progress, fillDuration, drainDuration };
   }
   const progress = (phase - fillDuration) / drainDuration;
-  return { state: 'draining', supply: false, occupancy: 1 - progress, start: PIPE_ROUTE_ORIGIN + total * progress, end: PIPE_ROUTE_ORIGIN + total + config.edgeWidth, total, cycle, progress, fillDuration, drainDuration };
+  return { state: 'draining', supply: false, occupancy: 1 - progress, start: PIPE_ROUTE_ORIGIN + total * progress, end: PIPE_ROUTE_ORIGIN + total + 1, total, cycle, progress, fillDuration, drainDuration };
 }
+
+function fluidProfile() { return manifests.get(collection.entries['pipe.straight'].id).fluidProfiles[ui.fluid.value]; }
+function boundaryShape(state) { return animation ? Math.min(1, state.progress * state.total * 2, (1 - state.progress) * state.total * 2) : 1; }
 
 function syncFluidUniforms(state = fluidCycleState()) {
   const edge = animation?.cycle?.edgeWidth ?? FALLBACK_FLUID_CYCLE.edgeWidth;
@@ -56,6 +59,7 @@ function syncFluidUniforms(state = fluidCycleState()) {
     uniforms.uFillBounds[0] = state.start;
     uniforms.uFillBounds[1] = state.end;
     uniforms.uFillBounds[2] = edge;
+    uniforms.uFillBounds[3] = boundaryShape(state);
   }
   return state;
 }
@@ -70,10 +74,13 @@ function status() {
   const mode = animation ? '动态材质' : '静态材质';
   const running = raf ? '播放中' : (paused ? '已暂停' : '未播放');
   const cycle = fluidCycleState();
-  const fluid = targetKind !== 'pipe' ? '' : cycle.state === 'filling' ? ` · 供液中 ${Math.round(cycle.progress * 100)}%` : cycle.state === 'draining' ? ` · 停止供应，排空中 ${Math.round(cycle.progress * 100)}%` : cycle.state === 'disabled' ? ' · 空管' : ' · 满管';
-  ui.status.textContent = `${mode} · ${targetKind} · ${nodes.length} 个组件 · ${running}${fluid}`;
+  const fluid = targetKind !== 'pipe' ? '' : cycle.state === 'filling' ? ` · 供应中 ${Math.round(cycle.progress * 100)}%` : cycle.state === 'draining' ? ` · 停止供应，排空中 ${Math.round(cycle.progress * 100)}%` : cycle.state === 'disabled' ? ' · 空管' : ' · 满管';
+  const family = targetKind === 'pipe' ? `管道 · ${fluidProfile()?.name || '无'}` : '传送带';
+  ui.status.textContent = `${mode} · ${family} · ${nodes.length} 个组件 · ${running}${fluid}`;
   audit.mode = animation ? 'dynamic' : 'static';
   audit.family = targetKind;
+  audit.fluidId = ui.fluid.value;
+  audit.fluidPhase = fluidProfile()?.phase || 'none';
   audit.rafActive = Boolean(raf);
   audit.waterTime = waterTime;
   audit.beltTime = beltTime;
@@ -167,7 +174,7 @@ function draw() {
   clear();
   nodes = buildRoute();
   const cycle = fluidCycleState();
-  const fillBounds = new Float32Array([cycle.start, cycle.end, animation?.cycle?.edgeWidth ?? FALLBACK_FLUID_CYCLE.edgeWidth, 1]);
+  const fillBounds = new Float32Array([cycle.start, cycle.end, animation?.cycle?.edgeWidth ?? FALLBACK_FLUID_CYCLE.edgeWidth, boundaryShape(cycle)]);
   let corners = 0;
   const routeLayer = new PIXI.Container();
   app.stage.addChild(routeLayer);
@@ -184,24 +191,24 @@ function draw() {
     if (supported && segment.shape !== 'straight') corners += 1;
     if (supported && textures.has(`static/${key}.support-back`)) sprite(`${key}.support-back`, box);
     if (pipe) {
-      if (ui.filled.checked) {
+      if ((ui.fluid.value !== 'none')) {
         if (animation) {
-          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid-body', { texture: tex(`${key}.fluid-body`), tint: ui.color.value, fillBounds }));
-          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid', { fillBounds }));
-          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid-specular', { texture: tex(`${key}.fluid-specular`), fillBounds }));
+          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid-body', { texture: tex(`${key}.fluid-body`), profile: fluidProfile(), fillBounds }));
+          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid', { profile: fluidProfile(), fillBounds }));
+          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid-specular', { texture: tex(`${key}.fluid-specular`), profile: fluidProfile(), fillBounds }));
         } else {
-          sprite(`${key}.fluid-body`, box, ui.color.value);
-          sprite(`${key}.fluid-specular`, box);
+          if (fluidProfile().phase === 'gas') sprite(`${key}.gas-body`, box);
+          else { sprite(`${key}.fluid-body`, box, fluidProfile().colors.body.hex); sprite(`${key}.fluid-specular`, box); }
         }
       }
       if (supported && textures.has(`static/${key}.support-middle`)) sprite(`${key}.support-middle`, box);
       sprite(`${key}.shell`, box);
-      if (animation) dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, ui.filled.checked));
+      if (animation) dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, (ui.fluid.value !== 'none')));
       else if (segment.index % 6 === 3) sprite(`${key}.static-marker`, box);
       if (supported && textures.has(`static/${key}.support-front`)) sprite(`${key}.support-front`, box);
     } else {
       sprite(`${key}${animation ? '.base' : '.static'}`, box);
-      if (animation) dynamicNodes.push(animation.mesh('conveyor', segment, box, beltTime, false, ui.color.value));
+      if (animation) dynamicNodes.push(animation.mesh('conveyor', segment, box, beltTime, false));
     }
   }
   drawPipeEndpoints(routeLayer);
@@ -228,7 +235,7 @@ function tick(now) {
   const delta = previous ? Math.min((now - previous) / 1000, 0.1) : 0;
   previous = now;
   if (targetKind === 'conveyor') beltTime += delta;
-  if (targetKind === 'pipe' && ui.filled.checked) {
+  if (targetKind === 'pipe' && (ui.fluid.value !== 'none')) {
     waterTime += delta;
     fluidCycleTime += delta;
   }
@@ -297,7 +304,7 @@ function setupControls() {
   const syncFamily = () => {
     targetKind = ui.family.value;
     const pipe = targetKind === 'pipe';
-    for (const id of ['filled-control', 'color-control', 'spacing-control']) {
+    for (const id of ['fluid-control', 'fluid-note', 'spacing-control']) {
       document.getElementById(id)?.toggleAttribute('hidden', !pipe);
     }
     document.documentElement.dataset.logisticsKind = targetKind;
@@ -306,13 +313,12 @@ function setupControls() {
   ui.family?.addEventListener('change', syncFamily);
   if (ui.family) {
     targetKind = ui.family.value;
-    for (const id of ['filled-control', 'color-control', 'spacing-control']) {
+    for (const id of ['fluid-control', 'fluid-note', 'spacing-control']) {
       document.getElementById(id)?.toggleAttribute('hidden', targetKind !== 'pipe');
     }
   }
   ui.layout?.addEventListener('change', () => draw());
-  ui.filled?.addEventListener('change', () => draw());
-  ui.color?.addEventListener('change', () => draw());
+  ui.fluid?.addEventListener('change', () => draw());
   ui.spacing?.addEventListener('change', () => draw());
   ui.animate?.addEventListener('change', () => void setAnimation());
   ui.pause?.addEventListener('click', () => {

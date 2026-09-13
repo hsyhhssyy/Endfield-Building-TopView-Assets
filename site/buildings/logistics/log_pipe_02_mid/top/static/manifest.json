@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "materialContractVersion": 2,
   "gameVersion": "v1.5",
-  "taskId": "20260912-003436-logistics-fluid-cycle-48273196",
+  "taskId": "20260913-114414-logistics-water-gas",
   "building": "log_pipe_02_mid",
   "pixelsPerCell": 128,
   "resources": {
@@ -122,6 +122,24 @@
       "namespace": "static",
       "sha256": "a0e6570286ce85912ca55279f34027c2f7bb88567de4cb8b2484fb69f1654bf6"
     },
+    "static/pipe.straight.gas-body": {
+      "file": "pipe-straight-gas-body.webp",
+      "width": 128,
+      "height": 128,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "colorSpace": "srgb",
+      "alpha": "straight",
+      "filter": "linear",
+      "wrap": "clamp",
+      "semantic": "pipe.straight.gas-body",
+      "namespace": "static",
+      "sha256": "d94c238fb44352448c4a5a64d0be5ecf07cde110a038df057f457ba6d3763559"
+    },
     "static/pipe.straight.fluid-specular": {
       "file": "pipe-straight-fluid-specular.webp",
       "width": 128,
@@ -212,6 +230,24 @@
       "namespace": "static",
       "sha256": "f75281336a46bfd71970ba1bc4787b10a549f3367415fa4ebd50f842b84644da"
     },
+    "static/pipe.left.gas-body": {
+      "file": "pipe-left-gas-body.webp",
+      "width": 128,
+      "height": 128,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "colorSpace": "srgb",
+      "alpha": "straight",
+      "filter": "linear",
+      "wrap": "clamp",
+      "semantic": "pipe.left.gas-body",
+      "namespace": "static",
+      "sha256": "bc4241a37c93f13e99b263587f09ce6efbf9871aa57318cf0e4b1846c8188d86"
+    },
     "static/pipe.left.fluid-specular": {
       "file": "pipe-left-fluid-specular.webp",
       "width": 128,
@@ -301,6 +337,24 @@
       "semantic": "pipe.right.fluid-body",
       "namespace": "static",
       "sha256": "97c493784bc504396eb4fb6e452e31a142cadebd2f61982cb7cbdce7a75611b7"
+    },
+    "static/pipe.right.gas-body": {
+      "file": "pipe-right-gas-body.webp",
+      "width": 128,
+      "height": 128,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "colorSpace": "srgb",
+      "alpha": "straight",
+      "filter": "linear",
+      "wrap": "clamp",
+      "semantic": "pipe.right.gas-body",
+      "namespace": "static",
+      "sha256": "11bea6f8f6a18875a19785e98eff55e5aaab70c101c1b0a10a51bc3e442ccdd6"
     },
     "static/pipe.right.fluid-specular": {
       "file": "pipe-right-fluid-specular.webp",
@@ -815,6 +869,154 @@
       "appearance": "Visible pale glint is a screenshot-calibrated 2D treatment of the authored bright albedo inset; the enabled emissive atlas samples black over this mesh UV island in v1.5"
     }
   },
+  "fluidProfiles": {
+    "item_liquid_water": {
+      "id": "item_liquid_water",
+      "name": "清水",
+      "phase": "liquid",
+      "phaseType": 2,
+      "subType": 4,
+      "atlasLayer": 4,
+      "material": "M_tube_art_liquid_water",
+      "colors": {
+        "body": {
+          "rgba8": [
+            92,
+            159,
+            224,
+            179
+          ],
+          "displayRgba8": [
+            92,
+            159,
+            224,
+            179
+          ],
+          "hex": "#5c9fe0",
+          "array": "T_WaterColorAtlas",
+          "layer": 4,
+          "format": "RGBA_BC7_SRGB",
+          "object": "CAB-db830311100ea6af0afab52162029165_7622698014684465723_Texture2DArray",
+          "streamSha256": "b519c917a3356a18c69785d47633fd703e371ff3eecb64b8672b0645b321a270"
+        },
+        "skin": {
+          "rgba8": [
+            82,
+            177,
+            209,
+            120
+          ],
+          "displayRgba8": [
+            82,
+            177,
+            209,
+            120
+          ],
+          "hex": "#52b1d1",
+          "array": "T_WaterSkinColorAtlas",
+          "layer": 4,
+          "format": "RGBA_BC7_SRGB",
+          "object": "CAB-9d2b46cc7274bce1f7aa154a238f4812_5988561676508966199_Texture2DArray",
+          "streamSha256": "b3e38c44101483f49603380f6958ecd60fc55c59ad41a0716c23d166df00e33e"
+        },
+        "skin2": {
+          "rgba8": [
+            7,
+            36,
+            58,
+            255
+          ],
+          "displayRgba8": [
+            7,
+            36,
+            58,
+            255
+          ],
+          "hex": "#07243a",
+          "array": "T_WaterSkinColor2Atlas",
+          "layer": 4,
+          "format": "RGBA_BC7_SRGB",
+          "object": "CAB-55da487244add3ff79adcca818a7d23d_-8933220189111898049_Texture2DArray",
+          "streamSha256": "48806486ac45881d7c9e0cae71ea2591340d8695a9ee3b3888854fe5aa516a3d"
+        },
+        "splash": {
+          "rgba8": [
+            110,
+            203,
+            219,
+            232
+          ],
+          "displayRgba8": [
+            175,
+            231,
+            238,
+            232
+          ],
+          "hex": "#afe7ee",
+          "array": "T_WaterSplashColorTextureArray",
+          "layer": 4,
+          "format": "RGBA_BC7_UNorm",
+          "object": "CAB-cd9e7a378dce0d3b692d7858d2129eae_2673383687997878308_Texture2DArray",
+          "streamSha256": "e20d29aec1d99538d2a199ef2696db904987165e601c4488fff6bc4963f7c486"
+        }
+      },
+      "colorSpace": "rgba8 = decoded BC7 bytes; displayRgba8/hex = sRGB (UNorm color RGB converted from linear, alpha unchanged)",
+      "appearance": "2D reconstruction; shared pipe interior, phase-specific shading and moving boundaries"
+    },
+    "item_gas_xiranite": {
+      "id": "item_gas_xiranite",
+      "name": "息壤气",
+      "phase": "gas",
+      "phaseType": 4,
+      "subType": 7,
+      "atlasLayer": 7,
+      "material": "M_fac_pipe_gas_xiranite",
+      "colors": {
+        "body": {
+          "rgba8": [
+            139,
+            192,
+            72,
+            38
+          ],
+          "displayRgba8": [
+            139,
+            192,
+            72,
+            38
+          ],
+          "hex": "#8bc048",
+          "array": "T_FogColorAtlas",
+          "layer": 7,
+          "format": "RGBA_BC7_SRGB",
+          "object": "CAB-cbd2c7cf53fb582fd33c859aedf95ea1_-3576973267196530123_Texture2DArray",
+          "streamSha256": "5d2c0cb81a306a034a84e4337fdd952431c8542531613a25945d82ab6fe97b73"
+        },
+        "skin": {
+          "rgba8": [
+            143,
+            181,
+            108,
+            191
+          ],
+          "displayRgba8": [
+            143,
+            181,
+            108,
+            191
+          ],
+          "hex": "#8fb56c",
+          "array": "T_FogColor2Atlas",
+          "layer": 7,
+          "format": "RGBA_BC7_SRGB",
+          "object": "CAB-8ce51f7192cbaeca364f03c1ff16c123_-7920922050920825574_Texture2DArray",
+          "streamSha256": "fdd9b071dac4b8cc49362c4555e2a17be9c09986c213edbdea28136bdcc1cc3f"
+        }
+      },
+      "colorSpace": "rgba8 = decoded BC7 bytes; displayRgba8/hex = sRGB (UNorm color RGB converted from linear, alpha unchanged)",
+      "appearance": "2D reconstruction; shared pipe interior, phase-specific shading and moving boundaries"
+    }
+  },
   "resourceNamespace": "static",
   "materialSpecification": "material-computation.json",
   "migrationFromContract1": {
@@ -824,16 +1026,19 @@
     "pipe.endpoint.whitening": "static/pipe.endpoint.whitening",
     "pipe.straight.shell": "static/pipe.straight.shell",
     "pipe.straight.fluid-body": "static/pipe.straight.fluid-body",
+    "pipe.straight.gas-body": "static/pipe.straight.gas-body",
     "pipe.straight.fluid-specular": "static/pipe.straight.fluid-specular",
     "pipe.straight.static-marked": "static/pipe.straight.static-marked",
     "pipe.straight.static-marker": "static/pipe.straight.static-marker",
     "pipe.left.shell": "static/pipe.left.shell",
     "pipe.left.fluid-body": "static/pipe.left.fluid-body",
+    "pipe.left.gas-body": "static/pipe.left.gas-body",
     "pipe.left.fluid-specular": "static/pipe.left.fluid-specular",
     "pipe.left.static-marked": "static/pipe.left.static-marked",
     "pipe.left.static-marker": "static/pipe.left.static-marker",
     "pipe.right.shell": "static/pipe.right.shell",
     "pipe.right.fluid-body": "static/pipe.right.fluid-body",
+    "pipe.right.gas-body": "static/pipe.right.gas-body",
     "pipe.right.fluid-specular": "static/pipe.right.fluid-specular",
     "pipe.right.static-marked": "static/pipe.right.static-marked",
     "pipe.right.static-marker": "static/pipe.right.static-marker",

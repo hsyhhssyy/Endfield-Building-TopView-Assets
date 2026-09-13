@@ -16,6 +16,12 @@ import {
 
 const ROOT_URL = new URL('../', import.meta.url);
 const $ = (selector) => document.querySelector(selector);
+const BACKGROUND_LABELS = Object.freeze({
+  transparent: '棋盘格',
+  white: '白色',
+  black: '黑色',
+  grass: '草地',
+});
 
 async function readJson(url) {
   const response = await fetch(url, { cache: 'no-cache' });
@@ -532,7 +538,7 @@ class BuildingPreview {
     let selected = 'transparent';
     try {
       const stored = localStorage.getItem('endfield-building-preview-background');
-      if (stored === 'grass') selected = stored;
+      if (Object.hasOwn(BACKGROUND_LABELS, stored)) selected = stored;
     } catch {
       // Storage can be disabled in hardened or private browser contexts.
     }
@@ -542,7 +548,7 @@ class BuildingPreview {
   }
 
   async setBackground(requestedMode) {
-    const mode = requestedMode === 'grass' ? 'grass' : 'transparent';
+    const mode = Object.hasOwn(BACKGROUND_LABELS, requestedMode) ? requestedMode : 'transparent';
     const select = $('#background-select');
     select.value = mode;
     select.disabled = true;
@@ -568,19 +574,16 @@ class BuildingPreview {
       const metrics = this.previewMetrics;
       $('#background-info').textContent = mode === 'grass'
         ? `草地以 ${this.spatial.value.pixelsPerCell?.x ?? 128} px/格连续铺设；预览尺寸 ${metrics.width}×${metrics.height} px。`
-        : `透明区域以黑白棋盘表示；设备四周各外扩 ${metrics.paddingCells} 格。`;
-      this.status(mode === 'grass' ? '草地背景已就绪。' : '透明棋盘背景已就绪。');
+        : `透明区域以${mode === 'transparent' ? '浅灰棋盘格' : BACKGROUND_LABELS[mode]}显示；设备四周各外扩 ${metrics.paddingCells} 格。`;
+      this.status(`${BACKGROUND_LABELS[mode]}背景已就绪。`);
       try {
         localStorage.setItem('endfield-building-preview-background', mode);
       } catch {
         // The preview remains functional without persisted preferences.
       }
     } catch (error) {
-      if (this.grassSprite) this.grassSprite.visible = false;
-      $('#pixi-stage').dataset.background = 'transparent';
-      document.documentElement.dataset.previewBackground = 'transparent';
-      select.value = 'transparent';
-      this.warn(`草地背景加载失败，已恢复透明背景：${error.message}`);
+      await this.setBackground('transparent');
+      this.warn(`草地背景加载失败，已恢复棋盘格背景：${error.message}`);
     } finally {
       select.disabled = false;
     }

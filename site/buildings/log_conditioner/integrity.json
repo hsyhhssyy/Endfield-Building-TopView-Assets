@@ -1,21 +1,20 @@
 {
   "schemaVersion": 1,
   "algorithm": "sha256",
-  "releaseId": "v1.5-20260913-024801-cst",
   "building": "log_conditioner",
   "fileCount": 20,
-  "totalBytes": 1829886,
-  "contentHash": "4f5280280b880bcc75e43baabce1c848b72886d5fcf8abb6db2e14bfe4f26081",
+  "totalBytes": 1830075,
+  "contentHash": "c9fd3901c4d5e14e7d603f0827c85425d3c00f9d9d5d0874fd86ca66d7bfab69",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4523,
-      "sha256": "d69e33d3668b1934a9a51e31baef8a8fe16f3fb0bb3ee70afbc8f638e61ec199"
+      "bytes": 4619,
+      "sha256": "1d7af13368f0811b61b837f993042a37f96d38b14629664ab78b9b2905a5c8a3"
     },
     {
       "path": "variants.json",
-      "bytes": 549,
-      "sha256": "3d60da9f6bcff265bdedfd3f71b0d337c1692cddd94c29f6806ae836ea973b62"
+      "bytes": 505,
+      "sha256": "2ea82becc2a7f1a3c9a783ead908e88255e0ecb98628e83d164f547747d1e61c"
     },
     {
       "path": "preview/grass-background.json",
@@ -29,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "preview/preview-data.js",
@@ -39,8 +38,8 @@
     },
     {
       "path": "preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "preview/vendor/LICENSE.txt",

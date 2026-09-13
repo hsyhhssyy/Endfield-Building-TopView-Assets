@@ -1,241 +1,241 @@
 {
   "schemaVersion": 1,
   "algorithm": "sha256",
-  "releaseId": "v1.5-20260913-024801-cst",
+  "releaseId": "v1.5-20260913-120848-cst",
   "sourceVersion": "v1.5",
-  "generatedAt": "2026-09-12T18:48:01Z",
-  "fileCount": 2076,
-  "totalBytes": 422480114,
-  "contentHash": "83bf1e1dafd31e3fb6ecc79303ddd26e495ffb549212d9b705b95d3678ea76f5",
+  "generatedAt": "2026-09-13T04:08:48Z",
+  "fileCount": 2147,
+  "totalBytes": 432290683,
+  "contentHash": "8054354e824397c7ddeee414be7d6171aed0d29321ce56f74a61b5ae68832557",
   "buildings": [
     {
       "id": "unloader_1",
-      "contentHash": "1ad89ffdf9bae0eda7926618e05f0f6cbc0fdda13837d30a67bb878569ec7ca8",
+      "contentHash": "be34e8378a3ad3c879a3db3712c047d678894e640288fe9e7336dab31d4a67f3",
       "integrity": "buildings/unloader_1/integrity.json"
     },
     {
       "id": "loader_1",
-      "contentHash": "bbcf78ef8b4cbb0b34aa5511d97f108cca4c1a38f9014d7ac4b19b077c6b6215",
+      "contentHash": "ce5340cf6882be119e6304e9b6d9f9a9368e0b2a7b4a99f2d9577a0bf00ec5b2",
       "integrity": "buildings/loader_1/integrity.json"
     },
     {
       "id": "power_diffuser_1",
-      "contentHash": "4223b1389766f41dc9a597182f082ef5e64634045e7011166fbb67a6245a6d11",
+      "contentHash": "979ddb96745906c1980aa2c97a142bb9ef6c17864b3b3f50c55d3566c093f34f",
       "integrity": "buildings/power_diffuser_1/integrity.json"
     },
     {
       "id": "gas_storager_1",
-      "contentHash": "ed38bba1182fc5c5557ef4ce3510558789fdf25e1c996ca69ee80f6fc4fa320b",
+      "contentHash": "84ac980d2ffb2581fa7aff26e38fb5165ffd6e356b2fc4db4603879a07bc2bd6",
       "integrity": "buildings/gas_storager_1/integrity.json"
     },
     {
       "id": "liquid_storager_1",
-      "contentHash": "7127c7daeb719991e7557683bf0630754f90df19bcbe982b1f17418e54c24a6e",
+      "contentHash": "6636fd5d84b06acea615c06620c2e381a8a509becc0fd9ffef973710c20e1cc0",
       "integrity": "buildings/liquid_storager_1/integrity.json"
     },
     {
       "id": "log_splitter",
-      "contentHash": "e891aa4a2ce82c3be636f69fbf7fd531dfa1022030cb7ae6489169ea9214f40b",
+      "contentHash": "7aafead689784f431460e128ceb554a8782c59eaabfe853ae1b0c4052a88721e",
       "integrity": "buildings/log_splitter/integrity.json"
     },
     {
       "id": "storager_1",
-      "contentHash": "b3cdfe64fde1508c684df5258bcd6061f6062dc76666f1ae22623bc9afaa601b",
+      "contentHash": "9ef4fb26bb1c55ef2b350de029907fd43b95b2689dbb1b2d5407b5f161e53a0d",
       "integrity": "buildings/storager_1/integrity.json"
     },
     {
       "id": "sp_hub_1",
-      "contentHash": "eeaf0a2c29108d16c3b0d03a29846aa94bd3a6e7755602c179809e81a13ccdd5",
+      "contentHash": "39d1d8acfaac6b7ab2ec97f5e1c45aafe725a1660e34e74fcdf344990d0863b9",
       "integrity": "buildings/sp_hub_1/integrity.json"
     },
     {
       "id": "mix_pool_1",
-      "contentHash": "890e18d971c35562c72be680e95f812ee29ba2aceb99460578c2cd8f36ae876e",
+      "contentHash": "8ec59c371e2f1aa30fcc533654bbf843023315871a945135e23ddbebe0cde3bb",
       "integrity": "buildings/mix_pool_1/integrity.json"
     },
     {
       "id": "transmuter_2",
-      "contentHash": "f9d0f64977833c671372bdab4c30192668f6fcfec15bcb760bd51db50d4ba85b",
+      "contentHash": "f41775be3889d1065ec1c3b7469f8d4518cf52beeef5f95a8fb2e4e23b968a6a",
       "integrity": "buildings/transmuter_2/integrity.json"
     },
     {
       "id": "shaper_1",
-      "contentHash": "3f2474bb9be0f2db9aa3a9fa2e14f588d8382d091eccac46d46e35fa29e66994",
+      "contentHash": "8decae1d92b0e33d4b078d75e3682ce4ec72351165ca9df0b82028de98e06418",
       "integrity": "buildings/shaper_1/integrity.json"
     },
     {
       "id": "udpipe_loader_2",
-      "contentHash": "deee1b4f90cec6edf2a8e6b8382aff303c6dcabd88966a0aca1ca342dcc9c29b",
+      "contentHash": "948ce230e8ea7948f01db3958727e32a46485ad045cdd01534f98b94949ae71b",
       "integrity": "buildings/udpipe_loader_2/integrity.json"
     },
     {
       "id": "udpipe_unloader_2",
-      "contentHash": "e943bf10e0c1fa960004a5cebd7e4d2f38e7ad0ed019363610db9f6fe8efc5a3",
+      "contentHash": "3f1b7cff00d7c6aa252cdc4f094549ab938019e35536da76a32fabcf98db9509",
       "integrity": "buildings/udpipe_unloader_2/integrity.json"
     },
     {
       "id": "xiranite_oven_1",
-      "contentHash": "40efd5680673dd78f54e495ee9e248a42d93f29db46847c255a4f5063c85484a",
+      "contentHash": "1e3610b70553e566c9b01cfd268f9c4991ad4b030ac8f1d47aa1a9176872edc3",
       "integrity": "buildings/xiranite_oven_1/integrity.json"
     },
     {
       "id": "log_hongs_bus",
-      "contentHash": "b05c503887db82711f0771ab833681afa8c9dbb0fb903ca1171fd32f6101c8f1",
+      "contentHash": "bac52148a800c4a2d186f8764c2cb931e6911631a6d4c700922a18c0670f7641",
       "integrity": "buildings/log_hongs_bus/integrity.json"
     },
     {
       "id": "log_hongs_bus_source",
-      "contentHash": "8604189d60c87b8dc35f8cd6338cfc53c7c10232f57cd93529d12292dc07da61",
+      "contentHash": "58dd24cd158ca1033da97b1207274a11cde625d3e9fe78eb5ca0859068f401ab",
       "integrity": "buildings/log_hongs_bus_source/integrity.json"
     },
     {
       "id": "tools_assebling_mc_1",
-      "contentHash": "85800234b31a82abf51c711e1aeb018bb89c7f9eabfe9bf9ee7c6bd029722029",
+      "contentHash": "c9d67019d52945067c873849d006a62e5edd7ebe0336fc4a6ec57abe6b13f911",
       "integrity": "buildings/tools_assebling_mc_1/integrity.json"
     },
     {
       "id": "liquid_cleaner_1",
-      "contentHash": "1e2c988aec2dc79c695b9cbd1c4225e5c8bf6601bde78d727a30050d3d483956",
+      "contentHash": "516f488b9fa5594b2e88a0f6956b841c18404cec01128ef9b11c9d42dfc13e81",
       "integrity": "buildings/liquid_cleaner_1/integrity.json"
     },
     {
       "id": "mix_pool_2",
-      "contentHash": "32b3e76729c771c0febd7101455663b13efb6c8e7ad02bbcffa2848b4daa9a89",
+      "contentHash": "92366e610ed6ce3051e834abd58f4434548ff56441a9465d4c5b0b2aba101bba",
       "integrity": "buildings/mix_pool_2/integrity.json"
     },
     {
       "id": "dismantler_1",
-      "contentHash": "9c0184e24bed939e958a3d674ae4ca484790cea02de57c763a9facca768d4405",
+      "contentHash": "29bda3add6ab28efb1020fd423e0fa79f3d66253067cafb3b8dd3bb10b2eb47c",
       "integrity": "buildings/dismantler_1/integrity.json"
     },
     {
       "id": "liquid_purifier_1",
-      "contentHash": "c6a7d09ee7fe310787bfab610e68834eb572e8e297d516ff508a59e2f29110db",
+      "contentHash": "914c1f92459e6ab4367909d7415a95d04a43cb81940bd6e9945ea98216ef1226",
       "integrity": "buildings/liquid_purifier_1/integrity.json"
     },
     {
       "id": "udpipe_loader_1",
-      "contentHash": "88a656d9af8c390ab8dae1e1839116a4934112f9d5c9cc084ce80ffce55cbd16",
+      "contentHash": "404c8927f2c4082f1cf1b50cba6e41c89d109bdd98ed0d54fc18e07f4a004ecb",
       "integrity": "buildings/udpipe_loader_1/integrity.json"
     },
     {
       "id": "udpipe_unloader_1",
-      "contentHash": "1343e648d24dd5adb64f8cc0bcf4dcdf35099e9ef2eac8d45f78b3eb0cfb64da",
+      "contentHash": "4a948e6dce286e5f0cbe91ede18685e11c3724862d7be63c08bb312ff69705f1",
       "integrity": "buildings/udpipe_unloader_1/integrity.json"
     },
     {
       "id": "log_connector",
-      "contentHash": "599feaf0dc4301ca709a486fd3fb5bb6994f61b93b0bd3200ae8e9a31f799f88",
+      "contentHash": "0a0b85c30d5aca70d3622451796ee782e49afa491c125c72e9c3184a11e0e0df",
       "integrity": "buildings/log_connector/integrity.json"
     },
     {
       "id": "sp_sub_hub_1",
-      "contentHash": "935f604a8be359757745a42ef6305df3822aca93aac6238b440f1bda6c8c551b",
+      "contentHash": "f00dfd787590c993007c47bb0f67b84a39c474c831239b3b8395d85375d98a26",
       "integrity": "buildings/sp_sub_hub_1/integrity.json"
     },
     {
       "id": "gas_reactor_1",
-      "contentHash": "58e20bf5ee749262316bbb7bb80ea63f4eff6f3a3a15db8a43778ee81d0f3ab0",
+      "contentHash": "fb536b55b2cd78d292ed468dae6cb9169f50bc2ec9b472aa2a68a1c28aee1445",
       "integrity": "buildings/gas_reactor_1/integrity.json"
     },
     {
       "id": "gas_pump_1",
-      "contentHash": "03a747a9bff291a19cdb288b710a9ca76c943281b6a3d12fbac886275a234195",
+      "contentHash": "d15b2394a07bc1f257b5e3ee737cd67c97dc59e58bd95cfb2ace1e1788b46c83",
       "integrity": "buildings/gas_pump_1/integrity.json"
     },
     {
       "id": "vaporizer_1",
-      "contentHash": "38fd87e3ffc4f9719309ecce748a96d4967ce139056b49ca67a634626cefb01c",
+      "contentHash": "0302fc54221122c5fe7616d18c404471475ba58183ab08932ed8b403ba42a418",
       "integrity": "buildings/vaporizer_1/integrity.json"
     },
     {
       "id": "pump_1",
-      "contentHash": "adeb106322f4c64934ab833fee00b2a226013c5904ee2e61fe74ba270c513d41",
+      "contentHash": "744ece16c310e149a7ab9e1fc59d39d2358abfa9e758bc873a52842a1d3ce65f",
       "integrity": "buildings/pump_1/integrity.json"
     },
     {
       "id": "log_converger",
-      "contentHash": "17471e2923e59f69a2e9c91b210ef772446b4ee2ea8eb05c57825a5922b56d96",
+      "contentHash": "a0e7c2c4e9dd73a665ee190c263cac571f9991f90081d166cb8972d8f398d267",
       "integrity": "buildings/log_converger/integrity.json"
     },
     {
       "id": "transmuter_1",
-      "contentHash": "a876b6059ca70fb3b6b7923693cb8ff4c28f1829544f3b461f1a44d129b7ba67",
+      "contentHash": "efd3e985109ba7f1b461c4c43e4b7c68884dfa4d80056bc6c0b1de6c65891698",
       "integrity": "buildings/transmuter_1/integrity.json"
     },
     {
       "id": "filling_powder_mc_1",
-      "contentHash": "2a429235e4a9d1c7ce85a466cc6122571879bafd00508c8f6bfc7926db1e024a",
+      "contentHash": "46b1d0e7ed7cc26cba3bee9276fee019dd925d08baeb3199d1d11edc0f4b4fec",
       "integrity": "buildings/filling_powder_mc_1/integrity.json"
     },
     {
       "id": "power_station_1",
-      "contentHash": "b817615b308ba5ecbea3bb85a818023417fcc1d407a15fa9d7ac51eb46c7af1e",
+      "contentHash": "15ee27b6a1dee242598ff163faf2e461642b79e31632658b95655f5dd3721de8",
       "integrity": "buildings/power_station_1/integrity.json"
     },
     {
       "id": "log_conditioner",
-      "contentHash": "4f5280280b880bcc75e43baabce1c848b72886d5fcf8abb6db2e14bfe4f26081",
+      "contentHash": "c9fd3901c4d5e14e7d603f0827c85425d3c00f9d9d5d0874fd86ca66d7bfab69",
       "integrity": "buildings/log_conditioner/integrity.json"
     },
     {
       "id": "thickener_1",
-      "contentHash": "2edb0cfdfea1db6e11c3e339c3f87452e749bba7ddfcf289390af77da73abbf9",
+      "contentHash": "619150950727d415e3c3237f7d78325ff18f0b47dd1a3f48b031ec81bea5245a",
       "integrity": "buildings/thickener_1/integrity.json"
     },
     {
       "id": "planter_1",
-      "contentHash": "c5fc3cafd932ccf6f8b1c8226fef0c02d3b4aea34ba210c1175c6ad794fe1afd",
+      "contentHash": "144fd68af67c5cb631882db3cd70fdc2a161672a58ecd04283fa8dde49022a57",
       "integrity": "buildings/planter_1/integrity.json"
     },
     {
       "id": "pipe_conditioner",
-      "contentHash": "fcc6c7a25d09c141765f393a5f698b78aee72ea8946d93d8de1de7451d90359f",
+      "contentHash": "e8b523d8e12b6cd89f11fb37e6fa550095c27a226513ff06dab6e1be23f7385b",
       "integrity": "buildings/pipe_conditioner/integrity.json"
     },
     {
       "id": "pipe_splitter",
-      "contentHash": "5805125cb7473694db8cb5c17976bfcfa84827ce73e6c024d02d6f5ec5c95ce9",
+      "contentHash": "f7fcbd2266c8f803b7eca5ecaea1004a6959b7c834e50dc98ff398cf358edb0c",
       "integrity": "buildings/pipe_splitter/integrity.json"
     },
     {
       "id": "logistics",
-      "contentHash": "5b2935faa380c0964030482146f3f216601fd56009ec10317e827a97360a4151",
+      "contentHash": "e84dd51e9e18d6ee1ca26d15eb5e7e8244fe1b1d50c822f4f41332d46b90bfc6",
       "integrity": "buildings/logistics/integrity.json"
     },
     {
       "id": "pipe_connector",
-      "contentHash": "6bd15a92f208c8bb9966582b3abe82db7e9a656843f90c535f536d9e5c81828f",
+      "contentHash": "961448741a892b17c5ef1793950947fac1cbcc8b842432ff3ce416b62822cdc4",
       "integrity": "buildings/pipe_connector/integrity.json"
     },
     {
       "id": "pipe_converger",
-      "contentHash": "88aba1f7c8a48025d40e32f8db8d708931521ca33868462c937b5e48d263d204",
+      "contentHash": "00ed6e59250b674d4be82f50fbc3b00b86336fe1591f5a822d17b1643c2a059c",
       "integrity": "buildings/pipe_converger/integrity.json"
     },
     {
       "id": "grinder_1",
-      "contentHash": "5c72129e804bf1e52c797201d46f4808fbbd910561935ce18898730e9b76a756",
+      "contentHash": "2dfb42a325bb58354ed28b744d15797dca7af2aa687654d3ca529feff70a8a18",
       "integrity": "buildings/grinder_1/integrity.json"
     },
     {
       "id": "furnance_1",
-      "contentHash": "1be6ce23dc9841364cb5771e4c31c58644b0b86d03848e2c8236b61e0874e632",
+      "contentHash": "39153808f21a24036ee544955d55c6cbccc90cd49660c916861753f19a9d5291",
       "integrity": "buildings/furnance_1/integrity.json"
     },
     {
       "id": "winder_1",
-      "contentHash": "3cf5247372fd6e0389e34ab5106e394936418151a81aff5bafe25697b8d5934a",
+      "contentHash": "0d7df088208200bf407dcd418b2738fd7bb54eb71d2aba566b08a33ed6865af2",
       "integrity": "buildings/winder_1/integrity.json"
     },
     {
       "id": "component_mc_1",
-      "contentHash": "411cb70ee2e3aaac2da00deccc91ca1ad584c30e3e8b138a48ca6452e833a44a",
+      "contentHash": "ccfdc8f35cfcf5146562ca1a3f529adb22929ab80946620352980a8768b5076e",
       "integrity": "buildings/component_mc_1/integrity.json"
     },
     {
       "id": "seedcollector_1",
-      "contentHash": "59b5fadbb833c8d3b26f6dff53147ab3d38a3af4ba12574305ad9390962d32f9",
+      "contentHash": "fa67c69a7716682898cd6435e67e25928a2a6beb3d88296bd603eb24665c31ae",
       "integrity": "buildings/seedcollector_1/integrity.json"
     }
   ],
@@ -248,32 +248,32 @@
     {
       "path": "assets-manifest.json",
       "bytes": 21689,
-      "sha256": "d595557f699cac5b353dcb85d2b53ed5069c07177f0a8de990585374d8297c8e"
+      "sha256": "1ef44e0a8bd67cec5373786d98bb52791cffd848443a042245b0eee4047879a4"
     },
     {
       "path": "index.html",
       "bytes": 8164,
-      "sha256": "6c478034e19aed15204deac4fba50154777a1501383ac96402cbaea086e205c2"
+      "sha256": "30b389650f5262dd5da9bee1bdc55db87310c2ee7a7ba2c46d00f3268280d424"
     },
     {
       "path": "release.json",
       "bytes": 669,
-      "sha256": "55b9a8b7d6030c15d91ae06ed7db713b414eb1e1521d462bd5beb1c1b116c85e"
+      "sha256": "b26ee45339339d41a068cfdaf51d9a1d168da784c0d35a39af04629ebfa6b9ee"
     },
     {
       "path": "buildings/component_mc_1/index.html",
-      "bytes": 4504,
-      "sha256": "f0399eb56ea5d6d6c59f8e534d664e038d320c394e3aa0ae9c8e8c3f50df1a60"
+      "bytes": 4600,
+      "sha256": "04c2b29e1d448231f22fd6c570a5bc05bcbabb1bc392248db6196fac3de8c315"
     },
     {
       "path": "buildings/component_mc_1/integrity.json",
-      "bytes": 4138,
-      "sha256": "10bac5b8b6ee38b80ce4b983c8eb6891c71cff838384ce526f5a08090c428d74"
+      "bytes": 4094,
+      "sha256": "144021248ca21099c11498bea463f9d03ecf90171713de1ff95c366c42089017"
     },
     {
       "path": "buildings/component_mc_1/variants.json",
-      "bytes": 542,
-      "sha256": "a09f8d4d85a8bf5feee765ec65c35aa77f0f70dd9b963f8a1163f8656a586047"
+      "bytes": 498,
+      "sha256": "3ebdf0a48699185319ba3f4f7c1007c1dee1e6f612c28bce2cbb31a6aa5b6d96"
     },
     {
       "path": "buildings/component_mc_1/preview/grass-background.json",
@@ -287,8 +287,8 @@
     },
     {
       "path": "buildings/component_mc_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/component_mc_1/preview/preview-data.js",
@@ -297,8 +297,8 @@
     },
     {
       "path": "buildings/component_mc_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/component_mc_1/preview/vendor/LICENSE.txt",
@@ -382,18 +382,18 @@
     },
     {
       "path": "buildings/dismantler_1/index.html",
-      "bytes": 4502,
-      "sha256": "b2416fe2a629b7169dbbfdec03b43332bb290d22c4c2daad8c6635096a33065a"
+      "bytes": 4598,
+      "sha256": "1d15334703fc633d0d222a59b24604c0ac5c8b362eb763185415a8264ca3187a"
     },
     {
       "path": "buildings/dismantler_1/integrity.json",
-      "bytes": 6697,
-      "sha256": "40cffe61aba17716c5041fa6055de6083f31633e32e46039bf20bec2e2d4f405"
+      "bytes": 6653,
+      "sha256": "4bcf7d749f81e248aab5466aeda714ca0296e09d9991068342506aef73c4ddcc"
     },
     {
       "path": "buildings/dismantler_1/variants.json",
-      "bytes": 540,
-      "sha256": "1f3c2e77a0a37be0916b9f022f11fda4518573844f487a7c54d7a90891fbdb49"
+      "bytes": 496,
+      "sha256": "7240a545ac09c3bee8888a42dab0b464e4459294aabb3ba43151510e05a9c2f2"
     },
     {
       "path": "buildings/dismantler_1/preview/grass-background.json",
@@ -407,8 +407,8 @@
     },
     {
       "path": "buildings/dismantler_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/dismantler_1/preview/preview-data.js",
@@ -417,8 +417,8 @@
     },
     {
       "path": "buildings/dismantler_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/dismantler_1/preview/vendor/LICENSE.txt",
@@ -567,18 +567,18 @@
     },
     {
       "path": "buildings/filling_powder_mc_1/index.html",
-      "bytes": 4509,
-      "sha256": "f5361307fa48feef0217b7de6210bdc5ca17ec8a4b99f79a475cdc23065bd747"
+      "bytes": 4605,
+      "sha256": "593c6aef94f9d793401019c943ad4e0ca6e994e9728df71c8eb65673fa0770df"
     },
     {
       "path": "buildings/filling_powder_mc_1/integrity.json",
-      "bytes": 7208,
-      "sha256": "b46c4c1c12e03a947909053edd69b749d8a17fec1c76275f82300935ac077332"
+      "bytes": 7164,
+      "sha256": "0ade3cd510f5367f31ee52d1b7edc7bae8dbf96fb4e8275a7ae7bc7c31d8caad"
     },
     {
       "path": "buildings/filling_powder_mc_1/variants.json",
-      "bytes": 547,
-      "sha256": "c7c20052e7be66e32704fff91201e33d5cc449ed9e98746717c1fe30c33e759e"
+      "bytes": 503,
+      "sha256": "752b2bb519c0102c6ff38df310c19a49be894c1b92b189fd51a49455555f7a95"
     },
     {
       "path": "buildings/filling_powder_mc_1/preview/grass-background.json",
@@ -592,8 +592,8 @@
     },
     {
       "path": "buildings/filling_powder_mc_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/filling_powder_mc_1/preview/preview-data.js",
@@ -602,8 +602,8 @@
     },
     {
       "path": "buildings/filling_powder_mc_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/filling_powder_mc_1/preview/vendor/LICENSE.txt",
@@ -767,18 +767,18 @@
     },
     {
       "path": "buildings/furnance_1/index.html",
-      "bytes": 4500,
-      "sha256": "4ad8abede9709aa1404a7209e3350ae661befde620ce7ac34c985cfa91bac36a"
+      "bytes": 4596,
+      "sha256": "01c2cdc165591e81773c6f475cabf3c28f8510bed802cd26940a62004edac09d"
     },
     {
       "path": "buildings/furnance_1/integrity.json",
-      "bytes": 5205,
-      "sha256": "bbde4ea09644bb12b9744bac44d3a0dea695f214be6313644a300a8307b68ddc"
+      "bytes": 5161,
+      "sha256": "febd83897f12c59844a26cdd57ab30f7c014ff531ce50632f9b06a1da1b69b5e"
     },
     {
       "path": "buildings/furnance_1/variants.json",
-      "bytes": 538,
-      "sha256": "0b5243ac84abf24637c673bd8cfe5ecd12df9d5634e1713204e96b44d24a5a94"
+      "bytes": 494,
+      "sha256": "66d3e1ca7f11ca012b7d58d5b0e923d3bb3c7b140c3e93c985040f4c5ce3c00c"
     },
     {
       "path": "buildings/furnance_1/preview/grass-background.json",
@@ -792,8 +792,8 @@
     },
     {
       "path": "buildings/furnance_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/furnance_1/preview/preview-data.js",
@@ -802,8 +802,8 @@
     },
     {
       "path": "buildings/furnance_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/furnance_1/preview/vendor/LICENSE.txt",
@@ -917,18 +917,18 @@
     },
     {
       "path": "buildings/gas_pump_1/index.html",
-      "bytes": 4518,
-      "sha256": "ab4e5adc59d0a76b2b0efd944beb056b3034a9154a4d670e01ea4853a1da5a28"
+      "bytes": 4620,
+      "sha256": "b830548f4e386c79e9fd3c966b301ec7554e93ebb02d02da0565bc299e88f995"
     },
     {
       "path": "buildings/gas_pump_1/integrity.json",
-      "bytes": 3566,
-      "sha256": "674459d9e3b9efbbabfdc0ef02ed5036645a3decd7ac058268bd11c85c1546cf"
+      "bytes": 4980,
+      "sha256": "80848dcff7a8c55d5aa020a0b47099d78ab017962509fa8ae60c5e2c7cba4ecb"
     },
     {
       "path": "buildings/gas_pump_1/variants.json",
-      "bytes": 544,
-      "sha256": "44833638e5ebf8933f3d5049b579691ab582a2a7fe1461973c43f0e5dce2cf15"
+      "bytes": 458,
+      "sha256": "30e9e09d537717e706ac946c4d75ad96a68a3c7735b32545ffd9b5017b6aedda"
     },
     {
       "path": "buildings/gas_pump_1/preview/grass-background.json",
@@ -942,8 +942,8 @@
     },
     {
       "path": "buildings/gas_pump_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/gas_pump_1/preview/preview-data.js",
@@ -952,8 +952,8 @@
     },
     {
       "path": "buildings/gas_pump_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/gas_pump_1/preview/vendor/LICENSE.txt",
@@ -967,23 +967,18 @@
     },
     {
       "path": "buildings/gas_pump_1/top/package.json",
-      "bytes": 1536,
-      "sha256": "55f66f69eb07429cbcd8e183a3ed11c8e4b6bebaa8e71f1cc6452e16dccd558a"
+      "bytes": 1540,
+      "sha256": "d2b2b5f601d1a257514e3ad9aad1e6e49cdfc694fb39f5fe881dcb8623a3a98c"
     },
     {
       "path": "buildings/gas_pump_1/top/ports.json",
-      "bytes": 3147,
-      "sha256": "9b10fc37861e34a5179eb2882ea6b6b81ed73dd937c0585a32fcad28eb34618f"
+      "bytes": 5884,
+      "sha256": "91a6ca70c049c3463c805f7f89a659d264661b4d4accdf7feae80f6a2a51201e"
     },
     {
       "path": "buildings/gas_pump_1/top/sequence.json",
       "bytes": 632,
       "sha256": "97488b36f11beae91b63f533a45b1f646b435b75b599bbc9d07c3c6f6dfe9459"
-    },
-    {
-      "path": "buildings/gas_pump_1/top/sheet-sizes.json",
-      "bytes": 621,
-      "sha256": "1134743b32257f3b69db9a14710e7a8e1b6a16d6792a52e5be642357c5b3b79e"
     },
     {
       "path": "buildings/gas_pump_1/top/spatial.json",
@@ -1007,8 +1002,48 @@
     },
     {
       "path": "buildings/gas_pump_1/top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 2093,
+      "sha256": "c1ae3dc5e9a97f3f11ffa5ad44692b3887c71a4b33a7032f34e835518f02dc19"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeoff_out_01/effect.json",
+      "bytes": 45549,
+      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeoff_out_01/height.webp",
+      "bytes": 5526,
+      "sha256": "c3274c071f52c852686310cd0d75c41b25670d55cee28d083a4b1f784340506a"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
+      "bytes": 617764,
+      "sha256": "19614522bf555155d327434f9ab2073742172a26351a99b77e68ae24c77396e6"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeon_out_01/effect.json",
+      "bytes": 30232,
+      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeon_out_01/height.webp",
+      "bytes": 6686,
+      "sha256": "9a215a9f6dccaee06ca1b9c09d4416f4e9ad8a8d1494d3c1d652df250c00421f"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/gas_pump_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
+      "bytes": 255860,
+      "sha256": "1e106a02cdd8931a8d2241bdf67546bf706c35d10e7044a6d89789c06077e57e"
     },
     {
       "path": "buildings/gas_pump_1/top/occlusion/height_static.webp",
@@ -1022,18 +1057,18 @@
     },
     {
       "path": "buildings/gas_reactor_1/index.html",
-      "bytes": 4521,
-      "sha256": "43feb77f0f91fa61c0492ee141659179db88f64b3d42c2f89f3ffc1d12e92a1c"
+      "bytes": 4617,
+      "sha256": "696e342f5dbcbc6d6cf57d4435af9bb67c39c62b803c3a99ab170bc11333323b"
     },
     {
       "path": "buildings/gas_reactor_1/integrity.json",
-      "bytes": 8802,
-      "sha256": "b1151edfbd28018e45e1d7208f35ebec6098158a4e0fbf7683f5f514a3f035bd"
+      "bytes": 8758,
+      "sha256": "3d54867c75c5553e6699e23e4caeb74328e40cda6772bff2a62ed0a74ffec8e4"
     },
     {
       "path": "buildings/gas_reactor_1/variants.json",
-      "bytes": 547,
-      "sha256": "ae2aaee3cfbf2d768acef605a93e5c7952abb6d495dfd7503527ff250e7c4178"
+      "bytes": 503,
+      "sha256": "ea2d3337475d2dbbad37daf0004d342b487d75fe3cdd2b8569ad691adcb42805"
     },
     {
       "path": "buildings/gas_reactor_1/preview/grass-background.json",
@@ -1047,8 +1082,8 @@
     },
     {
       "path": "buildings/gas_reactor_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/gas_reactor_1/preview/preview-data.js",
@@ -1057,8 +1092,8 @@
     },
     {
       "path": "buildings/gas_reactor_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/gas_reactor_1/preview/vendor/LICENSE.txt",
@@ -1262,18 +1297,18 @@
     },
     {
       "path": "buildings/gas_storager_1/index.html",
-      "bytes": 4504,
-      "sha256": "1e2a5eba16d49af175c6e4dbffcd4e9efe383ed37f7768b5940f8ed5f6d63b6b"
+      "bytes": 4606,
+      "sha256": "9b7f510b4a7a891238ccfb12482594836e2720f145bdc1693090ae036a88b847"
     },
     {
       "path": "buildings/gas_storager_1/integrity.json",
-      "bytes": 3569,
-      "sha256": "eb6f3f72838e91647c1bdb2fda34244794d31b8448d4e1bacd73732f4978caf2"
+      "bytes": 6591,
+      "sha256": "123b10e048798a679e48ea309dad2101e4e8ecd59ec7b4c4be314f11ba138ce2"
     },
     {
       "path": "buildings/gas_storager_1/variants.json",
-      "bytes": 542,
-      "sha256": "c9931be640fb59a67bd4f5889bc1fcd6347812ae74f28c94748a5294a4c95665"
+      "bytes": 456,
+      "sha256": "60b6157aec1a33c4a5c1f9a711c84517e1c9ac1c1e2b68e866dc44d73f42a07d"
     },
     {
       "path": "buildings/gas_storager_1/preview/grass-background.json",
@@ -1287,8 +1322,8 @@
     },
     {
       "path": "buildings/gas_storager_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/gas_storager_1/preview/preview-data.js",
@@ -1297,8 +1332,8 @@
     },
     {
       "path": "buildings/gas_storager_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/gas_storager_1/preview/vendor/LICENSE.txt",
@@ -1312,23 +1347,18 @@
     },
     {
       "path": "buildings/gas_storager_1/top/package.json",
-      "bytes": 1542,
-      "sha256": "4eb2a0560f2b88f19eec00cbeb7f1a09c568cc464145051cdec857674ac3f2fd"
+      "bytes": 1546,
+      "sha256": "1791896efdec27220928d38362d0f38714f00107f83e8bbebed1286d2c151d7d"
     },
     {
       "path": "buildings/gas_storager_1/top/ports.json",
-      "bytes": 3161,
-      "sha256": "e13bd70e912aa31b49efe9ffebf414b5c2852e934b2ef6f86ef3412c1af1392b"
+      "bytes": 8507,
+      "sha256": "79d2926e029aebf88c52add71c2c5fd9d30238599b85f5bf872058fec53207a3"
     },
     {
       "path": "buildings/gas_storager_1/top/sequence.json",
       "bytes": 632,
       "sha256": "97488b36f11beae91b63f533a45b1f646b435b75b599bbc9d07c3c6f6dfe9459"
-    },
-    {
-      "path": "buildings/gas_storager_1/top/sheet-sizes.json",
-      "bytes": 621,
-      "sha256": "14a3c23dacfe3c906740d19744724484bf20af13ee6d28cc80cc7bf13fd3e946"
     },
     {
       "path": "buildings/gas_storager_1/top/spatial.json",
@@ -1352,8 +1382,88 @@
     },
     {
       "path": "buildings/gas_storager_1/top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 3437,
+      "sha256": "cc4e3798bae1285d285b506cdd2f26835c2c08118e10460c3ace3e72604c58dc"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_in_01/effect.json",
+      "bytes": 45533,
+      "sha256": "9c5e73ce0fe1fd94ee41991d420029ddcf202e5cba3d7d233cefa9c2b5251a12"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_in_01/height.webp",
+      "bytes": 3914,
+      "sha256": "b82ebc5e80c51de105ebc748592087b50a730694dbba20fa9ec9395fdfc34936"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
+      "bytes": 590198,
+      "sha256": "613b7549b38116c104e4497bbfe9310fcfc632387407a61a9585cec6e0aa83f7"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_out_01/effect.json",
+      "bytes": 45549,
+      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_out_01/height.webp",
+      "bytes": 5526,
+      "sha256": "c3274c071f52c852686310cd0d75c41b25670d55cee28d083a4b1f784340506a"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
+      "bytes": 617764,
+      "sha256": "19614522bf555155d327434f9ab2073742172a26351a99b77e68ae24c77396e6"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_in_01/effect.json",
+      "bytes": 30228,
+      "sha256": "5458a91779aa7e437260026f87c333cfc1b5524b49a7598f2d38d509a387e55e"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_in_01/height.webp",
+      "bytes": 6286,
+      "sha256": "0cb6a508b449e2f1bf7e4532b480714567c1039405c9799b9f9ac53d7e17eda0"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet_000.webp",
+      "bytes": 246814,
+      "sha256": "d0a3fa8f0acdca586a63e1e50dd1de63a0a213431fa902177bf0c1afda63af83"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_out_01/effect.json",
+      "bytes": 30232,
+      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_out_01/height.webp",
+      "bytes": 6686,
+      "sha256": "9a215a9f6dccaee06ca1b9c09d4416f4e9ad8a8d1494d3c1d652df250c00421f"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/gas_storager_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
+      "bytes": 255860,
+      "sha256": "1e106a02cdd8931a8d2241bdf67546bf706c35d10e7044a6d89789c06077e57e"
     },
     {
       "path": "buildings/gas_storager_1/top/occlusion/height_static.webp",
@@ -1367,18 +1477,18 @@
     },
     {
       "path": "buildings/grinder_1/index.html",
-      "bytes": 4499,
-      "sha256": "087c0e20822b444504de8d2788e32381c0e93ab3144e94022219d8040ecc7a1c"
+      "bytes": 4595,
+      "sha256": "1c54a5952b16b7bacb4b4eb99eb579cbc03346cc99c24f7101204915f57518da"
     },
     {
       "path": "buildings/grinder_1/integrity.json",
-      "bytes": 5203,
-      "sha256": "59b4fd9b04bc4669a36cf3721854cff59c532c5f5d5c12ba440eb24f2203d0fb"
+      "bytes": 5159,
+      "sha256": "69973c8e64499b528bacdbd2112db8d8e81240b8f98b237a868f809747b40df0"
     },
     {
       "path": "buildings/grinder_1/variants.json",
-      "bytes": 537,
-      "sha256": "fc6752ce4dcaec0b5bebe599b6a671fdf679b92bab6a0ee49d1dbc584630c006"
+      "bytes": 493,
+      "sha256": "a30c1d42a860bab8c617d7ccd8e614f174fa3014a87228504afd3ad7ba438575"
     },
     {
       "path": "buildings/grinder_1/preview/grass-background.json",
@@ -1392,8 +1502,8 @@
     },
     {
       "path": "buildings/grinder_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/grinder_1/preview/preview-data.js",
@@ -1402,8 +1512,8 @@
     },
     {
       "path": "buildings/grinder_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/grinder_1/preview/vendor/LICENSE.txt",
@@ -1517,18 +1627,18 @@
     },
     {
       "path": "buildings/liquid_cleaner_1/index.html",
-      "bytes": 4524,
-      "sha256": "a117724ee55d764eb2c3cc6c6966818d71709c30002da79e02f6c68d8f331316"
+      "bytes": 4626,
+      "sha256": "8d242b39cffff2ce5c4cd2620311cbb3b118ab3cfe6d1847a28a338386e86154"
     },
     {
       "path": "buildings/liquid_cleaner_1/integrity.json",
-      "bytes": 5205,
-      "sha256": "2052ddbdcd4d5394305ae67e076ccd832a929d798ffffe9aba91cef0aa458cf2"
+      "bytes": 6610,
+      "sha256": "91f6e293ca073dc0a9d85543dae4913122a23962c6aebfcbe56bb00874d69bc3"
     },
     {
       "path": "buildings/liquid_cleaner_1/variants.json",
-      "bytes": 550,
-      "sha256": "4933f8050848b712888fa63e2e2cc9de9be6a735e2bdcc84ad1e29a99e6c7377"
+      "bytes": 464,
+      "sha256": "d80f345b0e22898ee610defd8a8c0da3d5bd6d124c614421e74d2bcd1640024d"
     },
     {
       "path": "buildings/liquid_cleaner_1/preview/grass-background.json",
@@ -1542,8 +1652,8 @@
     },
     {
       "path": "buildings/liquid_cleaner_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/liquid_cleaner_1/preview/preview-data.js",
@@ -1552,8 +1662,8 @@
     },
     {
       "path": "buildings/liquid_cleaner_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/liquid_cleaner_1/preview/vendor/LICENSE.txt",
@@ -1567,23 +1677,18 @@
     },
     {
       "path": "buildings/liquid_cleaner_1/top/package.json",
-      "bytes": 2210,
-      "sha256": "488adfe7f13969ecb9cdae2ea28b4bc3b87cee4a71b355003d9f2615f0ee05c9"
+      "bytes": 2214,
+      "sha256": "83d05ad2a6d83eb7c98331ac1ac1b470c046aa060c90656428131c3a1399dfa6"
     },
     {
       "path": "buildings/liquid_cleaner_1/top/ports.json",
-      "bytes": 3205,
-      "sha256": "063fb41633c17e4e08a90c030265118b2f3ea04c68689dec9c85d9d798ae5d70"
+      "bytes": 5936,
+      "sha256": "143ba9a6f365746d33bd13d6acf45ec3346be0cc9fad982a59b99bcf26101d45"
     },
     {
       "path": "buildings/liquid_cleaner_1/top/sequence.json",
       "bytes": 1664,
       "sha256": "e277c046eef892db1f82b012c8c184aed11f27deabba0f65868eb775f9f0c392"
-    },
-    {
-      "path": "buildings/liquid_cleaner_1/top/sheet-sizes.json",
-      "bytes": 1954,
-      "sha256": "c57f5861f1a8178ed5a9cd35fd003c16350f744580bf2dd4eaff9211ba3f7d7a"
     },
     {
       "path": "buildings/liquid_cleaner_1/top/spatial.json",
@@ -1652,8 +1757,48 @@
     },
     {
       "path": "buildings/liquid_cleaner_1/top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 2081,
+      "sha256": "79661160e969b1ab3e1209e984f027b23f31d6ebf4acaa207fcd0ee2a59dd0b6"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeoff_in_01/effect.json",
+      "bytes": 45533,
+      "sha256": "9c5e73ce0fe1fd94ee41991d420029ddcf202e5cba3d7d233cefa9c2b5251a12"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeoff_in_01/height.webp",
+      "bytes": 3914,
+      "sha256": "b82ebc5e80c51de105ebc748592087b50a730694dbba20fa9ec9395fdfc34936"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
+      "bytes": 590198,
+      "sha256": "613b7549b38116c104e4497bbfe9310fcfc632387407a61a9585cec6e0aa83f7"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeon_in_01/effect.json",
+      "bytes": 30228,
+      "sha256": "5458a91779aa7e437260026f87c333cfc1b5524b49a7598f2d38d509a387e55e"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeon_in_01/height.webp",
+      "bytes": 6286,
+      "sha256": "0cb6a508b449e2f1bf7e4532b480714567c1039405c9799b9f9ac53d7e17eda0"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/liquid_cleaner_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet_000.webp",
+      "bytes": 246814,
+      "sha256": "d0a3fa8f0acdca586a63e1e50dd1de63a0a213431fa902177bf0c1afda63af83"
     },
     {
       "path": "buildings/liquid_cleaner_1/top/occlusion/height_open_idle.webp",
@@ -1667,18 +1812,18 @@
     },
     {
       "path": "buildings/liquid_purifier_1/index.html",
-      "bytes": 4545,
-      "sha256": "ba7d1fd558b6a6558f7630af1b3d21005d0b844c39e341c2d3e82e8871bcdcd7"
+      "bytes": 4641,
+      "sha256": "7eada0584ec009cdc43287d3029854cbd930d4c73732413a7e63d07ea0ba6f7a"
     },
     {
       "path": "buildings/liquid_purifier_1/integrity.json",
-      "bytes": 22062,
-      "sha256": "2398daf46efc24348a8ecfc547f17103663fbf99da7a420278c48b462cb498dd"
+      "bytes": 22018,
+      "sha256": "6099b1ed7535638425ebc772a24f2b497e1608b579af6db58ddaf056dbcd5815"
     },
     {
       "path": "buildings/liquid_purifier_1/variants.json",
-      "bytes": 846,
-      "sha256": "a812e5f93ab71e1df3e5737013605556bc5c5224f80925e454318caea0c59b82"
+      "bytes": 802,
+      "sha256": "343cf6a398ed7c96edaf46def90559d09a73ea40bda01f8ac3218354426a5eef"
     },
     {
       "path": "buildings/liquid_purifier_1/preview/grass-background.json",
@@ -1692,8 +1837,8 @@
     },
     {
       "path": "buildings/liquid_purifier_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/liquid_purifier_1/preview/preview-data.js",
@@ -1702,8 +1847,8 @@
     },
     {
       "path": "buildings/liquid_purifier_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/liquid_purifier_1/preview/vendor/LICENSE.txt",
@@ -2247,18 +2392,18 @@
     },
     {
       "path": "buildings/liquid_storager_1/index.html",
-      "bytes": 4507,
-      "sha256": "f1a843e4a99a4309f909c5edf07939e39074e0c9fff99e9b204b96aafe638451"
+      "bytes": 4609,
+      "sha256": "ae28389c4bb7d1cee49963ef9f37e4c3453c02877712d46c8a5666c54f5526b4"
     },
     {
       "path": "buildings/liquid_storager_1/integrity.json",
-      "bytes": 5575,
-      "sha256": "296d399c1062e3cc0637cb43e7ead5b0004ee0ecbe96f2cd70471ed561cd5b87"
+      "bytes": 8596,
+      "sha256": "b5ca7d2ebbc4e8f8c94c90d2bd8e68e54cbaf11dacea1085aca8c6c131188ce0"
     },
     {
       "path": "buildings/liquid_storager_1/variants.json",
-      "bytes": 545,
-      "sha256": "fe8822b1b3924ea2defb621ec59bb9700fdbbfc17e62765e24424af01dfa357a"
+      "bytes": 459,
+      "sha256": "b3bde49f0e7a3e6f2e41978bef11fdeaa7f61504be89abfc3f79930c9b901a7c"
     },
     {
       "path": "buildings/liquid_storager_1/preview/grass-background.json",
@@ -2272,8 +2417,8 @@
     },
     {
       "path": "buildings/liquid_storager_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/liquid_storager_1/preview/preview-data.js",
@@ -2282,8 +2427,8 @@
     },
     {
       "path": "buildings/liquid_storager_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/liquid_storager_1/preview/vendor/LICENSE.txt",
@@ -2297,23 +2442,18 @@
     },
     {
       "path": "buildings/liquid_storager_1/top/package.json",
-      "bytes": 1603,
-      "sha256": "5c439e1b13aa626e07bae66f4d5cc125c370044c8c866c6a2bf08610bc4f6201"
+      "bytes": 1607,
+      "sha256": "4d9d11ae46a7739a33dba41eda6409bbb84a53aa1d5078b055f9b4bb0d499211"
     },
     {
       "path": "buildings/liquid_storager_1/top/ports.json",
-      "bytes": 3188,
-      "sha256": "bd75f6c94a8f1c082eddb719c0cc4f8beb06137ed23d2ea9f09c9dc09ec108a8"
+      "bytes": 8534,
+      "sha256": "84edc4de5a19ccad6bd958f6dc96070661e80376578e93b12967a85616d748bd"
     },
     {
       "path": "buildings/liquid_storager_1/top/sequence.json",
       "bytes": 1675,
       "sha256": "0d0d665ec5c8f4fb47a144aedcc281a9e4ecbaf80c71db0f5667ec8ae1a7c43e"
-    },
-    {
-      "path": "buildings/liquid_storager_1/top/sheet-sizes.json",
-      "bytes": 2786,
-      "sha256": "d0b4b228429af479734471a265e0bd6839d9420cfe636bff008831f683b39307"
     },
     {
       "path": "buildings/liquid_storager_1/top/spatial.json",
@@ -2392,8 +2532,88 @@
     },
     {
       "path": "buildings/liquid_storager_1/top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 3437,
+      "sha256": "cc4e3798bae1285d285b506cdd2f26835c2c08118e10460c3ace3e72604c58dc"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_in_01/effect.json",
+      "bytes": 45533,
+      "sha256": "9c5e73ce0fe1fd94ee41991d420029ddcf202e5cba3d7d233cefa9c2b5251a12"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_in_01/height.webp",
+      "bytes": 3914,
+      "sha256": "b82ebc5e80c51de105ebc748592087b50a730694dbba20fa9ec9395fdfc34936"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
+      "bytes": 590198,
+      "sha256": "613b7549b38116c104e4497bbfe9310fcfc632387407a61a9585cec6e0aa83f7"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_out_01/effect.json",
+      "bytes": 45549,
+      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_out_01/height.webp",
+      "bytes": 5526,
+      "sha256": "c3274c071f52c852686310cd0d75c41b25670d55cee28d083a4b1f784340506a"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
+      "bytes": 617764,
+      "sha256": "19614522bf555155d327434f9ab2073742172a26351a99b77e68ae24c77396e6"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_in_01/effect.json",
+      "bytes": 30228,
+      "sha256": "5458a91779aa7e437260026f87c333cfc1b5524b49a7598f2d38d509a387e55e"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_in_01/height.webp",
+      "bytes": 6286,
+      "sha256": "0cb6a508b449e2f1bf7e4532b480714567c1039405c9799b9f9ac53d7e17eda0"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet_000.webp",
+      "bytes": 246814,
+      "sha256": "d0a3fa8f0acdca586a63e1e50dd1de63a0a213431fa902177bf0c1afda63af83"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_out_01/effect.json",
+      "bytes": 30232,
+      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_out_01/height.webp",
+      "bytes": 6686,
+      "sha256": "9a215a9f6dccaee06ca1b9c09d4416f4e9ad8a8d1494d3c1d652df250c00421f"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/liquid_storager_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
+      "bytes": 255860,
+      "sha256": "1e106a02cdd8931a8d2241bdf67546bf706c35d10e7044a6d89789c06077e57e"
     },
     {
       "path": "buildings/liquid_storager_1/top/occlusion/height_open_idle.webp",
@@ -2407,18 +2627,18 @@
     },
     {
       "path": "buildings/loader_1/index.html",
-      "bytes": 4516,
-      "sha256": "cb0afd875a305f20d9f8097acc86037943c09b3fe320565c55fb288ed3dcd365"
+      "bytes": 4612,
+      "sha256": "27331b7e77d2f53228f3cdaf1ec9fc0cbb50f6b00c8a4d19ce4c7b4182afe1b8"
     },
     {
       "path": "buildings/loader_1/integrity.json",
-      "bytes": 3574,
-      "sha256": "32a7e218f48b63b2c5c696cf01ff1256185901d666a0ff9f190f1357f1a1a452"
+      "bytes": 3530,
+      "sha256": "fca6b63cecc4b2eba8bb930ff4c78e322855d63b7cc702114744970f2b5694fb"
     },
     {
       "path": "buildings/loader_1/variants.json",
-      "bytes": 542,
-      "sha256": "feb663289020158670c7c5c1c8762f15b5fc4479231b3584f8cd2546d0813ddd"
+      "bytes": 498,
+      "sha256": "61cad5c1d4e79cc54c750151f4b32f48b0e9d099a445b6da9a1ffdb1eed26706"
     },
     {
       "path": "buildings/loader_1/preview/grass-background.json",
@@ -2432,8 +2652,8 @@
     },
     {
       "path": "buildings/loader_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/loader_1/preview/preview-data.js",
@@ -2442,8 +2662,8 @@
     },
     {
       "path": "buildings/loader_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/loader_1/preview/vendor/LICENSE.txt",
@@ -2512,18 +2732,18 @@
     },
     {
       "path": "buildings/log_conditioner/index.html",
-      "bytes": 4523,
-      "sha256": "d69e33d3668b1934a9a51e31baef8a8fe16f3fb0bb3ee70afbc8f638e61ec199"
+      "bytes": 4619,
+      "sha256": "1d7af13368f0811b61b837f993042a37f96d38b14629664ab78b9b2905a5c8a3"
     },
     {
       "path": "buildings/log_conditioner/integrity.json",
-      "bytes": 3567,
-      "sha256": "661b1b4784e9257d69fed62f7d6d35e4ee4bfccc3fd96dfac9c5762597b58966"
+      "bytes": 3523,
+      "sha256": "f7c2a64f78b0f1a66fbc0c182cb9d117e8f5cb646321ed4ad27e8c8f1ab5db54"
     },
     {
       "path": "buildings/log_conditioner/variants.json",
-      "bytes": 549,
-      "sha256": "3d60da9f6bcff265bdedfd3f71b0d337c1692cddd94c29f6806ae836ea973b62"
+      "bytes": 505,
+      "sha256": "2ea82becc2a7f1a3c9a783ead908e88255e0ecb98628e83d164f547747d1e61c"
     },
     {
       "path": "buildings/log_conditioner/preview/grass-background.json",
@@ -2537,8 +2757,8 @@
     },
     {
       "path": "buildings/log_conditioner/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/log_conditioner/preview/preview-data.js",
@@ -2547,8 +2767,8 @@
     },
     {
       "path": "buildings/log_conditioner/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/log_conditioner/preview/vendor/LICENSE.txt",
@@ -2617,18 +2837,18 @@
     },
     {
       "path": "buildings/log_connector/index.html",
-      "bytes": 4503,
-      "sha256": "eb4de90fb6c1b9877945477b1d7eeb8ef0f57d68752be26895590c53fd57b99e"
+      "bytes": 4599,
+      "sha256": "e622efd94f0c097869e3dd8cd1795c28f4863f501470cbfa20b0b5d5900653c0"
     },
     {
       "path": "buildings/log_connector/integrity.json",
-      "bytes": 3567,
-      "sha256": "c13a0daee0f22cc824b088205b41601650ac72b7d606370821c73b8e10d1f10b"
+      "bytes": 3523,
+      "sha256": "622d3b90a30eab427f181c18fce4a3684f84fe3ceca20403bbcfb861dd2e8083"
     },
     {
       "path": "buildings/log_connector/variants.json",
-      "bytes": 541,
-      "sha256": "ebda3dbc79dba0ab4e61b9a520de87c0d5cd282a09f082117b6a20ad96fe4776"
+      "bytes": 497,
+      "sha256": "891458e4b13aa978b20cf2ed106ee1b1e907637786a308b2c773dc0793202bbc"
     },
     {
       "path": "buildings/log_connector/preview/grass-background.json",
@@ -2642,8 +2862,8 @@
     },
     {
       "path": "buildings/log_connector/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/log_connector/preview/preview-data.js",
@@ -2652,8 +2872,8 @@
     },
     {
       "path": "buildings/log_connector/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/log_connector/preview/vendor/LICENSE.txt",
@@ -2722,18 +2942,18 @@
     },
     {
       "path": "buildings/log_converger/index.html",
-      "bytes": 4503,
-      "sha256": "b963827312720300774c6ea0085e386db0e347ac12ccc870977c58ada6b3319b"
+      "bytes": 4599,
+      "sha256": "3f32a92ec88eb2827c3fa5a69a8c4e531ee750442acd0b752da80cc4ab84bb8c"
     },
     {
       "path": "buildings/log_converger/integrity.json",
-      "bytes": 3566,
-      "sha256": "bd5bba5981bbb94a7dd642c51089c63599d57eaee75fa0e281e40fbb364116e1"
+      "bytes": 3522,
+      "sha256": "025ffa5c82c279b472dacebdcb695a10c6ffc4abe62c2341e2c5ce467fa78924"
     },
     {
       "path": "buildings/log_converger/variants.json",
-      "bytes": 541,
-      "sha256": "1a74c89ee2df16e4df89d97c6a35ca2498323b6d3e37135c74b6a62e8204f136"
+      "bytes": 497,
+      "sha256": "ad6a75e37354e6b4a45e35b6947ba684bdce414624cdbf1df58c4385c7249bd3"
     },
     {
       "path": "buildings/log_converger/preview/grass-background.json",
@@ -2747,8 +2967,8 @@
     },
     {
       "path": "buildings/log_converger/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/log_converger/preview/preview-data.js",
@@ -2757,8 +2977,8 @@
     },
     {
       "path": "buildings/log_converger/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/log_converger/preview/vendor/LICENSE.txt",
@@ -2827,18 +3047,18 @@
     },
     {
       "path": "buildings/log_hongs_bus/index.html",
-      "bytes": 4521,
-      "sha256": "d4e297a71ae6867afb17a57e30b1e85fc880b97f50d870f5c1574759eacc9450"
+      "bytes": 4617,
+      "sha256": "ab875ef2a43f92ff5ddf4991beee3189d05fd94354af7939129dec1b65b0a240"
     },
     {
       "path": "buildings/log_hongs_bus/integrity.json",
-      "bytes": 3568,
-      "sha256": "786341264aa6c94b8d5c62e646dd680562b986a82fbfc000aee4c9ff94c182db"
+      "bytes": 3524,
+      "sha256": "8063f51bf520f04e4631645190c189c18cab3c69b6a1cdb8640dc6c658f22efd"
     },
     {
       "path": "buildings/log_hongs_bus/variants.json",
-      "bytes": 547,
-      "sha256": "e1a332148bd50f4756d3269b3200e10f033efe3f48dac1bc7661da9d6b55c9a7"
+      "bytes": 503,
+      "sha256": "f1a651e7dc4deeae82aea7ac98ba74e0b53a1b93846b11fbb151da855081484a"
     },
     {
       "path": "buildings/log_hongs_bus/preview/grass-background.json",
@@ -2852,8 +3072,8 @@
     },
     {
       "path": "buildings/log_hongs_bus/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/log_hongs_bus/preview/preview-data.js",
@@ -2862,8 +3082,8 @@
     },
     {
       "path": "buildings/log_hongs_bus/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/log_hongs_bus/preview/vendor/LICENSE.txt",
@@ -2932,18 +3152,18 @@
     },
     {
       "path": "buildings/log_hongs_bus_source/index.html",
-      "bytes": 4528,
-      "sha256": "57671072cd54e01015f83a9a7265a3dc25abc37b3be1dc3a95c130c996107ad0"
+      "bytes": 4624,
+      "sha256": "3d788a8d94bdd045b0664c916268b4ddf351e8be85050e846affc53864b2f8a4"
     },
     {
       "path": "buildings/log_hongs_bus_source/integrity.json",
-      "bytes": 3574,
-      "sha256": "c4b46a87e437d8d54c86d870579de7fde4eb84688dfbd8ceb973377e57215a92"
+      "bytes": 3530,
+      "sha256": "7bf0c7f20a389174eed71e88ed48860fe8b0ffea78d0184fb180661e3fd03658"
     },
     {
       "path": "buildings/log_hongs_bus_source/variants.json",
-      "bytes": 554,
-      "sha256": "ce0b83ea44ab2ae7420271e0ccd2f756884c9a05bce940c60273037833e7aa0b"
+      "bytes": 510,
+      "sha256": "fbdab82e279e7b5e32f79872b2e5fa0add922cf07b1a52bde48dc382fd92e186"
     },
     {
       "path": "buildings/log_hongs_bus_source/preview/grass-background.json",
@@ -2957,8 +3177,8 @@
     },
     {
       "path": "buildings/log_hongs_bus_source/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/log_hongs_bus_source/preview/preview-data.js",
@@ -2967,8 +3187,8 @@
     },
     {
       "path": "buildings/log_hongs_bus_source/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/log_hongs_bus_source/preview/vendor/LICENSE.txt",
@@ -3037,18 +3257,18 @@
     },
     {
       "path": "buildings/log_splitter/index.html",
-      "bytes": 4502,
-      "sha256": "a6a540239cc5b772e03f2f7ad165a4357f5b791cb6b3a5dff9685f0eb4c7e1ba"
+      "bytes": 4598,
+      "sha256": "7314c3a23c35690e9ec3d7c3ab5eabc981bc9f21bebc1ebed1edbe2d27f03e6c"
     },
     {
       "path": "buildings/log_splitter/integrity.json",
-      "bytes": 3565,
-      "sha256": "59645655361ca17d30bc9fbdadfcbee8373f261edf8c0c7a2b57d4c612fe8aac"
+      "bytes": 3521,
+      "sha256": "59203d09e600280ec3c8380514b821dce2093cc14f392e586783e6b82d15ab39"
     },
     {
       "path": "buildings/log_splitter/variants.json",
-      "bytes": 540,
-      "sha256": "54a7d6df17b31ffbdb1235479c8e536d68316286160599b1de260ad34f2758d8"
+      "bytes": 496,
+      "sha256": "605daec081c7afd208846f77e9f4a79da4b62113bfc36967114cc86a95d572ed"
     },
     {
       "path": "buildings/log_splitter/preview/grass-background.json",
@@ -3062,8 +3282,8 @@
     },
     {
       "path": "buildings/log_splitter/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/log_splitter/preview/preview-data.js",
@@ -3072,8 +3292,8 @@
     },
     {
       "path": "buildings/log_splitter/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/log_splitter/preview/vendor/LICENSE.txt",
@@ -3142,43 +3362,43 @@
     },
     {
       "path": "buildings/logistics/collection.json",
-      "bytes": 3022,
-      "sha256": "48430db720f914d11d3444dbc8ab3143391a1abb1d320c3e7c03ea432f62be6d"
+      "bytes": 3031,
+      "sha256": "94d95941cc85a8e5956b6fabe5a572ae23778a405cdbe83062f9a686d2406e4e"
     },
     {
       "path": "buildings/logistics/dynamic.js",
-      "bytes": 7289,
-      "sha256": "f0596f0aa344487a9a16cbdbaa8072f5802a254e9d5ee02aae579f55e733a7a5"
+      "bytes": 9514,
+      "sha256": "9e1d8ab3a1a734f43058b1ff1de40b424d68e9f65e132011085a1347532adc7a"
     },
     {
       "path": "buildings/logistics/index.html",
-      "bytes": 5545,
-      "sha256": "e839af2bf7f596acdcd66df73d66d2b1e1b31964636544f4f2fff60ffc3bc050"
+      "bytes": 5869,
+      "sha256": "196d3e173b0aa6ed5b99892d7100e07ec0c2857b6fcb350307d0ba0dabb1b4f3"
     },
     {
       "path": "buildings/logistics/integrity.json",
-      "bytes": 22813,
-      "sha256": "08b5c0d6d411783c8889f718548c3c4daf5d9f91efe15be3907517ab2f1adeb2"
+      "bytes": 23536,
+      "sha256": "12ff83e04ca356eae145a020ae1a2432328179eb92a37ad92993e04d42a1b02a"
     },
     {
       "path": "buildings/logistics/package.json",
-      "bytes": 537,
-      "sha256": "56860871dea278b0ee59ddd149fb54671fa0fac800df45c69366c3fb7f62797e"
+      "bytes": 517,
+      "sha256": "1da0f85937c1fd1340a6659feaf1d67b31168df24a6db38115c484f3883e199a"
     },
     {
       "path": "buildings/logistics/preview.js",
-      "bytes": 14689,
-      "sha256": "a64dca315c852ddb8d8fa2868140c8e967cfc9abd98c934912757a426e827934"
+      "bytes": 15678,
+      "sha256": "84495a8d281a42654236e80b9fe71c07bbe344977bc8d33756d5980473eff66d"
     },
     {
       "path": "buildings/logistics/variants.json",
-      "bytes": 496,
-      "sha256": "edc915fce7c22c38efc0e98677980ffe103c3e7aea8c0f671586fccf815ae1b7"
+      "bytes": 443,
+      "sha256": "dccda8436a67d9ff81edb3c752596da12c65ff83ccdf54b2823a2b1a756170f1"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/package.json",
-      "bytes": 745,
-      "sha256": "2f588758be39735e49d16fdf098598529341bf0b6642d863ea3ab6ac878c3639"
+      "bytes": 725,
+      "sha256": "f2fb645c5f407714b308d92d2372fe4534d5c1c2777ff8084097213868961a8d"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/dynamic/conveyor-arrow.webp",
@@ -3202,13 +3422,13 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/dynamic/manifest.json",
-      "bytes": 3553,
-      "sha256": "8f6eb7e58986420e50aeb9b700f131cacf1f290995ffd41d529031c17cd91c3c"
+      "bytes": 3542,
+      "sha256": "3c1d76146e842618c4b2c08d68157577f58fc8a11f6a2d79b2b18193d2f9ddc7"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/dynamic/material-computation.json",
-      "bytes": 21584,
-      "sha256": "5fffe502420864646903badad039b51e6a71f7e7a35957570b73281add422f09"
+      "bytes": 24997,
+      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/static/conveyor-left-arrow-static.webp",
@@ -3242,18 +3462,18 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/static/manifest.json",
-      "bytes": 4517,
-      "sha256": "ebcf209a06e587d97cf68230c0edc6ca1aa281581bb57e7d6e0b77e8c0d84d42"
+      "bytes": 4506,
+      "sha256": "2c5894bc2e2f0870de1bc1f4f6077997792e2fb83bd9df33adc2eff44e6e97c1"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/static/material-computation.json",
-      "bytes": 21583,
-      "sha256": "1d3a2759d216604624a0e02820ef79a6c765ca9501837d436b1a94c4ddc21ced"
+      "bytes": 24996,
+      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/package.json",
-      "bytes": 748,
-      "sha256": "e4905bc25d1971cea5fcc36cbfa077982fc33e5a6d0b69125f30bfab6a27228c"
+      "bytes": 728,
+      "sha256": "c6bd5b665abc415539f7a59c6731b79c43f566c1e0f093cd5d7e4ba0fda546a0"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/dynamic/conveyor-arrow.webp",
@@ -3277,13 +3497,13 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/dynamic/manifest.json",
-      "bytes": 3578,
-      "sha256": "ba262c6638363279c4237e658cd78e41913c56ae7b06455120de449ce712a99d"
+      "bytes": 3567,
+      "sha256": "27b00ce706f8bd4150720d57cad230aa271456ed51a54fc69cc24f7b64a5f203"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/dynamic/material-computation.json",
-      "bytes": 21584,
-      "sha256": "5fffe502420864646903badad039b51e6a71f7e7a35957570b73281add422f09"
+      "bytes": 24997,
+      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/static/conveyor-straight-arrow-static.webp",
@@ -3317,18 +3537,18 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/static/manifest.json",
-      "bytes": 4638,
-      "sha256": "917ab1f4ea7931c1dc759bf66de638d930e41f406472766c72ab49226abc0df0"
+      "bytes": 4627,
+      "sha256": "39de8ca2109780599e786dc0512080fc1a9d92ea5fd23a916dea085852d10ccf"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/static/material-computation.json",
-      "bytes": 21583,
-      "sha256": "1d3a2759d216604624a0e02820ef79a6c765ca9501837d436b1a94c4ddc21ced"
+      "bytes": 24996,
+      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/package.json",
-      "bytes": 747,
-      "sha256": "25f4e7917b07d22ebeb6d1e26d0d9a0455fa374faebd2f67b4854527580bd6b4"
+      "bytes": 727,
+      "sha256": "8d9461dbf5c7d4a6315a950095b4f763a5745570ebb47666ce99270f147dbe4d"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/dynamic/conveyor-arrow.webp",
@@ -3352,13 +3572,13 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/dynamic/manifest.json",
-      "bytes": 3561,
-      "sha256": "c4e78b40ac099e85a8ca56bff90b1632af8779b6731933833b9deff9415ff51e"
+      "bytes": 3550,
+      "sha256": "32d981698304e8cabc4f60c9d97210875f4c24774ab058ef7f4827fbb859c8c4"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/dynamic/material-computation.json",
-      "bytes": 21584,
-      "sha256": "5fffe502420864646903badad039b51e6a71f7e7a35957570b73281add422f09"
+      "bytes": 24997,
+      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/static/conveyor-right-arrow-static.webp",
@@ -3392,28 +3612,28 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/static/manifest.json",
-      "bytes": 4549,
-      "sha256": "1866a768e943011e7d661b230c4944986fbe70cde39d53e87587ab0169195bc5"
+      "bytes": 4538,
+      "sha256": "22ff42dee847110e2377231ef45d0b516194d34f0a36c3295557eb2d9309daf1"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/static/material-computation.json",
-      "bytes": 21583,
-      "sha256": "1d3a2759d216604624a0e02820ef79a6c765ca9501837d436b1a94c4ddc21ced"
+      "bytes": 24996,
+      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/package.json",
-      "bytes": 756,
-      "sha256": "f9cc2766bb9abc14062b0ed4b0f9ddd72b355673a5c3834f1e09bac20335c08f"
+      "bytes": 736,
+      "sha256": "66ba43f5c88e6b97bc6bb7e85561aa27f9ea47a4f182d713d72c23e9caa88324"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/manifest.json",
-      "bytes": 10859,
-      "sha256": "b5cb6b8d8519b10e555e0db5802ffa02d8d371e69f5007b7bb61114d3541638f"
+      "bytes": 16453,
+      "sha256": "84e6cb8049a4e73db956d6ece5d445cc2fdc4008d6281b7fa03674080972c9c4"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/material-computation.json",
-      "bytes": 21950,
-      "sha256": "4c1cad7e47328b62b27ce7c0b6c7b8a47cadbbe8c021a1af564d6d85c6fc612e"
+      "bytes": 30380,
+      "sha256": "8d201e6fbe1412a503e30ecf353d0748ca397da9be85abc861cc0cc54eca0c43"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/pipe-chevron.webp",
@@ -3471,6 +3691,11 @@
       "sha256": "b56b5223ad5fc96b03c98f2bb3bfcedc8bc0a572ba0f2a0bbc8682fbc07d2577"
     },
     {
+      "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/pipe-splash-noise.webp",
+      "bytes": 310438,
+      "sha256": "94251ab71aa1b3fea75c47a0a1369189fe3c1648ffe96f5e8c08aa63108eabb4"
+    },
+    {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/pipe-straight-fluid-mapping.json",
       "bytes": 136679,
       "sha256": "653f388929937d9a9a56c2cab3873597ec0d20597f508599a0bdad379ff81ccb"
@@ -3492,13 +3717,13 @@
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/manifest.json",
-      "bytes": 23710,
-      "sha256": "237ef20768cbc0f13aef708d290a1291dbf416f7b7bb8fa73fb124b3b7fb267e"
+      "bytes": 29580,
+      "sha256": "d858264e436d3f76410db23625f9fb279443338907c2746bdc3634f6570d29eb"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/material-computation.json",
-      "bytes": 21949,
-      "sha256": "509133fd67d4942a4e632d55697eea06540518035778a4890ae266d0047bbb0c"
+      "bytes": 30379,
+      "sha256": "0b01707e78d942198c585466117c3ce5a2dac559d2f716e5a06fa5b08bab7617"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-chevron.webp",
@@ -3539,6 +3764,11 @@
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-left-fluid-specular.webp",
       "bytes": 1000,
       "sha256": "f072183288bdb66b0e49d6ba34ff9b2e3391d477e8c1dba421dee8c7c1ba9707"
+    },
+    {
+      "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-left-gas-body.webp",
+      "bytes": 3326,
+      "sha256": "bc4241a37c93f13e99b263587f09ce6efbf9871aa57318cf0e4b1846c8188d86"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-left-shell.webp",
@@ -3591,6 +3821,11 @@
       "sha256": "2e17e25fd1e4944a70c0aebf30b9bb1182ef9edae94963977198f164e0a4b15f"
     },
     {
+      "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-right-gas-body.webp",
+      "bytes": 3378,
+      "sha256": "11bea6f8f6a18875a19785e98eff55e5aaab70c101c1b0a10a51bc3e442ccdd6"
+    },
+    {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-right-shell.webp",
       "bytes": 1670,
       "sha256": "abd5cd7bee0688a716d612dff241e67f2e4969e5da7b894d27471c8027ba30b2"
@@ -3629,6 +3864,11 @@
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-straight-fluid-specular.webp",
       "bytes": 198,
       "sha256": "972ebbdb3f763a8993ff7cc854cfd5214e9ba3759fa010772e6ddc9624188f17"
+    },
+    {
+      "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-straight-gas-body.webp",
+      "bytes": 2588,
+      "sha256": "d94c238fb44352448c4a5a64d0be5ecf07cde110a038df057f457ba6d3763559"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-straight-shell.webp",
@@ -3672,28 +3912,28 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/package.json",
-      "bytes": 753,
-      "sha256": "3e0fa6e6615aba54a30b956621e4001f330c9802b22dfd54819aa3c535be6a69"
+      "bytes": 733,
+      "sha256": "b81b9f670fc05fdaa07a0522a1f59ea64d4f4d35fad44f19cc4d547389bb00b1"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/dynamic/manifest.json",
-      "bytes": 384,
-      "sha256": "30a9126bc24036bcacfb85802893138bf3609f67dee8e61b4f5dd4d927d5a4cf"
+      "bytes": 373,
+      "sha256": "b99d648b8532b6de1a01f0716b3aa02606278aa4a69c09c4da81870a4e53906a"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/dynamic/material-computation.json",
-      "bytes": 21292,
-      "sha256": "22a8ff609c70fc5a6e4d60894196361ce75b96d7506f0c67f34c211e32c61232"
+      "bytes": 24705,
+      "sha256": "b7598066689652d11291cdade6bed484abf35f187b9f8951858fcdd4eeacb6d6"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/static/manifest.json",
-      "bytes": 1120,
-      "sha256": "8f7c03ebe1aa9e58d33be38b8b3889c3c43d554dc1bf30fe626805809674ad33"
+      "bytes": 1109,
+      "sha256": "80d64935a3af1ddd0b01fd6f6d2a91fd3088f67cca9eaae949db99d5227ebba4"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/static/material-computation.json",
-      "bytes": 21291,
-      "sha256": "e00fd081fc057598e2bc706415ea3a7e720503e1e0ec92e02c834fb70de0112f"
+      "bytes": 24704,
+      "sha256": "5ef8f17cea6a4608246452eb3a28cf665ddba6ead972adc1f27217cf4defa1f2"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/static/support-straight.webp",
@@ -3702,28 +3942,28 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/package.json",
-      "bytes": 751,
-      "sha256": "620c0a3f03e6abe0f4e7e0c70163a49bff1dee86953090600ba2b4084ea3231b"
+      "bytes": 731,
+      "sha256": "93c83f0def949281240316ba59ba3a38c3e3e140c91754881dabde472a6de2c0"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/dynamic/manifest.json",
-      "bytes": 384,
-      "sha256": "3cffc1c9ef1ef4c9c33b959326fbe55129d12db8d9b64dbfb55063beca5a91fc"
+      "bytes": 373,
+      "sha256": "a42dc5de3faf95ae8a61325a2194b26b6c6c89e64acf70414d94afd92347fed1"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/dynamic/material-computation.json",
-      "bytes": 21292,
-      "sha256": "22a8ff609c70fc5a6e4d60894196361ce75b96d7506f0c67f34c211e32c61232"
+      "bytes": 24705,
+      "sha256": "b7598066689652d11291cdade6bed484abf35f187b9f8951858fcdd4eeacb6d6"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/static/manifest.json",
-      "bytes": 1108,
-      "sha256": "272a79e6200b589b7d566e1c64c254c0d6ff49a76540160eae86ae7842817e1f"
+      "bytes": 1097,
+      "sha256": "e490316ca4eb0318a4ed8d97ca5820da9d0e0b5b404148137a5f08b2050c5132"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/static/material-computation.json",
-      "bytes": 21291,
-      "sha256": "e00fd081fc057598e2bc706415ea3a7e720503e1e0ec92e02c834fb70de0112f"
+      "bytes": 24704,
+      "sha256": "5ef8f17cea6a4608246452eb3a28cf665ddba6ead972adc1f27217cf4defa1f2"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/static/support-corner.webp",
@@ -3742,18 +3982,18 @@
     },
     {
       "path": "buildings/mix_pool_1/index.html",
-      "bytes": 4500,
-      "sha256": "5b44e9f611c8e8b3ac473804d8165eb2163e4893aa4ef55113d6052050fea511"
+      "bytes": 4596,
+      "sha256": "07ca088885d7bb3b742009aeebf747a12d12e8d2dcc4404c7495bf1ff2ca8508"
     },
     {
       "path": "buildings/mix_pool_1/integrity.json",
-      "bytes": 14680,
-      "sha256": "b59dbea7f88dd41d5f84e760d5b7def5f09d2c590098362b039d05b9a5025c11"
+      "bytes": 14636,
+      "sha256": "77b8ef7d032018c220600ccce5e641946b924ef1ab3b214b1d7b8d0af69bf79f"
     },
     {
       "path": "buildings/mix_pool_1/variants.json",
-      "bytes": 538,
-      "sha256": "ac3c59817e4541be38f10f9aac703e066db3259ad55ea02133b552c0ad436f49"
+      "bytes": 494,
+      "sha256": "68a5a85af897d1ca6fa1167fc56935a4e9828d07ab62eadca4ea5aee7297cc71"
     },
     {
       "path": "buildings/mix_pool_1/preview/grass-background.json",
@@ -3767,8 +4007,8 @@
     },
     {
       "path": "buildings/mix_pool_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/mix_pool_1/preview/preview-data.js",
@@ -3777,8 +4017,8 @@
     },
     {
       "path": "buildings/mix_pool_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/mix_pool_1/preview/vendor/LICENSE.txt",
@@ -4137,18 +4377,18 @@
     },
     {
       "path": "buildings/mix_pool_2/index.html",
-      "bytes": 4518,
-      "sha256": "cd527b6913b92e609aebc989757d67b8893dc174b9f197f99ea95bd394c47557"
+      "bytes": 4614,
+      "sha256": "dc6843a82c4e35977d3885114c2d025d2b711b2e16874692c326e74524a962ff"
     },
     {
       "path": "buildings/mix_pool_2/integrity.json",
-      "bytes": 17077,
-      "sha256": "5ce7f5a8afc7a9c2ae8fafc2d6699ad47f0c7a0ba23689a9f2efb74aa7395c57"
+      "bytes": 17033,
+      "sha256": "2e27668f83eedee783c90e413c435c690313569c9b2701ceb8038a86a420dd1d"
     },
     {
       "path": "buildings/mix_pool_2/variants.json",
-      "bytes": 544,
-      "sha256": "370fd360d2659a7693cecc13019eaf490e02fa87a8ed29967ba7f7bb05790dc0"
+      "bytes": 500,
+      "sha256": "a89d04b64735747fb52c07b9d9aa275569daadb7e82ee89157b873973ff09c46"
     },
     {
       "path": "buildings/mix_pool_2/preview/grass-background.json",
@@ -4162,8 +4402,8 @@
     },
     {
       "path": "buildings/mix_pool_2/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/mix_pool_2/preview/preview-data.js",
@@ -4172,8 +4412,8 @@
     },
     {
       "path": "buildings/mix_pool_2/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/mix_pool_2/preview/vendor/LICENSE.txt",
@@ -4597,18 +4837,18 @@
     },
     {
       "path": "buildings/pipe_conditioner/index.html",
-      "bytes": 4524,
-      "sha256": "12103487ed00400d37ab92f028a7dab9ac8df8ea4cc9ca6f6a04d5642fbb56cc"
+      "bytes": 4620,
+      "sha256": "0d209d0de6670d540319266886e5f7eb1b29254d26dc933b8fa8db7857d86415"
     },
     {
       "path": "buildings/pipe_conditioner/integrity.json",
-      "bytes": 3569,
-      "sha256": "a882f89e25bdc01edb8468b6a27b2198927d6992422bcedf51ac02903e6838ca"
+      "bytes": 3525,
+      "sha256": "8565bf69194835edb70b5aebefacdb61ac22a0d6f60083c9b51d5668e7dd438b"
     },
     {
       "path": "buildings/pipe_conditioner/variants.json",
-      "bytes": 550,
-      "sha256": "b094dcfd1923b81740aacec2aefb062264b738e520eafcf040a51443b0f4ad7b"
+      "bytes": 506,
+      "sha256": "0e10f7d352b50e49af7067b40348b90152d84dbe68eb43c81e05c93e30fb1c65"
     },
     {
       "path": "buildings/pipe_conditioner/preview/grass-background.json",
@@ -4622,8 +4862,8 @@
     },
     {
       "path": "buildings/pipe_conditioner/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/pipe_conditioner/preview/preview-data.js",
@@ -4632,8 +4872,8 @@
     },
     {
       "path": "buildings/pipe_conditioner/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/pipe_conditioner/preview/vendor/LICENSE.txt",
@@ -4702,18 +4942,18 @@
     },
     {
       "path": "buildings/pipe_connector/index.html",
-      "bytes": 4522,
-      "sha256": "3ebee1acb6dbfa55f706b1ac1f9cb7bb299d24b1f2b5f573ed1c4fb173231947"
+      "bytes": 4618,
+      "sha256": "98facf56ab98298377a32e1116610d7877ae3bf8f0fcf3960a9f4a1c364d01ea"
     },
     {
       "path": "buildings/pipe_connector/integrity.json",
-      "bytes": 3568,
-      "sha256": "97614165f5806daf7b379d501bb27f34495663b03d6b628b7d8fd7046b54c93e"
+      "bytes": 3524,
+      "sha256": "f5a1b20e2ad6d7629b8b34ea4a22aa0946e4d6484ce1b30b00059767de7c0759"
     },
     {
       "path": "buildings/pipe_connector/variants.json",
-      "bytes": 548,
-      "sha256": "6cb41a9c39f774323fa72877ff75ab74839587d71c6ab728e181650558be2075"
+      "bytes": 504,
+      "sha256": "85fa695a13c8b4718a01be66310ca701b7949b4de4bbddbc74b6da6bf194f1a3"
     },
     {
       "path": "buildings/pipe_connector/preview/grass-background.json",
@@ -4727,8 +4967,8 @@
     },
     {
       "path": "buildings/pipe_connector/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/pipe_connector/preview/preview-data.js",
@@ -4737,8 +4977,8 @@
     },
     {
       "path": "buildings/pipe_connector/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/pipe_connector/preview/vendor/LICENSE.txt",
@@ -4807,18 +5047,18 @@
     },
     {
       "path": "buildings/pipe_converger/index.html",
-      "bytes": 4522,
-      "sha256": "b69dac804ef6ca8bcbf9d1bc6b9bac2624b3fc484ae3354a446d89368d45757e"
+      "bytes": 4618,
+      "sha256": "19ab1322aad80433e25ea1417c510b59b6ee3b11d4dbbe6de871be172ff534b9"
     },
     {
       "path": "buildings/pipe_converger/integrity.json",
-      "bytes": 3568,
-      "sha256": "99178fadea15aa1fdf95e4faf8221a495b759678bf912f54c818f0cbf9c19030"
+      "bytes": 3524,
+      "sha256": "bb62af825093e0511e444446a69a6adcfc860716811c1f5334398121425346c1"
     },
     {
       "path": "buildings/pipe_converger/variants.json",
-      "bytes": 548,
-      "sha256": "c24275e1e798fb6a5d18c2d1e6bf7604cfa4c2091d6ff4b5aa3e4a99f1765477"
+      "bytes": 504,
+      "sha256": "b03e718408ee5ec91ae2638eefe16ca8cc58a4f41e2947961a842d6a2ca6505f"
     },
     {
       "path": "buildings/pipe_converger/preview/grass-background.json",
@@ -4832,8 +5072,8 @@
     },
     {
       "path": "buildings/pipe_converger/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/pipe_converger/preview/preview-data.js",
@@ -4842,8 +5082,8 @@
     },
     {
       "path": "buildings/pipe_converger/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/pipe_converger/preview/vendor/LICENSE.txt",
@@ -4912,18 +5152,18 @@
     },
     {
       "path": "buildings/pipe_splitter/index.html",
-      "bytes": 4521,
-      "sha256": "a3c18f68eff87679000971f8eb93eea9e652fa0b6ae8fb0a5ece9c3cacda8b19"
+      "bytes": 4617,
+      "sha256": "1527747c4d0b75da1d738aa1516cea63a905068c7712463276b765540732d6d4"
     },
     {
       "path": "buildings/pipe_splitter/integrity.json",
-      "bytes": 3567,
-      "sha256": "21795ecf5d853405be900dd784ab4eaac63d1f1bf391ea9eb6c89d0d568ae363"
+      "bytes": 3523,
+      "sha256": "ff9636417aa39ce11a618ab3e5fe6e67c2a91f344b60cd859963e7f1837bbb34"
     },
     {
       "path": "buildings/pipe_splitter/variants.json",
-      "bytes": 547,
-      "sha256": "6e4c6131f582595a123adb094ebf22db04469df2ac25a7a49ff6dc077ea78273"
+      "bytes": 503,
+      "sha256": "11b79a20cf6c42f966981a78fc3d7c4a1f5d469a2a1c212691b38e6d56b980fc"
     },
     {
       "path": "buildings/pipe_splitter/preview/grass-background.json",
@@ -4937,8 +5177,8 @@
     },
     {
       "path": "buildings/pipe_splitter/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/pipe_splitter/preview/preview-data.js",
@@ -4947,8 +5187,8 @@
     },
     {
       "path": "buildings/pipe_splitter/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/pipe_splitter/preview/vendor/LICENSE.txt",
@@ -5017,18 +5257,18 @@
     },
     {
       "path": "buildings/planter_1/index.html",
-      "bytes": 4491,
-      "sha256": "bf9cf6e8e86d7b133b4df501ff70c9de90a928830233b52ae2cd58320fd5c7ce"
+      "bytes": 4587,
+      "sha256": "8bdf51d818a1b24c4afb9fb352114b48b604e33ae1bc0fd17ffdd38cbaaa8c2e"
     },
     {
       "path": "buildings/planter_1/integrity.json",
-      "bytes": 7047,
-      "sha256": "788d9db5ad23c5f2f96ba4f1daa4ae279260d41bce04925088803bc78c3572b2"
+      "bytes": 7003,
+      "sha256": "2b0a78ab41c6d379c2614969d41ef18832b1751331859f472749146866528dda"
     },
     {
       "path": "buildings/planter_1/variants.json",
-      "bytes": 533,
-      "sha256": "aa94bb9322ecbfd561409afec0da03748e2a7bc84a5a0a63d3af5a73979ba08b"
+      "bytes": 489,
+      "sha256": "fbad9011cc5dc84a8b18a872d0b84b7c6f6a2d48a55a93b4e83f1871f56151a6"
     },
     {
       "path": "buildings/planter_1/preview/grass-background.json",
@@ -5042,8 +5282,8 @@
     },
     {
       "path": "buildings/planter_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/planter_1/preview/preview-data.js",
@@ -5052,8 +5292,8 @@
     },
     {
       "path": "buildings/planter_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/planter_1/preview/vendor/LICENSE.txt",
@@ -5217,18 +5457,18 @@
     },
     {
       "path": "buildings/power_diffuser_1/index.html",
-      "bytes": 4506,
-      "sha256": "8c07230e3e938ba6991e8be6df74134e2bd86ae4654518477e4adab7986534c6"
+      "bytes": 4602,
+      "sha256": "55382323cd79cca76f7a415728bce357ae78d0484c923e9441c7314fb1cdd24e"
     },
     {
       "path": "buildings/power_diffuser_1/integrity.json",
-      "bytes": 5209,
-      "sha256": "4a8ef70b7f7e997aac4592f962e80bb65d2d23b0e9cc5f4f2188bfd79fc9ab3a"
+      "bytes": 5165,
+      "sha256": "8c2c72e230b676590e6e56ef6c8b5fa9b587b017f57f1c19ef809bc945345af7"
     },
     {
       "path": "buildings/power_diffuser_1/variants.json",
-      "bytes": 544,
-      "sha256": "c18550b53f6b768e8e1cac86651c2cdff4d4785f045eea8f948d866c4a118194"
+      "bytes": 500,
+      "sha256": "a860286701b77bddd7330e9e04fe9f791964b1f8cdfff68388e5a7ee7eb72bb9"
     },
     {
       "path": "buildings/power_diffuser_1/preview/grass-background.json",
@@ -5242,8 +5482,8 @@
     },
     {
       "path": "buildings/power_diffuser_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/power_diffuser_1/preview/preview-data.js",
@@ -5252,8 +5492,8 @@
     },
     {
       "path": "buildings/power_diffuser_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/power_diffuser_1/preview/vendor/LICENSE.txt",
@@ -5367,18 +5607,18 @@
     },
     {
       "path": "buildings/power_station_1/index.html",
-      "bytes": 4505,
-      "sha256": "80f6bdd550b00bd5467a8054136701082aa77e3e42c98bafa9a617f67aea22c4"
+      "bytes": 4601,
+      "sha256": "2d728c07198c833c03cbd13847f3f82133b789b905692eaa099eead12a56c530"
     },
     {
       "path": "buildings/power_station_1/integrity.json",
-      "bytes": 5206,
-      "sha256": "3044f2e6ac51a1fbe0e18ac233f6d42777d4bcc3423e0349e41ab031fcf0dcba"
+      "bytes": 5162,
+      "sha256": "daea225417a6052395f320a4a9c7512bead5b5953d15ccff2544429120b79fd3"
     },
     {
       "path": "buildings/power_station_1/variants.json",
-      "bytes": 543,
-      "sha256": "e04912748223bec0463b4cd64e7be58ecf52f20a2eab05490360aa2553f4e4bc"
+      "bytes": 499,
+      "sha256": "31ba87eb8a30905ecf70d48c724aa514680c29c0ccc18ca5d04d397c2e424ead"
     },
     {
       "path": "buildings/power_station_1/preview/grass-background.json",
@@ -5392,8 +5632,8 @@
     },
     {
       "path": "buildings/power_station_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/power_station_1/preview/preview-data.js",
@@ -5402,8 +5642,8 @@
     },
     {
       "path": "buildings/power_station_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/power_station_1/preview/vendor/LICENSE.txt",
@@ -5517,18 +5757,18 @@
     },
     {
       "path": "buildings/pump_1/index.html",
-      "bytes": 4487,
-      "sha256": "0741c556143813aae497bb83e5686272f51a6892b3fc47b3106f094be4bb6e2a"
+      "bytes": 4595,
+      "sha256": "0690695108315a04c8e2b0c926a85dbcc4a074b2102f5d5ac893c4a4dde8ef43"
     },
     {
       "path": "buildings/pump_1/integrity.json",
-      "bytes": 5196,
-      "sha256": "8acbbdeedee1f3505ca56231e7b75d24b6ff93748435f29c1fb87e8f315f082f"
+      "bytes": 6772,
+      "sha256": "f96c24f2f7d13c653ad015cc20216c2f6e3ce988e00e393b0be0982dd5a51308"
     },
     {
       "path": "buildings/pump_1/variants.json",
-      "bytes": 531,
-      "sha256": "b6754e02c9f2429f1318962d35e259e0487580cd6bac5dc1a1f4b4145dcfc44e"
+      "bytes": 493,
+      "sha256": "9e05bfa8fcf47e3bc97b0ac946970f13aad6ca6468ec064ff3930c5c2de61f50"
     },
     {
       "path": "buildings/pump_1/preview/grass-background.json",
@@ -5542,8 +5782,8 @@
     },
     {
       "path": "buildings/pump_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/pump_1/preview/preview-data.js",
@@ -5552,8 +5792,8 @@
     },
     {
       "path": "buildings/pump_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/pump_1/preview/vendor/LICENSE.txt",
@@ -5567,118 +5807,158 @@
     },
     {
       "path": "buildings/pump_1/top/package.json",
-      "bytes": 1573,
-      "sha256": "4b393bfcb5e60feaf5e66aae0338fed441ef9aea798129b8b69ffc66011372ac"
+      "bytes": 2743,
+      "sha256": "7f03029d402bd162f1fc9341812ce3b3aa45b17a54820eaf01da10d0e3e621d4"
     },
     {
       "path": "buildings/pump_1/top/ports.json",
-      "bytes": 3146,
-      "sha256": "dbd392f68926f9148b0108719817a1234029d67992fe36e84d90cae7330beeac"
+      "bytes": 5880,
+      "sha256": "f110f9032d45c92da742462686a0f407806722d9a50b60cb39953719689cefea"
     },
     {
       "path": "buildings/pump_1/top/sequence.json",
       "bytes": 1668,
-      "sha256": "54dc2289917fab8aa7b3abba3fd81945d297d6485c3a8d737054acbca5a64ce8"
+      "sha256": "8bd6954d00657da4309b4619df2b6d199ef9916d1bdc411b288498688d1f33e1"
     },
     {
       "path": "buildings/pump_1/top/sheet-sizes.json",
-      "bytes": 2051,
-      "sha256": "0a2f7976d5188e34c4a66be94622a57626e78f8de168806cf4258b9ddd0eabf0"
+      "bytes": 1549,
+      "sha256": "95adf9053a691d7d750d712d82d92a484d868fe3017ee611ce0e10adf480863c"
     },
     {
       "path": "buildings/pump_1/top/spatial.json",
-      "bytes": 1206,
-      "sha256": "6c696909623af1ae0117345287638cae27814a0f4df51ac4784273c315630719"
+      "bytes": 2303,
+      "sha256": "3013dbe78b5767e3ed261ace72b1e85a0ff1e5644ddbfbb9cd8191f2b90f6183"
     },
     {
       "path": "buildings/pump_1/top/animations/close/animation.json",
-      "bytes": 19375,
-      "sha256": "a7469d9662c9fd626e618d89793d944c37b2fa860bd91da868c1b0c011c86b22"
+      "bytes": 26354,
+      "sha256": "d75bb63b7c9ac140160d6774347815de3f0063ba8e63febd800fb2759e47cfbb"
     },
     {
       "path": "buildings/pump_1/top/animations/close/spritesheet.json",
-      "bytes": 23076,
-      "sha256": "f07c0bb23715c08ce2618549d5460de6c91c7eee7a8ed59168f2dad6eaa112c0"
+      "bytes": 28654,
+      "sha256": "325e3f70c24ec895cad87355ecec9d94114fbbf746854e2edb0528f141808afb"
     },
     {
       "path": "buildings/pump_1/top/animations/close/spritesheet_000.webp",
-      "bytes": 351826,
-      "sha256": "6b70c5c9deb7ea18653e1183bc79d6718d5dafbf6f539db98421e87eb130692b"
+      "bytes": 486402,
+      "sha256": "9875e5548edde69059dc73c84ca3a5105aa602a7eb81ee84f4c4f91a0c3402c0"
     },
     {
       "path": "buildings/pump_1/top/animations/close_idle/animation.json",
-      "bytes": 5308,
-      "sha256": "6db54eb64b731ce7c3380770d2fee53751490fd77dcbda7b3d5ff2a38c6e334d"
+      "bytes": 6849,
+      "sha256": "98c702c2524d25e39cad0538a874bab1c2df6df64d0ed2a545f31d4e534ec42a"
     },
     {
       "path": "buildings/pump_1/top/animations/close_idle/spritesheet.json",
-      "bytes": 1620,
-      "sha256": "d73f3f099fe07c1092a8096b777636917ac94756466166ed64e1d8105e73ede0"
+      "bytes": 1739,
+      "sha256": "3ca7bff518734da32c5c0a4b9c5d08e40018f09fd4891e626664403049e49e24"
     },
     {
       "path": "buildings/pump_1/top/animations/close_idle/spritesheet_000.webp",
-      "bytes": 16392,
-      "sha256": "e5b073f66d7d4a60da2fa8b6bbad14738b1bc61a17d8c9af3ec0d7a8213bc1d7"
+      "bytes": 21424,
+      "sha256": "bd099ceca2bd02509c7a30af9bc32e25c3a0cda879a94c29148d43a65b375330"
     },
     {
       "path": "buildings/pump_1/top/animations/open/animation.json",
-      "bytes": 17881,
-      "sha256": "4faa6b626b0ed09959204664e2fc6448a75e3c44f925cf9ad5a306b1bb9201af"
+      "bytes": 24244,
+      "sha256": "5dee5d69be393bf7fb9430bb278276bb216141a946c6efee2f556812f0c125e4"
     },
     {
       "path": "buildings/pump_1/top/animations/open/spritesheet.json",
-      "bytes": 20787,
-      "sha256": "06f6b3d40cf6ed13cf0e21fc93899a0425ec25a8300d05ee206739c7fe54c360"
+      "bytes": 25752,
+      "sha256": "2196b52ce5df1717973d8432b794cf0a299bfdaba1032236da72deb06c9ca960"
     },
     {
       "path": "buildings/pump_1/top/animations/open/spritesheet_000.webp",
-      "bytes": 313092,
-      "sha256": "b57abc60b7efac3f180b34c03162658124d34dbc30e86cd920ad21fbf63af7d9"
+      "bytes": 439054,
+      "sha256": "63089f3cfa0e10730eab4d816213dbaa4d904c797ddd8e215bf2af18ec423cf0"
     },
     {
       "path": "buildings/pump_1/top/animations/open_idle/animation.json",
-      "bytes": 8939,
-      "sha256": "ac997958b9e5924bac3c4dc1a951774bd01cb1a3ff38b5c79656c482086bd760"
+      "bytes": 20945,
+      "sha256": "b26e2ad381e4df2b0c431d976fa8c9ecf9f06506f305b0b824c208d722dd8e54"
     },
     {
       "path": "buildings/pump_1/top/animations/open_idle/spritesheet.json",
-      "bytes": 7101,
-      "sha256": "7e730d79b86d6c97100069ac2a9eb0f03c0b5e5b33f1ae09a3a65e27f7571d9f"
+      "bytes": 21180,
+      "sha256": "897ed05af995f27530c4b6b1baece21b9c5af808ba171e7effe5925f734a4487"
     },
     {
       "path": "buildings/pump_1/top/animations/open_idle/spritesheet_000.webp",
-      "bytes": 98328,
-      "sha256": "fb4b9a1e1829b744c9c2240b642e7e2546ad028d771ade57f675918c8495bfe4"
+      "bytes": 347436,
+      "sha256": "1e123b80e60d2ee8bcbca448daf2d8ff2020dac51e776e3992bf0e481fa26e3e"
     },
     {
       "path": "buildings/pump_1/top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 2093,
+      "sha256": "c1ae3dc5e9a97f3f11ffa5ad44692b3887c71a4b33a7032f34e835518f02dc19"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeoff_out_01/effect.json",
+      "bytes": 45549,
+      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeoff_out_01/height.webp",
+      "bytes": 5526,
+      "sha256": "c3274c071f52c852686310cd0d75c41b25670d55cee28d083a4b1f784340506a"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
+      "bytes": 617764,
+      "sha256": "19614522bf555155d327434f9ab2073742172a26351a99b77e68ae24c77396e6"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeon_out_01/effect.json",
+      "bytes": 30232,
+      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeon_out_01/height.webp",
+      "bytes": 6686,
+      "sha256": "9a215a9f6dccaee06ca1b9c09d4416f4e9ad8a8d1494d3c1d652df250c00421f"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/pump_1/top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
+      "bytes": 255860,
+      "sha256": "1e106a02cdd8931a8d2241bdf67546bf706c35d10e7044a6d89789c06077e57e"
     },
     {
       "path": "buildings/pump_1/top/occlusion/height_open_idle.webp",
-      "bytes": 13140,
-      "sha256": "76170c829aa7dc995bbc823de330b9f0ddac3a860a712e79914acb41acf7ea85"
+      "bytes": 15706,
+      "sha256": "716d430a93e981d472f0801f952c37a56a74e777b5b3daf21ec32c5ed49c9071"
     },
     {
       "path": "buildings/pump_1/top/occlusion/occlusion.json",
-      "bytes": 3644,
-      "sha256": "ec466b76bab6b03c8101078b937e7903e68b7a44204ec19da994717e6b9a917f"
+      "bytes": 3416,
+      "sha256": "3796b9aa34a99f61669e2538852c747e6c00b96d8cd45686b76c390b12f47742"
     },
     {
       "path": "buildings/seedcollector_1/index.html",
-      "bytes": 4497,
-      "sha256": "a501ce78a6a2c78ee0a40589adc4ff9ed949c4e907fac267112ae35cff3e0b76"
+      "bytes": 4593,
+      "sha256": "1c6e24cf3f962e6d5ee3b787fee9b67176116f96d762c5984ba929795e216519"
     },
     {
       "path": "buildings/seedcollector_1/integrity.json",
-      "bytes": 7255,
-      "sha256": "ad6085387a1c57af606cedcdfd91eb160a454f54c51bacb58ec6fe60cb67aabd"
+      "bytes": 7211,
+      "sha256": "dafde744276006b2674111790344d405d4dc55c0122c42456ac1485510748b54"
     },
     {
       "path": "buildings/seedcollector_1/variants.json",
-      "bytes": 539,
-      "sha256": "8e5ff1e269b3764e1e07ea752324e9e9c4fe9349c6c1c620e676b68de810b2cf"
+      "bytes": 495,
+      "sha256": "aa4da50f2448753d46e3fd997b9278543a004e2c5699a0a766f7d9d0b304ae96"
     },
     {
       "path": "buildings/seedcollector_1/preview/grass-background.json",
@@ -5692,8 +5972,8 @@
     },
     {
       "path": "buildings/seedcollector_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/seedcollector_1/preview/preview-data.js",
@@ -5702,8 +5982,8 @@
     },
     {
       "path": "buildings/seedcollector_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/seedcollector_1/preview/vendor/LICENSE.txt",
@@ -5872,18 +6152,18 @@
     },
     {
       "path": "buildings/shaper_1/index.html",
-      "bytes": 4490,
-      "sha256": "6b5e2477801f46e2df5ecad78024e133d48e0db3c60aed82df05394bb66dd770"
+      "bytes": 4586,
+      "sha256": "aa64b624f58699a28446908cba96640d95c04069e88cff00653d3d9cf0db668f"
     },
     {
       "path": "buildings/shaper_1/integrity.json",
-      "bytes": 5926,
-      "sha256": "1c6ee8870d40b52ec5a169b21150ae746d170d469d5b8b58751b5414202f90b8"
+      "bytes": 5882,
+      "sha256": "374d195329a5cfc82ac0917a7108066748d50c3b6d5b0a1ba8eb84e6c24bd966"
     },
     {
       "path": "buildings/shaper_1/variants.json",
-      "bytes": 532,
-      "sha256": "a03b0f3d3dbad07642f05733d92825cf3612347d7266da5c15ed9f74c9f972a1"
+      "bytes": 488,
+      "sha256": "7ef54e7e83bda4429a790654a8b268149c479e79fa945d3701c4fb36b55ee3bc"
     },
     {
       "path": "buildings/shaper_1/preview/grass-background.json",
@@ -5897,8 +6177,8 @@
     },
     {
       "path": "buildings/shaper_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/shaper_1/preview/preview-data.js",
@@ -5907,8 +6187,8 @@
     },
     {
       "path": "buildings/shaper_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/shaper_1/preview/vendor/LICENSE.txt",
@@ -6037,18 +6317,18 @@
     },
     {
       "path": "buildings/sp_hub_1/index.html",
-      "bytes": 4507,
-      "sha256": "a77ea58fdd70eaee8763ff8d1320e74517717b29f061342bba7ddb063be67b5a"
+      "bytes": 4603,
+      "sha256": "7279a75bf0f22343da2bbfb4e418ca86150ac9e99022effeb2013e994e8e36eb"
     },
     {
       "path": "buildings/sp_hub_1/integrity.json",
-      "bytes": 37950,
-      "sha256": "f13dc20c522488c903dd7376caeb646551a571b4dd994804416d6314de056003"
+      "bytes": 37906,
+      "sha256": "dc17bc82c6981c12e7cc355be2dcf4922b142d74a767d51eff7fc1619d943070"
     },
     {
       "path": "buildings/sp_hub_1/variants.json",
-      "bytes": 539,
-      "sha256": "06356eca0e9f71d8c2d809a8e1c031fe4d2cf81cc2214d27eb4f69bd8c7c7c11"
+      "bytes": 495,
+      "sha256": "f6ef7f792ac430b257df19077d2f7a4a28ef29406495e184bc9aa048774d5951"
     },
     {
       "path": "buildings/sp_hub_1/preview/grass-background.json",
@@ -6062,8 +6342,8 @@
     },
     {
       "path": "buildings/sp_hub_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/sp_hub_1/preview/preview-data.js",
@@ -6072,8 +6352,8 @@
     },
     {
       "path": "buildings/sp_hub_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/sp_hub_1/preview/vendor/LICENSE.txt",
@@ -7077,18 +7357,18 @@
     },
     {
       "path": "buildings/sp_sub_hub_1/index.html",
-      "bytes": 4579,
-      "sha256": "fb2d726030a3a0461cb563fb7b9cb722a9aeb94a10269ee8e9b3ab6f81b4c29e"
+      "bytes": 4675,
+      "sha256": "95fd2fa0e6f7d4d54377c603b5dd0ea945ed49cca55b7a771524888b5b45e6c8"
     },
     {
       "path": "buildings/sp_sub_hub_1/integrity.json",
-      "bytes": 30663,
-      "sha256": "bfd7664a43dfc2fa6384ad59665f6ac84ecb9bfdf7d4b10cb62fefd7bc6b4e66"
+      "bytes": 30619,
+      "sha256": "0e2683ccee6b4acba2afd5cddf766daa8c1ebea32655bf1c5d76e05ca27c47da"
     },
     {
       "path": "buildings/sp_sub_hub_1/variants.json",
-      "bytes": 617,
-      "sha256": "185ae4ce7789967fc1c374e2dfc3eaaadc689eac6f4f8e51c669e4c9c1750f55"
+      "bytes": 573,
+      "sha256": "5e0cd563111c81d2084ac77352369b02c5a4b409ed3411dca51ea3d1698a27de"
     },
     {
       "path": "buildings/sp_sub_hub_1/preview/grass-background.json",
@@ -7102,8 +7382,8 @@
     },
     {
       "path": "buildings/sp_sub_hub_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/sp_sub_hub_1/preview/preview-data.js",
@@ -7112,8 +7392,8 @@
     },
     {
       "path": "buildings/sp_sub_hub_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/sp_sub_hub_1/preview/vendor/LICENSE.txt",
@@ -7887,18 +8167,18 @@
     },
     {
       "path": "buildings/storager_1/index.html",
-      "bytes": 4518,
-      "sha256": "8c9ca1031835c82f2f98dae919366287fc9661ee1d24603c256070290e58c442"
+      "bytes": 4614,
+      "sha256": "0bcba1a0011fcd4083a54e2d8a34aa3234823d00426efff2f5a7b529b9dec60d"
     },
     {
       "path": "buildings/storager_1/integrity.json",
-      "bytes": 3581,
-      "sha256": "fdf63864662a0f927e402bad4f05a4be3de8620badfddb83dd3f1f048af5a1e4"
+      "bytes": 3537,
+      "sha256": "0d4311a7c3042484283dc76c7cdd2347e2466e080a51414351ed9fb66d655ae8"
     },
     {
       "path": "buildings/storager_1/variants.json",
-      "bytes": 544,
-      "sha256": "65f96f7f06cbdb86f4512c83ac062d9c7f9499c336c46ea5234ff930590952ed"
+      "bytes": 500,
+      "sha256": "b5848b30b90f8f06ea046e0cc51eda1eb7828ddc57c17a8d6fa8a338a655b114"
     },
     {
       "path": "buildings/storager_1/preview/grass-background.json",
@@ -7912,8 +8192,8 @@
     },
     {
       "path": "buildings/storager_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/storager_1/preview/preview-data.js",
@@ -7922,8 +8202,8 @@
     },
     {
       "path": "buildings/storager_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/storager_1/preview/vendor/LICENSE.txt",
@@ -7992,18 +8272,18 @@
     },
     {
       "path": "buildings/thickener_1/index.html",
-      "bytes": 4501,
-      "sha256": "e70d3cb176a979e5a90beae086939e97ebb8fdada4cd3caa8c9c1389d13e8da5"
+      "bytes": 4597,
+      "sha256": "87d8da6b42d90315bd62d5cd8b45746e4237c9f85a03dac7e00c1e8ccbabf941"
     },
     {
       "path": "buildings/thickener_1/integrity.json",
-      "bytes": 6494,
-      "sha256": "838c67dc21aa139581a1c9bc05197ef48bb5680ce81846b988de0a8e96f7cd66"
+      "bytes": 6450,
+      "sha256": "4a874b9b987ce911a20225f3ad1546c237b9bb4ebf4e20174f2deb5b01a722e8"
     },
     {
       "path": "buildings/thickener_1/variants.json",
-      "bytes": 539,
-      "sha256": "81a257422a58f0c004d2046c635a5a330afe5d62f1ae4d2db3c5fe55dbfe24e2"
+      "bytes": 495,
+      "sha256": "7236cdf98a3242ab96d04eea8cf2c9e6df98b6862fd7b2fc495d50ee125d4e12"
     },
     {
       "path": "buildings/thickener_1/preview/grass-background.json",
@@ -8017,8 +8297,8 @@
     },
     {
       "path": "buildings/thickener_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/thickener_1/preview/preview-data.js",
@@ -8027,8 +8307,8 @@
     },
     {
       "path": "buildings/thickener_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/thickener_1/preview/vendor/LICENSE.txt",
@@ -8177,18 +8457,18 @@
     },
     {
       "path": "buildings/tools_assebling_mc_1/index.html",
-      "bytes": 4510,
-      "sha256": "9791e9b8d02ddd15c6d70eed00a1d25f1146bec0a7024ca9b7c381de3e1543e6"
+      "bytes": 4606,
+      "sha256": "bd4f5b985287a342f15a7805c4b6b92a255ada3565b3fe46177f2bd5a52855c8"
     },
     {
       "path": "buildings/tools_assebling_mc_1/integrity.json",
-      "bytes": 5769,
-      "sha256": "60d252f108b9ae5640614471858973b84183ff065a1e0b7562afa3c920e95bc6"
+      "bytes": 5725,
+      "sha256": "9f1ad6ccb15595e40a08f2ad364f481a9ab74f899d6ffb9b81a5269ddc2c1d19"
     },
     {
       "path": "buildings/tools_assebling_mc_1/variants.json",
-      "bytes": 548,
-      "sha256": "85148504456518d81d27acccf78933bf09b24c8e26646e693c256778d24fc184"
+      "bytes": 504,
+      "sha256": "ce0ccb7200813f6096ce7ac98f77e271688fc175a322dd63bf725dec777e251e"
     },
     {
       "path": "buildings/tools_assebling_mc_1/preview/grass-background.json",
@@ -8202,8 +8482,8 @@
     },
     {
       "path": "buildings/tools_assebling_mc_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/tools_assebling_mc_1/preview/preview-data.js",
@@ -8212,8 +8492,8 @@
     },
     {
       "path": "buildings/tools_assebling_mc_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/tools_assebling_mc_1/preview/vendor/LICENSE.txt",
@@ -8342,18 +8622,18 @@
     },
     {
       "path": "buildings/transmuter_1/index.html",
-      "bytes": 4558,
-      "sha256": "4298bce254ceb2f7f8ef4f6079fe1276ba1b59fe6949bd2af4c54a38ac4205f8"
+      "bytes": 4654,
+      "sha256": "18e70c700a63bf8b2c33fb9767524416e17e7b34b9b32d6f71a66136cc56416d"
     },
     {
       "path": "buildings/transmuter_1/integrity.json",
-      "bytes": 9881,
-      "sha256": "453382250b456c5b39d1a5ff46b5010ad275eb08bdffa5378a43325477218845"
+      "bytes": 9837,
+      "sha256": "e34348acbed5adfa7567a0e42a46cf74d7eb1df35b8135745fcbbba94fcd7309"
     },
     {
       "path": "buildings/transmuter_1/variants.json",
-      "bytes": 565,
-      "sha256": "773c42e37293f362606fc05522f00195ce062b3f10bb4a04ae56e5d44fdba0d2"
+      "bytes": 521,
+      "sha256": "512a2dabb13c4af1bbf4c51161ed58acd4568e6c06b2c5cb0fa293d90d2015bb"
     },
     {
       "path": "buildings/transmuter_1/preview/grass-background.json",
@@ -8367,8 +8647,8 @@
     },
     {
       "path": "buildings/transmuter_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/transmuter_1/preview/preview-data.js",
@@ -8377,8 +8657,8 @@
     },
     {
       "path": "buildings/transmuter_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/transmuter_1/preview/vendor/LICENSE.txt",
@@ -8602,18 +8882,18 @@
     },
     {
       "path": "buildings/transmuter_2/index.html",
-      "bytes": 4583,
-      "sha256": "345d93ecf80460384bddf111a914f04c2d10be6d94a9c3086107076f7eb15ab9"
+      "bytes": 4679,
+      "sha256": "16e30bf13e450351fcc73d0dd1022d68f6b92317119d2079e19c4d4faaab3813"
     },
     {
       "path": "buildings/transmuter_2/integrity.json",
-      "bytes": 18480,
-      "sha256": "11f5ad717cedb2f819206d434b6d5b848bae288beea1df3bfe9adc3d88ab29fc"
+      "bytes": 18436,
+      "sha256": "954320d4cecb71a9cd529aeeaf223aeed9cb62b1d2b864ce0703ee27420d6f6d"
     },
     {
       "path": "buildings/transmuter_2/variants.json",
-      "bytes": 908,
-      "sha256": "b0f81a3185192fc5cf1a022a9b938102eef3e8c18c2bd3c8234767162ed68d24"
+      "bytes": 864,
+      "sha256": "fcd0f1b001f7019d202f03ff9488c3ba5b22f02fabca2b080f4c4a053ddbd1da"
     },
     {
       "path": "buildings/transmuter_2/preview/grass-background.json",
@@ -8627,8 +8907,8 @@
     },
     {
       "path": "buildings/transmuter_2/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/transmuter_2/preview/preview-data.js",
@@ -8637,8 +8917,8 @@
     },
     {
       "path": "buildings/transmuter_2/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/transmuter_2/preview/vendor/LICENSE.txt",
@@ -9072,18 +9352,18 @@
     },
     {
       "path": "buildings/udpipe_loader_1/index.html",
-      "bytes": 4514,
-      "sha256": "dccb675c6e5eda68dadca8af3af7dd53fb17a08f471a1031f2475e4dd75fcd03"
+      "bytes": 4610,
+      "sha256": "c32dfdd213f09a402e01869abc43c9ad98ec6663f25ae143aa52e2f7de3798bc"
     },
     {
       "path": "buildings/udpipe_loader_1/integrity.json",
-      "bytes": 5426,
-      "sha256": "99cd1af1fad88cd5bb645296c20100cd5f4342f1650e372f87006ff93c6e46ca"
+      "bytes": 5382,
+      "sha256": "2b47124f425bf92c861130ecc55d8d040237ae9ef6fbfb5800eb05973d943119"
     },
     {
       "path": "buildings/udpipe_loader_1/variants.json",
-      "bytes": 546,
-      "sha256": "6556763c24e974e84af92c04041e8390725ec394e60d69d36d01848512444ff9"
+      "bytes": 502,
+      "sha256": "42ecdf91c3fc0ffe2a6f66f67930bb0d2be2371658f211269fadee82b03a0a0d"
     },
     {
       "path": "buildings/udpipe_loader_1/preview/grass-background.json",
@@ -9097,8 +9377,8 @@
     },
     {
       "path": "buildings/udpipe_loader_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/udpipe_loader_1/preview/preview-data.js",
@@ -9107,8 +9387,8 @@
     },
     {
       "path": "buildings/udpipe_loader_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/udpipe_loader_1/preview/vendor/LICENSE.txt",
@@ -9222,18 +9502,18 @@
     },
     {
       "path": "buildings/udpipe_loader_2/index.html",
-      "bytes": 4532,
-      "sha256": "bfd6cd2ca1d932de8ff0b0e17a2553c602a8fdee987fbf2cc866f1752e209532"
+      "bytes": 4628,
+      "sha256": "215b65162753264bb5cdb9e619286bd8163920bafd7ada5ee0d983853cdab120"
     },
     {
       "path": "buildings/udpipe_loader_2/integrity.json",
-      "bytes": 5595,
-      "sha256": "ba6cb995d999d68e2b2df856404fcaf94c1b973396e45865064596b00d238950"
+      "bytes": 5551,
+      "sha256": "aef7bae2d736420979362b4175ba58ee6d8016c53af573bda56c6ba8f149f218"
     },
     {
       "path": "buildings/udpipe_loader_2/variants.json",
-      "bytes": 552,
-      "sha256": "944c924a217c87cfddcee00c77e74a4b0e1fc7d529d502ae386bc3c7f891f6b1"
+      "bytes": 508,
+      "sha256": "9d7f4e585e84c2df3fd119f09663cb59e07372a4878716590aaf9e989620bf52"
     },
     {
       "path": "buildings/udpipe_loader_2/preview/grass-background.json",
@@ -9247,8 +9527,8 @@
     },
     {
       "path": "buildings/udpipe_loader_2/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/udpipe_loader_2/preview/preview-data.js",
@@ -9257,8 +9537,8 @@
     },
     {
       "path": "buildings/udpipe_loader_2/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/udpipe_loader_2/preview/vendor/LICENSE.txt",
@@ -9377,18 +9657,18 @@
     },
     {
       "path": "buildings/udpipe_unloader_1/index.html",
-      "bytes": 4516,
-      "sha256": "40a472d5b36f0955a546923e86be9af792899beb82e615e0ea5d68ec20f40907"
+      "bytes": 4612,
+      "sha256": "5efe1ebf41de789b35256ac2c59c9b9285270d9ccbf769c2f08ccfe59a86aac1"
     },
     {
       "path": "buildings/udpipe_unloader_1/integrity.json",
-      "bytes": 5412,
-      "sha256": "87d18b876810b24197dfd6f52800c55b7a7e1a88dfc0a681c5339c324392ab1d"
+      "bytes": 5368,
+      "sha256": "7421ff8adb19cfbcfa6c9dc37a7e08daae86ed369f0992c74fe3c0dc44d868d4"
     },
     {
       "path": "buildings/udpipe_unloader_1/variants.json",
-      "bytes": 548,
-      "sha256": "411b9599dd40ef2cbd70d242ab5b64dd8f948a03b9fc245b269625a6c85e2788"
+      "bytes": 504,
+      "sha256": "0c974eb6fcd4786205c57585f8415b56757186c81698ef784b89ff558ff9e0a7"
     },
     {
       "path": "buildings/udpipe_unloader_1/preview/grass-background.json",
@@ -9402,8 +9682,8 @@
     },
     {
       "path": "buildings/udpipe_unloader_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/udpipe_unloader_1/preview/preview-data.js",
@@ -9412,8 +9692,8 @@
     },
     {
       "path": "buildings/udpipe_unloader_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/udpipe_unloader_1/preview/vendor/LICENSE.txt",
@@ -9527,18 +9807,18 @@
     },
     {
       "path": "buildings/udpipe_unloader_2/index.html",
-      "bytes": 4534,
-      "sha256": "6a02c91d6e43c08e06b0c328e71feb5de97ffa2ddf54d27bc951a4e5b38a381b"
+      "bytes": 4630,
+      "sha256": "be066b52c0aaef490cf0d5336c9242c31b178f5d9c4014c6b8909c16d43f04f9"
     },
     {
       "path": "buildings/udpipe_unloader_2/integrity.json",
-      "bytes": 5605,
-      "sha256": "5048d63b6e902ed2bc6d14b07b896fa192107414cb598a82eb301123b5e839e3"
+      "bytes": 5561,
+      "sha256": "73aecd07072f70eff93a0f982a9eba13290c3ec77d37050f0298546d59935257"
     },
     {
       "path": "buildings/udpipe_unloader_2/variants.json",
-      "bytes": 554,
-      "sha256": "47fa560a6a59f62de9b5d0713b83396b52e04df3cb67e5886487b63cce6e8f10"
+      "bytes": 510,
+      "sha256": "cf454d9db60bbabe0a0e9c64abc3618ed992676b446b43ee87a25d6003a4ae73"
     },
     {
       "path": "buildings/udpipe_unloader_2/preview/grass-background.json",
@@ -9552,8 +9832,8 @@
     },
     {
       "path": "buildings/udpipe_unloader_2/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/udpipe_unloader_2/preview/preview-data.js",
@@ -9562,8 +9842,8 @@
     },
     {
       "path": "buildings/udpipe_unloader_2/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/udpipe_unloader_2/preview/vendor/LICENSE.txt",
@@ -9682,18 +9962,18 @@
     },
     {
       "path": "buildings/unloader_1/index.html",
-      "bytes": 4518,
-      "sha256": "42ea7a061e5f961162f8f706623d27f1d7b825068f43707b2331f653551b10c3"
+      "bytes": 4614,
+      "sha256": "d9fae2ca2869ea3584c97aafd9568639ebf253c381d8da1d0f7cdf55884af0a4"
     },
     {
       "path": "buildings/unloader_1/integrity.json",
-      "bytes": 3576,
-      "sha256": "b7af111fbe6e5fa29953e8be04ab8bed8302a261bf311311c7e22c84245102dc"
+      "bytes": 3532,
+      "sha256": "9bf1b53c9c3d4dedc985a9037befbd50e4ef67b7fe5f618fc4a55029ed5cc877"
     },
     {
       "path": "buildings/unloader_1/variants.json",
-      "bytes": 544,
-      "sha256": "e1cfe5150b72ea9bf2dabcef7a3907a34e5bbf8cefa52c4bb197e29da62bc399"
+      "bytes": 500,
+      "sha256": "9a42da061d61b6e0e0c13a49165eff7efd7c991b0a3733caeb28c6030916d98f"
     },
     {
       "path": "buildings/unloader_1/preview/grass-background.json",
@@ -9707,8 +9987,8 @@
     },
     {
       "path": "buildings/unloader_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/unloader_1/preview/preview-data.js",
@@ -9717,8 +9997,8 @@
     },
     {
       "path": "buildings/unloader_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/unloader_1/preview/vendor/LICENSE.txt",
@@ -9787,18 +10067,18 @@
     },
     {
       "path": "buildings/vaporizer_1/index.html",
-      "bytes": 4519,
-      "sha256": "8a650fc4cacca1825aaf19bcaf31d8f4300897a053f4e3bbdeb9b8b86e2faf76"
+      "bytes": 4621,
+      "sha256": "e26dc4d25a1553a108b393733a95200c26c5615a50a1523125bb730a16f0394a"
     },
     {
       "path": "buildings/vaporizer_1/integrity.json",
-      "bytes": 4390,
-      "sha256": "634ed1eea2cd2bcc7d09b70aa3ed48b2b75c0d4b80a6e0e7250e5b7bdae51471"
+      "bytes": 7499,
+      "sha256": "b0f0945ded91e0d8f17d2cc8fffb311b425371f72f440f1ae6c82a4568ad479d"
     },
     {
       "path": "buildings/vaporizer_1/variants.json",
-      "bytes": 545,
-      "sha256": "dad5021f648f3ca1792573cba6040c89ec4a8ce6831d195ba77b6f394e3683dd"
+      "bytes": 459,
+      "sha256": "af42d7b2e635f286fccffc7fc133932bbd9de4ccf2d1358a896ce4b78a230553"
     },
     {
       "path": "buildings/vaporizer_1/preview/grass-background.json",
@@ -9812,8 +10092,8 @@
     },
     {
       "path": "buildings/vaporizer_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/vaporizer_1/preview/preview-data.js",
@@ -9822,8 +10102,8 @@
     },
     {
       "path": "buildings/vaporizer_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/vaporizer_1/preview/vendor/LICENSE.txt",
@@ -9837,23 +10117,18 @@
     },
     {
       "path": "buildings/vaporizer_1/top/package.json",
-      "bytes": 1545,
-      "sha256": "3824905390a77312388fd17f1dcb3d23f3870a2497b9b114ec7890741550f8ad"
+      "bytes": 1549,
+      "sha256": "5fdb7f81ae78dabb80c4fc74a2f109953d6316123e3f480a8a3654f50b242122"
     },
     {
       "path": "buildings/vaporizer_1/top/ports.json",
-      "bytes": 14466,
-      "sha256": "805899e70af5cc18ed0a2c12fc1535efa6b4de77282d7dc65344534fe1631a2e"
+      "bytes": 15835,
+      "sha256": "ed9b0cd40d69aee3d3ebdad52617db8b4452d91733bf0ea90ee07b2aaed6a0c9"
     },
     {
       "path": "buildings/vaporizer_1/top/sequence.json",
       "bytes": 632,
       "sha256": "97488b36f11beae91b63f533a45b1f646b435b75b599bbc9d07c3c6f6dfe9459"
-    },
-    {
-      "path": "buildings/vaporizer_1/top/sheet-sizes.json",
-      "bytes": 621,
-      "sha256": "93d5228e823976dfd2d26b8358e7cbf30c72c86b05589d38f323f2b6e448ad77"
     },
     {
       "path": "buildings/vaporizer_1/top/spatial.json",
@@ -9877,8 +10152,48 @@
     },
     {
       "path": "buildings/vaporizer_1/top/effects/resources.json",
-      "bytes": 1450,
-      "sha256": "a6aca49fe615195b96b3f84435431375d05f8893fa3bc3ae0e9c737d68eaff06"
+      "bytes": 4256,
+      "sha256": "6ee99449ac25ae26ed17be17faeae6583caa727194d4b36fac3b54233d6bfa3a"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeoff_in_green_01/effect.json",
+      "bytes": 45556,
+      "sha256": "b518b2c8ad11a488dbd69b5add132606af6d3c074b145960e35c84e7a941ae5c"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeoff_in_green_01/height.webp",
+      "bytes": 3002,
+      "sha256": "d567381063e06657003da64d639940a2e017b78b20941af171d5749cadbb4fb0"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeoff_in_green_01/spritesheet.json",
+      "bytes": 41954,
+      "sha256": "f619d8953167a4028f4d7b282a8ab2af4d11dd0fe7effae8f0ed2ab80d3f9c95"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeoff_in_green_01/spritesheet_000.webp",
+      "bytes": 402632,
+      "sha256": "0394b4b092e37039730be93a8f0fb0406340afee3b05056fc5aee5e572031199"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeon_in_green_01/effect.json",
+      "bytes": 30229,
+      "sha256": "01072a7b8d4042f9692d417015bd250cd518ce5e6d08cacff54331020ad53700"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeon_in_green_01/height.webp",
+      "bytes": 4492,
+      "sha256": "03ef97baf7c8b6ea50322dd7d7e0229ad967def6c21e902e7b6ba10e682630ba"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeon_in_green_01/spritesheet.json",
+      "bytes": 26714,
+      "sha256": "2d6781de38e02d4eefd87f5195483c6b8a38224cb1eab9b38143dd30468bd02a"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_large_pipeon_in_green_01/spritesheet_000.webp",
+      "bytes": 165406,
+      "sha256": "951ec6f38295ddeddc094ec235294aa40cf8931709461480d48a4b29170af157"
     },
     {
       "path": "buildings/vaporizer_1/top/effects/P_fxfac_interactive_mixpool_green_2501/effect.json",
@@ -9901,6 +10216,46 @@
       "sha256": "2190b04ec00e9343a7552f2190764fe4c9c6d7104959bd16364dd1bddf977c15"
     },
     {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeoff_in_01/effect.json",
+      "bytes": 45533,
+      "sha256": "9c5e73ce0fe1fd94ee41991d420029ddcf202e5cba3d7d233cefa9c2b5251a12"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeoff_in_01/height.webp",
+      "bytes": 3914,
+      "sha256": "b82ebc5e80c51de105ebc748592087b50a730694dbba20fa9ec9395fdfc34936"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
+      "bytes": 41967,
+      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
+      "bytes": 590198,
+      "sha256": "613b7549b38116c104e4497bbfe9310fcfc632387407a61a9585cec6e0aa83f7"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeon_in_01/effect.json",
+      "bytes": 30228,
+      "sha256": "5458a91779aa7e437260026f87c333cfc1b5524b49a7598f2d38d509a387e55e"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeon_in_01/height.webp",
+      "bytes": 6286,
+      "sha256": "0cb6a508b449e2f1bf7e4532b480714567c1039405c9799b9f9ac53d7e17eda0"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet.json",
+      "bytes": 26725,
+      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+    },
+    {
+      "path": "buildings/vaporizer_1/top/effects/P_interactive_large_pipeon_in_01/spritesheet_000.webp",
+      "bytes": 246814,
+      "sha256": "d0a3fa8f0acdca586a63e1e50dd1de63a0a213431fa902177bf0c1afda63af83"
+    },
+    {
       "path": "buildings/vaporizer_1/top/occlusion/height_static.webp",
       "bytes": 24966,
       "sha256": "ad24c9828d6d7669fbb6a2e192d6bc19e0e8644e1f2304d8037eaac358ae8ed6"
@@ -9912,18 +10267,18 @@
     },
     {
       "path": "buildings/winder_1/index.html",
-      "bytes": 4516,
-      "sha256": "8ecc0330cd4019f474d906be27a4bb4ab8a1dc74692d350e832366d2cb6507c3"
+      "bytes": 4612,
+      "sha256": "4bd453a7de67e4973092a504c6b19cd4665315c497eb180f47a256629ed790d0"
     },
     {
       "path": "buildings/winder_1/integrity.json",
-      "bytes": 5573,
-      "sha256": "01c4ef0d4c4aedb6ccff7dcd6b1ef566705cf621f0502bccb33d7cb758ee55aa"
+      "bytes": 5529,
+      "sha256": "12b26ebf5658ffe50c29a3ee31b6a675ab7fc5e3903d64a35f2f8bb287cf9e91"
     },
     {
       "path": "buildings/winder_1/variants.json",
-      "bytes": 542,
-      "sha256": "9e52094e45e239664ee1c711e15569ce400a20985501b1d6658ec446e2206689"
+      "bytes": 498,
+      "sha256": "8698d01eace60ff94348b02827bcf0e76fc4644a9076c1511f3f3dd4ee3791fa"
     },
     {
       "path": "buildings/winder_1/preview/grass-background.json",
@@ -9937,8 +10292,8 @@
     },
     {
       "path": "buildings/winder_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/winder_1/preview/preview-data.js",
@@ -9947,8 +10302,8 @@
     },
     {
       "path": "buildings/winder_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/winder_1/preview/vendor/LICENSE.txt",
@@ -10072,18 +10427,18 @@
     },
     {
       "path": "buildings/xiranite_oven_1/index.html",
-      "bytes": 4558,
-      "sha256": "b3fc57c568183482d0ecda3863dd6e76b8402ddbeee9cda76c3c77244662296d"
+      "bytes": 4654,
+      "sha256": "f8bd9f16a72f27d09a353e896f90cc005864ae98c26a608282f5207bda4d266c"
     },
     {
       "path": "buildings/xiranite_oven_1/integrity.json",
-      "bytes": 20965,
-      "sha256": "0fe8b63c22fb3b7cb71efe93f6d66e9f0d1f68b75bc972356c6efda2de5d41b6"
+      "bytes": 20921,
+      "sha256": "8415d7f285f5a49c9d3406576625f75b8f03a2112325f202d34686208260613b"
     },
     {
       "path": "buildings/xiranite_oven_1/variants.json",
-      "bytes": 889,
-      "sha256": "ac390aeab9f2314b0848a0e5873435e496b41918a3d7be8bcf6e946bc5dfb158"
+      "bytes": 845,
+      "sha256": "f9ef03bad20bfb65bdba02ebe01849946caca39d502a162858d2e0b49f7eb380"
     },
     {
       "path": "buildings/xiranite_oven_1/preview/grass-background.json",
@@ -10097,8 +10452,8 @@
     },
     {
       "path": "buildings/xiranite_oven_1/preview/pixi-building-preview.js",
-      "bytes": 35979,
-      "sha256": "9c600a6e76c8b104d1c12ba1b9a2b15655be8821a859d3a992f931e77a482858"
+      "bytes": 36004,
+      "sha256": "165da76efce9ab56876bd1d63bc588521d65085af6455ed70009ad2310af5cff"
     },
     {
       "path": "buildings/xiranite_oven_1/preview/preview-data.js",
@@ -10107,8 +10462,8 @@
     },
     {
       "path": "buildings/xiranite_oven_1/preview/preview.css",
-      "bytes": 3398,
-      "sha256": "689b84e200721ac9bc1dfcfed13ab0e5d7a57083535bfabfa08a33eb401b8894"
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
     },
     {
       "path": "buildings/xiranite_oven_1/preview/vendor/LICENSE.txt",

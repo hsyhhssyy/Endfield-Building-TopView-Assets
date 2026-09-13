@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
+  "sourcePackName": "A_pump+1_001_01_variant_dynamic_lod0",
   "static": false,
+  "staticGeometry": false,
+  "materialAnimation": null,
+  "identicalSceneFrameCopies": 0,
   "vatTexture": "T_pump+1_001_01_variant_VAT",
   "vatLayout": "rigid-track-quaternion-translation",
   "trackCount": 11,
@@ -47,16 +51,21 @@
   },
   "fps": 30,
   "frameStep": 1,
-  "width": 384,
+  "width": 640,
   "height": 384,
   "projection": "orthographic",
   "viewDirection": [
-    -0.004407733678817749,
-    0.000509372039232403,
-    -0.9999901056289673
+    0.0,
+    0.0,
+    -1.0
   ],
+  "imageAxes": {
+    "x": "+sourceX",
+    "y": "+sourceZ"
+  },
   "transparentBackground": true,
   "renderPass": "scene",
+  "glassControl": "normal",
   "lighting": {
     "directionlessAmbientStrength": 0.03,
     "shadingMode": "pbr",
@@ -67,7 +76,7 @@
     "normalGreenFlip": true,
     "roughnessFloor": 0.4,
     "specularScale": 0.4,
-    "exposure": 0.8,
+    "exposure": 1.5,
     "keyLight": "area",
     "lightRig": "fourfold",
     "keyEnergyPerLight": 2300.0,
@@ -99,7 +108,8 @@
         "glassEnabled": false,
         "liquidEnabled": false,
         "emissiveLutEnabled": false,
-        "missingTextureReferences": []
+        "missingTextureReferences": [],
+        "semanticDefaultTextures": []
       },
       {
         "name": "M_pump+1_001_01_variant_transparency+1_001_01_vat",
@@ -107,10 +117,12 @@
         "glassEnabled": false,
         "liquidEnabled": false,
         "emissiveLutEnabled": false,
-        "missingTextureReferences": [
+        "missingTextureReferences": [],
+        "semanticDefaultTextures": [
           {
             "property": "_MROMap",
-            "texture": "T_default_mro_MRO"
+            "texture": "T_default_mro_MRO",
+            "substitute": "neutral-mro"
           }
         ]
       },
@@ -120,22 +132,25 @@
         "glassEnabled": false,
         "liquidEnabled": false,
         "emissiveLutEnabled": false,
-        "missingTextureReferences": [
+        "missingTextureReferences": [],
+        "semanticDefaultTextures": [
           {
             "property": "_NormalMap",
-            "texture": "T_default_normal_N"
+            "texture": "T_default_normal_N",
+            "substitute": "flat-tangent-normal"
           }
         ]
       }
     ],
     "base": [
       {
-        "name": "M_pedestal+1_001_03x03_04a_variant_build_specialelectrictower+1_001_01_vat",
+        "name": "M_pedestal+1_001_03x03_04a_build_specialelectrictower+1_001_01_vat",
         "shaderNameRecovered": false,
         "glassEnabled": false,
         "liquidEnabled": false,
         "emissiveLutEnabled": false,
-        "missingTextureReferences": []
+        "missingTextureReferences": [],
+        "semanticDefaultTextures": []
       }
     ]
   },
@@ -143,7 +158,7 @@
     {
       "vatRow": 66,
       "vatPhysicalRow": 127,
-      "durationMs": 30,
+      "durationMs": 33,
       "sourceSpan": {
         "startIndex": 0,
         "endIndexInclusive": 0,
@@ -152,13 +167,18 @@
           "start": 66,
           "endInclusive": 66,
           "step": 1
+        },
+        "vatPhysicalRows": {
+          "start": 127,
+          "endInclusive": 127,
+          "step": -1
         }
       }
     },
     {
       "vatRow": 67,
       "vatPhysicalRow": 126,
-      "durationMs": 40,
+      "durationMs": 34,
       "sourceSpan": {
         "startIndex": 1,
         "endIndexInclusive": 1,
@@ -167,51 +187,98 @@
           "start": 67,
           "endInclusive": 67,
           "step": 1
+        },
+        "vatPhysicalRows": {
+          "start": 126,
+          "endInclusive": 126,
+          "step": -1
         }
       }
     }
   ],
-  "sourcePackName": "A_pump+1_001_01_variant_dynamic_lod0",
+  "sourceFrameCount": 2,
+  "retainedFrameCount": 2,
   "canvasNormalization": {
     "imageAxes": {
       "x": "+sourceX",
       "y": "+sourceZ"
     },
-    "operation": "flip-top-bottom",
+    "operation": "none",
     "resized": false
   },
   "postProcessCrop": {
     "rectPixels": [
-      0,
-      0,
-      384,
-      384
+      128,
+      128,
+      768,
+      512
     ],
     "resultFramePixels": [
-      384,
+      640,
       384
     ],
     "pixelsPerCell": 128,
-    "resized": false
+    "resized": false,
+    "edgeOverflowPolicy": {
+      "mode": "subtract-before-whole-cell-ceiling",
+      "maxPixelsPerSide": 2,
+      "inclusive": true,
+      "sourceAlphaUnionBoundsPixels": [
+        151,
+        134,
+        770,
+        506
+      ],
+      "sourceFootprintRectPixels": [
+        384,
+        128,
+        768,
+        512
+      ],
+      "rawOverflowPixels": {
+        "left": 233,
+        "top": 0,
+        "right": 2,
+        "bottom": 0
+      },
+      "effectiveOverflowPixels": {
+        "left": 231,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "ignoredByFinalCropPixels": {
+        "left": 0,
+        "top": 0,
+        "right": 2,
+        "bottom": 0
+      },
+      "minimumCanvasConstraint": null,
+      "evaluatedOn": "source PNG union alpha before WebP encoding"
+    }
   },
-  "sourceFrameCount": 2,
-  "retainedFrameCount": 2,
-  "frameDeduplication": {
-    "method": "consecutive-visible-rgba-byte-equality",
-    "transparentRgbIgnored": true,
-    "sourceFrameCount": 2,
-    "retainedFrameCount": 2,
-    "removedFrameCount": 0,
-    "sourceDurationMs": 70,
-    "retainedDurationMs": 70,
-    "explicitClosureFramesPreserved": 0
-  },
-  "spritesheetMetadata": "spritesheet.json",
   "spatialMetadata": "../../spatial.json",
+  "spritesheetMetadata": "spritesheet.json",
   "playback": {
-    "mode": "loop",
+    "mode": "hold-final",
     "frameCount": 2,
     "playbackFrameCount": 2,
-    "durationMs": 70
+    "durationMs": 67
+  },
+  "frameDeduplication": {
+    "method": "consecutive-visible-rgba-byte-equality",
+    "sourceFrameCount": 2,
+    "retainedFrameCount": 2,
+    "sourceDurationMs": 67,
+    "retainedDurationMs": 67
+  },
+  "orientationAudit": {
+    "status": "passed",
+    "imageAxes": {
+      "x": "+sourceX",
+      "y": "+sourceZ"
+    },
+    "cameraPreflightStatus": "passed",
+    "expectedIntakeExtension": "left of the centered 3x3 logical footprint"
   }
 }

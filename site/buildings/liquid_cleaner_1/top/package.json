@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "taskId": "20260911-building-port-delivery",
+  "taskId": "20260913-endpoint-port-regeneration",
   "version": "v1.5",
   "building": "liquid_cleaner_1",
   "tableBuildingId": "liquid_cleaner_1",

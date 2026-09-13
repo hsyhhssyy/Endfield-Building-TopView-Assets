@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "building": "vaporizer_1",
   "displayName": "气体散布机",
-  "taskId": "20260913-single-device-pages-all",
+  "taskId": "20260913-endpoint-port-regeneration",
   "defaultVariant": "top",
   "variants": [
     {
@@ -12,10 +12,8 @@
       "root": "top/",
       "package": "top/package.json",
       "sequence": "top/sequence.json",
-      "spatial": "top/spatial.json",
-      "sheetSizes": "top/sheet-sizes.json"
+      "spatial": "top/spatial.json"
     }
   ],
-  "releaseId": "v1.5-20260913-024801-cst",
   "integrity": "integrity.json"
 }

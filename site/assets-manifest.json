@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "releaseId": "v1.5-20260913-024801-cst",
+  "releaseId": "v1.5-20260913-120848-cst",
   "sourceVersion": "v1.5",
-  "generatedAt": "2026-09-12T18:48:01Z",
+  "generatedAt": "2026-09-13T04:08:48Z",
   "buildingCount": 46,
   "buildings": [
     {
@@ -17,7 +17,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "1ad89ffdf9bae0eda7926618e05f0f6cbc0fdda13837d30a67bb878569ec7ca8",
+      "contentHash": "be34e8378a3ad3c879a3db3712c047d678894e640288fe9e7336dab31d4a67f3",
       "integrity": "buildings/unloader_1/integrity.json",
       "copiedFiles": 20
     },
@@ -33,7 +33,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "bbcf78ef8b4cbb0b34aa5511d97f108cca4c1a38f9014d7ac4b19b077c6b6215",
+      "contentHash": "ce5340cf6882be119e6304e9b6d9f9a9368e0b2a7b4a99f2d9577a0bf00ec5b2",
       "integrity": "buildings/loader_1/integrity.json",
       "copiedFiles": 20
     },
@@ -49,7 +49,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "4223b1389766f41dc9a597182f082ef5e64634045e7011166fbb67a6245a6d11",
+      "contentHash": "979ddb96745906c1980aa2c97a142bb9ef6c17864b3b3f50c55d3566c093f34f",
       "integrity": "buildings/power_diffuser_1/integrity.json",
       "copiedFiles": 29
     },
@@ -65,9 +65,9 @@
           "label": "气体模式"
         }
       ],
-      "contentHash": "ed38bba1182fc5c5557ef4ce3510558789fdf25e1c996ca69ee80f6fc4fa320b",
+      "contentHash": "84ac980d2ffb2581fa7aff26e38fb5165ffd6e356b2fc4db4603879a07bc2bd6",
       "integrity": "buildings/gas_storager_1/integrity.json",
-      "copiedFiles": 20
+      "copiedFiles": 35
     },
     {
       "id": "liquid_storager_1",
@@ -81,9 +81,9 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "7127c7daeb719991e7557683bf0630754f90df19bcbe982b1f17418e54c24a6e",
+      "contentHash": "6636fd5d84b06acea615c06620c2e381a8a509becc0fd9ffef973710c20e1cc0",
       "integrity": "buildings/liquid_storager_1/integrity.json",
-      "copiedFiles": 31
+      "copiedFiles": 46
     },
     {
       "id": "log_splitter",
@@ -97,7 +97,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "e891aa4a2ce82c3be636f69fbf7fd531dfa1022030cb7ae6489169ea9214f40b",
+      "contentHash": "7aafead689784f431460e128ceb554a8782c59eaabfe853ae1b0c4052a88721e",
       "integrity": "buildings/log_splitter/integrity.json",
       "copiedFiles": 20
     },
@@ -113,7 +113,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "b3cdfe64fde1508c684df5258bcd6061f6062dc76666f1ae22623bc9afaa601b",
+      "contentHash": "9ef4fb26bb1c55ef2b350de029907fd43b95b2689dbb1b2d5407b5f161e53a0d",
       "integrity": "buildings/storager_1/integrity.json",
       "copiedFiles": 20
     },
@@ -129,7 +129,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "eeaf0a2c29108d16c3b0d03a29846aa94bd3a6e7755602c179809e81a13ccdd5",
+      "contentHash": "39d1d8acfaac6b7ab2ec97f5e1c45aafe725a1660e34e74fcdf344990d0863b9",
       "integrity": "buildings/sp_hub_1/integrity.json",
       "copiedFiles": 207
     },
@@ -145,7 +145,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "890e18d971c35562c72be680e95f812ee29ba2aceb99460578c2cd8f36ae876e",
+      "contentHash": "8ec59c371e2f1aa30fcc533654bbf843023315871a945135e23ddbebe0cde3bb",
       "integrity": "buildings/mix_pool_1/integrity.json",
       "copiedFiles": 78
     },
@@ -166,7 +166,7 @@
           "label": "固体转化模式"
         }
       ],
-      "contentHash": "f9d0f64977833c671372bdab4c30192668f6fcfec15bcb760bd51db50d4ba85b",
+      "contentHash": "f41775be3889d1065ec1c3b7469f8d4518cf52beeef5f95a8fb2e4e23b968a6a",
       "integrity": "buildings/transmuter_2/integrity.json",
       "copiedFiles": 93
     },
@@ -182,7 +182,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "3f2474bb9be0f2db9aa3a9fa2e14f588d8382d091eccac46d46e35fa29e66994",
+      "contentHash": "8decae1d92b0e33d4b078d75e3682ce4ec72351165ca9df0b82028de98e06418",
       "integrity": "buildings/shaper_1/integrity.json",
       "copiedFiles": 32
     },
@@ -198,7 +198,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "deee1b4f90cec6edf2a8e6b8382aff303c6dcabd88966a0aca1ca342dcc9c29b",
+      "contentHash": "948ce230e8ea7948f01db3958727e32a46485ad045cdd01534f98b94949ae71b",
       "integrity": "buildings/udpipe_loader_2/integrity.json",
       "copiedFiles": 30
     },
@@ -214,7 +214,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "e943bf10e0c1fa960004a5cebd7e4d2f38e7ad0ed019363610db9f6fe8efc5a3",
+      "contentHash": "3f1b7cff00d7c6aa252cdc4f094549ab938019e35536da76a32fabcf98db9509",
       "integrity": "buildings/udpipe_unloader_2/integrity.json",
       "copiedFiles": 30
     },
@@ -235,7 +235,7 @@
           "label": "气液模式"
         }
       ],
-      "contentHash": "40efd5680673dd78f54e495ee9e248a42d93f29db46847c255a4f5063c85484a",
+      "contentHash": "1e3610b70553e566c9b01cfd268f9c4991ad4b030ac8f1d47aa1a9176872edc3",
       "integrity": "buildings/xiranite_oven_1/integrity.json",
       "copiedFiles": 109
     },
@@ -251,7 +251,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "b05c503887db82711f0771ab833681afa8c9dbb0fb903ca1171fd32f6101c8f1",
+      "contentHash": "bac52148a800c4a2d186f8764c2cb931e6911631a6d4c700922a18c0670f7641",
       "integrity": "buildings/log_hongs_bus/integrity.json",
       "copiedFiles": 20
     },
@@ -267,7 +267,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "8604189d60c87b8dc35f8cd6338cfc53c7c10232f57cd93529d12292dc07da61",
+      "contentHash": "58dd24cd158ca1033da97b1207274a11cde625d3e9fe78eb5ca0859068f401ab",
       "integrity": "buildings/log_hongs_bus_source/integrity.json",
       "copiedFiles": 20
     },
@@ -283,7 +283,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "85800234b31a82abf51c711e1aeb018bb89c7f9eabfe9bf9ee7c6bd029722029",
+      "contentHash": "c9d67019d52945067c873849d006a62e5edd7ebe0336fc4a6ec57abe6b13f911",
       "integrity": "buildings/tools_assebling_mc_1/integrity.json",
       "copiedFiles": 32
     },
@@ -299,9 +299,9 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "1e2c988aec2dc79c695b9cbd1c4225e5c8bf6601bde78d727a30050d3d483956",
+      "contentHash": "516f488b9fa5594b2e88a0f6956b841c18404cec01128ef9b11c9d42dfc13e81",
       "integrity": "buildings/liquid_cleaner_1/integrity.json",
-      "copiedFiles": 29
+      "copiedFiles": 36
     },
     {
       "id": "mix_pool_2",
@@ -315,7 +315,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "32b3e76729c771c0febd7101455663b13efb6c8e7ad02bbcffa2848b4daa9a89",
+      "contentHash": "92366e610ed6ce3051e834abd58f4434548ff56441a9465d4c5b0b2aba101bba",
       "integrity": "buildings/mix_pool_2/integrity.json",
       "copiedFiles": 91
     },
@@ -331,7 +331,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "9c0184e24bed939e958a3d674ae4ca484790cea02de57c763a9facca768d4405",
+      "contentHash": "29bda3add6ab28efb1020fd423e0fa79f3d66253067cafb3b8dd3bb10b2eb47c",
       "integrity": "buildings/dismantler_1/integrity.json",
       "copiedFiles": 36
     },
@@ -352,7 +352,7 @@
           "label": "气体模式"
         }
       ],
-      "contentHash": "c6a7d09ee7fe310787bfab610e68834eb572e8e297d516ff508a59e2f29110db",
+      "contentHash": "914c1f92459e6ab4367909d7415a95d04a43cb81940bd6e9945ea98216ef1226",
       "integrity": "buildings/liquid_purifier_1/integrity.json",
       "copiedFiles": 115
     },
@@ -368,7 +368,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "88a656d9af8c390ab8dae1e1839116a4934112f9d5c9cc084ce80ffce55cbd16",
+      "contentHash": "404c8927f2c4082f1cf1b50cba6e41c89d109bdd98ed0d54fc18e07f4a004ecb",
       "integrity": "buildings/udpipe_loader_1/integrity.json",
       "copiedFiles": 29
     },
@@ -384,7 +384,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "1343e648d24dd5adb64f8cc0bcf4dcdf35099e9ef2eac8d45f78b3eb0cfb64da",
+      "contentHash": "4a948e6dce286e5f0cbe91ede18685e11c3724862d7be63c08bb312ff69705f1",
       "integrity": "buildings/udpipe_unloader_1/integrity.json",
       "copiedFiles": 29
     },
@@ -400,7 +400,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "599feaf0dc4301ca709a486fd3fb5bb6994f61b93b0bd3200ae8e9a31f799f88",
+      "contentHash": "0a0b85c30d5aca70d3622451796ee782e49afa491c125c72e9c3184a11e0e0df",
       "integrity": "buildings/log_connector/integrity.json",
       "copiedFiles": 20
     },
@@ -416,7 +416,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "935f604a8be359757745a42ef6305df3822aca93aac6238b440f1bda6c8c551b",
+      "contentHash": "f00dfd787590c993007c47bb0f67b84a39c474c831239b3b8395d85375d98a26",
       "integrity": "buildings/sp_sub_hub_1/integrity.json",
       "copiedFiles": 161
     },
@@ -432,7 +432,7 @@
           "label": "气体模式"
         }
       ],
-      "contentHash": "58e20bf5ee749262316bbb7bb80ea63f4eff6f3a3a15db8a43778ee81d0f3ab0",
+      "contentHash": "fb536b55b2cd78d292ed468dae6cb9169f50bc2ec9b472aa2a68a1c28aee1445",
       "integrity": "buildings/gas_reactor_1/integrity.json",
       "copiedFiles": 47
     },
@@ -448,9 +448,9 @@
           "label": "气体模式"
         }
       ],
-      "contentHash": "03a747a9bff291a19cdb288b710a9ca76c943281b6a3d12fbac886275a234195",
+      "contentHash": "d15b2394a07bc1f257b5e3ee737cd67c97dc59e58bd95cfb2ace1e1788b46c83",
       "integrity": "buildings/gas_pump_1/integrity.json",
-      "copiedFiles": 20
+      "copiedFiles": 27
     },
     {
       "id": "vaporizer_1",
@@ -464,9 +464,9 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "38fd87e3ffc4f9719309ecce748a96d4967ce139056b49ca67a634626cefb01c",
+      "contentHash": "0302fc54221122c5fe7616d18c404471475ba58183ab08932ed8b403ba42a418",
       "integrity": "buildings/vaporizer_1/integrity.json",
-      "copiedFiles": 24
+      "copiedFiles": 39
     },
     {
       "id": "pump_1",
@@ -480,9 +480,9 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "adeb106322f4c64934ab833fee00b2a226013c5904ee2e61fe74ba270c513d41",
+      "contentHash": "744ece16c310e149a7ab9e1fc59d39d2358abfa9e758bc873a52842a1d3ce65f",
       "integrity": "buildings/pump_1/integrity.json",
-      "copiedFiles": 29
+      "copiedFiles": 37
     },
     {
       "id": "log_converger",
@@ -496,7 +496,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "17471e2923e59f69a2e9c91b210ef772446b4ee2ea8eb05c57825a5922b56d96",
+      "contentHash": "a0e7c2c4e9dd73a665ee190c263cac571f9991f90081d166cb8972d8f398d267",
       "integrity": "buildings/log_converger/integrity.json",
       "copiedFiles": 20
     },
@@ -512,7 +512,7 @@
           "label": "气体转化/液体转化模式"
         }
       ],
-      "contentHash": "a876b6059ca70fb3b6b7923693cb8ff4c28f1829544f3b461f1a44d129b7ba67",
+      "contentHash": "efd3e985109ba7f1b461c4c43e4b7c68884dfa4d80056bc6c0b1de6c65891698",
       "integrity": "buildings/transmuter_1/integrity.json",
       "copiedFiles": 51
     },
@@ -528,7 +528,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "2a429235e4a9d1c7ce85a466cc6122571879bafd00508c8f6bfc7926db1e024a",
+      "contentHash": "46b1d0e7ed7cc26cba3bee9276fee019dd925d08baeb3199d1d11edc0f4b4fec",
       "integrity": "buildings/filling_powder_mc_1/integrity.json",
       "copiedFiles": 39
     },
@@ -544,7 +544,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "b817615b308ba5ecbea3bb85a818023417fcc1d407a15fa9d7ac51eb46c7af1e",
+      "contentHash": "15ee27b6a1dee242598ff163faf2e461642b79e31632658b95655f5dd3721de8",
       "integrity": "buildings/power_station_1/integrity.json",
       "copiedFiles": 29
     },
@@ -560,7 +560,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "4f5280280b880bcc75e43baabce1c848b72886d5fcf8abb6db2e14bfe4f26081",
+      "contentHash": "c9fd3901c4d5e14e7d603f0827c85425d3c00f9d9d5d0874fd86ca66d7bfab69",
       "integrity": "buildings/log_conditioner/integrity.json",
       "copiedFiles": 20
     },
@@ -576,7 +576,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "2edb0cfdfea1db6e11c3e339c3f87452e749bba7ddfcf289390af77da73abbf9",
+      "contentHash": "619150950727d415e3c3237f7d78325ff18f0b47dd1a3f48b031ec81bea5245a",
       "integrity": "buildings/thickener_1/integrity.json",
       "copiedFiles": 36
     },
@@ -592,7 +592,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "c5fc3cafd932ccf6f8b1c8226fef0c02d3b4aea34ba210c1175c6ad794fe1afd",
+      "contentHash": "144fd68af67c5cb631882db3cd70fdc2a161672a58ecd04283fa8dde49022a57",
       "integrity": "buildings/planter_1/integrity.json",
       "copiedFiles": 39
     },
@@ -608,7 +608,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "fcc6c7a25d09c141765f393a5f698b78aee72ea8946d93d8de1de7451d90359f",
+      "contentHash": "e8b523d8e12b6cd89f11fb37e6fa550095c27a226513ff06dab6e1be23f7385b",
       "integrity": "buildings/pipe_conditioner/integrity.json",
       "copiedFiles": 20
     },
@@ -624,7 +624,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "5805125cb7473694db8cb5c17976bfcfa84827ce73e6c024d02d6f5ec5c95ce9",
+      "contentHash": "f7fcbd2266c8f803b7eca5ecaea1004a6959b7c834e50dc98ff398cf358edb0c",
       "integrity": "buildings/pipe_splitter/integrity.json",
       "copiedFiles": 20
     },
@@ -640,9 +640,9 @@
           "label": "完整物流套件"
         }
       ],
-      "contentHash": "5b2935faa380c0964030482146f3f216601fd56009ec10317e827a97360a4151",
+      "contentHash": "e84dd51e9e18d6ee1ca26d15eb5e7e8244fe1b1d50c822f4f41332d46b90bfc6",
       "integrity": "buildings/logistics/integrity.json",
-      "copiedFiles": 119
+      "copiedFiles": 123
     },
     {
       "id": "pipe_connector",
@@ -656,7 +656,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "6bd15a92f208c8bb9966582b3abe82db7e9a656843f90c535f536d9e5c81828f",
+      "contentHash": "961448741a892b17c5ef1793950947fac1cbcc8b842432ff3ce416b62822cdc4",
       "integrity": "buildings/pipe_connector/integrity.json",
       "copiedFiles": 20
     },
@@ -672,7 +672,7 @@
           "label": "液体模式"
         }
       ],
-      "contentHash": "88aba1f7c8a48025d40e32f8db8d708931521ca33868462c937b5e48d263d204",
+      "contentHash": "00ed6e59250b674d4be82f50fbc3b00b86336fe1591f5a822d17b1643c2a059c",
       "integrity": "buildings/pipe_converger/integrity.json",
       "copiedFiles": 20
     },
@@ -688,7 +688,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "5c72129e804bf1e52c797201d46f4808fbbd910561935ce18898730e9b76a756",
+      "contentHash": "2dfb42a325bb58354ed28b744d15797dca7af2aa687654d3ca529feff70a8a18",
       "integrity": "buildings/grinder_1/integrity.json",
       "copiedFiles": 29
     },
@@ -704,7 +704,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "1be6ce23dc9841364cb5771e4c31c58644b0b86d03848e2c8236b61e0874e632",
+      "contentHash": "39153808f21a24036ee544955d55c6cbccc90cd49660c916861753f19a9d5291",
       "integrity": "buildings/furnance_1/integrity.json",
       "copiedFiles": 29
     },
@@ -720,7 +720,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "3cf5247372fd6e0389e34ab5106e394936418151a81aff5bafe25697b8d5934a",
+      "contentHash": "0d7df088208200bf407dcd418b2738fd7bb54eb71d2aba566b08a33ed6865af2",
       "integrity": "buildings/winder_1/integrity.json",
       "copiedFiles": 31
     },
@@ -736,7 +736,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "411cb70ee2e3aaac2da00deccc91ca1ad584c30e3e8b138a48ca6452e833a44a",
+      "contentHash": "ccfdc8f35cfcf5146562ca1a3f529adb22929ab80946620352980a8768b5076e",
       "integrity": "buildings/component_mc_1/integrity.json",
       "copiedFiles": 23
     },
@@ -752,7 +752,7 @@
           "label": "默认模式"
         }
       ],
-      "contentHash": "59b5fadbb833c8d3b26f6dff53147ab3d38a3af4ba12574305ad9390962d32f9",
+      "contentHash": "fa67c69a7716682898cd6435e67e25928a2a6beb3d88296bd603eb24665c31ae",
       "integrity": "buildings/seedcollector_1/integrity.json",
       "copiedFiles": 40
     }

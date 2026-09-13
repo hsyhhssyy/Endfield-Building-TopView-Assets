@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "building": "logistics",
   "displayName": "管道和传送带",
-  "taskId": "20260912-235853-logistics-consolidate-layout",
+  "taskId": "20260913-114414-logistics-water-gas",
   "defaultVariant": "collection",
   "variants": [
     {
@@ -14,6 +14,5 @@
       "collection": "collection.json"
     }
   ],
-  "releaseId": "v1.5-20260913-024801-cst",
   "integrity": "integrity.json"
 }

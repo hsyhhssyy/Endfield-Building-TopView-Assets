@@ -70,13 +70,15 @@ h1 { margin: 4px 0 6px; font-size: clamp(24px, 4vw, 36px); }
   background-color: #fff;
   background-image: conic-gradient(
     #fff 25%,
-    #30363a 0 50%,
+    #ccc 0 50%,
     #fff 0 75%,
-    #30363a 0
+    #ccc 0
   );
   background-position: 0 0;
-  background-size: 32px 32px;
+  background-size: 16px 16px;
 }
+#pixi-stage[data-background="white"] { background: #fff; }
+#pixi-stage[data-background="black"] { background: #000; }
 #pixi-stage[data-background="grass"] { background: #596749; }
 #pixi-stage canvas { display: block; width: 100%; height: auto; }
 #loading { padding: 24px; }
