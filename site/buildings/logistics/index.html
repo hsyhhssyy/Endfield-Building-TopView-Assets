@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="building-display-name" content="管道和传送带">
-  <meta name="building-task-id" content="20260913-114414-logistics-water-gas">
+  <meta name="building-task-id" content="20260913-170902-logistics-tabs">
   <meta name="building-id" content="logistics">
   <meta name="logistics-kind" content="collection">
   <meta name="logistics-shape" content="all">
@@ -24,34 +24,49 @@
     .card{background:#202c25;border-radius:8px;padding:14px;margin-top:20px}.links{line-height:1.9}
     details{margin:20px 0;padding:12px;background:#202c25;border-radius:8px}#error{color:#ffb69a;white-space:pre-wrap}
     a.download{display:inline-block;padding:8px 12px;background:#284b37;border-radius:5px}#loading{color:#f3d38b}
+    .mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0 12px}
+    .mode-tab{text-align:left;padding:18px 22px;border:2px solid #526959;border-radius:10px;cursor:pointer}
+    .mode-tab strong{display:block;font-size:21px;margin-bottom:5px}.mode-tab span{font-size:13px;color:#b5c4bc}
+    .mode-tab[aria-selected="true"]{background:#a8e6c3;border-color:#c5ffdf;color:#10291c;box-shadow:0 0 0 2px #a8e6c326}
+    .mode-tab[aria-selected="true"] span{color:#315940}.mode-tab:hover{border-color:#a8e6c3}
+    button:focus-visible,a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+    #mode-description{margin:8px 0 16px}#preview-heading{color:#c5ffdf}
+    @media(max-width:600px){body{padding:0 12px;margin:18px auto}.mode-tab{padding:14px 12px}.mode-tab strong{font-size:18px}}
   </style>
 </head>
 <body>
   <nav><a href="../../">返回总索引</a><span class="muted">v1.5 · materialContractVersion 2 · PixiJS</span></nav>
   <h1>管道和传送带</h1>
-  <p class="subtle">物流素材集合 · 视图：top · renderer：pixi-logistics-material-v2</p>
-  <p>管道、端点接头、支架与传送带共用一个预览。各元素按实际资源 ID 收纳在 logistics 子目录中，并继续使用 material contract v2。</p>
-  <div class="downloads" hidden></div>
+  <p>选择下方模式查看效果。切换时保留流体、布局和播放进度，方便对照。</p>
+  <div class="mode-tabs" role="tablist" aria-label="预览方式">
+    <button class="mode-tab" id="tab-draw" type="button" role="tab" aria-selected="true" aria-controls="preview-panel" data-playback="draw"><strong>实时绘制</strong><span>原始效果 · 作为视觉参考</span></button>
+    <button class="mode-tab" id="tab-baked" type="button" role="tab" aria-selected="false" aria-controls="preview-panel" tabindex="-1" data-playback="baked"><strong>烘焙播放</strong><span>烘焙素材 · 查看实际播放效果</span></button>
+  </div>
+  <p id="mode-description">实时计算流体与传送带动画，查看完整参考效果。</p>
+  <div class="downloads"><a class="download" href="logistics-files.json" download>物流文件清单 JSON</a><a class="download" href="collection.json" download>集合与组件 JSON</a><a class="download" data-playback-only="baked" hidden href="logistics-baked.json" download>使用方法与流体颜色 JSON</a></div>
 
-  <section class="card">
-    <h2>实时预览</h2>
-    <fieldset>
+  <section class="card" id="preview-panel" role="tabpanel" aria-labelledby="tab-draw" tabindex="0">
+    <h2 id="preview-heading">管道与传送带(绘制)</h2>
+    <fieldset id="preview-controls" aria-label="预览选项">
       <label id="family-control">类型 <select id="family"><option value="pipe">管道</option><option value="conveyor">传送带</option></select></label>
       <label id="layout-control">布局 <select id="layout"><option value="snake">蛇形路线</option><option value="long">直线路线</option></select></label>
-      <label id="animate-control"><input type="checkbox" id="animate">启用动态材质</label>
+      <label id="animate-control"><input type="checkbox" id="animate"><span id="animate-label">启用动画</span></label>
       <button id="pause" type="button" disabled>播放</button>
+      <button id="restart" type="button" disabled>重新播放</button>
       <label id="fluid-control">流体 <select id="fluid"><option value="none">无</option><option value="item_gas_xiranite">息壤气</option><option value="item_liquid_water" selected>清水</option></select></label>
+      <label id="no-wait-control"><input type="checkbox" id="no-wait">不等待排空</label>
       <label id="spacing-control">支架间距 <select id="spacing"><option value="4">4</option><option value="6" selected>6</option><option value="8">8</option></select></label>
+      <label>放大 <select id="zoom"><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option></select></label>
     </fieldset>
     <div id="loading">正在加载本地 PixiJS 资源…</div><div id="error"></div>
     <div class="stage" id="stage"></div><div id="status" class="status" aria-live="polite"></div>
-    <p class="subtle" id="fluid-note">启用动态材质可观察水头推进与停供排空。每 0.5 秒前进一格。</p>
+    <p class="subtle" id="fluid-note">水头每 0.5 秒前进一格；停供后整管约 2 秒变细排空。勾选“不等待排空”会在变细到一半时恢复供应，直接变粗；完全排空后再供应才出现新水头。</p>
     <div class="fps-grid"><span>素材帧率</span><strong id="source-fps">N/A（程序化材质）</strong><span>实时渲染帧率</span><strong id="render-fps">-- FPS</strong></div>
   </section>
 
-  <details><summary>资源与材质契约</summary><div class="links"><strong>传送带直段</strong>：<a href="grid_belt_01_mid/top/static/manifest.json">static</a> · <a href="grid_belt_01_mid/top/dynamic/manifest.json">dynamic</a><br><strong>传送带左弯</strong>：<a href="grid_belt_01_left/top/static/manifest.json">static</a> · <a href="grid_belt_01_left/top/dynamic/manifest.json">dynamic</a><br><strong>传送带右弯</strong>：<a href="grid_belt_01_right/top/static/manifest.json">static</a> · <a href="grid_belt_01_right/top/dynamic/manifest.json">dynamic</a><br><strong>管道与可染色流体</strong>：<a href="log_pipe_02_mid/top/static/manifest.json">static</a> · <a href="log_pipe_02_mid/top/dynamic/manifest.json">dynamic</a><br><strong>管道直向支架</strong>：<a href="pipesupport_1_03/top/static/manifest.json">static</a> · <a href="pipesupport_1_03/top/dynamic/manifest.json">dynamic</a><br><strong>管道转角支架</strong>：<a href="pipesupport_1_04/top/static/manifest.json">static</a> · <a href="pipesupport_1_04/top/dynamic/manifest.json">dynamic</a><br><strong>计算规范</strong>：<a href="log_pipe_02_mid/top/dynamic/material-computation.json">material-computation.json</a></div>
-    <p>各组件的 static/manifest.json 和 dynamic/manifest.json 继续使用独立命名空间；页面只负责把它们组合为管道或传送带路线。动态效果由本地 dynamic.js / GLSL shader 计算。</p>
-    <p>清水与息壤气使用解包物品表对应的颜色图集。水头起伏、水花、雾团与消退前缘为二维重建；气体暂共用现有管内几何。供满后停供、排空再供应是本展示页的演示循环。</p>
+  <details><summary>资源与材质契约</summary><p class="subtle">任务：20260913-170902-logistics-tabs · 视图：top · renderer：pixi-logistics-material-v2</p><div class="links"><strong>传送带直段</strong>：<a href="grid_belt_01_mid/top/static/manifest.json">static</a> · <a href="grid_belt_01_mid/top/dynamic/manifest.json">dynamic</a><br><strong>传送带左弯</strong>：<a href="grid_belt_01_left/top/static/manifest.json">static</a> · <a href="grid_belt_01_left/top/dynamic/manifest.json">dynamic</a><br><strong>传送带右弯</strong>：<a href="grid_belt_01_right/top/static/manifest.json">static</a> · <a href="grid_belt_01_right/top/dynamic/manifest.json">dynamic</a><br><strong>管道与可染色流体</strong>：<a href="log_pipe_02_mid/top/static/manifest.json">static</a> · <a href="log_pipe_02_mid/top/dynamic/manifest.json">dynamic</a><br><strong>管道直向支架</strong>：<a href="pipesupport_1_03/top/static/manifest.json">static</a> · <a href="pipesupport_1_03/top/dynamic/manifest.json">dynamic</a><br><strong>管道转角支架</strong>：<a href="pipesupport_1_04/top/static/manifest.json">static</a> · <a href="pipesupport_1_04/top/dynamic/manifest.json">dynamic</a><br><strong>计算规范</strong>：<a href="log_pipe_02_mid/top/dynamic/material-computation.json">material-computation.json</a></div>
+    <p>各组件按实际资源 ID 收纳，使用独立命名空间。绘制模式实时计算材质；烘焙模式使用图集与长幅流体纹理。两种模式共用路线和播放状态，使用方法与流体颜色见 <a href="logistics-baked.json" data-playback-only="baked" hidden>烘焙 JSON</a><span data-playback-only="draw">各组件材质 JSON</span>。</p>
+    <p>清水与息壤气使用解包物品表对应的颜色图集。液体内缩、粗细起伏、白色水头与雾团为二维重建；气体暂共用现有管内几何。整管排空与中途恢复按观察复刻，约 2 秒排空及供水时序为演示参数。</p>
   </details>
   <script type="module" src="preview.js"></script>
 <a href="integrity.json" style="position:fixed;right:12px;bottom:10px;z-index:20;color:#9bc7ff;font:12px sans-serif">SHA-256 索引</a>

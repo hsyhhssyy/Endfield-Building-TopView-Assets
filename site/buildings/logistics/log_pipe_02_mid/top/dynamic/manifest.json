@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "materialContractVersion": 2,
   "gameVersion": "v1.5",
-  "taskId": "20260913-114414-logistics-water-gas",
+  "taskId": "20260913-155015-logistics-baked-flow",
   "building": "log_pipe_02_mid",
   "requiresBaseContract": 2,
   "resources": {
@@ -514,19 +514,22 @@
         "appearance": "2D reconstruction; shared pipe interior, phase-specific shading and moving boundaries"
       }
     },
-    "appearanceRevision": "water-gas-v1",
+    "appearanceRevision": "water-gas-flat-head-v4",
     "evidence": "v1.5 recovered pipe pattern formula; wave shading uses original normal texture with approximate lighting",
-    "fluidStatus": "Source item colors; curved moving water head, textured foam and two-color gas turbulence are 2D reconstructions sharing the existing liquid interior map. Full game shader, gas mesh and SceneColor refraction are not reproduced.",
-    "fillController": "fluid-supply-cycle-v1",
+    "fluidStatus": "Source item colors; inset liquid with subtle continuous radius waves, a planar moving front with a filled white-to-blue cap gradient, whole-route thinning to disappearance and interrupted recovery; soft two-color gas turbulence. Screenshot-guided 2D reconstructions sharing the existing liquid interior map. Full game shader, gas mesh and SceneColor refraction are not reproduced.",
+    "fillController": "fluid-thickness-cycle-v2",
     "fillCellsPerSecond": 2.0,
-    "drainCellsPerSecond": 2.0,
-    "fillEdgeWidth": 0.04,
+    "fillEdgeWidth": 0.012,
     "transportTiming": {
       "table": "FactoryLiquidPipeTable",
       "id": "log_pipe_01",
       "msPerRound": 500,
       "interpretation": "One cell per transport round, continuously interpolated; demonstration fill/drain scheduling is project-defined"
-    }
+    },
+    "drainDuration": 2.0,
+    "refillDuration": 2.0,
+    "holdDuration": 1.0,
+    "emptyDuration": 0.3
   },
   "endpointConnector": {
     "resource": "static/pipe.endpoint.connector",

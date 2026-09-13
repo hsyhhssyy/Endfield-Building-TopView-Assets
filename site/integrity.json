@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "algorithm": "sha256",
-  "releaseId": "v1.5-20260913-120848-cst",
+  "releaseId": "v1.5-20260913-182613-cst",
   "sourceVersion": "v1.5",
-  "generatedAt": "2026-09-13T04:08:48Z",
-  "fileCount": 2147,
-  "totalBytes": 432290683,
-  "contentHash": "8054354e824397c7ddeee414be7d6171aed0d29321ce56f74a61b5ae68832557",
+  "generatedAt": "2026-09-13T10:26:13Z",
+  "fileCount": 2158,
+  "totalBytes": 434507809,
+  "contentHash": "845e6d3a396ea52a3719d5bb9396250c55b361d4c4d83b59466f8581d8eb9dc2",
   "buildings": [
     {
       "id": "unloader_1",
@@ -200,7 +200,7 @@
     },
     {
       "id": "logistics",
-      "contentHash": "e84dd51e9e18d6ee1ca26d15eb5e7e8244fe1b1d50c822f4f41332d46b90bfc6",
+      "contentHash": "f49a8b2151c288e6b156b9941f11c4b5bfd4d6ce8eaa997ba6c1a49002ae1bab",
       "integrity": "buildings/logistics/integrity.json"
     },
     {
@@ -248,17 +248,17 @@
     {
       "path": "assets-manifest.json",
       "bytes": 21689,
-      "sha256": "1ef44e0a8bd67cec5373786d98bb52791cffd848443a042245b0eee4047879a4"
+      "sha256": "de29983aebaad33c3348408801b0c6f5a23581b0afd44d5bdfed6c017cc67a19"
     },
     {
       "path": "index.html",
       "bytes": 8164,
-      "sha256": "30b389650f5262dd5da9bee1bdc55db87310c2ee7a7ba2c46d00f3268280d424"
+      "sha256": "36e50cc21ff496479b283fd0a7620300ca2b29c207ee8b5e005c4a0853480192"
     },
     {
       "path": "release.json",
       "bytes": 669,
-      "sha256": "b26ee45339339d41a068cfdaf51d9a1d168da784c0d35a39af04629ebfa6b9ee"
+      "sha256": "21dfd35eac528d90d0e475cd289344367e5b3c3cde6e1e6b3621698362f5b14c"
     },
     {
       "path": "buildings/component_mc_1/index.html",
@@ -3361,44 +3361,99 @@
       "sha256": "3776220784cbd99bbeda25f5023cfab903df422b4e14b7efa045a6eeb605395e"
     },
     {
+      "path": "buildings/logistics/baked-flow.js",
+      "bytes": 5855,
+      "sha256": "42abb3c2117ae8cdd96a93de30fb932a9fd6178c4188359db746fe6adb10ccda"
+    },
+    {
+      "path": "buildings/logistics/baked.html",
+      "bytes": 408,
+      "sha256": "1730c32e5befe04f7e43dbc77e687b5fba2c2b2bccfc5441d99824c1daeca0a3"
+    },
+    {
+      "path": "buildings/logistics/baked.js",
+      "bytes": 7679,
+      "sha256": "8fb42795f0146163cc055924d1ea4a7738f8e224dd6f4cce78254205fffff5c6"
+    },
+    {
       "path": "buildings/logistics/collection.json",
-      "bytes": 3031,
-      "sha256": "94d95941cc85a8e5956b6fabe5a572ae23778a405cdbe83062f9a686d2406e4e"
+      "bytes": 3126,
+      "sha256": "7f83850cebcd3a9e5131b673f11ec22a61dce59fe241cadb3c28e10144d6615e"
     },
     {
       "path": "buildings/logistics/dynamic.js",
-      "bytes": 9514,
-      "sha256": "9e1d8ab3a1a734f43058b1ff1de40b424d68e9f65e132011085a1347532adc7a"
+      "bytes": 14018,
+      "sha256": "3d3468890288da7c980d19d5dc1b2b514d2edcebebe9b9100d356820d749db1d"
+    },
+    {
+      "path": "buildings/logistics/fluid-cycle.js",
+      "bytes": 2078,
+      "sha256": "9c115fccbae394dc7b57abda8f6a4fc0d542d18c7462dbf5173fc84322c16966"
     },
     {
       "path": "buildings/logistics/index.html",
-      "bytes": 5869,
-      "sha256": "196d3e173b0aa6ed5b99892d7100e07ec0c2857b6fcb350307d0ba0dabb1b4f3"
+      "bytes": 8362,
+      "sha256": "0c90f00e066347e7c861f06e495801d95430a88cab64921cc12766146757f9c7"
     },
     {
       "path": "buildings/logistics/integrity.json",
-      "bytes": 23536,
-      "sha256": "12ff83e04ca356eae145a020ae1a2432328179eb92a37ad92993e04d42a1b02a"
+      "bytes": 25276,
+      "sha256": "7a690ecc9121d5670a275b99750ac161fd8ccabcddddd7a13437026d0297c562"
+    },
+    {
+      "path": "buildings/logistics/logistics-baked.json",
+      "bytes": 502191,
+      "sha256": "075080c1a505eb10aa51284290da35b43b598e4d333892a06e9ec666d3a34826"
+    },
+    {
+      "path": "buildings/logistics/logistics-files.json",
+      "bytes": 8602,
+      "sha256": "0c8a69b5909f781deaea8302955efbbc182e4034473e104fb552b2b9154d100b"
     },
     {
       "path": "buildings/logistics/package.json",
-      "bytes": 517,
-      "sha256": "1da0f85937c1fd1340a6659feaf1d67b31168df24a6db38115c484f3883e199a"
+      "bytes": 891,
+      "sha256": "90086687584936340dc4502c56289e17c139ec0d0de783906c38f21540e06f40"
     },
     {
       "path": "buildings/logistics/preview.js",
-      "bytes": 15678,
-      "sha256": "84495a8d281a42654236e80b9fe71c07bbe344977bc8d33756d5980473eff66d"
+      "bytes": 22327,
+      "sha256": "2afaf873188ade1703d0275fefd87e2985ec4355ec052fe38a0b8afd42ef4361"
     },
     {
       "path": "buildings/logistics/variants.json",
-      "bytes": 443,
-      "sha256": "dccda8436a67d9ff81edb3c752596da12c65ff83ccdf54b2823a2b1a756170f1"
+      "bytes": 438,
+      "sha256": "055c5966d58dfb38298ce5bf22f9324be0009872f6dc7822dbebb9e1d67b1706"
+    },
+    {
+      "path": "buildings/logistics/baked/conveyor-0.webp",
+      "bytes": 722550,
+      "sha256": "fb558a6ffe7e477479624d132d49019fe76bf13a36d56d1d5c9aa3d0895e6872"
+    },
+    {
+      "path": "buildings/logistics/baked/fluid-data.webp",
+      "bytes": 510800,
+      "sha256": "e0ed3f7bc0c98c384ae4645404bc97217e86866dfbc4dc41bbf0d1b1fce199a7"
+    },
+    {
+      "path": "buildings/logistics/baked/gas-field.webp",
+      "bytes": 151416,
+      "sha256": "bdeb2b38c3637a1deb833587c59268eff720416d3af1d66e24a7f3f795c96dfe"
+    },
+    {
+      "path": "buildings/logistics/baked/pipe-marks-0.webp",
+      "bytes": 76974,
+      "sha256": "7dc86a06a154f7547013dbe9c8b1e349ae37ff1917862eefc9ba7dac6bd9cea1"
+    },
+    {
+      "path": "buildings/logistics/baked/static-0.webp",
+      "bytes": 141508,
+      "sha256": "cb3b76b08f6d865a82e7ade42ea06f12265770971ffde4e5e9358eea1f81c8c8"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/package.json",
-      "bytes": 725,
-      "sha256": "f2fb645c5f407714b308d92d2372fe4534d5c1c2777ff8084097213868961a8d"
+      "bytes": 720,
+      "sha256": "15804c9e2d5787fb077861ae5ef72420b4e52f797888cbfc2281aa44940c87c6"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/dynamic/conveyor-arrow.webp",
@@ -3427,8 +3482,8 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/dynamic/material-computation.json",
-      "bytes": 24997,
-      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
+      "bytes": 30874,
+      "sha256": "1a615d470ab94e9be3bcd2c3ca77786fdad6231537a5cc81e97d46a4f7de19b2"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/static/conveyor-left-arrow-static.webp",
@@ -3467,13 +3522,13 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/static/material-computation.json",
-      "bytes": 24996,
-      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
+      "bytes": 30873,
+      "sha256": "a22eac2754533266b28c5539f04fe7bfb0bab9d4565fe5d6d38c494d5f25e5b0"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/package.json",
-      "bytes": 728,
-      "sha256": "c6bd5b665abc415539f7a59c6731b79c43f566c1e0f093cd5d7e4ba0fda546a0"
+      "bytes": 723,
+      "sha256": "ba81c1173b4763f2def6d5516b728d6fa44543615c9a80c8d67cafe81703819b"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/dynamic/conveyor-arrow.webp",
@@ -3502,8 +3557,8 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/dynamic/material-computation.json",
-      "bytes": 24997,
-      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
+      "bytes": 30874,
+      "sha256": "1a615d470ab94e9be3bcd2c3ca77786fdad6231537a5cc81e97d46a4f7de19b2"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/static/conveyor-straight-arrow-static.webp",
@@ -3542,13 +3597,13 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/static/material-computation.json",
-      "bytes": 24996,
-      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
+      "bytes": 30873,
+      "sha256": "a22eac2754533266b28c5539f04fe7bfb0bab9d4565fe5d6d38c494d5f25e5b0"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/package.json",
-      "bytes": 727,
-      "sha256": "8d9461dbf5c7d4a6315a950095b4f763a5745570ebb47666ce99270f147dbe4d"
+      "bytes": 722,
+      "sha256": "70d766cecb12e0eab0389f7da48ba0e9bc4da84b8892e72a29cd8f6bd7c09537"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/dynamic/conveyor-arrow.webp",
@@ -3577,8 +3632,8 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/dynamic/material-computation.json",
-      "bytes": 24997,
-      "sha256": "b0121349e65ed72c10a6cf0e25481d5c50d6e1871413dacf975f6fc13d47d3ff"
+      "bytes": 30874,
+      "sha256": "1a615d470ab94e9be3bcd2c3ca77786fdad6231537a5cc81e97d46a4f7de19b2"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/static/conveyor-right-arrow-static.webp",
@@ -3617,23 +3672,23 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/static/material-computation.json",
-      "bytes": 24996,
-      "sha256": "bebb263f1cc3f54c183ef8b812938fe4394804b7478c57487b57b17f10436e4a"
+      "bytes": 30873,
+      "sha256": "a22eac2754533266b28c5539f04fe7bfb0bab9d4565fe5d6d38c494d5f25e5b0"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/package.json",
-      "bytes": 736,
-      "sha256": "66ba43f5c88e6b97bc6bb7e85561aa27f9ea47a4f182d713d72c23e9caa88324"
+      "bytes": 731,
+      "sha256": "616cb3a39c3d8aebe52e3eea81833d3aabd927bafabca3bc7c7d3a8b28ba8ba6"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/manifest.json",
-      "bytes": 16453,
-      "sha256": "84e6cb8049a4e73db956d6ece5d445cc2fdc4008d6281b7fa03674080972c9c4"
+      "bytes": 16694,
+      "sha256": "00240a198fb61b7b7eb461611d8daa80f156ee1da2c17983d37ef30e48233058"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/material-computation.json",
-      "bytes": 30380,
-      "sha256": "8d201e6fbe1412a503e30ecf353d0748ca397da9be85abc861cc0cc54eca0c43"
+      "bytes": 36497,
+      "sha256": "0922c9e9310f8a00b69c844432d8c95af88ebad1ae9fa31afc678996ffd9636e"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/pipe-chevron.webp",
@@ -3722,8 +3777,8 @@
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/material-computation.json",
-      "bytes": 30379,
-      "sha256": "0b01707e78d942198c585466117c3ce5a2dac559d2f716e5a06fa5b08bab7617"
+      "bytes": 36496,
+      "sha256": "206a430e7682dc9b302c4646a307154e5a2108dcaf44aa92a0a1b411ac76c227"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-chevron.webp",
@@ -3912,8 +3967,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/package.json",
-      "bytes": 733,
-      "sha256": "b81b9f670fc05fdaa07a0522a1f59ea64d4f4d35fad44f19cc4d547389bb00b1"
+      "bytes": 728,
+      "sha256": "dc4b1c2e913364e0d0fa1d8056c8d9deacfdc056983aa2e0734ea9dd5208c07a"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/dynamic/manifest.json",
@@ -3922,8 +3977,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/dynamic/material-computation.json",
-      "bytes": 24705,
-      "sha256": "b7598066689652d11291cdade6bed484abf35f187b9f8951858fcdd4eeacb6d6"
+      "bytes": 30582,
+      "sha256": "e6c7b1f7ae093a03d6ecbc4b30ca5938997d420ef01eb5982fc134456c366030"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/static/manifest.json",
@@ -3932,8 +3987,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/static/material-computation.json",
-      "bytes": 24704,
-      "sha256": "5ef8f17cea6a4608246452eb3a28cf665ddba6ead972adc1f27217cf4defa1f2"
+      "bytes": 30581,
+      "sha256": "5bc1caf42cc6997216f903911f4f15e18bdb2352be89688511fa47e0f72ebf49"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/static/support-straight.webp",
@@ -3942,8 +3997,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/package.json",
-      "bytes": 731,
-      "sha256": "93c83f0def949281240316ba59ba3a38c3e3e140c91754881dabde472a6de2c0"
+      "bytes": 726,
+      "sha256": "c9dc26c46b2923133fb91b8b03102174b2ff27272708371eb28a81bd3317bae9"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/dynamic/manifest.json",
@@ -3952,8 +4007,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/dynamic/material-computation.json",
-      "bytes": 24705,
-      "sha256": "b7598066689652d11291cdade6bed484abf35f187b9f8951858fcdd4eeacb6d6"
+      "bytes": 30582,
+      "sha256": "e6c7b1f7ae093a03d6ecbc4b30ca5938997d420ef01eb5982fc134456c366030"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/static/manifest.json",
@@ -3962,8 +4017,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/static/material-computation.json",
-      "bytes": 24704,
-      "sha256": "5ef8f17cea6a4608246452eb3a28cf665ddba6ead972adc1f27217cf4defa1f2"
+      "bytes": 30581,
+      "sha256": "5bc1caf42cc6997216f903911f4f15e18bdb2352be89688511fa47e0f72ebf49"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/static/support-corner.webp",

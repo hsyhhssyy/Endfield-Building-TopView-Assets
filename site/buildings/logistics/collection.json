@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "gameVersion": "v1.5",
   "materialContractVersion": 2,
-  "taskId": "20260913-114414-logistics-water-gas",
+  "taskId": "20260913-170902-logistics-tabs",
   "entries": {
     "conveyor.straight": {
       "id": "grid_belt_01_mid",
@@ -95,5 +95,7 @@
     "支架源中心高度按几何配准；长管支架间距可调，非已恢复的游戏常数。",
     "动态示例实现项目定义的连续路线供液、满管停供与排空循环；这不是已恢复的游戏状态机。",
     "水头、水花与雾团为二维近似；气体共用现有管内几何。暂不支持完整原游戏 Shader 及场景颜色折射。"
-  ]
+  ],
+  "sourceTaskId": "20260913-114414-logistics-water-gas",
+  "bakedManifest": "logistics-baked.json"
 }
