@@ -4,7 +4,7 @@
   "previewRenderer": "pixi-logistics-material-v2",
   "version": "v1.5",
   "gameVersion": "v1.5",
-  "taskId": "20260913-logistics-height-publication",
+  "taskId": "20260914-133000-logistics-fluid-color-release",
   "building": "grid_belt_01_left",
   "displayName": "传送带左弯",
   "view": "top",

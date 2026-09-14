@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "algorithm": "sha256",
-  "releaseId": "v1.5-20260914-093844-cst",
+  "releaseId": "v1.5-20260914-122929-cst",
   "sourceVersion": "v1.5",
-  "generatedAt": "2026-09-14T01:38:44Z",
-  "fileCount": 2473,
-  "totalBytes": 454425177,
-  "contentHash": "63754072467230fc390eb475ecd0d76fab4490996255f26e2fedd8c1fce2ae80",
+  "generatedAt": "2026-09-14T04:29:29Z",
+  "fileCount": 2474,
+  "totalBytes": 454698048,
+  "contentHash": "e1f3223016b8a09cfeb9717dc3face829d2d55f8b0e173f0354fc5d5e76b4229",
   "buildings": [
     {
       "id": "unloader_1",
@@ -200,7 +200,7 @@
     },
     {
       "id": "logistics",
-      "contentHash": "25c469acc66a02092a06d73f1ccec3a57baff830c23e7815b86af9a2fdd1081d",
+      "contentHash": "b52b7b89bd9b77aa43d8438b7083798143e0280e5b1a98ff8e0e5ad4080c338f",
       "integrity": "buildings/logistics/integrity.json"
     },
     {
@@ -247,18 +247,18 @@
     },
     {
       "path": "assets-manifest.json",
-      "bytes": 24178,
-      "sha256": "cdcc12843b4bb8f4a8375d6e4180e1333a5104fbdde6f8b9b7569282bc6285a3"
+      "bytes": 24284,
+      "sha256": "c48709bc6d911eb43b68e1a12d6a4f1eb6d56ca2cd4a28b823f1e69455e3c0d9"
     },
     {
       "path": "index.html",
       "bytes": 8164,
-      "sha256": "ecd74193bbfb0a3d1025cda6e0cc6a27b3626871ad501024ad4156578bb9a964"
+      "sha256": "c1fbd6ca850a883e3222cef8ceb3ab0fdc5dacb781107d18e1c5451bfe060a0b"
     },
     {
       "path": "release.json",
       "bytes": 706,
-      "sha256": "1de45aed7a189c22e76aec215fc503640c6ae30471255c5db676872c7767bf26"
+      "sha256": "20e33db24543ed39cbe3e1e8542861185b4c48d385c55fb94aae9f7d42b52f46"
     },
     {
       "path": "audio/integrity.json",
@@ -4847,8 +4847,8 @@
     },
     {
       "path": "buildings/logistics/collection.json",
-      "bytes": 3914,
-      "sha256": "9a6322f7e00b60c114cecaef447e681a205893823a156534dc69d71c9f173a48"
+      "bytes": 4983,
+      "sha256": "cb5025af3a1365b55ea915cca54af638588f3c8f0fedff66d462d3dd5368660f"
     },
     {
       "path": "buildings/logistics/dynamic.js",
@@ -4861,24 +4861,29 @@
       "sha256": "9c115fccbae394dc7b57abda8f6a4fc0d542d18c7462dbf5173fc84322c16966"
     },
     {
+      "path": "buildings/logistics/fluid-profiles.json",
+      "bytes": 47326,
+      "sha256": "ca46fb916b6e4e91c869b0b8d4a0ec83070e6276c83f475b668dd6c39f7b95c5"
+    },
+    {
       "path": "buildings/logistics/index.html",
-      "bytes": 10106,
-      "sha256": "08ad3e98ebbfdc670cf31271f198c5f1ebeae3a07f54627f1cab4bf78b77c3c3"
+      "bytes": 10211,
+      "sha256": "aa02eab2130f46bce8c86b0cbe86fff2badf49ddfd378e912507e917c0474795"
     },
     {
       "path": "buildings/logistics/integrity.json",
-      "bytes": 29111,
-      "sha256": "08a945b04598619d82a718ab23bb301c53faf78dccfec800060af0af8be37e76"
+      "bytes": 29272,
+      "sha256": "dc44734f2fe2f7397d567b272c6cf235e178273ddc259262066fd68a5b9d3569"
     },
     {
       "path": "buildings/logistics/logistics-baked.json",
-      "bytes": 502236,
-      "sha256": "3f19f24c4644310641a6bf578ab1055a3d8aae26f6f8e6cda1351a769fcab6d8"
+      "bytes": 545339,
+      "sha256": "1e80d9f65b4f0743da824985961e9d6ff57ef8039ab23664772ecb439102bf1a"
     },
     {
       "path": "buildings/logistics/logistics-files.json",
-      "bytes": 9819,
-      "sha256": "ee5cc0343037d7bac8b4205677e9233327b6ce2f68fa014b708065c7546f6ec2"
+      "bytes": 9935,
+      "sha256": "a1d6c928a0a29119954dd1a4fc109171bc5b1c6ec230bc5c8a850775c2b5ecfa"
     },
     {
       "path": "buildings/logistics/logistics-height.json",
@@ -4887,8 +4892,8 @@
     },
     {
       "path": "buildings/logistics/package.json",
-      "bytes": 943,
-      "sha256": "47f496a18faaf5cab59197f91e77018dc1e3f361e505be23f9711e33b08635d4"
+      "bytes": 1000,
+      "sha256": "e54c597c09b73817964621eb20b388ab87189e501c3dd0535dc0c8a70baf8c8e"
     },
     {
       "path": "buildings/logistics/preview.js",
@@ -4897,8 +4902,8 @@
     },
     {
       "path": "buildings/logistics/variants.json",
-      "bytes": 445,
-      "sha256": "9c7c91d478ff33482666681a2ae990fbac1fd14a8d7bfc881d3fb42998a306b7"
+      "bytes": 453,
+      "sha256": "859ff3d83e29888cdc4ee548dca6e6c920850eb7c9b53ed57f626d0f9fc0a805"
     },
     {
       "path": "buildings/logistics/baked/conveyor-0.webp",
@@ -4927,8 +4932,8 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/package.json",
-      "bytes": 815,
-      "sha256": "844f56e2906e740f6c64a20422e6c4006de96e2d88a6fd2e4b45877014a96cbd"
+      "bytes": 823,
+      "sha256": "e3d3c711d3517045ed5fcd3c5309d8dd206eac54233746efd0797aa37366798d"
     },
     {
       "path": "buildings/logistics/grid_belt_01_left/top/spatial.json",
@@ -5017,8 +5022,8 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/package.json",
-      "bytes": 818,
-      "sha256": "c74af648424fb28da71c0891c54b5af2e5cea33e68eb3143133d157795316833"
+      "bytes": 826,
+      "sha256": "60d51b8e8318223b0b78d8da497565f8956e34dbd082d2017be7b11a8f3e20c2"
     },
     {
       "path": "buildings/logistics/grid_belt_01_mid/top/spatial.json",
@@ -5107,8 +5112,8 @@
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/package.json",
-      "bytes": 817,
-      "sha256": "bc67ac21e75dfdaccb8d0480575c2b18148af0328a82840d11b1af7654b2d237"
+      "bytes": 825,
+      "sha256": "e4b9b1a629e63fb0da94178260e6aef8e90ffbdd608e8ec0aee5b9edbcfceca6"
     },
     {
       "path": "buildings/logistics/grid_belt_01_right/top/spatial.json",
@@ -5197,8 +5202,8 @@
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/package.json",
-      "bytes": 826,
-      "sha256": "bb6754b51dd604ff37f5b4e568c92f1b86d9ccc206c681e0ae2d3af0910e2342"
+      "bytes": 834,
+      "sha256": "362b148362100fc4d2e287713bedb428a5d79b9f171cd9651be7820f4bd12686"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/spatial.json",
@@ -5207,13 +5212,13 @@
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/manifest.json",
-      "bytes": 16694,
-      "sha256": "00240a198fb61b7b7eb461611d8daa80f156ee1da2c17983d37ef30e48233058"
+      "bytes": 62603,
+      "sha256": "d1b8d1c0971a04a0291180f8fe17ff455f788641ea55b52ce22b11979ecd6954"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/material-computation.json",
-      "bytes": 36497,
-      "sha256": "0922c9e9310f8a00b69c844432d8c95af88ebad1ae9fa31afc678996ffd9636e"
+      "bytes": 82406,
+      "sha256": "d1be7b8b46ec355637010ada03c3f8aee08d6e4b6497904b45bd9c0e0b6a6535"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/dynamic/pipe-chevron.webp",
@@ -5317,13 +5322,13 @@
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/manifest.json",
-      "bytes": 29674,
-      "sha256": "a8fa678478945dfba55a1418b695af786d473f51304c240f58b647d974fa7e4f"
+      "bytes": 72719,
+      "sha256": "9486d277090112bf3e31982eafc74ae6643f190622dbb71c4033e2f74213a45b"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/material-computation.json",
-      "bytes": 36496,
-      "sha256": "206a430e7682dc9b302c4646a307154e5a2108dcaf44aa92a0a1b411ac76c227"
+      "bytes": 82405,
+      "sha256": "56b0dd0044eac39beefa9a24f2e0d0a4d983651965369150ad85b67a66e72c65"
     },
     {
       "path": "buildings/logistics/log_pipe_02_mid/top/static/pipe-chevron.webp",
@@ -5512,8 +5517,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/package.json",
-      "bytes": 823,
-      "sha256": "89642636cbd77bd2851e9aa97aec76bc412d80803b5dfa0d5c1173e13bebf68a"
+      "bytes": 831,
+      "sha256": "1572a86b3a9141c01dcc5be8262573db2637f663a43b963696ab273ccd8641fb"
     },
     {
       "path": "buildings/logistics/pipesupport_1_03/top/spatial.json",
@@ -5557,8 +5562,8 @@
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/package.json",
-      "bytes": 821,
-      "sha256": "8f37b2ccbd7ce82f4e7f99f71925296629afed70386d2bebdec1baba7976e399"
+      "bytes": 829,
+      "sha256": "516695a980c7838e4f141124b5f890d4f9a3edbfff7462b9b32b74060366aa65"
     },
     {
       "path": "buildings/logistics/pipesupport_1_04/top/spatial.json",

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "releaseId": "v1.5-20260914-093844-cst",
+  "releaseId": "v1.5-20260914-122929-cst",
   "sourceVersion": "v1.5",
-  "generatedAt": "2026-09-14T01:38:44Z",
+  "generatedAt": "2026-09-14T04:29:29Z",
   "buildingCount": 46,
   "buildings": [
     {
@@ -676,9 +676,11 @@
           "label": "完整物流套件"
         }
       ],
-      "contentHash": "25c469acc66a02092a06d73f1ccec3a57baff830c23e7815b86af9a2fdd1081d",
+      "contentHash": "b52b7b89bd9b77aa43d8438b7083798143e0280e5b1a98ff8e0e5ad4080c338f",
       "integrity": "buildings/logistics/integrity.json",
-      "copiedFiles": 155
+      "copiedFiles": 156,
+      "fluidProfileMetadata": "buildings/logistics/fluid-profiles.json",
+      "fluidProfileCount": 20
     },
     {
       "id": "pipe_connector",

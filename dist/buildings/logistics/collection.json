@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "gameVersion": "v1.5",
   "materialContractVersion": 2,
-  "taskId": "20260913-logistics-height-publication",
+  "taskId": "20260914-133000-logistics-fluid-color-release",
   "entries": {
     "conveyor.straight": {
       "id": "grid_belt_01_mid",
@@ -110,5 +110,44 @@
   ],
   "sourceTaskId": "20260913-114414-logistics-water-gas",
   "bakedManifest": "logistics-baked.json",
-  "heightMetadata": "logistics-height.json"
+  "heightMetadata": "logistics-height.json",
+  "fluidProfileCoverage": {
+    "profile": "endfield-pipe-fluid-colors-v1",
+    "profileCount": 20,
+    "phaseCounts": {
+      "liquid": 11,
+      "gas": 9
+    },
+    "itemIds": [
+      "item_liquid_acid",
+      "item_liquid_plant_grass_1",
+      "item_liquid_sewage",
+      "item_liquid_water",
+      "item_liquid_xiranite",
+      "item_liquid_xiranite_enr",
+      "item_liquid_xiranite_poly",
+      "item_liquid_xiranite_lowpoly",
+      "item_liquid_copper",
+      "item_liquid_copper_enr",
+      "item_liquid_plant_grass_2",
+      "item_gas_acid",
+      "item_activity_copper_poly_gas",
+      "item_gas_water",
+      "item_gas_xiranite",
+      "item_gas_xiranite_enr",
+      "item_gas_copper",
+      "item_gas_copper_enr",
+      "item_gas_copper_enr2",
+      "item_gas_inert"
+    ],
+    "source": {
+      "table": "FactoryItemTable",
+      "sha256": "65c21c3b3bcfb70aaf4850c9c4fd62a9826b38a45b4dddd9ad2c302471711de1",
+      "eligiblePhaseTypes": {
+        "2": "liquid",
+        "4": "gas"
+      }
+    }
+  },
+  "fluidProfileMetadata": "fluid-profiles.json"
 }

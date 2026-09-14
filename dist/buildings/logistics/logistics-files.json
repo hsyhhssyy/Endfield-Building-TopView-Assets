@@ -10,6 +10,7 @@
       "url": "index.html?renderer=draw",
       "groups": [
         "shared",
+        "fluid-metadata",
         "static-materials",
         "draw-materials",
         "height-data"
@@ -20,6 +21,7 @@
       "url": "index.html?renderer=baked",
       "groups": [
         "shared",
+        "fluid-metadata",
         "static-materials",
         "baked-runtime",
         "baked-materials",
@@ -43,6 +45,9 @@
       "variants.json",
       "vendor/PIXI-LICENSE.txt",
       "vendor/pixi.min.js"
+    ],
+    "fluid-metadata": [
+      "fluid-profiles.json"
     ],
     "static-materials": [
       "grid_belt_01_left/top/static/conveyor-left-arrow-static.webp",
