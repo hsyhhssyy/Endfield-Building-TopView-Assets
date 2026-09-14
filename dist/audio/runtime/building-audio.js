@@ -49,8 +49,7 @@ if (metadataLink && !globalThis.__endfieldBuildingAudio) {
       option.textContent = variant.selector || `变体 ${index + 1}`;
       state.variant.append(option);
     });
-    state.variant.hidden = variants.length < 2;
-    state.variant.previousElementSibling.hidden = variants.length < 2;
+    state.variant.closest('[data-audio-variant-row]').hidden = variants.length < 2;
     if (variants.some((variant) => variant.key === previous)) state.variant.value = previous;
   };
 
@@ -132,30 +131,34 @@ if (metadataLink && !globalThis.__endfieldBuildingAudio) {
   const createPanel = (controls) => {
     const style = document.createElement('style');
     style.textContent = `
-      .building-audio-panel { display:grid; gap:8px; padding:12px; border:1px solid rgba(255,255,255,.14); border-radius:10px; background:rgba(10,18,20,.52); }
-      .building-audio-panel h2 { margin:0; font-size:14px; }
-      .building-audio-row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
-      .building-audio-row label { font-size:12px; opacity:.82; }
-      .building-audio-panel button, .building-audio-panel select { min-height:32px; }
       .building-audio-panel input[type="range"] { width:110px; }
-      .building-audio-status { margin:0; min-height:1.2em; font-size:12px; opacity:.72; }
+      .building-audio-status { min-height:1.2em; }
     `;
     document.head.append(style);
 
     const panel = document.createElement('section');
-    panel.className = 'building-audio-panel';
+    panel.id = 'building-audio-panel';
+    panel.className = 'panel building-audio-panel';
     panel.innerHTML = `
       <h2>建筑声音</h2>
-      <div class="building-audio-row">
+      <div class="button-row">
         <button type="button" data-audio-enable>启用声音</button>
-        <label for="building-audio-variant" hidden>事件变体</label>
-        <select id="building-audio-variant" hidden></select>
+      </div>
+      <div class="control-row" data-audio-variant-row hidden>
+        <label for="building-audio-variant">事件变体</label>
+        <select id="building-audio-variant"></select>
+      </div>
+      <div class="control-row">
         <label for="building-audio-volume">音量</label>
         <input id="building-audio-volume" type="range" min="0" max="1" step="0.05" value="0.7">
       </div>
-      <p class="building-audio-status">浏览器要求点击后才能播放声音</p>
+      <p class="subtle building-audio-status">浏览器要求点击后才能播放声音</p>
     `;
-    controls.append(panel);
+    const portsPanel = controls.querySelector('#effects-panel');
+    const metadataPanel = controls.querySelector('#metadata-links')?.closest('.panel');
+    if (portsPanel) portsPanel.insertAdjacentElement('afterend', panel);
+    else if (metadataPanel) controls.insertBefore(panel, metadataPanel);
+    else controls.append(panel);
     state.panel = panel;
     state.status = panel.querySelector('.building-audio-status');
     state.variant = panel.querySelector('#building-audio-variant');

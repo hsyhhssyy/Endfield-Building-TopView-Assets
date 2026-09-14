@@ -1,5 +1,5 @@
 {
-  "contentHash": "41d475fbf13ced45b75dd6fdc1a52c7a50c0df43456090e1932b4808790509fe",
+  "contentHash": "a66c12b8133405622ff9cac5d736d9aba495b9661fbe6ec40f130342430d2ca2",
   "files": [
     {
       "bytes": 3008,
@@ -1462,9 +1462,9 @@
       "sha256": "b2553d5e5f86d859b4ff09780ed8ef1d182c6df1850cc359673bd578f7ca875b"
     },
     {
-      "bytes": 8323,
+      "bytes": 8242,
       "path": "runtime/building-audio.js",
-      "sha256": "a4a969d556062973e5a6f9725ed3016375ad7c8e6628c954dd9fca0689f8b7f7"
+      "sha256": "21193a6ce3dd806b0a16d1e88ba053932776ef6de9dd0bdb01f09187aeb3e114"
     }
   ],
   "profile": "endfield-building-audio-v1",

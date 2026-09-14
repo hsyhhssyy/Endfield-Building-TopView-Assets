@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "algorithm": "sha256",
-  "releaseId": "v1.5-20260913-234811-cst",
+  "releaseId": "v1.5-20260914-093844-cst",
   "sourceVersion": "v1.5",
-  "generatedAt": "2026-09-13T15:48:11Z",
+  "generatedAt": "2026-09-14T01:38:44Z",
   "fileCount": 2473,
-  "totalBytes": 454425258,
-  "contentHash": "0b75c600bad9aea99a3992492747aac1e5432114cfac0fbc97a7db4fdb10cc5e",
+  "totalBytes": 454425177,
+  "contentHash": "63754072467230fc390eb475ecd0d76fab4490996255f26e2fedd8c1fce2ae80",
   "buildings": [
     {
       "id": "unloader_1",
@@ -248,22 +248,22 @@
     {
       "path": "assets-manifest.json",
       "bytes": 24178,
-      "sha256": "0ec5f1c5e2f56a1647017511460950682d40f5c4f2f6408dfbab7f54ae730889"
+      "sha256": "cdcc12843b4bb8f4a8375d6e4180e1333a5104fbdde6f8b9b7569282bc6285a3"
     },
     {
       "path": "index.html",
       "bytes": 8164,
-      "sha256": "078af66514c2797ec2c1abab548f6a87b0f402572a475081aa42cfff356225eb"
+      "sha256": "ecd74193bbfb0a3d1025cda6e0cc6a27b3626871ad501024ad4156578bb9a964"
     },
     {
       "path": "release.json",
       "bytes": 706,
-      "sha256": "fffb71f279a35d80c73decb0e8572801859158eaad5ba156b5f9c6ef2f1c28c9"
+      "sha256": "1de45aed7a189c22e76aec215fc503640c6ae30471255c5db676872c7767bf26"
     },
     {
       "path": "audio/integrity.json",
       "bytes": 49016,
-      "sha256": "908c09091c2a1f7340ed85c34d3b8e63c2ed90edd3d5758f9e709e774000bb89"
+      "sha256": "cee117e332d5975f6076f4df92456de141526489eabc63296508463b611ffed2"
     },
     {
       "path": "audio/manifest.json",
@@ -1727,8 +1727,8 @@
     },
     {
       "path": "audio/runtime/building-audio.js",
-      "bytes": 8323,
-      "sha256": "a4a969d556062973e5a6f9725ed3016375ad7c8e6628c954dd9fca0689f8b7f7"
+      "bytes": 8242,
+      "sha256": "21193a6ce3dd806b0a16d1e88ba053932776ef6de9dd0bdb01f09187aeb3e114"
     },
     {
       "path": "buildings/component_mc_1/index.html",
