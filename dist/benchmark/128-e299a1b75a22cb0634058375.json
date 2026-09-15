@@ -1,0 +1,44 @@
+{
+  "name": "static",
+  "url": "./128-e299a1b75a22cb0634058375.json",
+  "pages": [
+    {
+      "url": "../buildings/gas_pump_1/top/animations/static/spritesheet_000.webp",
+      "width": 384,
+      "height": 384,
+      "originalWidth": 384,
+      "originalHeight": 384,
+      "resolution": 1.0,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "330cab5ff350caa80cb9d65cfa5bc92e58e0aef74a034d5fc9b1561be5055309",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 13686,
+      "sha256": "330cab5ff350caa80cb9d65cfa5bc92e58e0aef74a034d5fc9b1561be5055309"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 384,
+      "durationMs": 30,
+      "physicalRect": [
+        0.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 589824
+}

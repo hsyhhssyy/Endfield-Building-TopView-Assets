@@ -4,7 +4,7 @@
   "previewRenderer": "pixi-logistics-material-v2",
   "version": "v1.5",
   "gameVersion": "v1.5",
-  "taskId": "20260914-133000-logistics-fluid-color-release",
+  "taskId": "20260913-logistics-height-publication",
   "sourceTaskId": "20260913-114414-logistics-water-gas",
   "building": "logistics",
   "displayName": "管道和传送带",
@@ -14,7 +14,6 @@
   "logisticsKind": "collection",
   "logisticsShape": "all",
   "collection": "collection.json",
-  "fluidProfileMetadata": "fluid-profiles.json",
   "heightMetadata": "logistics-height.json",
   "bakedManifest": "logistics-baked.json",
   "previewPages": [
@@ -34,5 +33,15 @@
       "label": "烘焙播放",
       "url": "index.html?renderer=baked"
     }
-  ]
+  ],
+  "fluidProfileMetadata": "fluid-profiles.json",
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
 }

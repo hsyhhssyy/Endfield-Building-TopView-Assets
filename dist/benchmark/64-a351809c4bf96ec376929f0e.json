@@ -1,0 +1,44 @@
+{
+  "name": "bind_pose",
+  "url": "./64-a351809c4bf96ec376929f0e.json",
+  "pages": [
+    {
+      "url": "../64/buildings/unloader_1/top/animations/bind_pose/spritesheet_000.webp",
+      "width": 192,
+      "height": 128,
+      "originalWidth": 384,
+      "originalHeight": 256,
+      "resolution": 0.5,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "ce8597c1e94561ea8859a81354e79e92be131874761b3c71be827572cfeff9b6",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 2354,
+      "sha256": "6c781ea010c78c639b463b93bcdd2525ff4e0922a4dc7b9201207a3b23109329"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 30,
+      "physicalRect": [
+        0.0,
+        0.0,
+        192.0,
+        128.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 98304
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256",
+  "building": "udpipe_loader_1",
+  "fileCount": 29,
+  "totalBytes": 2179602,
+  "contentHash": "7ecdb539b3f004f5bfb3aa3f2f39a5248ca613bd2d4aa4278261cc0ab0c732b3",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 5395,
+      "sha256": "d37aa74c4c881259c0e3d9a2106149b62c440c7ba71f58ebd1356cd17b05b90f"
+    },
+    {
+      "path": "variants.json",
+      "bytes": 881,
+      "sha256": "be88c18d24b7f37512e07b194492b632549a16074c73caf27a65634bec4236f1"
+    },
+    {
+      "path": "preview/grass-background.json",
+      "bytes": 752,
+      "sha256": "8aec7bcd56cbe816fb764d1f8b9d03c467026d89811c45c9017d874daea796d8"
+    },
+    {
+      "path": "preview/grass-base.webp",
+      "bytes": 8874,
+      "sha256": "b21359f3ec429fb0ea15a1be87d33dcf5d3696c34b639353ac3cf80bcb8f142f"
+    },
+    {
+      "path": "preview/pixi-building-preview.js",
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
+    },
+    {
+      "path": "preview/preview-data.js",
+      "bytes": 5142,
+      "sha256": "e36b1263dc5cc85c401d5317bb11f2caa410423d7dda1c54e9158f9fb0c31b48"
+    },
+    {
+      "path": "preview/preview.css",
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
+    },
+    {
+      "path": "preview/vendor/LICENSE.txt",
+      "bytes": 1085,
+      "sha256": "530a014b36db249b1c169a2d698469e1c8c3e35bf48548b00b5031ffdd8a2b93"
+    },
+    {
+      "path": "preview/vendor/pixi.min.js",
+      "bytes": 785850,
+      "sha256": "66a99b6475ce96a46ea7ed841749773eee5ca74ddea1638a34ef115dbb8db768"
+    },
+    {
+      "path": "top/package.json",
+      "bytes": 3360,
+      "sha256": "9972963a9b93cc501222b2b9603465579584592ee4dba1b4dbad18465218410a"
+    },
+    {
+      "path": "top/ports.json",
+      "bytes": 9845,
+      "sha256": "cc0786b1d01411523efec3e33fe1bae4d3d5d781624b2d66a012cbe6181faaad"
+    },
+    {
+      "path": "top/sequence.json",
+      "bytes": 1080,
+      "sha256": "7b62b379eedcf03e163bcb39765c9c1ab670a3cff47fbffa0c8d898c81f85ccf"
+    },
+    {
+      "path": "top/sheet-sizes.json",
+      "bytes": 1277,
+      "sha256": "a15b0611a7e1ddf62063677eb85580d97d6146f279b8a1ff5f5c62704900df03"
+    },
+    {
+      "path": "top/spatial.json",
+      "bytes": 2954,
+      "sha256": "1b5aa1e550f1623ff094d074bae4300050182e30e182d9fdbd64c882fc5a992a"
+    },
+    {
+      "path": "top/animations/emissive_belt/animation.json",
+      "bytes": 29739,
+      "sha256": "04acd76c076518c062ffa7376069ef894e5b03d1b806dcf030b1a864a77998d0"
+    },
+    {
+      "path": "top/animations/emissive_belt/spritesheet.json",
+      "bytes": 56848,
+      "sha256": "1657a6f7d23e61ce5af603585710724736219621608d8c0f6526e172a1d6e78f"
+    },
+    {
+      "path": "top/animations/emissive_belt/spritesheet_000.webp",
+      "bytes": 474440,
+      "sha256": "5a8143b54b1dae5503971587563be92196e58dccaa204081f0d5d2c974dd8b57"
+    },
+    {
+      "path": "top/animations/emissive_belt/spritesheet_001.webp",
+      "bytes": 236554,
+      "sha256": "e78eafb20f70c3c5a275584ee657bac9eb4480b3eeabec9298bbdab6b7620920"
+    },
+    {
+      "path": "top/effects/resources.json",
+      "bytes": 2587,
+      "sha256": "a892e7ebe92763a37e1dc733d8bb5a80e8842796feb52412b11c6d6e0bff11d8"
+    },
+    {
+      "path": "top/effects/P_fxfac_interactive_large_pipeon_in_02/effect.json",
+      "bytes": 43802,
+      "sha256": "c846ec04a7b140bda02933a0e9bb54a1fd28bc4014aa6ff8d3c8a762334a14b4"
+    },
+    {
+      "path": "top/effects/P_fxfac_interactive_large_pipeon_in_02/height.webp",
+      "bytes": 2410,
+      "sha256": "c2d72def6cea75f179a775c9a7bd7863042370cc167eabd69916fa4ee84e5b9a"
+    },
+    {
+      "path": "top/effects/P_fxfac_interactive_large_pipeon_in_02/spritesheet.json",
+      "bytes": 40174,
+      "sha256": "6e9baa651f8bc8399da8e1479c22da47f66e6616b246844078df00df55c676fa"
+    },
+    {
+      "path": "top/effects/P_fxfac_interactive_large_pipeon_in_02/spritesheet_000.webp",
+      "bytes": 110276,
+      "sha256": "7a29da380b258df3b2c4b20f18e6d352320739f30e990c31d7d5b61d49326edf"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_in_01/effect.json",
+      "bytes": 65937,
+      "sha256": "44d82ed65f45c6ed322e5d14e69df4dd486866f889830e07160cf793634fd435"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_in_01/height.webp",
+      "bytes": 1702,
+      "sha256": "7a8b839a34119a6fd804fdf4b8398e5ac9b06188bc5cb6ff153c9cbdbc039c2c"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
+      "bytes": 62240,
+      "sha256": "d8717e39b46d41303248fc10259bb9b810e7b5f17a61d6252d4b171c7cc7f7d3"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
+      "bytes": 176184,
+      "sha256": "bbe4aaab4be0ed1406545937d51a7f4491906e6273e28a77353cbf9c674ebe77"
+    },
+    {
+      "path": "top/occlusion/height_emissive_belt.webp",
+      "bytes": 6232,
+      "sha256": "e4bfe727ebddf5234922b36ad536faf066fe6344d56a12964766a0a136a21787"
+    },
+    {
+      "path": "top/occlusion/occlusion.json",
+      "bytes": 3151,
+      "sha256": "3cd5934c88b86c5a5203ac335eadd8650904ea2dd5962346c8c9eac8ea5515ba"
+    }
+  ]
+}

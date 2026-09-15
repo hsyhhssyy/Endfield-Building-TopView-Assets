@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "taskId": "20260915-pump-light-strip",
+  "label": "底座灯带 · 细条图集",
+  "atlas": "light-atlas.webp",
+  "geometry": "light-mesh.json",
+  "heightMetadata": "../../top/occlusion/occlusion.json",
+  "atlasSize": [
+    516,
+    100
+  ],
+  "states": [
+    {
+      "id": "yellow",
+      "label": "黄色",
+      "color": [
+        255,
+        202,
+        45
+      ],
+      "frame": [
+        2,
+        2,
+        512,
+        16
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.02,
+        0.9922480620155039,
+        0.16
+      ]
+    },
+    {
+      "id": "red",
+      "label": "红色",
+      "color": [
+        255,
+        69,
+        52
+      ],
+      "frame": [
+        2,
+        22,
+        512,
+        16
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.22,
+        0.9922480620155039,
+        0.16
+      ]
+    },
+    {
+      "id": "green",
+      "label": "绿色",
+      "color": [
+        65,
+        235,
+        126
+      ],
+      "frame": [
+        2,
+        42,
+        512,
+        16
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.42,
+        0.9922480620155039,
+        0.16
+      ]
+    },
+    {
+      "id": "cyan",
+      "label": "蓝色",
+      "color": [
+        53,
+        185,
+        255
+      ],
+      "frame": [
+        2,
+        62,
+        512,
+        16
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.62,
+        0.9922480620155039,
+        0.16
+      ]
+    },
+    {
+      "id": "white",
+      "label": "白色",
+      "color": [
+        244,
+        247,
+        255
+      ],
+      "frame": [
+        2,
+        82,
+        512,
+        16
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.82,
+        0.9922480620155039,
+        0.16
+      ]
+    }
+  ],
+  "defaultState": "yellow",
+  "atlasLayout": "five horizontal strips stacked vertically; yellow/red/green/blue/white",
+  "stripSize": [
+    512,
+    16
+  ],
+  "atlasGpuRGBA8Bytes": 206400,
+  "uvPreparation": "offline source UV resampling; runtime consumes saved positions/indices/uvs",
+  "stateMapping": "review palette only; game status codes not decoded",
+  "geometryIsStatic": true,
+  "heightPolicy": "existing representative building height; interpolated source mesh Y",
+  "epsilon": 0.003,
+  "compositing": "normal premultiplied alpha over existing neutral lamp beauty; no additive doubling",
+  "consumerContract": {
+    "draw": "Use indexed triangle Mesh geometry, not a rectangular Sprite. One atlas TextureSource is shared by every palette state.",
+    "position": "pixelX = spatial.pivotPixels.x + sourceX * pixelsPerCell.x; pixelY = spatial.pivotPixels.y + sourceZ * pixelsPerCell.y; apply the same stage transform as the building.",
+    "textureUV": "atlasUV = state.uvRect.xy + mesh.uvs * state.uvRect.zw; color is already baked into the atlas, no runtime tint.",
+    "heightUV": "heightUV = pixelPosition / spatial.framePixels; nearest filtering, no mipmaps, no color conversion.",
+    "heightDecode": "sceneY = heightMin + (256 * round(R*255) + round(G*255)) / 65535 * (heightMax-heightMin); A=0 means no surface.",
+    "occlusion": "Interpolate source position Y across each mesh triangle; discard only when height A is valid and lightY + baseElevation + heightOffset + epsilon < sceneY.",
+    "blend": "Atlas is straight-alpha; shader outputs RGB*alpha and alpha for normal premultiplied-alpha blending.",
+    "scope": "Fixed top camera; authored static pedestal light; existing representative open_idle building height. Rebuild scene height for neighbor placements; moving occluders require matching pose heights when greater accuracy is needed."
+  },
+  "sourceHashes": {
+    "mesh-data.json.gz": "c80c84aafed43b8ba2095973f68ace95205143d416692549c7dc863cb96ec15b",
+    "T_fac_build_specialelectrictower+1_001_01_E.png": "321f9482152ec98457504fcb8ff43020632f87b33705ba398a1a7d1a563662c9"
+  },
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

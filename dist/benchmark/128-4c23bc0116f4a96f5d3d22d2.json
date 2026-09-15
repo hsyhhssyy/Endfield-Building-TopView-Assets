@@ -1,0 +1,44 @@
+{
+  "name": "v1.5/fx/P_fxfac_interactive_mixpool_green_2502",
+  "url": "./128-4c23bc0116f4a96f5d3d22d2.json",
+  "pages": [
+    {
+      "url": "../buildings/transmuter_1/top/effects/P_fxfac_interactive_mixpool_green_2502/spritesheet_000.webp",
+      "width": 100,
+      "height": 29,
+      "originalWidth": 100,
+      "originalHeight": 29,
+      "resolution": 1.0,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "b1c9edd8465358f16265b2d8458b8a9dddaee665c6ed9edafde863089a0cb9ca",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 1268,
+      "sha256": "b1c9edd8465358f16265b2d8458b8a9dddaee665c6ed9edafde863089a0cb9ca"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 100,
+      "height": 29,
+      "durationMs": 1000.0,
+      "physicalRect": [
+        0.0,
+        0.0,
+        100.0,
+        29.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 11600
+}

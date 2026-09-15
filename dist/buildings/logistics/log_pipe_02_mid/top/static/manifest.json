@@ -86,6 +86,46 @@
       "namespace": "static",
       "sha256": "136ead129d06492c8bc9a048e71f958fff9f4ace425674f3c591e313da134b4b"
     },
+    "static/pipe.endpoint.whitening-small": {
+      "file": "pipe-endpoint-whitening-small.webp",
+      "width": 128,
+      "height": 128,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "colorSpace": "srgb",
+      "alpha": "straight",
+      "filter": "linear",
+      "wrap": "clamp",
+      "sourceId": "log_pipe_02_mid",
+      "component": "route-endpoint",
+      "semantic": "pipe.endpoint.whitening-small",
+      "namespace": "static",
+      "sha256": "37ceb3182dbb0abbb8fec148306c839880d3acc77cda6b5a8bc4e17840a1ecaf"
+    },
+    "static/pipe.endpoint.whitening-standard": {
+      "file": "pipe-endpoint-whitening-standard.webp",
+      "width": 128,
+      "height": 128,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "colorSpace": "srgb",
+      "alpha": "straight",
+      "filter": "linear",
+      "wrap": "clamp",
+      "sourceId": "log_pipe_02_mid",
+      "component": "route-endpoint",
+      "semantic": "pipe.endpoint.whitening-standard",
+      "namespace": "static",
+      "sha256": "21a038be2d5cbc17225f6ac830709fda91a652e6e639127e556777622e943a93"
+    },
     "static/pipe.straight.shell": {
       "file": "pipe-straight-shell.webp",
       "width": 128,
@@ -836,6 +876,20 @@
     "base": "pipe.endpoint.connector-base",
     "highlight": "pipe.endpoint.connector-highlight",
     "whitening": "pipe.endpoint.whitening",
+    "whiteningVariants": {
+      "small": "pipe.endpoint.whitening-small",
+      "standard": "pipe.endpoint.whitening-standard"
+    },
+    "whiteningSelection": {
+      "zeroStraightCells": "none",
+      "oneStraightCell": "small",
+      "twoOrMoreStraightCells": "standard"
+    },
+    "layerOrder": [
+      "pipe",
+      "pipe.endpoint.whitening",
+      "pipe.endpoint.connector"
+    ],
     "canvasCells": [
       1,
       1
@@ -2418,6 +2472,8 @@
     "pipe.endpoint.connector-highlight": "static/pipe.endpoint.connector-highlight",
     "pipe.endpoint.connector": "static/pipe.endpoint.connector",
     "pipe.endpoint.whitening": "static/pipe.endpoint.whitening",
+    "pipe.endpoint.whitening-small": "static/pipe.endpoint.whitening-small",
+    "pipe.endpoint.whitening-standard": "static/pipe.endpoint.whitening-standard",
     "pipe.straight.shell": "static/pipe.straight.shell",
     "pipe.straight.fluid-body": "static/pipe.straight.fluid-body",
     "pipe.straight.gas-body": "static/pipe.straight.gas-body",
@@ -2491,5 +2547,14 @@
         "4": "gas"
       }
     }
+  },
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
   }
 }

@@ -1,0 +1,44 @@
+{
+  "name": "open_idle",
+  "url": "./64-c6946eb56e11606e51d332b3.json",
+  "pages": [
+    {
+      "url": "../64/buildings/transmuter_1/top/animations/open_idle/spritesheet_000.webp",
+      "width": 320,
+      "height": 320,
+      "originalWidth": 640,
+      "originalHeight": 640,
+      "resolution": 0.5,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "74b896157cc929f127d60bbba482bb70ec2b6e306f2a495e9e201724c354d7d4",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 14288,
+      "sha256": "dd51a2ec7e2e26ff026d0f6c8c37819d87c08692ad8166fa22390d8c7249e163"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 640,
+      "durationMs": 70,
+      "physicalRect": [
+        0.0,
+        0.0,
+        320.0,
+        320.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 409600
+}

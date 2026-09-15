@@ -11,8 +11,8 @@
   <title>研磨机 · 建筑预览</title>
   <link rel="stylesheet" href="preview/preview.css">
 <link rel="building-audio" href="../../audio/buildings/thickener_1/audio.json">
-</head>
-<body>
+<meta name="asset-resolution" content="1.0"></head>
+<body><nav style="position:relative;z-index:20;padding:12px;background:#17232d;color:#edf3fa"><label>素材尺寸 <select id="site-size"><option value="128" selected>128px / 格</option><option value="64">64px / 格</option></select></label>　<button data-download-size="128">下载 128px 素材包</button> <button data-download-size="64">下载 64px 素材包</button>　<a href="../../benchmark/">性能测试</a> <span id="download-status" role="status"></span></nav>
   <main class="page">
     <a class="back" href="../../">← 返回总览首页</a>
     <h1 id="page-title">研磨机 · 建筑预览</h1>
@@ -91,5 +91,5 @@
   <script type="module" src="preview/pixi-building-preview.js"></script>
 <a href="integrity.json" style="position:fixed;right:12px;bottom:10px;z-index:20;color:#9bc7ff;font:12px sans-serif">SHA-256 索引</a>
 <script type="module" src="../../audio/runtime/building-audio.js"></script>
-</body>
+<script src="../../download-assets.js" data-site-root="../../" data-size="128"></script></body>
 </html>

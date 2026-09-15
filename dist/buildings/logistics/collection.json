@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "gameVersion": "v1.5",
   "materialContractVersion": 2,
-  "taskId": "20260914-133000-logistics-fluid-color-release",
+  "taskId": "20260913-logistics-height-publication",
   "entries": {
     "conveyor.straight": {
       "id": "grid_belt_01_mid",
@@ -111,6 +111,7 @@
   "sourceTaskId": "20260913-114414-logistics-water-gas",
   "bakedManifest": "logistics-baked.json",
   "heightMetadata": "logistics-height.json",
+  "fluidProfileMetadata": "fluid-profiles.json",
   "fluidProfileCoverage": {
     "profile": "endfield-pipe-fluid-colors-v1",
     "profileCount": 20,
@@ -149,5 +150,13 @@
       }
     }
   },
-  "fluidProfileMetadata": "fluid-profiles.json"
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
 }

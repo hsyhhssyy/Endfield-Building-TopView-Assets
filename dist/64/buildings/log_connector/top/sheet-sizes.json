@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "partCount": 1,
+  "totalBytes": 1210,
+  "pages": [
+    {
+      "animation": "static",
+      "index": 0,
+      "image": "animations/static/spritesheet_000.webp",
+      "width": 64,
+      "height": 64,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 1210,
+      "sha256": "55b31a3ef1c5c70c34737e106433774b38e0691e47c46cb55bb7cb627aa3200f",
+      "resolution": 0.5
+    }
+  ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

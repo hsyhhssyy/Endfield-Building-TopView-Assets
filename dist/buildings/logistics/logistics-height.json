@@ -48,5 +48,14 @@
     "placement": "按 spatial 的 pivotPixels 与 pixelsPerCell 对齐颜色画布；世界高度为放置 baseY + localY，重叠实体取最大有效高度。",
     "state": "按 stateMapping 选高度字段。裸直管为 null；带支架直管用 straightWithSupport，左右弯用 left/right。透明管壁及流体不写入实体高度。",
     "assembly": "管道字段已烘焙 sourceAssembly 的支架平移和旋转，放置时只再应用整段变换。支架装配高度沿用现有近似值。"
+  },
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
   }
 }

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256",
+  "building": "gas_pump_1",
+  "fileCount": 27,
+  "totalBytes": 1396213,
+  "contentHash": "31207feda7e389b60b146923c78463c06a7f61f946e2b0bead10ef1366020009",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 5400,
+      "sha256": "28e62c19b293c1910afe0b50e57485bf052ce6ea73b93e258f16b6439fb5510d"
+    },
+    {
+      "path": "variants.json",
+      "bytes": 837,
+      "sha256": "62a012ba64c4f9081b995289e09091ea9b48e5e9e83ae993c68a0e8591a6ff3c"
+    },
+    {
+      "path": "preview/grass-background.json",
+      "bytes": 752,
+      "sha256": "8aec7bcd56cbe816fb764d1f8b9d03c467026d89811c45c9017d874daea796d8"
+    },
+    {
+      "path": "preview/grass-base.webp",
+      "bytes": 8874,
+      "sha256": "b21359f3ec429fb0ea15a1be87d33dcf5d3696c34b639353ac3cf80bcb8f142f"
+    },
+    {
+      "path": "preview/pixi-building-preview.js",
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
+    },
+    {
+      "path": "preview/preview-data.js",
+      "bytes": 5142,
+      "sha256": "e36b1263dc5cc85c401d5317bb11f2caa410423d7dda1c54e9158f9fb0c31b48"
+    },
+    {
+      "path": "preview/preview.css",
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
+    },
+    {
+      "path": "preview/vendor/LICENSE.txt",
+      "bytes": 1085,
+      "sha256": "530a014b36db249b1c169a2d698469e1c8c3e35bf48548b00b5031ffdd8a2b93"
+    },
+    {
+      "path": "preview/vendor/pixi.min.js",
+      "bytes": 785850,
+      "sha256": "66a99b6475ce96a46ea7ed841749773eee5ca74ddea1638a34ef115dbb8db768"
+    },
+    {
+      "path": "top/package.json",
+      "bytes": 1978,
+      "sha256": "f2609714606eec5079243bd34a091cb9ecafd08eec48769a747bf9cb8611872d"
+    },
+    {
+      "path": "top/ports.json",
+      "bytes": 6459,
+      "sha256": "16f992186f6a872d0c504b6555cbcda4abb781fea302cc077a1d1d937f41ce21"
+    },
+    {
+      "path": "top/sequence.json",
+      "bytes": 1040,
+      "sha256": "0fa6a0b90792f675de629a1f2ce55c058d44c7d8c214f6c5837ef950cb409201"
+    },
+    {
+      "path": "top/spatial.json",
+      "bytes": 1651,
+      "sha256": "7289262a7d05f624e1692405302cf35f59c423df9871af137bb647ec6e15f9e9"
+    },
+    {
+      "path": "top/animations/static/animation.json",
+      "bytes": 3656,
+      "sha256": "3174c08aa01ef5a0512b0af21377d5418dc51d79fd7405e345a06e90d27f76c3"
+    },
+    {
+      "path": "top/animations/static/spritesheet.json",
+      "bytes": 1570,
+      "sha256": "037cb982857483b7ec92e0bf69c4faedfabc25383aa9868007e1d3267ca46193"
+    },
+    {
+      "path": "top/animations/static/spritesheet_000.webp",
+      "bytes": 7362,
+      "sha256": "3fc5ad5bca7a9323e91b84392487afd94b5a75c5af67d60b4190cd98943e8c07"
+    },
+    {
+      "path": "top/effects/resources.json",
+      "bytes": 2546,
+      "sha256": "6cbdbc2b1b6bf22725364698c77015240ffc4869d11cf8b78798b05fc5f3667e"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_out_01/effect.json",
+      "bytes": 65953,
+      "sha256": "8c6b3087044cb5c182e922305ebf524e29fb439493729097d9cdfdd3890269eb"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_out_01/height.webp",
+      "bytes": 1576,
+      "sha256": "8582d7b52d994e99acda8fd8c39178e5335997516e823136084418a3b354df51"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
+      "bytes": 62240,
+      "sha256": "053770c161ec1d6b5c050e3846cee6bac63949a0ee53b39b00bc089710a2cb97"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
+      "bytes": 177210,
+      "sha256": "47d4d5cd4a8bdffba3dc665cd4468144bb8fd96591feb2f20fd9a6494917528b"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeon_out_01/effect.json",
+      "bytes": 43812,
+      "sha256": "5e41ba9ff3ef00ce8f16a4b4f0536734c9bb06ae94562e466895353073d4ce01"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeon_out_01/height.webp",
+      "bytes": 2372,
+      "sha256": "2507d95f6b951ae84ced831a677de4ba86e9b1a37a4dd6bb7ce4970578c0292f"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
+      "bytes": 40174,
+      "sha256": "0c674598011443f5613fbb7b152a980c26ee9330fa8cb3913613b9d1baedc8ce"
+    },
+    {
+      "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
+      "bytes": 112646,
+      "sha256": "b336fbbf249e73f9a73fb6bcbb3dd2c6d97b80c584739a23c4cf583634b8a448"
+    },
+    {
+      "path": "top/occlusion/height_static.webp",
+      "bytes": 11974,
+      "sha256": "b631acaf506a631a80128c4a0758172c52363fef00f1cd9d9f418e572b2126b8"
+    },
+    {
+      "path": "top/occlusion/occlusion.json",
+      "bytes": 3223,
+      "sha256": "9808ebc55fe69b01352aadfc5c778da41eda483fd6fa7d47cf07fc6d9776afbd"
+    }
+  ]
+}

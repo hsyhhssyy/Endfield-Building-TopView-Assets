@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "partCount": 11,
+  "totalBytes": 4036436,
+  "pages": [
+    {
+      "animation": "close",
+      "index": 0,
+      "image": "animations/close/spritesheet_000.webp",
+      "width": 1920,
+      "height": 2048,
+      "columns": 5,
+      "rows": 8,
+      "frameStart": 0,
+      "frameCount": 40,
+      "bytes": 517836,
+      "sha256": "7ffe5a17c976b95d57dac7b68813ea0bea82499bf73eff120f4c71104767fa27",
+      "resolution": 0.5
+    },
+    {
+      "animation": "close",
+      "index": 1,
+      "image": "animations/close/spritesheet_001.webp",
+      "width": 1920,
+      "height": 2048,
+      "columns": 5,
+      "rows": 8,
+      "frameStart": 40,
+      "frameCount": 40,
+      "bytes": 513138,
+      "sha256": "6a3c8eeb2a6fed0ea358f0f8286b77908dcae7ed5ec54bde14e6cf3335422126",
+      "resolution": 0.5
+    },
+    {
+      "animation": "close",
+      "index": 2,
+      "image": "animations/close/spritesheet_002.webp",
+      "width": 1920,
+      "height": 2048,
+      "columns": 5,
+      "rows": 8,
+      "frameStart": 80,
+      "frameCount": 40,
+      "bytes": 505172,
+      "sha256": "e07529c5b7fd861486f8a0bdba851f40fc968e5551a49cdc30075f29f272f62b",
+      "resolution": 0.5
+    },
+    {
+      "animation": "close",
+      "index": 3,
+      "image": "animations/close/spritesheet_003.webp",
+      "width": 1920,
+      "height": 512,
+      "columns": 5,
+      "rows": 2,
+      "frameStart": 120,
+      "frameCount": 6,
+      "bytes": 73362,
+      "sha256": "3a5d58b7c602ec4e3b62fb1822252a548d9141a5b22aea647cecad27d532d4cf",
+      "resolution": 0.5
+    },
+    {
+      "animation": "close_idle",
+      "index": 0,
+      "image": "animations/close_idle/spritesheet_000.webp",
+      "width": 768,
+      "height": 256,
+      "columns": 2,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 2,
+      "bytes": 26440,
+      "sha256": "196ec2213bfabcb3a67671331cd8cd84f0b01824ec5208c17dd112a379e58032",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open",
+      "index": 0,
+      "image": "animations/open/spritesheet_000.webp",
+      "width": 1920,
+      "height": 2048,
+      "columns": 5,
+      "rows": 8,
+      "frameStart": 0,
+      "frameCount": 40,
+      "bytes": 512558,
+      "sha256": "1f38a3440597c618a298b364de2087095a43b2c6dde75581c25fbf10a63b3e25",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open",
+      "index": 1,
+      "image": "animations/open/spritesheet_001.webp",
+      "width": 1920,
+      "height": 2048,
+      "columns": 5,
+      "rows": 8,
+      "frameStart": 40,
+      "frameCount": 40,
+      "bytes": 517972,
+      "sha256": "d152b15d7a1eaf12efd6c542211ccdc916404086fa3c7cf6783f39a1ea57400e",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open",
+      "index": 2,
+      "image": "animations/open/spritesheet_002.webp",
+      "width": 1920,
+      "height": 2048,
+      "columns": 5,
+      "rows": 8,
+      "frameStart": 80,
+      "frameCount": 40,
+      "bytes": 510886,
+      "sha256": "08af049b447c7fbe4ffe23cf7434d35e162878644315cb86b85eff3943832221",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open",
+      "index": 3,
+      "image": "animations/open/spritesheet_003.webp",
+      "width": 384,
+      "height": 256,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 120,
+      "frameCount": 1,
+      "bytes": 13368,
+      "sha256": "67b1f2b2a36c265ec8c8e6f27f674753174f6c77dc23e610fa8da7e84ce6bd6c",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open_idle",
+      "index": 0,
+      "image": "animations/open_idle/spritesheet_000.webp",
+      "width": 1920,
+      "height": 2048,
+      "columns": 5,
+      "rows": 8,
+      "frameStart": 0,
+      "frameCount": 40,
+      "bytes": 511310,
+      "sha256": "d4509568c11518042e8485d42dfc25590b5e04c867d1fe2b139b263a18acfd44",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open_idle",
+      "index": 1,
+      "image": "animations/open_idle/spritesheet_001.webp",
+      "width": 1920,
+      "height": 1536,
+      "columns": 5,
+      "rows": 6,
+      "frameStart": 40,
+      "frameCount": 26,
+      "bytes": 334394,
+      "sha256": "7ffed97a1a0aa9c3835287a0ab9a080a7dea25e80f3ae8f2ea00907f828157b8",
+      "resolution": 0.5
+    }
+  ],
+  "animations": [
+    {
+      "animation": "close",
+      "partCount": 4,
+      "totalBytes": 3421836
+    },
+    {
+      "animation": "close_idle",
+      "partCount": 1,
+      "totalBytes": 54480
+    },
+    {
+      "animation": "open",
+      "partCount": 4,
+      "totalBytes": 3291830
+    },
+    {
+      "animation": "open_idle",
+      "partCount": 2,
+      "totalBytes": 1797392
+    }
+  ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

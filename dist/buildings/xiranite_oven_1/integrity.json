@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "xiranite_oven_1",
   "fileCount": 109,
-  "totalBytes": 41698467,
-  "contentHash": "9dc1e0a5e6ef8123dda0a056fbf8802a119001f3a741ff6cee610e8f44f40fc3",
+  "totalBytes": 41822807,
+  "contentHash": "e0832ad4dc2b024e87540e7571374e1215441cf581850a05f1897e3121276e38",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4816,
-      "sha256": "f5c2310667483ea7a1a5f5ec703fa82078a7a7bf7c24c83b99d6521fa12b42d4"
+      "bytes": 5414,
+      "sha256": "3d857102df2cd7433ecfe88efe7de589b87ff04dc1bfb6e7dad6d8ed77c1e01e"
     },
     {
       "path": "variants.json",
-      "bytes": 845,
-      "sha256": "f9ef03bad20bfb65bdba02ebe01849946caca39d502a162858d2e0b49f7eb380"
+      "bytes": 1225,
+      "sha256": "2375fb6c5af0c1d49832b3821a3cc759ae93cc192bd824e07bc39a87b53eed40"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 9874,
-      "sha256": "14df6259561fcc3cda78e150bdd17e4efbe6af5bfcf8e331a724765b4e1234df"
+      "bytes": 10689,
+      "sha256": "50c335dbb286a4d72ac26b337376c15f8bacf04053ea0cff634b5dda2a1592aa"
     },
     {
       "path": "top/ports.json",
-      "bytes": 58518,
-      "sha256": "449a51017b934c8cd43d6e5e3114d91cbd2aa47ec12fcb81b753a66784ba4c80"
+      "bytes": 60906,
+      "sha256": "98a6eaff0fdaee801244f2b72e9cf2691307840a5981e2e57c9b2c72a51f4ff4"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 1007,
-      "sha256": "c0d1c9cf7a0c9d8260075e30dfa2a4e7dc538a788f05f250f0fe0e1849dcf43a"
+      "bytes": 1429,
+      "sha256": "34299650c5b33e49ece6b8074f16ab28bf4079f463ca4de0a691a84a3d7ac437"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 8484,
-      "sha256": "3d408b330ccc0e4d65f26fe9a57322e3644f1be7dfca30e00c642948292bec49"
+      "bytes": 8864,
+      "sha256": "17dd44691c38611c7807166c0d3e0852e4360b33fdaef3f01d2e3866cd8b519b"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 4899,
-      "sha256": "ede7c13965c5ff3e139ca84e816667b2bca4bc1de63af9a6ad3d5180a599bbae"
+      "bytes": 5531,
+      "sha256": "47635c083dc7c45ac1e6af1328c4b33e391e9a4b9561162981a47f690f4963ba"
     },
     {
       "path": "top/animations/close_idle/animation.json",
-      "bytes": 3580,
-      "sha256": "c8f7394490e513e95f8b33c932a8c84a5a45a402e2aa8bbb8f25a66fa45e81b0"
+      "bytes": 4111,
+      "sha256": "a0e8d18aaf240781f0f776d67806a83d2cbf78ea77e2076964c7b1bc8fb093cd"
     },
     {
       "path": "top/animations/close_idle/spritesheet.json",
-      "bytes": 1172,
-      "sha256": "66f5ba7bb1becf5e78b8e7eacc27d80374fc04bff570ec76509495b51dd4fdbf"
+      "bytes": 1613,
+      "sha256": "e3958531cacadb25ae462cf10ee7178d1ee5742ff3a688895ce0b8d77252241d"
     },
     {
       "path": "top/animations/close_idle/spritesheet_000.webp",
@@ -93,13 +93,13 @@
     },
     {
       "path": "top/animations/open_idle/animation.json",
-      "bytes": 320256,
-      "sha256": "922b70e3ca7f6aaa215abe6aecf5da57a4fc104be4bf322c373672811be618e4"
+      "bytes": 335867,
+      "sha256": "60abec321fe9bdf5bc5cbb660c93e1614ba2e434d8a779a22d3dff6cfb55c519"
     },
     {
       "path": "top/animations/open_idle/spritesheet.json",
-      "bytes": 443659,
-      "sha256": "339faf608625f463e544cd48fdd50c31c7008cba21beba0230a70959e66650d0"
+      "bytes": 465452,
+      "sha256": "e119391df5c3218ec3e8e31389577575e88c2c91de89c8f3b48db00ab1796fe3"
     },
     {
       "path": "top/animations/open_idle/spritesheet_000.webp",
@@ -208,13 +208,13 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 3437,
-      "sha256": "cc4e3798bae1285d285b506cdd2f26835c2c08118e10460c3ace3e72604c58dc"
+      "bytes": 3931,
+      "sha256": "abf984d47f0dbdf38c70b21873fa71ef7682859b7446f3e7cfbea32da7f79dbb"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/effect.json",
-      "bytes": 45533,
-      "sha256": "9c5e73ce0fe1fd94ee41991d420029ddcf202e5cba3d7d233cefa9c2b5251a12"
+      "bytes": 48110,
+      "sha256": "73fb9b44bb54d5949ecbb85c2fc4857928bcdd6b43208533d2dc651740d52794"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/height.webp",
@@ -223,8 +223,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
-      "bytes": 41967,
-      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+      "bytes": 44409,
+      "sha256": "0882b3181288849f128150fd073cd2978707fefd247d75a862af5909b4d09869"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
@@ -233,8 +233,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/effect.json",
-      "bytes": 45549,
-      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+      "bytes": 48126,
+      "sha256": "dcaa29b3e944721efd7eb678a18efd69aab909dc426fe7c58f8f45ec0a8fe4f4"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/height.webp",
@@ -243,8 +243,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
-      "bytes": 41967,
-      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+      "bytes": 44409,
+      "sha256": "0882b3181288849f128150fd073cd2978707fefd247d75a862af5909b4d09869"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
@@ -253,8 +253,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/effect.json",
-      "bytes": 30228,
-      "sha256": "5458a91779aa7e437260026f87c333cfc1b5524b49a7598f2d38d509a387e55e"
+      "bytes": 32090,
+      "sha256": "3c51000f65770f4ce54acfb9d0bac2f8454c2e4b9a346fdece82b3b0efcbec0c"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/height.webp",
@@ -263,8 +263,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/spritesheet.json",
-      "bytes": 26725,
-      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+      "bytes": 28452,
+      "sha256": "689b58afe8e5e113829a0ab7c4f5c8fe3490c97ef17f832287725f21ac7376b1"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/spritesheet_000.webp",
@@ -273,8 +273,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/effect.json",
-      "bytes": 30232,
-      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+      "bytes": 32094,
+      "sha256": "f2215bf36472d2b1f98db366c35f3a6f5240e7ca3f122b560caa3953785fa04d"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/height.webp",
@@ -283,8 +283,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
-      "bytes": 26725,
-      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+      "bytes": 28452,
+      "sha256": "689b58afe8e5e113829a0ab7c4f5c8fe3490c97ef17f832287725f21ac7376b1"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
@@ -298,43 +298,43 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2849,
-      "sha256": "2d438f897609040ee184deb8abfd807dd673ad1c8839b1cdfa99939f9314cb3b"
+      "bytes": 3324,
+      "sha256": "994a8913239a25a099125bc5dac5bc5dd07309ab1f676e997e78c51137cb486a"
     },
     {
       "path": "top-gasliquid/package.json",
-      "bytes": 9890,
-      "sha256": "5d5aa7f4b6036c539745028ac389436ca3fab1f3ddd436c0caa7fcdd99236d62"
+      "bytes": 10705,
+      "sha256": "a53a4e07e4d33c10c6762797c9011a9ca0dcb88123bd7a01876f309621ff3d32"
     },
     {
       "path": "top-gasliquid/ports.json",
-      "bytes": 58534,
-      "sha256": "791dc431d9cbaca8aed05376485b891eb819d5c4f9cc2e5ad50390d63cbe0619"
+      "bytes": 60922,
+      "sha256": "15470ca9af43bef74e81d01ba468618164472e6eac470af1c3fdfd18358c749d"
     },
     {
       "path": "top-gasliquid/sequence.json",
-      "bytes": 1007,
-      "sha256": "4457efc87303e81c260122bee9ca9b853b16c2ed8999547719f14cfc86be5566"
+      "bytes": 1429,
+      "sha256": "a4403833d20039e5279e0084acd72c7dc6d6e68f652b7ff78e50ef7e15b8da92"
     },
     {
       "path": "top-gasliquid/sheet-sizes.json",
-      "bytes": 8484,
-      "sha256": "a5605423796ca6d8808056a13fa6820c274c71d76b3ff2851f34cc3b0688ff73"
+      "bytes": 8864,
+      "sha256": "52c029b887b8f4c716b5fc9c4c60dffccc17a0f67c30631e11e653aecafa900d"
     },
     {
       "path": "top-gasliquid/spatial.json",
-      "bytes": 4899,
-      "sha256": "ede7c13965c5ff3e139ca84e816667b2bca4bc1de63af9a6ad3d5180a599bbae"
+      "bytes": 5531,
+      "sha256": "47635c083dc7c45ac1e6af1328c4b33e391e9a4b9561162981a47f690f4963ba"
     },
     {
       "path": "top-gasliquid/animations/close_idle/animation.json",
-      "bytes": 3880,
-      "sha256": "1bc7c47b8a531b665b4065c4cccbda206b01d3c491190aaed9e3dd3e871c03df"
+      "bytes": 4420,
+      "sha256": "b92b24e288406ac8ec08eefb9faccab6a92513aaf1f5f9056776a3df18547270"
     },
     {
       "path": "top-gasliquid/animations/close_idle/spritesheet.json",
-      "bytes": 1172,
-      "sha256": "8eb37867e8cd99add3e0ab0182a17763aebbc17218696316b39ba70b971df827"
+      "bytes": 1613,
+      "sha256": "e2208e3c08e58342bbd61ef974a00c4023b043836a1d932008ba2010b2bd5b8b"
     },
     {
       "path": "top-gasliquid/animations/close_idle/spritesheet_000.webp",
@@ -343,13 +343,13 @@
     },
     {
       "path": "top-gasliquid/animations/open_idle/animation.json",
-      "bytes": 317622,
-      "sha256": "c973a327c97d9b53fc99143d835e122270b1d25807839db5563b427e51715a1c"
+      "bytes": 333102,
+      "sha256": "e6be6e35f29debcb0bcb0d6830575564b2f4d19773a199e042c65ee7f56e5156"
     },
     {
       "path": "top-gasliquid/animations/open_idle/spritesheet.json",
-      "bytes": 439602,
-      "sha256": "a71a9dc250a75698ef8cd735bd406d8396f7f0113ae634ce9effe12d614dad94"
+      "bytes": 461199,
+      "sha256": "dd1f1355e59e8514ac77e7597a6a3d87aec18ecb4e60d6cdc126fbe1a830b3b2"
     },
     {
       "path": "top-gasliquid/animations/open_idle/spritesheet_000.webp",
@@ -458,13 +458,13 @@
     },
     {
       "path": "top-gasliquid/effects/resources.json",
-      "bytes": 3437,
-      "sha256": "cc4e3798bae1285d285b506cdd2f26835c2c08118e10460c3ace3e72604c58dc"
+      "bytes": 3931,
+      "sha256": "abf984d47f0dbdf38c70b21873fa71ef7682859b7446f3e7cfbea32da7f79dbb"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_in_01/effect.json",
-      "bytes": 45533,
-      "sha256": "9c5e73ce0fe1fd94ee41991d420029ddcf202e5cba3d7d233cefa9c2b5251a12"
+      "bytes": 48110,
+      "sha256": "73fb9b44bb54d5949ecbb85c2fc4857928bcdd6b43208533d2dc651740d52794"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_in_01/height.webp",
@@ -473,8 +473,8 @@
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
-      "bytes": 41967,
-      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+      "bytes": 44409,
+      "sha256": "0882b3181288849f128150fd073cd2978707fefd247d75a862af5909b4d09869"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
@@ -483,8 +483,8 @@
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_out_01/effect.json",
-      "bytes": 45549,
-      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+      "bytes": 48126,
+      "sha256": "dcaa29b3e944721efd7eb678a18efd69aab909dc426fe7c58f8f45ec0a8fe4f4"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_out_01/height.webp",
@@ -493,8 +493,8 @@
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
-      "bytes": 41967,
-      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+      "bytes": 44409,
+      "sha256": "0882b3181288849f128150fd073cd2978707fefd247d75a862af5909b4d09869"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
@@ -503,8 +503,8 @@
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_in_01/effect.json",
-      "bytes": 30228,
-      "sha256": "5458a91779aa7e437260026f87c333cfc1b5524b49a7598f2d38d509a387e55e"
+      "bytes": 32090,
+      "sha256": "3c51000f65770f4ce54acfb9d0bac2f8454c2e4b9a346fdece82b3b0efcbec0c"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_in_01/height.webp",
@@ -513,8 +513,8 @@
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_in_01/spritesheet.json",
-      "bytes": 26725,
-      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+      "bytes": 28452,
+      "sha256": "689b58afe8e5e113829a0ab7c4f5c8fe3490c97ef17f832287725f21ac7376b1"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_in_01/spritesheet_000.webp",
@@ -523,8 +523,8 @@
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_out_01/effect.json",
-      "bytes": 30232,
-      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+      "bytes": 32094,
+      "sha256": "f2215bf36472d2b1f98db366c35f3a6f5240e7ca3f122b560caa3953785fa04d"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_out_01/height.webp",
@@ -533,8 +533,8 @@
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
-      "bytes": 26725,
-      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+      "bytes": 28452,
+      "sha256": "689b58afe8e5e113829a0ab7c4f5c8fe3490c97ef17f832287725f21ac7376b1"
     },
     {
       "path": "top-gasliquid/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
@@ -548,8 +548,8 @@
     },
     {
       "path": "top-gasliquid/occlusion/occlusion.json",
-      "bytes": 2852,
-      "sha256": "f19e8ff6335e5acf4640667620a97fbae1c395543c5790b4d4d701dba294d417"
+      "bytes": 3327,
+      "sha256": "fd4aedeff5e5d2ddb88893e5fe8891f5374fc54669c7a496e1e76b954da392d4"
     }
   ]
 }

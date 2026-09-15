@@ -1,0 +1,64 @@
+{
+  "name": "close_idle",
+  "url": "./64-1f6b1414421e905f4e79e4e5.json",
+  "pages": [
+    {
+      "url": "../64/buildings/sp_hub_1/top/animations/close_idle/spritesheet_000.webp",
+      "width": 1408,
+      "height": 576,
+      "originalWidth": 2816,
+      "originalHeight": 1152,
+      "resolution": 0.5,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "35c704ca9d92c4a1b1ba1d232276d6ce8aff8bd68140446b5635824299759505",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 60202,
+      "sha256": "835de93e14dd9e7e7410c2826dfd9f22932912a403fa3b438328b6ce0d97e60a"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 1408,
+      "height": 1152,
+      "durationMs": 30,
+      "physicalRect": [
+        0.0,
+        0.0,
+        704.0,
+        576.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "page": 0,
+      "x": 1408,
+      "y": 0,
+      "width": 1408,
+      "height": 1152,
+      "durationMs": 40,
+      "physicalRect": [
+        704.0,
+        0.0,
+        704.0,
+        576.0
+      ],
+      "uvRect": [
+        0.5,
+        0.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 2,
+  "rgbaBytes": 3244032
+}

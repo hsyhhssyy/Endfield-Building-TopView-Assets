@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "furnance_1",
   "fileCount": 29,
-  "totalBytes": 4006816,
-  "contentHash": "578e5ab4445ec5d3989cedb96df251255a9962ab8ce32a920e0ffca9c46020d8",
+  "totalBytes": 4023301,
+  "contentHash": "177f6a6a4b3a5ce8df1566d507e65edf92fbc5f826bd44961783a9ea70eb3bf9",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4753,
-      "sha256": "c55b072fa0b479a5105138811bc51b8068fd7cbb591e4682111298f178715288"
+      "bytes": 5351,
+      "sha256": "57074cc9891049d2920cb7ef35110dd8c86d2923bc93bef11c48e7ebb33e019b"
     },
     {
       "path": "variants.json",
-      "bytes": 494,
-      "sha256": "66d3e1ca7f11ca012b7d58d5b0e923d3bb3c7b140c3e93c985040f4c5ce3c00c"
+      "bytes": 874,
+      "sha256": "c780afe90d74bd8bfd61f73fab680776ebe7e5e86673cbefd672ae9fb2e85ed9"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 4303,
-      "sha256": "88d2a9021042090cc9bec0a7fb463d4c9369dbe6b2d2eea2e197ed0b783d0c49"
+      "bytes": 4869,
+      "sha256": "bd89e7e7e7468622e47c886daf9f0348f596b0594ef35f80ad8d9ba513e7c735"
     },
     {
       "path": "top/ports.json",
-      "bytes": 16202,
-      "sha256": "d5d7f8db0602e4a616b5614a25cbee240f616190ad98feb51537ae1eba19cab8"
+      "bytes": 17144,
+      "sha256": "472fa37546de446219eeb2874c2e3a8f68f65b9c6b08169707af46eb606ac447"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 1666,
-      "sha256": "7655cb63860bae2932d1f9cbc7c3dad5c43fa6a003646b5f71c171f216513f49"
+      "bytes": 2114,
+      "sha256": "8c01cac198c7fb4e357581131bdb20455484f93caebb151dabbab089a9940a79"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 1964,
-      "sha256": "e660c2c7189c65fb18d1fe438fc62119ac768879076d4eb031817884d19124e0"
+      "bytes": 2344,
+      "sha256": "3b150d0295342d1fc056e8e20de701fd9a3c38c30afa075a27681d199d1e9ee4"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 3474,
-      "sha256": "502859db336565c12fe343430a7e6ca93c305341d9288618635218961561b2cc"
+      "bytes": 4034,
+      "sha256": "dc4e0cdc9e77850855bacfa4bca6afc7aeeef24e082b0a709f739555345e15a8"
     },
     {
       "path": "top/animations/close/animation.json",
-      "bytes": 15352,
-      "sha256": "a17f43e2cd5359cf4c58d6b2742917ecf83bef4138bd62be448906533a110821"
+      "bytes": 16453,
+      "sha256": "b9c714ce7cda462ffad4c354b7867a6c24601aa5a3cef0e20fed30249cf1a5a2"
     },
     {
       "path": "top/animations/close/spritesheet.json",
-      "bytes": 16555,
-      "sha256": "cd0ddc76632c9312c82d8330dab52d0b7bb1d23e5ea1ce9cfd8828997d38b6ae"
+      "bytes": 17752,
+      "sha256": "40bdea22fa6e6f40b0f74f3e2b85bdd8e10e807a5e453bb7f41959cc8f5a28a7"
     },
     {
       "path": "top/animations/close/spritesheet_000.webp",
@@ -93,13 +93,13 @@
     },
     {
       "path": "top/animations/close_idle/animation.json",
-      "bytes": 4198,
-      "sha256": "9b8b1b8ce1871f2bf0d3cad3d38e79ae6a4b22d00ddcb93e7bb243beaf29e3aa"
+      "bytes": 4759,
+      "sha256": "b98aa5c175b985748f6b3feed1cd11355c7eb276f870dc848fe0fdc9ceb9a2ba"
     },
     {
       "path": "top/animations/close_idle/spritesheet.json",
-      "bytes": 1170,
-      "sha256": "80720a149223e1ff674698819e5821b165cf2439bdb554822df40b1a88bf0bf7"
+      "bytes": 1611,
+      "sha256": "1bd7dfc904ea5794df8b191a9c0c6ca13350ae96bcc30a3da23cff9a4eeaec7c"
     },
     {
       "path": "top/animations/close_idle/spritesheet_000.webp",
@@ -108,13 +108,13 @@
     },
     {
       "path": "top/animations/open/animation.json",
-      "bytes": 19041,
-      "sha256": "188095c1622ee7d01605230c8d49811b3f7c2f528ed8b346db41b583e9304e54"
+      "bytes": 20322,
+      "sha256": "37bc800a8c5c2fe0f65ada8ae27d84f68ce1296f3859d901448b114eecae875c"
     },
     {
       "path": "top/animations/open/spritesheet.json",
-      "bytes": 21666,
-      "sha256": "2c88be35aa531b6b30046b5a96bf124484f06106f7ef96d2c471600de872cef7"
+      "bytes": 23115,
+      "sha256": "db0770f7ae9840fd75bf5d67a102b0a412187076e4e664d64d611d899d2eefa7"
     },
     {
       "path": "top/animations/open/spritesheet_000.webp",
@@ -123,13 +123,13 @@
     },
     {
       "path": "top/animations/open_idle/animation.json",
-      "bytes": 33527,
-      "sha256": "b5afbff1f479e0fb153cdcc7a555365dd1b9e52720dc889e6fd7e992112c8942"
+      "bytes": 35508,
+      "sha256": "d1a7bc79b0b1edb5326015426461f9b1285ba2b8798466481fd08e7aac72a04c"
     },
     {
       "path": "top/animations/open_idle/spritesheet.json",
-      "bytes": 41690,
-      "sha256": "9af0ee2ea2d0bb6c1ee740b2c6825e072db148f67d02fb390ddd88c128253b5d"
+      "bytes": 44119,
+      "sha256": "eeb9caf8af4298928da8518ee07a82b1be522d4ee1289f7403df7b24e90ddb94"
     },
     {
       "path": "top/animations/open_idle/spritesheet_000.webp",
@@ -138,8 +138,8 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 1148,
+      "sha256": "1cd661a2b6b8d0678ace36f3571cb98ef7e339222a98ee00699899564f92cf48"
     },
     {
       "path": "top/occlusion/height_open_idle.webp",
@@ -148,8 +148,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2810,
-      "sha256": "a60ac3c40940aee6a1cc48305d57f183a28a8ed2f7b0e3b3ee84c8a77bd2dfe4"
+      "bytes": 3284,
+      "sha256": "415b2339e0f144167e04bf6418cfe235b52d8bd04fd6d5afb996881f321654af"
     }
   ]
 }

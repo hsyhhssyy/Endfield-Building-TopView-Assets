@@ -42,5 +42,14 @@
       "bytes": 366524,
       "sha256": "77fe8c1f5c2cc6b825c42d5241f2785ef0258dda5a3dd3717ee70e51d3cd1752"
     }
-  ]
+  ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
 }

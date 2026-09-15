@@ -1,0 +1,1240 @@
+{
+  "schemaVersion": 1,
+  "pages": [
+    {
+      "image": "animations/close/spritesheet_000.webp",
+      "bytes": 157016,
+      "visibleRgbMeanAbsoluteError": 1.1705223873260562,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "83862615e9591f31cdb3cdd902fd001ab5dfa29df2219b302f5006c4711ba051",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_001.webp",
+      "bytes": 156960,
+      "visibleRgbMeanAbsoluteError": 1.1697616297538158,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "191f02f1c0c71b26e9699a46905467fef6eb768c114f30a1da0bf8b6bff5f47b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_002.webp",
+      "bytes": 155558,
+      "visibleRgbMeanAbsoluteError": 1.171830169429095,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "d8a2f2030ffda7161947b2503c73e3c65cf1fd274ca766476743906cf8fca63d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_003.webp",
+      "bytes": 155792,
+      "visibleRgbMeanAbsoluteError": 1.1798656220318715,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "295578c2e4a3bd89748c6e2b20b4ea0844376d977ce1332e6c42feb1b8790448",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_004.webp",
+      "bytes": 156218,
+      "visibleRgbMeanAbsoluteError": 1.1750973635260051,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "b30be83d017a1cc7c3aaadb0b17e77708c6e7e7a3f188ec7a113418f9af6bac7",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_005.webp",
+      "bytes": 155514,
+      "visibleRgbMeanAbsoluteError": 1.181080091850283,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "4e24de2734e68397cd19fe1d720e825e31a610a7bc21bc7da671aa8c0ebc9a77",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_006.webp",
+      "bytes": 155248,
+      "visibleRgbMeanAbsoluteError": 1.164826171556788,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "b3050a8951fb7a8985b6b21c083b8973639797efa12f5cd4fd3deff7f2f4c857",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_007.webp",
+      "bytes": 154362,
+      "visibleRgbMeanAbsoluteError": 1.1630016174466333,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "07cc0535df5bfe7c1103fcc2de46147b02bc185ad8b3eba010fe40084e71b73b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_008.webp",
+      "bytes": 154758,
+      "visibleRgbMeanAbsoluteError": 1.1655279521036974,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "9a6d19029cf722d9055510bd2a8e9667cdd7bdf6d10a775a2de206a42780e3db",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_009.webp",
+      "bytes": 153192,
+      "visibleRgbMeanAbsoluteError": 1.158865743896166,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "337a74e8010fac6b428a59d78c134021715b8755b8e40a70bf177f5dd59646d3",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_010.webp",
+      "bytes": 152840,
+      "visibleRgbMeanAbsoluteError": 1.157847067989912,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "f8f9c9e042ce8ce509548c17ff082464baa640546496d515e94af27ecdfd9bb8",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_011.webp",
+      "bytes": 152872,
+      "visibleRgbMeanAbsoluteError": 1.1483929673162645,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "2ff06b0231958aee18162709bdcc6a3fee2a3201556f3f8fb45b84f47ac67763",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_012.webp",
+      "bytes": 154200,
+      "visibleRgbMeanAbsoluteError": 1.1601373419633974,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "8b507d99edbcd63a912cb1a50a3bde0bc31aafaf590faba080a1c4c2de7d7eb9",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_013.webp",
+      "bytes": 153704,
+      "visibleRgbMeanAbsoluteError": 1.1544814250534108,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "25913c65e2e0f663417ef2ca962e9b2e0084d0a48e073af1f09e415f3bcdf515",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_014.webp",
+      "bytes": 153308,
+      "visibleRgbMeanAbsoluteError": 1.1601639939760593,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "37b8ef3d6136e17af33a0a78be02e9a920e2ad5a09522f56aa35a2e0fd15278b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_015.webp",
+      "bytes": 153734,
+      "visibleRgbMeanAbsoluteError": 1.161639352328478,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "313b85b2d38165235e533868df1c71d4cb4470413adb2efe9ce96bb1b80da658",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_016.webp",
+      "bytes": 154198,
+      "visibleRgbMeanAbsoluteError": 1.1621248624618075,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "cfd7c4003136e406ddd0367e6b8a0432ac88feeb9bea05f2183bab8090c80a09",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_017.webp",
+      "bytes": 152970,
+      "visibleRgbMeanAbsoluteError": 1.1541886294731762,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "e0baf37e97940cdf9b5fbc78aa3134eb87a7ba7316497888b2ed175a45f99cbf",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_018.webp",
+      "bytes": 153240,
+      "visibleRgbMeanAbsoluteError": 1.1604526474067591,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "e8682a43e4782314201096211885c424fdcfc6c94d5717eb4451e9e1915f1d98",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_019.webp",
+      "bytes": 151656,
+      "visibleRgbMeanAbsoluteError": 1.1513693318763008,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "fec382a92ed301b25dee405c4fcfe3efedcf9c6888ee969de351601f6c92adf5",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_020.webp",
+      "bytes": 153546,
+      "visibleRgbMeanAbsoluteError": 1.1560520946850197,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "d4b65e018a30142938e3c6be41dccd8e28854f94f6a7560b0ffef5e65ac110f2",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_021.webp",
+      "bytes": 154282,
+      "visibleRgbMeanAbsoluteError": 1.1628128776834958,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "3175099f6adc6f458dfd4543573bd3fae54cd9f0fc654d92194214f88288d605",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_022.webp",
+      "bytes": 152966,
+      "visibleRgbMeanAbsoluteError": 1.1599781411656276,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "f9d5618c6942a6048eb7342a451dd0f9c90442fc129f12204e857fcebe43ef9a",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_023.webp",
+      "bytes": 154186,
+      "visibleRgbMeanAbsoluteError": 1.159221299317834,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "1370be7942e0a6b8b05e2d50181168e68ed0a7e98c83c763ed8963fe36414758",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_024.webp",
+      "bytes": 155918,
+      "visibleRgbMeanAbsoluteError": 1.162464727923117,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "a2389d791639c2997883e957004d1f4c6f6f7c35c8bbff7adcf12f4fb4007950",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_025.webp",
+      "bytes": 155500,
+      "visibleRgbMeanAbsoluteError": 1.166882267641938,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "73690a7ecc334e3031a0e297e59c84d82190e045a20c04f3142811bd5d93921b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_026.webp",
+      "bytes": 153608,
+      "visibleRgbMeanAbsoluteError": 1.1602624850872156,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "ddd6c574cb698097b11fecfd78d1474d9eec9274ffda18943dcaec360a34a670",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_027.webp",
+      "bytes": 152698,
+      "visibleRgbMeanAbsoluteError": 1.1593287441663682,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "1317e5fe2e9b7f493a516ba3dc75e04c9f36234ebec769c9427ffd7a0cd561b2",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_028.webp",
+      "bytes": 152624,
+      "visibleRgbMeanAbsoluteError": 1.1559431436002912,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "b1da75b7df846e6fa24f956744bb3adf6c1c3275a6308433fb72c1969ac17a42",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_029.webp",
+      "bytes": 151600,
+      "visibleRgbMeanAbsoluteError": 1.1558189627940414,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "ee9f1e96e6bd7bfd35a146eaa97be8b3db0eec13906a5289d3842fe8019f21a9",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_030.webp",
+      "bytes": 151424,
+      "visibleRgbMeanAbsoluteError": 1.1675019583162523,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "ee8525f334736d3f12a29758ce584d8270df8a08abe53a68d0743fa13a24401f",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_031.webp",
+      "bytes": 153358,
+      "visibleRgbMeanAbsoluteError": 1.1500955581345667,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "5fb296c1e2f83b86eca3ae87d2e326d73989420b6ddb64e8ed15b154906f0554",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_032.webp",
+      "bytes": 152914,
+      "visibleRgbMeanAbsoluteError": 1.1509617276261375,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "d1ba9b53a100bdca8b7d09557a389667aead2856be0c5c956179bbbbfcd08b33",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close/spritesheet_033.webp",
+      "bytes": 101800,
+      "visibleRgbMeanAbsoluteError": 1.149738580156493,
+      "alphaExact": true,
+      "animation": "close",
+      "sha256": "76d9dec9a55f5a858b94fafe61144b26d9ebbf727f750f124d97ab886182674f",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/close_idle/spritesheet_000.webp",
+      "bytes": 51156,
+      "visibleRgbMeanAbsoluteError": 1.147823777394357,
+      "alphaExact": true,
+      "animation": "close_idle",
+      "sha256": "d25c41641bab3850e95165f9bf0f1387f3f479520ad88c89355f5599a46b38b6",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_000.webp",
+      "bytes": 151856,
+      "visibleRgbMeanAbsoluteError": 1.148957220130646,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "e58649fa4a3a16cff7f6c067f3f15a92630113028a8c119030769ae08d1b400c",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_001.webp",
+      "bytes": 151180,
+      "visibleRgbMeanAbsoluteError": 1.1534491930214068,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "ed87c80336162e4f3c106235f299f2337a868f0a5a311c6d3d08b4ef28c85be0",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_002.webp",
+      "bytes": 153346,
+      "visibleRgbMeanAbsoluteError": 1.1509877520403853,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "f1c8683e081dd53c90074cb2ab032a3021ddd7e07d6bd3345a1f0b40e504c5e6",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_003.webp",
+      "bytes": 152958,
+      "visibleRgbMeanAbsoluteError": 1.1554899338653526,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "3b01b67e655ec3409717efd518b69ae58c8060a90360d3e6db84244a0df087a5",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_004.webp",
+      "bytes": 152082,
+      "visibleRgbMeanAbsoluteError": 1.1533437983276928,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "6dc5364d3ac51daa7f6ffce9e1979570f3e02956acde193b1db96f29a4b88bbf",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_005.webp",
+      "bytes": 152648,
+      "visibleRgbMeanAbsoluteError": 1.153536220001528,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "9b5842f1984e8f6361b1a351e1d30925ddd3b99fc497971f7a530cf56f7f77e4",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_006.webp",
+      "bytes": 153038,
+      "visibleRgbMeanAbsoluteError": 1.162706939071156,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "ee35b325b411f71bb4fc03426e3314043826ab349a85a63920e13fea12e3ea1c",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_007.webp",
+      "bytes": 153626,
+      "visibleRgbMeanAbsoluteError": 1.1590065769803428,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "81fcdf24215b782d98437ff403beed697439d466df67cb36aca6258a8997f4fd",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_008.webp",
+      "bytes": 153656,
+      "visibleRgbMeanAbsoluteError": 1.1540479637485768,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "8e3597cf442eb9df0a2647b574f1e85eed9d44674f9728cb88eafa29df998bf7",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_009.webp",
+      "bytes": 153472,
+      "visibleRgbMeanAbsoluteError": 1.157130601640107,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "5f8c5e9cab69b906ab3a0aa3fc5fe2a0c980ee74949d0265fd23813082b045d6",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_010.webp",
+      "bytes": 153296,
+      "visibleRgbMeanAbsoluteError": 1.159155568843906,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "d6243584f4a172e6c377382a05bea93199e46c5bc9e61cb3ebe5bdc2c685e8df",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_011.webp",
+      "bytes": 154748,
+      "visibleRgbMeanAbsoluteError": 1.1625971511885418,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "be539ddd3b1e82282bb496ea90cd70d540c6807e935433beac83c004b0ac5d2e",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_012.webp",
+      "bytes": 154372,
+      "visibleRgbMeanAbsoluteError": 1.1612585674505538,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "e71f12e620ba06eb13dfbec6dc9edb9150e17aac2c427105cabce2dae37aec23",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_013.webp",
+      "bytes": 151686,
+      "visibleRgbMeanAbsoluteError": 1.162192266531507,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "97f525bbed0a01c8a5509013ae82649f85667e50edb9fe5f3f72cad7fc30119b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_014.webp",
+      "bytes": 153892,
+      "visibleRgbMeanAbsoluteError": 1.1714678363762234,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "75d60612ba018b294aade2eec76c4805d42a655a8afe6851f8e2f9040d0cc264",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_015.webp",
+      "bytes": 153570,
+      "visibleRgbMeanAbsoluteError": 1.156861278240569,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "6ef7405f881fd3ecdf03e64496dba4a91a536b17ce04faff93290e5d15e7c407",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_016.webp",
+      "bytes": 152416,
+      "visibleRgbMeanAbsoluteError": 1.1553232437265053,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "2b3ed960b28b8e6f6ed352d9dc67de7d43622d9bc592950f1aa9f3570acee1e1",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_017.webp",
+      "bytes": 153352,
+      "visibleRgbMeanAbsoluteError": 1.1570070065923774,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "23b9a8fd32dbdb201beeb723aacaf4b0ac2ab46cb0de319b794528764cf7fb7c",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_018.webp",
+      "bytes": 153330,
+      "visibleRgbMeanAbsoluteError": 1.1631493122734735,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "3192d83bc34c6ae7f01804700c0d243dd64a99c2477aa92c7ead410127870803",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_019.webp",
+      "bytes": 153144,
+      "visibleRgbMeanAbsoluteError": 1.1672270702107734,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "d7515ee8ba2d0b53f0a59dbd1e06fcfddef62992b9c3d7273c00792432441da4",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_020.webp",
+      "bytes": 154718,
+      "visibleRgbMeanAbsoluteError": 1.163398970922696,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "714603eee558831bfebd0ba7aa4ea7c3a56d14317e0a9188bbd61582ad3ccbe1",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_021.webp",
+      "bytes": 154116,
+      "visibleRgbMeanAbsoluteError": 1.162002606290695,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "9026dbbe5defdd274f344fa1f05fb1dfa228379d0b74e06ccc9888eb5afc249e",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_022.webp",
+      "bytes": 155612,
+      "visibleRgbMeanAbsoluteError": 1.1703822166391067,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "c6778da7684aadcc2b098ec69e6660a9f6d910be1629e6da8e2d2451085449b7",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_023.webp",
+      "bytes": 153554,
+      "visibleRgbMeanAbsoluteError": 1.1635191769389883,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "6b6aa198dc1026acb8ebc428c727be6b5a8936fe5bf5ad26292f049f0c2f06fb",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_024.webp",
+      "bytes": 153610,
+      "visibleRgbMeanAbsoluteError": 1.1601989302877906,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "a3715df39de803f3dcff32e76b4f4961dd9f12f3f053febc7fe2ae3a68a01180",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_025.webp",
+      "bytes": 155098,
+      "visibleRgbMeanAbsoluteError": 1.159599866681361,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "2084ad6f55c7a04654aa21d80b9872554a625a1dd5dc7a8a3a94e1090f6ccf35",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_026.webp",
+      "bytes": 156080,
+      "visibleRgbMeanAbsoluteError": 1.1689856846475286,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "9bb52cc4d15f03cd4fdc3318dffd3f554487d5bdf634ce1aee1830dddf79c4ac",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_027.webp",
+      "bytes": 154560,
+      "visibleRgbMeanAbsoluteError": 1.167990690121442,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "68d694df4fcc0452c5910690a24bb34490ade41f4ef941d77eeaac1c9109d406",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_028.webp",
+      "bytes": 156464,
+      "visibleRgbMeanAbsoluteError": 1.1710379805050972,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "4ee92263d43fd2c6e74534daddaf24315e1dd8e74e27fa9d7b437cb22e73e122",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_029.webp",
+      "bytes": 156130,
+      "visibleRgbMeanAbsoluteError": 1.1748306899379015,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "2848f1ddaef5957d4f52ce5b16531a3450f0cb1f6a83d5ce7e7f32c20cac325e",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_030.webp",
+      "bytes": 155878,
+      "visibleRgbMeanAbsoluteError": 1.1765421120462347,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "bb816277a1da6198f21a9e67c04fa4ef878c722ea5e3ba2bfbaf39e91d01d129",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_031.webp",
+      "bytes": 157840,
+      "visibleRgbMeanAbsoluteError": 1.1745293163790549,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "787490e2f39d740416b74207a32c5c292171c92f806ffea20a8f3a3657251f74",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_032.webp",
+      "bytes": 157996,
+      "visibleRgbMeanAbsoluteError": 1.1766477192222415,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "c0dbf80637efca2796f5cd9e1c68f222432d24cd16654d41951d9ef7902b8f0d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open/spritesheet_033.webp",
+      "bytes": 52984,
+      "visibleRgbMeanAbsoluteError": 1.1766488836347162,
+      "alphaExact": true,
+      "animation": "open",
+      "sha256": "80a45468c409dac60ae79d84a395b2dde46099c48b281beb6a915f9b768748db",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_000.webp",
+      "bytes": 156312,
+      "visibleRgbMeanAbsoluteError": 1.1723580672200251,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "dc64378f01a7fa4ef36e214f4b907c259b25689f63e0e03a0695aade81d3b025",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_001.webp",
+      "bytes": 156612,
+      "visibleRgbMeanAbsoluteError": 1.1867962571018544,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "25e8db9d0e77db888e41421ae97e2fa7878d4a59eea6608c10479d5c3d9bcce1",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_002.webp",
+      "bytes": 156652,
+      "visibleRgbMeanAbsoluteError": 1.1702898073237968,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "0ef738724d2625a07679324c95fcfdb9a9cdce723e90718098b81af1b69bb6b2",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_003.webp",
+      "bytes": 156122,
+      "visibleRgbMeanAbsoluteError": 1.1726141510071015,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "79713acfc978e379c2609fabb99127f82694ff2dd669a4e6e2fc2bf1c5b7bd1b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_004.webp",
+      "bytes": 155072,
+      "visibleRgbMeanAbsoluteError": 1.1722220806645351,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "1f1db7e5c04cde1ffb5fd11182b6d86b12d8c88d9a394fcfeeec72bf274188b6",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_005.webp",
+      "bytes": 154158,
+      "visibleRgbMeanAbsoluteError": 1.1625195800245298,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "7b081d2e495bfa0fc053f7540eb9aac799f7950ab652e2fe0ba6a471a13a4b8f",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_006.webp",
+      "bytes": 155290,
+      "visibleRgbMeanAbsoluteError": 1.1622525996590718,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "470f082fb57aea1bc62e36bda4665d404d454f7a20b4846db5c05c972a58574c",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_007.webp",
+      "bytes": 152268,
+      "visibleRgbMeanAbsoluteError": 1.168880373633603,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "a308e1068167db78d98d53600facc88a1f2afb628c6b35c4d3e837b31a393448",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_008.webp",
+      "bytes": 152290,
+      "visibleRgbMeanAbsoluteError": 1.1471639204215252,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "55cd61139bb802f22e6c54944f5f3fe62696e709f0523f3f016d84d909bb76da",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_009.webp",
+      "bytes": 152566,
+      "visibleRgbMeanAbsoluteError": 1.149648833583243,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "81a1daade0cf07730e211039d084537168b67b05277d1584cc31c54a853c6dc2",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_010.webp",
+      "bytes": 150360,
+      "visibleRgbMeanAbsoluteError": 1.160177382742232,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "73a37629c3331f33b96736ebe9cdca286b9658ce9f975db7d654003e2705188d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_011.webp",
+      "bytes": 152946,
+      "visibleRgbMeanAbsoluteError": 1.1523087211828773,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "d8e595d5b7cb71b815738cad1eca6427df20acb60a578831bca1d6285739f466",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_012.webp",
+      "bytes": 151718,
+      "visibleRgbMeanAbsoluteError": 1.1535175175687808,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "914c652fa4dea74fb35c6823688e0b6555f8e10744ad07d1fb9957d0229b9cc2",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_013.webp",
+      "bytes": 152166,
+      "visibleRgbMeanAbsoluteError": 1.1573217681171135,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "5494426ef43c71def8fca01f4444a648476e86fcee2450692329e3ac4f2b1742",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_014.webp",
+      "bytes": 152500,
+      "visibleRgbMeanAbsoluteError": 1.1592397925511098,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "23a0f50ddcdd9488f7af2fba47112a14522dd4d627ddf3b3bb41d782d9027743",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_015.webp",
+      "bytes": 152622,
+      "visibleRgbMeanAbsoluteError": 1.1550221638472018,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "139594705eb6d36cef9767262508140cad33111c583e570d27fb5c364340db65",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_016.webp",
+      "bytes": 152342,
+      "visibleRgbMeanAbsoluteError": 1.1526458252111638,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "df3947d920cf3c072e944d24bf255248c5033a86528258a593ba1bcc696a1438",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_017.webp",
+      "bytes": 151164,
+      "visibleRgbMeanAbsoluteError": 1.1440607391418989,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "2042acb74ec16d2a8e4fe4fd79f19c1ab1f804e832463518432b5ede1ff59048",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_018.webp",
+      "bytes": 151496,
+      "visibleRgbMeanAbsoluteError": 1.151028253058057,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "bf4d5af9b0d127722c02236196b21e2121f907d08cff2a114871f59e1b39c0b5",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_019.webp",
+      "bytes": 152284,
+      "visibleRgbMeanAbsoluteError": 1.1488333740435506,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "e48e5b2783418aa1be6eafe819e6e61ae677e5aa213c8fca84e5fe9c387a6ab1",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_020.webp",
+      "bytes": 151732,
+      "visibleRgbMeanAbsoluteError": 1.153248403368714,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "20136f2f9002b1b91bf6e34f4a4d264d375c6b983836da102ead06ded06f8e4b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_021.webp",
+      "bytes": 153032,
+      "visibleRgbMeanAbsoluteError": 1.1540418969639048,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "d2908e9ad4003d898aaeaf9d4e9688328c29ecc0df4415ae609879cc99892f2a",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_022.webp",
+      "bytes": 152662,
+      "visibleRgbMeanAbsoluteError": 1.1593442667671494,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "9b607360baac81e42c04dba0db434b1ccba9543d43161306526a1955a57db43d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_023.webp",
+      "bytes": 153926,
+      "visibleRgbMeanAbsoluteError": 1.1670133938706395,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "19715c40faef63dab898b834d924da3ea7fb88227e6b9fdcdc67db852aa06f1d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_024.webp",
+      "bytes": 153052,
+      "visibleRgbMeanAbsoluteError": 1.1591868232449398,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "0fd99a513fd14b5e9a56b1b54a002ada8bbb8041f5b948bf4ae4a65dbeedd687",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_025.webp",
+      "bytes": 154224,
+      "visibleRgbMeanAbsoluteError": 1.160542519499692,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "48c8f4537344f2915af338d164bf62e192399a7eb401d03500ea23eb9583b57a",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_026.webp",
+      "bytes": 154352,
+      "visibleRgbMeanAbsoluteError": 1.1626174138956398,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "1e14bb25c515a227290769713cba286f9264b51a585171d52ff4f236b72333db",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_027.webp",
+      "bytes": 155150,
+      "visibleRgbMeanAbsoluteError": 1.163929455582765,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "7faa7b8ab69012d31d1c92d3e314e9a9c5730c291b62f474956f6a387db34d2a",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_028.webp",
+      "bytes": 156732,
+      "visibleRgbMeanAbsoluteError": 1.1703326670920837,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "ac317d0e700703995474eae8a3e749294662d19c3f812b8061e8d9795ab61889",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_029.webp",
+      "bytes": 155632,
+      "visibleRgbMeanAbsoluteError": 1.167454146317585,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "9892b5fd4d7cff9a0d792a2371a61ed674478a6d901e15228aa7664eabab4fb1",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_030.webp",
+      "bytes": 156598,
+      "visibleRgbMeanAbsoluteError": 1.1732002850138898,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "0d61e128fd1618755b23a2807213ba4d502203da2dd320e3f5ad8c2512905822",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_031.webp",
+      "bytes": 156688,
+      "visibleRgbMeanAbsoluteError": 1.1910975155120733,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "ef77f893c6f20dc854e1f2cb970a49993cbc669c7e761759373dd40e95b72ddb",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_032.webp",
+      "bytes": 156114,
+      "visibleRgbMeanAbsoluteError": 1.1714145628029873,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "22038d0aabfe4f3b0c1ef0230640e18f68d9e10db25546cbd4a759c61ffaa8b5",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_033.webp",
+      "bytes": 156808,
+      "visibleRgbMeanAbsoluteError": 1.181548893114393,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "69a2c1f99b9edaca510968dbb553f7df5c787e61b1249b1a3ae2fc5e5cca5a99",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_034.webp",
+      "bytes": 156544,
+      "visibleRgbMeanAbsoluteError": 1.1730436253359455,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "7f6e53fd9ce6dd2238e1d91a1a690105000780c8764b843129eab2d7638a3732",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_035.webp",
+      "bytes": 156562,
+      "visibleRgbMeanAbsoluteError": 1.166701871362835,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "0b7ed770f45b05cee2b11ab41a8b0510f82611433c5be414c0b208819d1e0c8d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_036.webp",
+      "bytes": 156634,
+      "visibleRgbMeanAbsoluteError": 1.1756638023585118,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "4b6d7de67b879d10612a1fc90201909f319eca69e83dbcd7f3865e3bc63699e5",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_037.webp",
+      "bytes": 156000,
+      "visibleRgbMeanAbsoluteError": 1.1746482849708433,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "b776464e7efea5f21b5e77f8f868a8b1ec97f1ee7b1b2b663dec45af32c5aa66",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_038.webp",
+      "bytes": 154506,
+      "visibleRgbMeanAbsoluteError": 1.1633996444617605,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "20b5261e35412401f10b1bef3ce07885e8960882d9640a959a0751e1ee3defb8",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_039.webp",
+      "bytes": 154026,
+      "visibleRgbMeanAbsoluteError": 1.1626224643245866,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "72c26cad5bd88f58afd178a9102341802fa16aab688d78de5e98064ddb1ad3d1",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_040.webp",
+      "bytes": 153372,
+      "visibleRgbMeanAbsoluteError": 1.1622415120870853,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "e76f8776cdbd45702e562f0be4ae789682e4f690e5df9b7a420bbfa5fa9df5de",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_041.webp",
+      "bytes": 151176,
+      "visibleRgbMeanAbsoluteError": 1.1466205875542883,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "60d85c2762ab557ed2d78b418fe0c871a3cd4cc89b5d35ddce53411b6e2ddbc9",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_042.webp",
+      "bytes": 152148,
+      "visibleRgbMeanAbsoluteError": 1.1472514076404836,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "e739fab3d8fbae19776fa8c5d7b9ccfc1f07b4cfc534ee05a3242115a03dad90",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_043.webp",
+      "bytes": 151098,
+      "visibleRgbMeanAbsoluteError": 1.1502107433635442,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "eb94c96500c70cc15c10b353134175344e6eb6081c9bbd7d881032092192862c",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_044.webp",
+      "bytes": 151354,
+      "visibleRgbMeanAbsoluteError": 1.146674979416864,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "ef62d7857cdc82c55f60555a924e67a6c651ad81e4502619920d91f8b7a93b2f",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_045.webp",
+      "bytes": 152814,
+      "visibleRgbMeanAbsoluteError": 1.1501707025847097,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "0a6d6f0d3a5387d00ae3c644816ca0e9ad4082263d687f05f5c564f09cd9e9fe",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_046.webp",
+      "bytes": 151622,
+      "visibleRgbMeanAbsoluteError": 1.1473708605386785,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "1728571ffeb703228180fc9608ac62fe937b328b971181fbc2a553e9b69038a8",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_047.webp",
+      "bytes": 152506,
+      "visibleRgbMeanAbsoluteError": 1.1535552989933238,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "a2c6703ab75a8b843ee257615ad1ddcc87d180b527329d92b60cf447732916e4",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_048.webp",
+      "bytes": 152768,
+      "visibleRgbMeanAbsoluteError": 1.1537829498581502,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "3cf0b8163c0acebfb3a1e24997cdcec6a41a4e82b27047afa5658490d4a9f1c7",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_049.webp",
+      "bytes": 151732,
+      "visibleRgbMeanAbsoluteError": 1.1510922680963191,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "35e3ebd83a797adae0ef8c1a22b223c872cd0bffad5bc22ef89486437abfe9b1",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_050.webp",
+      "bytes": 152102,
+      "visibleRgbMeanAbsoluteError": 1.1515307083485735,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "c78eccb3394dcb7dad1971d994a397ef35998d6913e14972f88ac65aa272b928",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_051.webp",
+      "bytes": 151734,
+      "visibleRgbMeanAbsoluteError": 1.1498028043942266,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "08ff2568d8a84d5841d4c60b16ede5b0e188c9c3f973f3aaad771f652fa42315",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_052.webp",
+      "bytes": 152196,
+      "visibleRgbMeanAbsoluteError": 1.1503529990041268,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "9ad45b14ebcbe4b73f26e1f5c7abc1f9d5866e9dfcd4eedfe0e78b534a18293d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_053.webp",
+      "bytes": 152152,
+      "visibleRgbMeanAbsoluteError": 1.153905540748417,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "22bc2fecdbaa90566ce98da9d3cbc91c074f985d88be2a2d504a61367ed866d8",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_054.webp",
+      "bytes": 152072,
+      "visibleRgbMeanAbsoluteError": 1.1539638237211616,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "84b99efa2b5f97a5057f4d53b56b819c6802faaa5d012e9c577b7f6191e55ac7",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_055.webp",
+      "bytes": 152476,
+      "visibleRgbMeanAbsoluteError": 1.153674919251096,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "3298418e444cd8fc66471a5c6ab21eabf5391e94bf704a36a6448a6a6a321a7d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_056.webp",
+      "bytes": 152942,
+      "visibleRgbMeanAbsoluteError": 1.1664582621532131,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "4e5f5f9bd96d00463748067148d6cbbd7fd2de32e73fafc9a2f3a78b48cafbc2",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_057.webp",
+      "bytes": 153012,
+      "visibleRgbMeanAbsoluteError": 1.1595927120594374,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "013a79177b74138984234eedfcabaebdffd60774cc66e3d2d50fd846214d2994",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_058.webp",
+      "bytes": 152492,
+      "visibleRgbMeanAbsoluteError": 1.1527653199492531,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "c200a6d4d454e4da8a3c471dfd66cbabb8f30ea14db21ace65991a59a6e1cdba",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_059.webp",
+      "bytes": 153460,
+      "visibleRgbMeanAbsoluteError": 1.1572857439681308,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "e47ecf3e30962342ffc5046e68e9c3fd12df1b592b968e89bdfa1407f88ee0db",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_060.webp",
+      "bytes": 154726,
+      "visibleRgbMeanAbsoluteError": 1.1601765041044518,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "5d7b5adf3828663b0ea07689b40073352ff129a422252ae5db9017d4271a52b9",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_061.webp",
+      "bytes": 154242,
+      "visibleRgbMeanAbsoluteError": 1.1772723685907245,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "585b0a1b23494bf278391b6326df7dfae1667cb3f8561ce794c019a1c7a8a431",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_062.webp",
+      "bytes": 156090,
+      "visibleRgbMeanAbsoluteError": 1.167094311689416,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "037af828a79047887e5917fe15f2f13928c94c3f3cad17da77f29bd70cda686b",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_063.webp",
+      "bytes": 155870,
+      "visibleRgbMeanAbsoluteError": 1.163693457576057,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "b9530af3944f5a13939c9fcc846a101f0c84355fd56dcd522be1fcbaad7c081d",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_064.webp",
+      "bytes": 157446,
+      "visibleRgbMeanAbsoluteError": 1.1754693110662904,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "6e911ee2f059641befffddbd7e632f6885c5c93f991181f988aed16241a0f31c",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_065.webp",
+      "bytes": 157312,
+      "visibleRgbMeanAbsoluteError": 1.1940984380694013,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "c0971d4243b4a2b212b16a7545fa3e3a64a8fb3cbbab0fc24bc825ac29c8f6b9",
+      "resolution": 0.5
+    },
+    {
+      "image": "animations/open_idle/spritesheet_066.webp",
+      "bytes": 157196,
+      "visibleRgbMeanAbsoluteError": 1.178922199505526,
+      "alphaExact": true,
+      "animation": "open_idle",
+      "sha256": "05a7f5944fcb0dbd5c79493f65466cc6f6fc0ada6909c7c2ae0a26cabcdc1d3a",
+      "resolution": 0.5
+    }
+  ],
+  "totalPages": 136,
+  "totalBytes": 20677252,
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

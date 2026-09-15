@@ -8,5 +8,5 @@ Generated GitHub Pages snapshot of baked Endfield building top-view assets.
 - Integrity: `dist/integrity.json` with SHA-256 hashes for exact file bytes
 
 The site intentionally excludes raw models, source extraction files, PNG/GIF
-frames, diagnostics, and ZIP downloads. Content is generated from the formal
+frames and diagnostics. The site packages separate 128px/64px ZIP downloads in the browser. Content is generated from the formal
 root `variants.json` allowlist in the private working repository.

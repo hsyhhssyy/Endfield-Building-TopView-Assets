@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "gas_storager_1",
   "fileCount": 35,
-  "totalBytes": 3872585,
-  "contentHash": "92f2c41dc4d1af7178d7144a33d93611c4ba09ccbc3e2a925487395b433c7968",
+  "totalBytes": 3895945,
+  "contentHash": "170be88baeddc0370734c5ef6c6b64c63441310080e48be06d1849a4a90984e3",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4767,
-      "sha256": "6ef78997d68aeb2301b739516974e16ec1d2cb78b255b26ee368c83c6d4619e2"
+      "bytes": 5365,
+      "sha256": "303fc31e097aeb6d5963f2c3f67e67cd464922fd0f8f197d38bbbcf34c79495f"
     },
     {
       "path": "variants.json",
-      "bytes": 456,
-      "sha256": "60b6157aec1a33c4a5c1f9a711c84517e1c9ac1c1e2b68e866dc44d73f42a07d"
+      "bytes": 836,
+      "sha256": "061636253097f38390e77ffde0b28d38de5d3eca38ea463613015b492b50598f"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,33 +53,33 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 1546,
-      "sha256": "1791896efdec27220928d38362d0f38714f00107f83e8bbebed1286d2c151d7d"
+      "bytes": 1985,
+      "sha256": "64922b61c0c6bcccb4dfb85b1526b31387cc76eb375351e2d341da1c266da09b"
     },
     {
       "path": "top/ports.json",
-      "bytes": 8507,
-      "sha256": "79d2926e029aebf88c52add71c2c5fd9d30238599b85f5bf872058fec53207a3"
+      "bytes": 9167,
+      "sha256": "d1afa217124e0f972711e60f3c9f4601734988a0046b03b3a3bbe6b382e0f9b7"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 632,
-      "sha256": "97488b36f11beae91b63f533a45b1f646b435b75b599bbc9d07c3c6f6dfe9459"
+      "bytes": 1041,
+      "sha256": "cbad742f8db68ff2a707c82977858fd13aa4eee8aecf2dae9d26478e71efa971"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 1206,
-      "sha256": "6c696909623af1ae0117345287638cae27814a0f4df51ac4784273c315630719"
+      "bytes": 1652,
+      "sha256": "ee31e032b8985f71326b24dba9e71e80c64602924253dd5b22cd1ddfc942e9cd"
     },
     {
       "path": "top/animations/static/animation.json",
-      "bytes": 3814,
-      "sha256": "fc4647f780e5e19f20ccff05fa3bf3d765563184d4d10dfa68cf082907c5f74f"
+      "bytes": 4343,
+      "sha256": "684a4c060fedff7f49a20986cb9238d62e51ca45f1e05ac6ce84e674373eab40"
     },
     {
       "path": "top/animations/static/spritesheet.json",
-      "bytes": 1016,
-      "sha256": "9fc9e356005a619ccbedc50a2d15173b5cf1eecbe8c0697066e097b0fc0c98b8"
+      "bytes": 1452,
+      "sha256": "b007c08e9f45f52728d47b76f09d8ad5f5ce3b74a01273b88ed7bbdbc33c79c9"
     },
     {
       "path": "top/animations/static/spritesheet_000.webp",
@@ -88,13 +88,13 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 3437,
-      "sha256": "cc4e3798bae1285d285b506cdd2f26835c2c08118e10460c3ace3e72604c58dc"
+      "bytes": 3931,
+      "sha256": "abf984d47f0dbdf38c70b21873fa71ef7682859b7446f3e7cfbea32da7f79dbb"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/effect.json",
-      "bytes": 45533,
-      "sha256": "9c5e73ce0fe1fd94ee41991d420029ddcf202e5cba3d7d233cefa9c2b5251a12"
+      "bytes": 48110,
+      "sha256": "73fb9b44bb54d5949ecbb85c2fc4857928bcdd6b43208533d2dc651740d52794"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/height.webp",
@@ -103,8 +103,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/spritesheet.json",
-      "bytes": 41967,
-      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+      "bytes": 44409,
+      "sha256": "0882b3181288849f128150fd073cd2978707fefd247d75a862af5909b4d09869"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_in_01/spritesheet_000.webp",
@@ -113,8 +113,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/effect.json",
-      "bytes": 45549,
-      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+      "bytes": 48126,
+      "sha256": "dcaa29b3e944721efd7eb678a18efd69aab909dc426fe7c58f8f45ec0a8fe4f4"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/height.webp",
@@ -123,8 +123,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
-      "bytes": 41967,
-      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+      "bytes": 44409,
+      "sha256": "0882b3181288849f128150fd073cd2978707fefd247d75a862af5909b4d09869"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
@@ -133,8 +133,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/effect.json",
-      "bytes": 30228,
-      "sha256": "5458a91779aa7e437260026f87c333cfc1b5524b49a7598f2d38d509a387e55e"
+      "bytes": 32090,
+      "sha256": "3c51000f65770f4ce54acfb9d0bac2f8454c2e4b9a346fdece82b3b0efcbec0c"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/height.webp",
@@ -143,8 +143,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/spritesheet.json",
-      "bytes": 26725,
-      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+      "bytes": 28452,
+      "sha256": "689b58afe8e5e113829a0ab7c4f5c8fe3490c97ef17f832287725f21ac7376b1"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_in_01/spritesheet_000.webp",
@@ -153,8 +153,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/effect.json",
-      "bytes": 30232,
-      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+      "bytes": 32094,
+      "sha256": "f2215bf36472d2b1f98db366c35f3a6f5240e7ca3f122b560caa3953785fa04d"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/height.webp",
@@ -163,8 +163,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
-      "bytes": 26725,
-      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+      "bytes": 28452,
+      "sha256": "689b58afe8e5e113829a0ab7c4f5c8fe3490c97ef17f832287725f21ac7376b1"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
@@ -178,8 +178,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2620,
-      "sha256": "84ccfb2bc125cb7f7d5e38ae1d9498d4acb2a5c48bfa13c66927629a4025c86b"
+      "bytes": 3089,
+      "sha256": "373e46d82011e9e06993f4c5c43095692e819e7ca563be2b90ad4291dda73780"
     }
   ]
 }

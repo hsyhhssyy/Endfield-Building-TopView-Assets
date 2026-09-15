@@ -1,0 +1,79 @@
+{
+  "cellWidth": 384,
+  "cellHeight": 384,
+  "frameCount": 1,
+  "playbackFrameCount": 1,
+  "maximumPartPixels": [
+    4096,
+    4096
+  ],
+  "pageCapacity": 1,
+  "pages": [
+    {
+      "index": 0,
+      "image": "spritesheet_000.webp",
+      "width": 192,
+      "height": 192,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 6086,
+      "sha256": "5d308ae7374b8aa1191318f1391faf3f55a019050ffa79a6ee29a062e8c7128a",
+      "resolution": 0.5
+    }
+  ],
+  "frames": [
+    {
+      "vatRow": 127,
+      "vatPhysicalRow": 164,
+      "durationMs": 70,
+      "sourceSpan": {
+        "startIndex": 0,
+        "endIndexInclusive": 1,
+        "count": 2,
+        "vatRows": {
+          "start": 127,
+          "endInclusive": 128,
+          "step": 1
+        }
+      },
+      "index": 0,
+      "page": 0,
+      "localIndex": 0,
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 384,
+      "playable": true,
+      "physicalRect": [
+        0.0,
+        0.0,
+        192.0,
+        192.0
+      ]
+    }
+  ],
+  "encoding": {
+    "format": "WebP",
+    "quality": 85,
+    "alphaQuality": 100,
+    "losslessAlpha": true,
+    "transparentRgb": [
+      0,
+      0,
+      0
+    ],
+    "encoder": "Pillow bundled libwebp",
+    "method": 6
+  },
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

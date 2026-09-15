@@ -1,0 +1,44 @@
+{
+  "name": "close_idle",
+  "url": "./128-d756c66c011c1aa1cf9640bb.json",
+  "pages": [
+    {
+      "url": "../buildings/furnance_1/top/animations/close_idle/spritesheet_000.webp",
+      "width": 384,
+      "height": 384,
+      "originalWidth": 384,
+      "originalHeight": 384,
+      "resolution": 1.0,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "244a9fb0c9f0afda4312548e6d507f2237edb9c6ccc938f1f2b8d4f3fe29244a",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 15460,
+      "sha256": "244a9fb0c9f0afda4312548e6d507f2237edb9c6ccc938f1f2b8d4f3fe29244a"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 384,
+      "durationMs": 67,
+      "physicalRect": [
+        0.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 589824
+}

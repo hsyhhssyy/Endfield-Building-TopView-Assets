@@ -1,0 +1,44 @@
+{
+  "name": "close_idle",
+  "url": "./64-f615cf48b246cce33e21ac06.json",
+  "pages": [
+    {
+      "url": "../64/buildings/liquid_purifier_1/top-gas/animations/close_idle/spritesheet_000.webp",
+      "width": 320,
+      "height": 320,
+      "originalWidth": 640,
+      "originalHeight": 640,
+      "resolution": 0.5,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "0f4a86e1e59274df5cdd42e40f30286b1bfee5e88f8e09a00793fbfea95959ff",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 12384,
+      "sha256": "e21f68d6e780ec9b33b57b64d8c847c4c0a42717fcda3bf63ae920b8373e3668"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 640,
+      "durationMs": 67,
+      "physicalRect": [
+        0.0,
+        0.0,
+        320.0,
+        320.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 409600
+}

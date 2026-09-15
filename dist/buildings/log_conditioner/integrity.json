@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "log_conditioner",
   "fileCount": 20,
-  "totalBytes": 1830661,
-  "contentHash": "facb2f25dd595c1aac2c46495ddf139c0acdc20991d3563e0b64cb0965bd7264",
+  "totalBytes": 1837194,
+  "contentHash": "c0bd26785cc98ed30e3f0b5d3a81d784ccd6a8fc180fe03100940ed6713583e1",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4781,
-      "sha256": "f2fd9bf0cf908a79af27b448472dcbd07f1789433b54f68be6a4b9640c286f28"
+      "bytes": 5379,
+      "sha256": "58553226d35b0eec96c99c4c54d531945ec463c8abceb144506a3253182a78bd"
     },
     {
       "path": "variants.json",
-      "bytes": 505,
-      "sha256": "2ea82becc2a7f1a3c9a783ead908e88255e0ecb98628e83d164f547747d1e61c"
+      "bytes": 885,
+      "sha256": "ba7271739e8dbece0427d42329df5c4b3c682faebdba6cf034060beb80cd8d7f"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 2571,
-      "sha256": "e6f83ae6b42c42af7ca7113bc04afb236b402126611c8eaa005b4dd11d533b0f"
+      "bytes": 3060,
+      "sha256": "705f549f73283f3b36cc4d54a9c1d8f9eac8ab4fc55346c1cf2dfe4acf7a086a"
     },
     {
       "path": "top/ports.json",
-      "bytes": 7123,
-      "sha256": "0584eea131cf72eabbdaa190220e0ea653e5e1904756d634fc1179c9f07de3aa"
+      "bytes": 7752,
+      "sha256": "574ab1a2df59be15fca44ead1aaa1cee5156df20cb26f4e6828c7d3e1eb56b70"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 632,
-      "sha256": "f7ac8300e3cd62af66c70503e52dda268666a2de1a8c5ee858194676221bbdca"
+      "bytes": 1041,
+      "sha256": "7c4bb59554d2878cb8e4e908ca05a40615c7ac5b9a17648f26ccde95e66ee701"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 447,
-      "sha256": "1325fe531a8882e176d6e3e5f421ab2ae8596dabc0c979147ec3610de4427e7a"
+      "bytes": 827,
+      "sha256": "395f2801bcdcc08bf3114b7cc7c91ed328e5aee122d17c056faa03c001e6bc7d"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 2427,
-      "sha256": "badd80e90a3bf3408299fa6a4e42108ba23de9a878b4a37049ad489f7e190a96"
+      "bytes": 2929,
+      "sha256": "bec6ef3813062885b087564b02f7658118387210ebabecf6022ef7ca04c663bd"
     },
     {
       "path": "top/animations/static/animation.json",
-      "bytes": 4111,
-      "sha256": "d29182e0f9f11d8d2a6e5404d7fa4a5e08efc2a492949a3b2800a2a7aac37483"
+      "bytes": 4669,
+      "sha256": "ce4e57309cc100dd5c715da676c1ca9f39efd1a06bd919977359ee7748fbba18"
     },
     {
       "path": "top/animations/static/spritesheet.json",
-      "bytes": 903,
-      "sha256": "662150c0c6300629c217b0e01424127844916e21490ae62fb7ab670eb0cbdb7d"
+      "bytes": 1332,
+      "sha256": "e0ca8fb5fcfe008923ae0c69491b8f4eba61176245d98ebf93b6d7247a09a96b"
     },
     {
       "path": "top/animations/static/spritesheet_000.webp",
@@ -93,8 +93,8 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 1148,
+      "sha256": "1cd661a2b6b8d0678ace36f3571cb98ef7e339222a98ee00699899564f92cf48"
     },
     {
       "path": "top/occlusion/height_static.webp",
@@ -103,8 +103,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2314,
-      "sha256": "bf41e683f553ff6dd5b4bb5b0d3597cb6223a51a678ff5788cdc3331500b72ef"
+      "bytes": 2776,
+      "sha256": "f74ab0021a1adc86df63181d9a02e551fbe0d4a6c5acaf01619f78e76fa024ee"
     }
   ]
 }

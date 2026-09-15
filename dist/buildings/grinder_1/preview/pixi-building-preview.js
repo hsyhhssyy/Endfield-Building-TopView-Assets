@@ -71,7 +71,7 @@ class PageStore {
         resource: bitmap,
         alphaMode: 'no-premultiply-alpha',
         autoGenerateMipmaps: false,
-        resolution: 1,
+        resolution: Number(document.querySelector('meta[name="asset-resolution"]')?.content || 1),
       });
       source.style.scaleMode = 'linear';
       entry.texture = new PIXI.Texture({ source });
@@ -234,7 +234,7 @@ function decodeHeight(image, index, heightMin, heightMax) {
   return heightMin + (packed / 65535) * (heightMax - heightMin);
 }
 
-class StaticHeightMasker {
+export class StaticHeightMasker {
   constructor(packageDoc, spatialDoc, onWarning) {
     this.packageDoc = packageDoc;
     this.spatial = spatialDoc.value;
@@ -306,12 +306,14 @@ class StaticHeightMasker {
           const effectY = decodeHeight(effect, index, effectMin, effectMax);
           let keep = effectY !== null;
           if (keep) {
-            const localX = (px + 0.5 - finiteNumber(effectPivot[0])) / pixelsPerCell;
-            const localZ = (py + 0.5 - finiteNumber(effectPivot[1])) / pixelsPerCell;
+            const resolution = effectDoc.value.textureProfile?.resolution ?? 1;
+            const sceneResolution = this.packageDoc.value.textureProfile?.resolution ?? 1;
+            const localX = ((px + 0.5) / resolution - finiteNumber(effectPivot[0])) / pixelsPerCell;
+            const localZ = ((py + 0.5) / resolution - finiteNumber(effectPivot[1])) / pixelsPerCell;
             const worldX = position[0] + cos * localX + sin * localZ;
             const worldZ = position[2] - sin * localX + cos * localZ;
-            const sceneX = Math.floor(finiteNumber(spatialPivot.x) + worldX * pixelsPerCell);
-            const sceneY = Math.floor(finiteNumber(spatialPivot.y) + worldZ * pixelsPerCell);
+            const sceneX = Math.floor((finiteNumber(spatialPivot.x) + worldX * pixelsPerCell) * sceneResolution);
+            const sceneY = Math.floor((finiteNumber(spatialPivot.y) + worldZ * pixelsPerCell) * sceneResolution);
             if (sceneX >= 0 && sceneY >= 0 && sceneX < this.scene.width && sceneY < this.scene.height) {
               const sceneHeight = decodeHeight(
                 this.scene,
@@ -335,7 +337,9 @@ class StaticHeightMasker {
       canvas.width = effect.width;
       canvas.height = effect.height;
       canvas.getContext('2d').putImageData(new ImageData(mask, effect.width, effect.height), 0, 0);
-      return PIXI.Texture.from(canvas);
+      const texture = PIXI.Texture.from(canvas);
+      texture.source.resolution = effectDoc.value.textureProfile?.resolution ?? 1;
+      return texture;
     })();
     this.maskCache.set(key, promise);
     return promise;
@@ -834,6 +838,7 @@ class BuildingPreview {
   }
 
   dispose() {
+    this.lightMeshExperiment?.dispose();
     this.clearEffects();
     this.buildingTrack?.dispose();
     if (this.app) this.app.destroy(true, { children: true, texture: false, textureSource: false });
@@ -929,6 +934,11 @@ export async function mountBuildingPreviewPage(rootUrl = ROOT_URL) {
     const preview = new BuildingPreview(assetUrl(variant.root, rootUrl));
     try {
       await preview.init();
+      const lightMesh = manifest.experiments?.lightMesh;
+      if (lightMesh?.manifest && (!lightMesh.variant || lightMesh.variant === variant.key)) {
+        const { mountLightMeshExperiment } = await import('./factory-light-mesh-preview.js');
+        preview.lightMeshExperiment = await mountLightMeshExperiment(preview, assetUrl(lightMesh.manifest, rootUrl));
+      }
       if (request !== generation) {
         preview.dispose();
         return;
@@ -961,6 +971,6 @@ function showPreviewError(error) {
   console.error(error);
 }
 
-if (typeof document !== 'undefined') {
+if (typeof document !== 'undefined' && document.querySelector('#stage-status')) {
   mountBuildingPreviewPage().catch(showPreviewError);
 }

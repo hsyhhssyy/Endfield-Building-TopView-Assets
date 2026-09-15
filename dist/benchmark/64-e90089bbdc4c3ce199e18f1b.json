@@ -1,0 +1,44 @@
+{
+  "name": "static",
+  "url": "./64-e90089bbdc4c3ce199e18f1b.json",
+  "pages": [
+    {
+      "url": "../64/buildings/log_hongs_bus_source/top/animations/static/spritesheet_000.webp",
+      "width": 320,
+      "height": 320,
+      "originalWidth": 640,
+      "originalHeight": 640,
+      "resolution": 0.5,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "ff9c2fcd690a8f8d8b385952979199facf96e48ae1cb1f155709ecfb5a10f1c8",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 6214,
+      "sha256": "425d79990498d76877aff18dca0c99de40062fb1ed0404be545fdf3d25cc17f7"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 640,
+      "durationMs": 33,
+      "physicalRect": [
+        0.0,
+        0.0,
+        320.0,
+        320.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 409600
+}

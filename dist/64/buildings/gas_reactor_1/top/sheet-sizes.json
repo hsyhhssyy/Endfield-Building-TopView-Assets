@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "animations": {
+    "close": {
+      "partCount": 1,
+      "totalBytes": 29380,
+      "mib": 0.028018951416015625
+    },
+    "close_idle": {
+      "partCount": 1,
+      "totalBytes": 29380,
+      "mib": 0.028018951416015625
+    },
+    "open": {
+      "partCount": 1,
+      "totalBytes": 29380,
+      "mib": 0.028018951416015625
+    },
+    "open_idle": {
+      "partCount": 3,
+      "totalBytes": 2263348,
+      "mib": 2.158496856689453
+    }
+  },
+  "partCount": 6,
+  "totalBytes": 1086408,
+  "totalMiB": 2.2425537109375,
+  "pages": [
+    {
+      "animation": "close",
+      "index": 0,
+      "image": "animations/close/spritesheet_000.webp",
+      "width": 320,
+      "height": 320,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 13818,
+      "sha256": "67db34fe1aa8b0dec106637987bc9d144192c83099d146f015837c2c80ab2c7d",
+      "resolution": 0.5
+    },
+    {
+      "animation": "close_idle",
+      "index": 0,
+      "image": "animations/close_idle/spritesheet_000.webp",
+      "width": 320,
+      "height": 320,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 13818,
+      "sha256": "67db34fe1aa8b0dec106637987bc9d144192c83099d146f015837c2c80ab2c7d",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open",
+      "index": 0,
+      "image": "animations/open/spritesheet_000.webp",
+      "width": 320,
+      "height": 320,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 13818,
+      "sha256": "67db34fe1aa8b0dec106637987bc9d144192c83099d146f015837c2c80ab2c7d",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open_idle",
+      "index": 0,
+      "image": "animations/open_idle/spritesheet_000.webp",
+      "width": 1920,
+      "height": 1920,
+      "columns": 6,
+      "rows": 6,
+      "frameStart": 0,
+      "frameCount": 36,
+      "bytes": 466594,
+      "sha256": "e5d26d89e486fc64ddf58df15fb5f879784778b46a80eccf0b3fe1c54b8a4097",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open_idle",
+      "index": 1,
+      "image": "animations/open_idle/spritesheet_001.webp",
+      "width": 1920,
+      "height": 1920,
+      "columns": 6,
+      "rows": 6,
+      "frameStart": 36,
+      "frameCount": 36,
+      "bytes": 465164,
+      "sha256": "77ba037e6890d44c998dd2439884241e6ffba454a0545ff507cd8223d33a63d8",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open_idle",
+      "index": 2,
+      "image": "animations/open_idle/spritesheet_002.webp",
+      "width": 1920,
+      "height": 640,
+      "columns": 6,
+      "rows": 2,
+      "frameStart": 72,
+      "frameCount": 9,
+      "bytes": 113196,
+      "sha256": "bc022f8401bde1077f4c8126310f246144322ead619113710bdf8e1b8597efec",
+      "resolution": 0.5
+    }
+  ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

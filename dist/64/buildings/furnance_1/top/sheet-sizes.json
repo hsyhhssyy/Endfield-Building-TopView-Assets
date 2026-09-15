@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "partCount": 4,
+  "totalBytes": 954198,
+  "pages": [
+    {
+      "animation": "close",
+      "index": 0,
+      "image": "animations/close/spritesheet_000.webp",
+      "width": 1920,
+      "height": 576,
+      "columns": 10,
+      "rows": 3,
+      "frameStart": 0,
+      "frameCount": 28,
+      "bytes": 194170,
+      "sha256": "3785754a0a1d70b384e5f364146ab98795a1e01c969cdbf131661bf1816d4f8d",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open",
+      "index": 0,
+      "image": "animations/open/spritesheet_000.webp",
+      "width": 1920,
+      "height": 768,
+      "columns": 10,
+      "rows": 4,
+      "frameStart": 0,
+      "frameCount": 37,
+      "bytes": 255968,
+      "sha256": "c88f9350149145732eea6416a1cdac6d8f44c4ba942944e7829910c95c29b4b2",
+      "resolution": 0.5
+    },
+    {
+      "animation": "close_idle",
+      "index": 0,
+      "image": "animations/close_idle/spritesheet_000.webp",
+      "width": 192,
+      "height": 192,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 7560,
+      "sha256": "3724467cf16aa86ec5e66a8cfba69181e5e3d1dc20c71c2eb8f68876a991b7d3",
+      "resolution": 0.5
+    },
+    {
+      "animation": "open_idle",
+      "index": 0,
+      "image": "animations/open_idle/spritesheet_000.webp",
+      "width": 1920,
+      "height": 1536,
+      "columns": 10,
+      "rows": 8,
+      "frameStart": 0,
+      "frameCount": 72,
+      "bytes": 496500,
+      "sha256": "f9fe78b31cc08047736c529f36b5ddc2d35d54331491436ef35142faf983be28",
+      "resolution": 0.5
+    }
+  ],
+  "animations": [
+    {
+      "animation": "close",
+      "partCount": 1,
+      "totalBytes": 411114
+    },
+    {
+      "animation": "open",
+      "partCount": 1,
+      "totalBytes": 541812
+    },
+    {
+      "animation": "close_idle",
+      "partCount": 1,
+      "totalBytes": 15460
+    },
+    {
+      "animation": "open_idle",
+      "partCount": 1,
+      "totalBytes": 1033174
+    }
+  ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

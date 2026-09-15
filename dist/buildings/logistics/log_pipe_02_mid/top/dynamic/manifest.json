@@ -86,6 +86,24 @@
       "namespace": "dynamic",
       "sha256": "94251ab71aa1b3fea75c47a0a1369189fe3c1648ffe96f5e8c08aa63108eabb4"
     },
+    "dynamic/pipe.endpoint.whitening-noise": {
+      "file": "pipe-endpoint-whitening-noise.webp",
+      "width": 128,
+      "height": 128,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "colorSpace": "linear-data",
+      "alpha": "straight",
+      "filter": "nearest",
+      "wrap": "clamp",
+      "semantic": "pipe.endpoint.whitening-noise",
+      "namespace": "dynamic",
+      "sha256": "8c6314e838f4ce95eb71a7617c215f57ac7fe6a8576d7baee5d39604135c9997"
+    },
     "dynamic/pipe.straight.mapping": {
       "file": "pipe-straight-mapping.webp",
       "width": 128,
@@ -1967,6 +1985,21 @@
     "resource": "static/pipe.endpoint.connector",
     "state": "Static base resource shared by static and dynamic pipe modes"
   },
+  "endpointWhitening": {
+    "material": "pipe-endpoint-whitening-live.json",
+    "module": "pipe-endpoint-whitening-live.js",
+    "noise": "dynamic/pipe.endpoint.whitening-noise",
+    "variants": [
+      "small",
+      "standard"
+    ],
+    "selection": "0 straight cells: none; 1: small; 2 or more: standard",
+    "layerOrder": [
+      "pipe",
+      "pipe.endpoint.whitening",
+      "pipe.endpoint.connector"
+    ]
+  },
   "resourceNamespace": "dynamic",
   "materialSpecification": "material-computation.json",
   "migrationFromContract1": {
@@ -1974,11 +2007,21 @@
     "pipe.chevron": "dynamic/pipe.chevron",
     "pipe.fluid-motion": "dynamic/pipe.fluid-motion",
     "pipe.splash-noise": "dynamic/pipe.splash-noise",
+    "pipe.endpoint.whitening-noise": "dynamic/pipe.endpoint.whitening-noise",
     "pipe.straight.mapping": "dynamic/pipe.straight.mapping",
     "pipe.straight.fluid-mapping": "dynamic/pipe.straight.fluid-mapping",
     "pipe.left.mapping": "dynamic/pipe.left.mapping",
     "pipe.left.fluid-mapping": "dynamic/pipe.left.fluid-mapping",
     "pipe.right.mapping": "dynamic/pipe.right.mapping",
     "pipe.right.fluid-mapping": "dynamic/pipe.right.fluid-mapping"
+  },
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
   }
 }

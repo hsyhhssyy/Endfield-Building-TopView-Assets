@@ -1,0 +1,64 @@
+{
+  "name": "close_idle",
+  "url": "./64-e5c0fe838e66265bf74db6ee.json",
+  "pages": [
+    {
+      "url": "../64/buildings/planter_1/top/animations/close/spritesheet_000.webp",
+      "width": 640,
+      "height": 320,
+      "originalWidth": 1280,
+      "originalHeight": 640,
+      "resolution": 0.5,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "cee6424875fae143c998b441112a92850b6578c814d94ab1cf417c3e6342bbe0",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 21140,
+      "sha256": "f1ee3e31acdea695eae20d14cd6c53fa93b6fbf5c664d6c24d74f92beb0aafb6"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 640,
+      "durationMs": 30,
+      "physicalRect": [
+        0.0,
+        0.0,
+        320.0,
+        320.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "page": 0,
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 640,
+      "durationMs": 40,
+      "physicalRect": [
+        320.0,
+        0.0,
+        320.0,
+        320.0
+      ],
+      "uvRect": [
+        0.5,
+        0.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 2,
+  "rgbaBytes": 819200
+}

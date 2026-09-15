@@ -1,0 +1,44 @@
+{
+  "name": "static",
+  "url": "./128-846d73c6cf819d7dec024a85.json",
+  "pages": [
+    {
+      "url": "../buildings/log_connector/top/animations/static/spritesheet_000.webp",
+      "width": 128,
+      "height": 128,
+      "originalWidth": 128,
+      "originalHeight": 128,
+      "resolution": 1.0,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "4282985ac4a5dded5e633b57f45378901119510e2f1b0f4d56585e4212dddfc4",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 2280,
+      "sha256": "4282985ac4a5dded5e633b57f45378901119510e2f1b0f4d56585e4212dddfc4"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 33,
+      "physicalRect": [
+        0.0,
+        0.0,
+        128.0,
+        128.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 65536
+}

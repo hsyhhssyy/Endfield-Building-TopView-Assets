@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "format": "logistics-spritesheet-v2",
   "gameVersion": "v1.5",
-  "taskId": "20260914-133000-logistics-fluid-color-release",
+  "taskId": "20260913-155015-logistics-baked-flow",
   "sourceAppearance": "water-gas-flat-head-v4",
   "pixelsPerCell": 128,
   "maxPageSize": [
@@ -93,6 +93,24 @@
       "rgbaBytes": 4771280,
       "sha256": "cb3b76b08f6d865a82e7ade42ea06f12265770971ffde4e5e9358eea1f81c8c8"
     },
+    "endpoint-whitening-small": {
+      "file": "log_pipe_02_mid/top/static/pipe-endpoint-whitening-small.webp",
+      "group": "static",
+      "width": 128,
+      "height": 128,
+      "bytes": 2010,
+      "rgbaBytes": 65536,
+      "sha256": "37ceb3182dbb0abbb8fec148306c839880d3acc77cda6b5a8bc4e17840a1ecaf"
+    },
+    "endpoint-whitening-standard": {
+      "file": "log_pipe_02_mid/top/static/pipe-endpoint-whitening-standard.webp",
+      "group": "static",
+      "width": 128,
+      "height": 128,
+      "bytes": 2722,
+      "rgbaBytes": 65536,
+      "sha256": "21a038be2d5cbc17225f6ac830709fda91a652e6e639127e556777622e943a93"
+    },
     "fluid-data": {
       "file": "baked/fluid-data.webp",
       "group": "fluid-field",
@@ -117,6 +135,54 @@
     }
   },
   "frames": {
+    "static/pipe.endpoint.whitening-small": {
+      "page": "endpoint-whitening-small",
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "sourceSize": [
+        128,
+        128
+      ],
+      "spriteSourceSize": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false
+    },
+    "static/pipe.endpoint.whitening-standard": {
+      "page": "endpoint-whitening-standard",
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "sourceSize": [
+        128,
+        128
+      ],
+      "spriteSourceSize": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "rotated": false
+    },
     "conveyor/straight/highlight/22": {
       "page": "conveyor-0",
       "rect": [
@@ -29021,6 +29087,34 @@
       "ownerId": "log_pipe_02_mid",
       "frame": "static/pipe.endpoint.whitening"
     },
+    "static/pipe.endpoint.whitening-small": {
+      "width": 128,
+      "height": 128,
+      "colorSpace": "srgb",
+      "alpha": "straight",
+      "filter": "linear",
+      "wrap": "clamp",
+      "sourceId": "log_pipe_02_mid",
+      "component": "route-endpoint",
+      "semantic": "pipe.endpoint.whitening-small",
+      "namespace": "static",
+      "ownerId": "log_pipe_02_mid",
+      "frame": "static/pipe.endpoint.whitening-small"
+    },
+    "static/pipe.endpoint.whitening-standard": {
+      "width": 128,
+      "height": 128,
+      "colorSpace": "srgb",
+      "alpha": "straight",
+      "filter": "linear",
+      "wrap": "clamp",
+      "sourceId": "log_pipe_02_mid",
+      "component": "route-endpoint",
+      "semantic": "pipe.endpoint.whitening-standard",
+      "namespace": "static",
+      "ownerId": "log_pipe_02_mid",
+      "frame": "static/pipe.endpoint.whitening-standard"
+    },
     "static/pipe.straight.shell": {
       "width": 128,
       "height": 128,
@@ -31147,6 +31241,20 @@
     "base": "pipe.endpoint.connector-base",
     "highlight": "pipe.endpoint.connector-highlight",
     "whitening": "pipe.endpoint.whitening",
+    "whiteningVariants": {
+      "small": "pipe.endpoint.whitening-small",
+      "standard": "pipe.endpoint.whitening-standard"
+    },
+    "whiteningSelection": {
+      "zeroStraightCells": "none",
+      "oneStraightCell": "small",
+      "twoOrMoreStraightCells": "standard"
+    },
+    "layerOrder": [
+      "pipe",
+      "pipe.endpoint.whitening",
+      "pipe.endpoint.connector"
+    ],
     "canvasCells": [
       1,
       1
@@ -31436,7 +31544,7 @@
       "support-front",
       "route endpoints"
     ],
-    "endpoints": "每条连续管线只在入口、出口各放一次 connector/whitening；内部格接缝不放。pipeShapes 包含支架装配信息，左右弯都有支架。",
+    "endpoints": "每条连续管线只在入口、出口各放一次 connector；白光按端点到首个转角前的连续直管格数选择：0 格不放、1 格 small、2 格及以上 standard。白光在管道上、端帽下，内部格接缝不放。pipeShapes 包含支架装配信息，左右弯都有支架。",
     "colors": "流体改用中性空间场，运行时按 fluidProfiles 的 body/skin/skin2/splash 设置多色参数；勿给管壁、支架、标记染色。",
     "performance": "静态、标记和传送带仍为合批 Sprite；流体为每条路线一个共享 Mesh，预烘焙昂贵的多层雾噪声，运行时仅采样、连续粗细/前缘裁切和颜色合成。不能每格创建独立 Shader。",
     "example": "index.html 顶部切换实时绘制与烘焙播放；?renderer=baked 直达烘焙，附加 &animate=1 播放。Tab 共用画布并保留选项和进度，旧 baked.html 自动跳转。烘焙使用 baked-flow.js，JSON 内含一致的参考 Shader；直接打开烘焙不加载 dynamic.js 或原独立动态贴图。"
@@ -31448,10 +31556,10 @@
     "水体内缩、两组弱粗细波、连续排空与平直白色水头保留绘制版公式；场景折射和游戏状态机仍是二维近似。"
   ],
   "totals": {
-    "frameCount": 1143,
-    "pageCount": 5,
-    "compressedBytes": 1603248,
-    "rgbaBytes": 28904668
+    "frameCount": 1145,
+    "pageCount": 7,
+    "compressedBytes": 1607980,
+    "rgbaBytes": 29035740
   },
   "fluidPlayback": {
     "kind": "baked-spatial-field-v2",
@@ -31525,6 +31633,7 @@
     }
   },
   "heightMetadata": "logistics-height.json",
+  "fluidProfileMetadata": "fluid-profiles.json",
   "fluidProfileCoverage": {
     "profile": "endfield-pipe-fluid-colors-v1",
     "profileCount": 20,
@@ -31563,5 +31672,13 @@
       }
     }
   },
-  "fluidProfileMetadata": "fluid-profiles.json"
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
 }

@@ -1,0 +1,64 @@
+{
+  "name": "close_idle",
+  "url": "./128-2e3460b417146c72d86d3dfc.json",
+  "pages": [
+    {
+      "url": "../buildings/seedcollector_1/top/animations/close_idle/spritesheet_000.webp",
+      "width": 1280,
+      "height": 640,
+      "originalWidth": 1280,
+      "originalHeight": 640,
+      "resolution": 1.0,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "5d351c27d230c33fc07902eef9a3d5714462bbefe151850fc46ceb4be9a04f75",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 68546,
+      "sha256": "5d351c27d230c33fc07902eef9a3d5714462bbefe151850fc46ceb4be9a04f75"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 640,
+      "durationMs": 33,
+      "physicalRect": [
+        0.0,
+        0.0,
+        640.0,
+        640.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "page": 0,
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 640,
+      "durationMs": 33,
+      "physicalRect": [
+        640.0,
+        0.0,
+        640.0,
+        640.0
+      ],
+      "uvRect": [
+        0.5,
+        0.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 2,
+  "rgbaBytes": 3276800
+}

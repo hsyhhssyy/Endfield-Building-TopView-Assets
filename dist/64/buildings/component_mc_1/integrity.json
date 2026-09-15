@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256",
+  "building": "component_mc_1",
+  "fileCount": 23,
+  "totalBytes": 1589405,
+  "contentHash": "342fadc3c0859f87d69c2800174f1defd20aceb0bba78243af12ab71bc871725",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 5384,
+      "sha256": "14fb262460c424e0f255fd5fd61e75bea69537061270c5aef6b9a7d553af50ad"
+    },
+    {
+      "path": "variants.json",
+      "bytes": 877,
+      "sha256": "8469dd2340274f223836a4b150ca1f66f5ec9ec10e1024d8d14c614d2d39f65d"
+    },
+    {
+      "path": "preview/grass-background.json",
+      "bytes": 752,
+      "sha256": "8aec7bcd56cbe816fb764d1f8b9d03c467026d89811c45c9017d874daea796d8"
+    },
+    {
+      "path": "preview/grass-base.webp",
+      "bytes": 8874,
+      "sha256": "b21359f3ec429fb0ea15a1be87d33dcf5d3696c34b639353ac3cf80bcb8f142f"
+    },
+    {
+      "path": "preview/pixi-building-preview.js",
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
+    },
+    {
+      "path": "preview/preview-data.js",
+      "bytes": 5142,
+      "sha256": "e36b1263dc5cc85c401d5317bb11f2caa410423d7dda1c54e9158f9fb0c31b48"
+    },
+    {
+      "path": "preview/preview.css",
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
+    },
+    {
+      "path": "preview/vendor/LICENSE.txt",
+      "bytes": 1085,
+      "sha256": "530a014b36db249b1c169a2d698469e1c8c3e35bf48548b00b5031ffdd8a2b93"
+    },
+    {
+      "path": "preview/vendor/pixi.min.js",
+      "bytes": 785850,
+      "sha256": "66a99b6475ce96a46ea7ed841749773eee5ca74ddea1638a34ef115dbb8db768"
+    },
+    {
+      "path": "top/package.json",
+      "bytes": 4853,
+      "sha256": "f1558a947eeed5ad5bf47c61b6ca4660ea230da89454e539c5ba05c2d8790bb9"
+    },
+    {
+      "path": "top/ports.json",
+      "bytes": 17043,
+      "sha256": "c0ba8bf27c05f430ab79518482d468f60f2ee0f2e581926124603213b44dd31d"
+    },
+    {
+      "path": "top/sequence.json",
+      "bytes": 1423,
+      "sha256": "e1952a375ee5cd31cd787993d52c6edff84149b6398925152174dc73ec6630e2"
+    },
+    {
+      "path": "top/sheet-sizes.json",
+      "bytes": 1482,
+      "sha256": "eea221cb1ae819488bd44ee5b563f847a4d329a750a6872dcdffb56a5da78d79"
+    },
+    {
+      "path": "top/spatial.json",
+      "bytes": 4033,
+      "sha256": "2648e6abbfd0e9a0cdda8063190dcc99025ec57f822356fc3f7dcfb3421cf068"
+    },
+    {
+      "path": "top/animations/close_idle/animation.json",
+      "bytes": 4072,
+      "sha256": "295e62acf7bec8fc8e8f6a0c5d6d4d621fc2d9fbd2853d73489054a891ec1a5d"
+    },
+    {
+      "path": "top/animations/close_idle/spritesheet.json",
+      "bytes": 1729,
+      "sha256": "870767da6408dbadb5c28eeefa29d6f3e56a408d4eb888c598f2eb558c74672e"
+    },
+    {
+      "path": "top/animations/close_idle/spritesheet_000.webp",
+      "bytes": 6366,
+      "sha256": "586c21f601086be990af70578434b5cb3132a64be9ab128de60eb729c170c2a2"
+    },
+    {
+      "path": "top/animations/open_idle/animation.json",
+      "bytes": 46622,
+      "sha256": "d911e223d4d3ee2e05e5fcde971d4732608d8a9daacfce5213df8cd960912395"
+    },
+    {
+      "path": "top/animations/open_idle/spritesheet.json",
+      "bytes": 70179,
+      "sha256": "75a424535e43b889b3998d75edb1363552bda08d7156bdd64f0d58655fe4c94f"
+    },
+    {
+      "path": "top/animations/open_idle/spritesheet_000.webp",
+      "bytes": 572370,
+      "sha256": "012d9b28a33eda56db4ba8ffee52e547da8a43e65017924ac2ce825d7b7fb163"
+    },
+    {
+      "path": "top/effects/resources.json",
+      "bytes": 1147,
+      "sha256": "c7ad33fecf3b48401fc835fcc4eedd0573e0d8bd76f41c64650a7f3afb5a6787"
+    },
+    {
+      "path": "top/occlusion/height_open_idle.webp",
+      "bytes": 5890,
+      "sha256": "85ee0612f7d3b5db224d9a7fc32e9a0c89e528b3479bc1546e37b753b40b75cc"
+    },
+    {
+      "path": "top/occlusion/occlusion.json",
+      "bytes": 3401,
+      "sha256": "28c08425b6a2d5abe3d89a60dc03d316672bd5d62c35dd86f162961dcbcf94dd"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "close_idle",
+  "url": "./128-385709c740231a234713238a.json",
+  "pages": [
+    {
+      "url": "../buildings/liquid_storager_1/top/animations/close_idle/spritesheet_000.webp",
+      "width": 384,
+      "height": 384,
+      "originalWidth": 384,
+      "originalHeight": 384,
+      "resolution": 1.0,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "c1069c1740adb25d434bb6e879d13a61a7f64ba5174929bf8f05c5bc464e93e6",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 11544,
+      "sha256": "c1069c1740adb25d434bb6e879d13a61a7f64ba5174929bf8f05c5bc464e93e6"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 384,
+      "durationMs": 70,
+      "physicalRect": [
+        0.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 1,
+  "rgbaBytes": 589824
+}

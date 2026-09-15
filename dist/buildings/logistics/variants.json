@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "building": "logistics",
   "displayName": "管道和传送带",
-  "taskId": "20260914-133000-logistics-fluid-color-release",
+  "taskId": "20260913-logistics-height-publication",
   "defaultVariant": "collection",
   "variants": [
     {
@@ -14,5 +14,14 @@
       "collection": "collection.json"
     }
   ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  },
   "integrity": "integrity.json"
 }

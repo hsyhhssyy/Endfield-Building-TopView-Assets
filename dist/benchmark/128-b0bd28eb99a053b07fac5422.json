@@ -1,0 +1,64 @@
+{
+  "name": "close_idle",
+  "url": "./128-b0bd28eb99a053b07fac5422.json",
+  "pages": [
+    {
+      "url": "../buildings/pump_1/top/animations/close_idle/spritesheet_000.webp",
+      "width": 1280,
+      "height": 384,
+      "originalWidth": 1280,
+      "originalHeight": 384,
+      "resolution": 1.0,
+      "profile": "offline-grid-v1",
+      "sourceSha256": "bd099ceca2bd02509c7a30af9bc32e25c3a0cda879a94c29148d43a65b375330",
+      "kind": "color",
+      "name": "spritesheet_000.webp",
+      "bytes": 21424,
+      "sha256": "bd099ceca2bd02509c7a30af9bc32e25c3a0cda879a94c29148d43a65b375330"
+    }
+  ],
+  "frames": [
+    {
+      "page": 0,
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 33,
+      "physicalRect": [
+        0.0,
+        0.0,
+        640.0,
+        384.0
+      ],
+      "uvRect": [
+        0.0,
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "page": 0,
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 34,
+      "physicalRect": [
+        640.0,
+        0.0,
+        640.0,
+        384.0
+      ],
+      "uvRect": [
+        0.5,
+        0.0,
+        0.5,
+        1.0
+      ]
+    }
+  ],
+  "frameCount": 2,
+  "rgbaBytes": 1966080
+}

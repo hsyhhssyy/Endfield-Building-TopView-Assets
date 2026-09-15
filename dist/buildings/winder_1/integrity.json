@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "winder_1",
   "fileCount": 31,
-  "totalBytes": 5390356,
-  "contentHash": "4311a7ffbc11eafcd32b9cd76ff072c25d6d9b894b2cf96f18aaf5989ab49c97",
+  "totalBytes": 5406918,
+  "contentHash": "0b88b97ae057e27ee1da859cbf04af530d9f1fadc34f3698adcfbf11ec401d4d",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4767,
-      "sha256": "0b993d81f1b8e138b882dd023159ac4f7579f4312dafa23d69ea71f96587fb3c"
+      "bytes": 5365,
+      "sha256": "0ab1833c44e5e29607267e01b0c4a7ef3ff299c1ca9e11c5bdd368b90e0f65e8"
     },
     {
       "path": "variants.json",
-      "bytes": 498,
-      "sha256": "8698d01eace60ff94348b02827bcf0e76fc4644a9076c1511f3f3dd4ee3791fa"
+      "bytes": 878,
+      "sha256": "231ccee960798fc6dfaeebd3a5d5f73318a03bf49f40fab25b7faf967402aed3"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 6553,
-      "sha256": "b929a4430d36c8800753f023dfa4d7f345b6414864cc6b3ca13dbf88f473de39"
+      "bytes": 7221,
+      "sha256": "20a32bf63101bab1168d36b3f2e29bb8ee6dd8077d16ac0adcdbf1bb509756bb"
     },
     {
       "path": "top/ports.json",
-      "bytes": 28250,
-      "sha256": "6c3e2246b4dab5a866da8aa8e2662c4c8dcd4dc8dc76ff816883de83e736e3ee"
+      "bytes": 29606,
+      "sha256": "6e50004084d300de040e85ecf06463a294a4e570b8698d6225bc82061cdb8047"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 1669,
-      "sha256": "2baa273180db6c3b303c00ac53ab646f3548ff0580d06bcaf61ea47d5f06c95e"
+      "bytes": 2117,
+      "sha256": "dd9c99d3fad497d4f7cb07e61d5667fe3d950d403e104856190638a6d4a37805"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 2692,
-      "sha256": "69cea7d73a2c330a354852938eb38706919bb808e58bcd65ab3a16ee342c539c"
+      "bytes": 3072,
+      "sha256": "e1a86c89b9bbc15910d29c09522a9f7f6fe7d53fa259d84bfb2f0ae0aa0a8d52"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 5620,
-      "sha256": "7ab0f3a12048725cb6fc2501e41b89617dff2152411e6cf44598c6b8c3c3495c"
+      "bytes": 6288,
+      "sha256": "11ede2f4651865b401581b20ec47a1325221b38f61592d7f931cd638a32ae94f"
     },
     {
       "path": "top/animations/close/animation.json",
-      "bytes": 14537,
-      "sha256": "14e85832f356bcb3067d5c095b125ed366e1007546f02b21e20c6373d9c43b17"
+      "bytes": 15599,
+      "sha256": "c85fdb644eda422392e9d71a035e3f29ff8fec296ec45018f5283dd6fdde996f"
     },
     {
       "path": "top/animations/close/spritesheet.json",
-      "bytes": 15426,
-      "sha256": "0b70bac53923a668e8463501a3eb6c5ee5fe906f246118317b559f8a6b88783e"
+      "bytes": 16567,
+      "sha256": "5eb04d7cb0fd1e1e0615f0b04ecb7286340686367b998c8bc70b09e5bce11b30"
     },
     {
       "path": "top/animations/close/spritesheet_000.webp",
@@ -93,13 +93,13 @@
     },
     {
       "path": "top/animations/close_idle/animation.json",
-      "bytes": 4209,
-      "sha256": "ccbd91a37f3bfaabfc267c0fb1e659fcb0ac1fe15e22d5a668a6346a1efd4fa4"
+      "bytes": 4771,
+      "sha256": "e211fea9c3d9311eac2f4be282af1b0e46b26bbda21d83cb6bc61f6d158c691d"
     },
     {
       "path": "top/animations/close_idle/spritesheet.json",
-      "bytes": 1173,
-      "sha256": "e1d870d96233658672010189c81ecd2d62f6afb0fc7d2b3f1593e81e5eaa120a"
+      "bytes": 1614,
+      "sha256": "23fb68d01f591b9568df3e95b72c9fbc45ec5204310540408ffac1af389b95f5"
     },
     {
       "path": "top/animations/close_idle/spritesheet_000.webp",
@@ -108,13 +108,13 @@
     },
     {
       "path": "top/animations/open/animation.json",
-      "bytes": 24799,
-      "sha256": "b5f7030a8bdbd78f967a2b09dc038238400eb3f050f3078d9ff2bc4a59eb9bba"
+      "bytes": 26361,
+      "sha256": "6539a0b85960ef2a0704557404962f56bbd21bbe05d08792e4a13727c7618685"
     },
     {
       "path": "top/animations/open/spritesheet.json",
-      "bytes": 29919,
-      "sha256": "7fc7d2c728566c9ee6b48477e5a3c78b16c5b2c0e44cdc4bef513d4066786ef8"
+      "bytes": 31772,
+      "sha256": "590be91301bb6256e855d60fa2f2e83972b08b5e0251dc2f077c771c4054b798"
     },
     {
       "path": "top/animations/open/spritesheet_000.webp",
@@ -128,13 +128,13 @@
     },
     {
       "path": "top/animations/open_idle/animation.json",
-      "bytes": 23658,
-      "sha256": "16d71a5625d6e00869356a6619ea1de50451fcbebfd18c1909d1992cc03b608e"
+      "bytes": 25160,
+      "sha256": "5796722985febc826a39059cd80ae855c682d201ef8e5996eeeac57a7dbb819c"
     },
     {
       "path": "top/animations/open_idle/spritesheet.json",
-      "bytes": 28298,
-      "sha256": "85b3ac4e816fe041220ab42ecbda2a1edea4fabb94ea8636167550441152735a"
+      "bytes": 30067,
+      "sha256": "cd02ae185325500748031da3b0c9bc6ce8359f7a57c5296223169eb286decc49"
     },
     {
       "path": "top/animations/open_idle/spritesheet_000.webp",
@@ -148,8 +148,8 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 1148,
+      "sha256": "1cd661a2b6b8d0678ace36f3571cb98ef7e339222a98ee00699899564f92cf48"
     },
     {
       "path": "top/occlusion/height_open_idle.webp",
@@ -158,8 +158,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2839,
-      "sha256": "9e47d44e24d9cccbb9920e56c183d2eb01589c2b18a4160c7f8b6dc39d69c68b"
+      "bytes": 3314,
+      "sha256": "14cce4f1af99cb9cf1699f04558227c71070e524dcf6ee0d7d171a8ba3593fbc"
     }
   ]
 }

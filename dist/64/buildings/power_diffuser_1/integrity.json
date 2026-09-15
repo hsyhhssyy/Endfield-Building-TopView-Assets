@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256",
+  "building": "power_diffuser_1",
+  "fileCount": 29,
+  "totalBytes": 2637038,
+  "contentHash": "4ff4fbf47716de15ce2bfdc512736f151067301b8aa772f443e9bfc15becef4e",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 5388,
+      "sha256": "ba06e60a73009a3ca06a7c21d2883bf22e7ca87992deef0b933ea1ae79c06a1d"
+    },
+    {
+      "path": "variants.json",
+      "bytes": 879,
+      "sha256": "662db0ff6c1f86fbfc030ad86c9c0fa17e1a510e41b6e20191ded1e91d6ea555"
+    },
+    {
+      "path": "preview/grass-background.json",
+      "bytes": 752,
+      "sha256": "8aec7bcd56cbe816fb764d1f8b9d03c467026d89811c45c9017d874daea796d8"
+    },
+    {
+      "path": "preview/grass-base.webp",
+      "bytes": 8874,
+      "sha256": "b21359f3ec429fb0ea15a1be87d33dcf5d3696c34b639353ac3cf80bcb8f142f"
+    },
+    {
+      "path": "preview/pixi-building-preview.js",
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
+    },
+    {
+      "path": "preview/preview-data.js",
+      "bytes": 5142,
+      "sha256": "e36b1263dc5cc85c401d5317bb11f2caa410423d7dda1c54e9158f9fb0c31b48"
+    },
+    {
+      "path": "preview/preview.css",
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
+    },
+    {
+      "path": "preview/vendor/LICENSE.txt",
+      "bytes": 1085,
+      "sha256": "530a014b36db249b1c169a2d698469e1c8c3e35bf48548b00b5031ffdd8a2b93"
+    },
+    {
+      "path": "preview/vendor/pixi.min.js",
+      "bytes": 785850,
+      "sha256": "66a99b6475ce96a46ea7ed841749773eee5ca74ddea1638a34ef115dbb8db768"
+    },
+    {
+      "path": "top/package.json",
+      "bytes": 1952,
+      "sha256": "8e55e2fecbce9f1bff0b596b468156385e5d7760bd72e9e86a0dcc4f6e1e3b09"
+    },
+    {
+      "path": "top/ports.json",
+      "bytes": 3573,
+      "sha256": "e9ce510607f7513a463bc17f640e20db4bce392d233d065db202cf924dd46dc6"
+    },
+    {
+      "path": "top/sequence.json",
+      "bytes": 2126,
+      "sha256": "ecb7c4284f903e758d5c74d17847890b2e20daeb40bab8b342d8fb3d91c552f4"
+    },
+    {
+      "path": "top/sheet-sizes.json",
+      "bytes": 3366,
+      "sha256": "4574a9a51b0d11e6a3e0e3682ffb94fb87868d20cef82323aab1e3c31c694662"
+    },
+    {
+      "path": "top/spatial.json",
+      "bytes": 2351,
+      "sha256": "45381aabf230a06f8237f09d34d8b9477c5f73310c107fbf776721d47cb3344b"
+    },
+    {
+      "path": "top/animations/close/animation.json",
+      "bytes": 50159,
+      "sha256": "161fee2bff684ccecb3e8973cd6ce6ce232b309043d2eb479c1b6504c40d0872"
+    },
+    {
+      "path": "top/animations/close/spritesheet.json",
+      "bytes": 81084,
+      "sha256": "afad6dcd230c78b5c6d8e876b99a8f51c0bd4568bc9fe04009828e851388a78e"
+    },
+    {
+      "path": "top/animations/close/spritesheet_000.webp",
+      "bytes": 436440,
+      "sha256": "91db7808aa5c2494c5fa0a5d435a61cc8853c8818473143b37267863298fb5cf"
+    },
+    {
+      "path": "top/animations/close_idle/animation.json",
+      "bytes": 5720,
+      "sha256": "f60013c1bf12f7d2b24a5c1e709388ca69858226e2129d8faab3223adedc3d8a"
+    },
+    {
+      "path": "top/animations/close_idle/spritesheet.json",
+      "bytes": 2174,
+      "sha256": "5d8bfa99a15fa280cfc3819c41d943bb41a6c44e487fbd0f8d90f7dca85fc473"
+    },
+    {
+      "path": "top/animations/close_idle/spritesheet_000.webp",
+      "bytes": 3712,
+      "sha256": "e2ca62551fa3fc2eabb583298cfaeeeac03fd1bfdd11b312399d14d1fbeb1efc"
+    },
+    {
+      "path": "top/animations/open/animation.json",
+      "bytes": 50510,
+      "sha256": "9a4149915c2cc6db2d2f076f01c65651c0ffca978afe242dc95ff6c77582977b"
+    },
+    {
+      "path": "top/animations/open/spritesheet.json",
+      "bytes": 81435,
+      "sha256": "90bbd8fee3a20f9da36a8ffa959daf28ca0145ceddbdce3b44539338dd1ff349"
+    },
+    {
+      "path": "top/animations/open/spritesheet_000.webp",
+      "bytes": 435546,
+      "sha256": "76b7310d8c2bd6193899f7edd218f48a8f71b574335b8996a4054de769a7f489"
+    },
+    {
+      "path": "top/animations/open_idle/animation.json",
+      "bytes": 53572,
+      "sha256": "a90aae7965d751eec029f9836424a901baa5f3df65af97ab850ac9168a7f8001"
+    },
+    {
+      "path": "top/animations/open_idle/spritesheet.json",
+      "bytes": 86962,
+      "sha256": "d7c66c131d5c5fab281e11e93df9a832dc6ccdd0c328edcada008a15122086d7"
+    },
+    {
+      "path": "top/animations/open_idle/spritesheet_000.webp",
+      "bytes": 478884,
+      "sha256": "67dc83cd7d57b1ed1c0446d2e08bf5241d4d0722c89e850d19d970c284f97325"
+    },
+    {
+      "path": "top/effects/resources.json",
+      "bytes": 1147,
+      "sha256": "c7ad33fecf3b48401fc835fcc4eedd0573e0d8bd76f41c64650a7f3afb5a6787"
+    },
+    {
+      "path": "top/occlusion/height_open_idle.webp",
+      "bytes": 4090,
+      "sha256": "27e6c68cf85e5f32f0b190b7d3986ad4734040230125ae513a9212e4f08f9caa"
+    },
+    {
+      "path": "top/occlusion/occlusion.json",
+      "bytes": 3434,
+      "sha256": "aae51da9ae4b8c6f509274de7b60dea91824e255cbc1b55c6365ff0f7789335e"
+    }
+  ]
+}

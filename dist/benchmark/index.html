@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>工厂渲染性能测试</title><link rel="stylesheet" href="benchmark.css"></head>
+<body><header><label>素材尺寸<select id="asset-size"><option value="64">64px / 格（默认）</option><option value="128">128px / 格</option></select></label><a href="../">← 返回素材总览</a><div class="heading"><div><p class="eyebrow">FACTORY / RENDER BENCHMARK</p><h1>工厂渲染性能测试</h1></div><span id="phase" class="badge">准备中</span></div>
+<p>1080 × 1080 像素 · 离线素材 · 一格占地间距 · 独立动画循环</p></header>
+<main><section class="scene"><div class="canvas-scroll"><div id="canvas-host"></div></div><div class="scene-bar"><span id="scene-info">正在读取设备目录</span><span id="live-fps">— FPS</span></div><p id="status" role="status">初始化</p></section>
+<aside><section class="panel"><h2>场景配置</h2><label>预设<select id="preset"><option value="all">全部设备各一台</option><option value="single">指定单设备</option><option value="pumps">水泵排满网格</option><option value="custom">自定义 JSON</option></select></label>
+<div id="single-controls" hidden><label>设备<select id="device"></select></label><label>数量（或 fill 排满网格）<input id="device-count" value="1"></label></div>
+<div class="pair"><label>网格 N<input id="grid" value="auto"></label><label>预热 / 秒<input id="warmup" type="number" min="0" max="120" value="10"></label></div>
+<div class="pair"><label>采样 / 秒<input id="duration" type="number" min="1" max="600" value="60"></label><label>水泵灯带<select id="lights"><option value="strip">细条图集与网格</option><option value="original">原始烘焙颜色</option></select></label></div>
+<label>常驻纹理范围<select id="residency"><option value="scene">当前场景的选定动画，全部图集页</option><option value="catalog">全部设备的选定动画</option><option value="all-clips">全部设备、全部模式、全部动画</option></select></label>
+<label class="check"><input id="ports" type="checkbox" checked>设备端口与环形特效（ON）</label>
+<details><summary>编辑设备、模式和数量</summary><textarea id="config" spellcheck="false" rows="15"></textarea><p class="small">count 可为数字或 fill；variant、clip 可选。两条 10 格物流线始终绘制，管内保持满息壤气。</p><label>读取 JSON 文件<input id="config-file" type="file" accept=".json,application/json"></label><p class="small">URL 参数：preset=pumps、grid=128、device=pump_1、count=fill、duration=60、warmup=10、resident=scene、autorun=1。也可用 config=配置文件URL，或复制包含完整 JSON 的场景链接。</p></details>
+<div class="buttons"><button id="apply">应用场景</button><button id="run" class="primary" disabled>开始 Benchmark</button><button id="stop" disabled>停止</button></div><div class="buttons"><button id="download-config">下载配置</button><button id="copy-url">复制场景链接</button></div>
+<p class="small">已上传的纹理在本页存活期间保留，不主动卸载。独立对照测试请刷新页面，以获得干净的常驻集合。</p></section>
+<section class="panel"><h2>资源与运行环境</h2><dl id="environment"></dl><p id="gpu-info" class="small"></p><details><summary>补充硬件配置（随结果导出）</summary><p class="small">浏览器不开放 CPU 完整型号与显存容量；系统内存只提供近似档位。可填写本机配置，导出时标为手动提供。</p><label>CPU 型号<input id="cpu-model" placeholder="例如 AMD Ryzen 9 7950X"></label><label>系统内存 / GiB<input id="ram-gib" type="number" min="0" step="any"></label><label>显卡型号<input id="gpu-model"></label><label>显存 / GiB<input id="vram-gib" type="number" min="0" step="any"></label></details><dl id="resources"></dl><p id="memory-note" class="notice"></p></section>
+<section class="panel"><h2>本轮结果</h2><div id="headline-metrics" class="metrics"></div><dl id="result-details"></dl><div class="buttons"><button id="json" disabled>结果 JSON</button><button id="csv" disabled>逐帧 CSV</button></div><p id="validity" class="small"></p></section></aside>
+<section class="panel chart-panel"><h2>帧耗时 / ms</h2><canvas id="chart" width="1080" height="180"></canvas><p class="small">横轴为采样时间。1% / 0.1% Low = 1000 ÷ 最慢对应比例帧的平均毫秒数；分位数采用线性插值。FPS 来自浏览器帧调度，受刷新率与无头环境影响，不等同于显示器实际呈现帧率。GPU 每 4 帧异步采样一次。</p></section>
+<section class="panel inventory-panel"><h2>当前场景设备</h2><table><thead><tr><th>设备</th><th>模式 / 动画</th><th>占地</th><th>数量</th><th>帧数 / 周期</th></tr></thead><tbody id="inventory"></tbody></table></section></main>
+<script type="module" src="benchmark.mjs"></script></body></html>

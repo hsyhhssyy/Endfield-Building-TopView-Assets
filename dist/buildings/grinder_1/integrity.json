@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "grinder_1",
   "fileCount": 29,
-  "totalBytes": 4100751,
-  "contentHash": "a386baec1f0463cdfebdfe8c037d4461207aa9682874ba7f00163422b1526330",
+  "totalBytes": 4120374,
+  "contentHash": "d72c626decfe31b5cdf38e4af8e737581fa5eb48fd05b2a81cf4938a51bd4140",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4751,
-      "sha256": "f885b037117748a83cc23cfdf50f5848bb48170cd62ed67490fa2516d18ac2e1"
+      "bytes": 5349,
+      "sha256": "9b60db6cf57b6374d1c965e1874f7aea7c46868db6603a0c655b358f8d957af5"
     },
     {
       "path": "variants.json",
-      "bytes": 493,
-      "sha256": "a30c1d42a860bab8c617d7ccd8e614f174fa3014a87228504afd3ad7ba438575"
+      "bytes": 873,
+      "sha256": "e2c23eda3fa6f1944c5698ad4d3827479b1998b837d0f63f6479f65cd69521c1"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 4300,
-      "sha256": "649eaa28e0c2df505153a1684c5e39deb3c17eca5c2c64349d3550e6aa2e2349"
+      "bytes": 4866,
+      "sha256": "588994b4530d7fc4c5427589fa94ae871449af754652b220ae6f60b13dbb7545"
     },
     {
       "path": "top/ports.json",
-      "bytes": 15800,
-      "sha256": "08f489e558aa941450b3218da25ff13571d79ed8e23579461c0023acc18eec1d"
+      "bytes": 16724,
+      "sha256": "51a140ee6ad703ee7835b3f7e6b37906721b6fff8b4b213e7710d21df20d02d4"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 1670,
-      "sha256": "5342e822f7cc30b383d4aa2986eb5f38f4ca06f2f69683dc6996285fb89d216f"
+      "bytes": 2118,
+      "sha256": "c6f8c9eef7e8e9bb304e67eff55cf45fee9b3483826fb478fd0a949873648ca3"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 1963,
-      "sha256": "80ae601cec8c1ce6b848c354072b52cc65488d3a798f37668145a9eb1d5470c6"
+      "bytes": 2343,
+      "sha256": "b6a905e754e14c12d7771d8dec6ff2d68d08feeaa7dc7f8cb63ea54eaf3b09a1"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 3474,
-      "sha256": "502859db336565c12fe343430a7e6ca93c305341d9288618635218961561b2cc"
+      "bytes": 4034,
+      "sha256": "dc4e0cdc9e77850855bacfa4bca6afc7aeeef24e082b0a709f739555345e15a8"
     },
     {
       "path": "top/animations/close/animation.json",
-      "bytes": 41817,
-      "sha256": "7928275204c80e1025fe40491c1e201b7183a03bdbdc19576983fe584a093905"
+      "bytes": 44187,
+      "sha256": "346e50b4d80e4dc9ba573f8ed2590232cafad4bf1cd11962ced22a8326781450"
     },
     {
       "path": "top/animations/close/spritesheet.json",
-      "bytes": 52683,
-      "sha256": "d26c5c3227116424a96f90f0f572b2cddc7d96a0a115596c23651b7f40f19e5c"
+      "bytes": 55644,
+      "sha256": "3bb08dcd8500c0f99b1c6d10c701699aa275a9de76fe89cf973fc1e0412b75ab"
     },
     {
       "path": "top/animations/close/spritesheet_000.webp",
@@ -93,13 +93,13 @@
     },
     {
       "path": "top/animations/close_idle/animation.json",
-      "bytes": 4522,
-      "sha256": "4b184757ef8f2b0338ca4e0f0a432669695c16b7eb79d1b1fd8ad9cf699bff61"
+      "bytes": 5092,
+      "sha256": "c1547d1d6f065576fdfdc51e6ff5ba198f594096f51fcdae0de2ccc06f8df291"
     },
     {
       "path": "top/animations/close_idle/spritesheet.json",
-      "bytes": 1174,
-      "sha256": "658810ca5fb7073e0da2fe5d76a673448c3c064463913d27dd0b90a492213de2"
+      "bytes": 1615,
+      "sha256": "05255dbdc78fb0d4f9f64b996d1b2cb398e0e41f879ed899c8299ee2974c824a"
     },
     {
       "path": "top/animations/close_idle/spritesheet_000.webp",
@@ -108,13 +108,13 @@
     },
     {
       "path": "top/animations/open/animation.json",
-      "bytes": 37715,
-      "sha256": "823ae71156fa7662df43a68127b23768fbf80d404a6305c730f234968222ff36"
+      "bytes": 39885,
+      "sha256": "897b5e4988b3750609c435dd4658ed57350bc65622ba4f3de814b329ef887c86"
     },
     {
       "path": "top/animations/open/spritesheet.json",
-      "bytes": 46995,
-      "sha256": "e61d1e5b08ec0666d87b1234d2eb84294036b23281746a14b73267080ef60395"
+      "bytes": 49676,
+      "sha256": "fb657977440c87bbf656b94978b272236add9b360f5ffce713e62beb7510e895"
     },
     {
       "path": "top/animations/open/spritesheet_000.webp",
@@ -123,13 +123,13 @@
     },
     {
       "path": "top/animations/open_idle/animation.json",
-      "bytes": 16511,
-      "sha256": "d7a016ab7432c2fc1dd0859a95d7782c7968f903e81496ce14ac454f7d5c6c6e"
+      "bytes": 17661,
+      "sha256": "6b91f37f3acf7b31e11141272fb5a228c3f585bc4fa7b4a7749a874391653a6b"
     },
     {
       "path": "top/animations/open_idle/spritesheet.json",
-      "bytes": 17701,
-      "sha256": "6803a78d42c5178e5263a0415c0564068a72246d0511fc9799137c6d987c3feb"
+      "bytes": 18954,
+      "sha256": "2814822e5fe0eb20d7743105ba2b999b938cc7c76eba0f4f0f73e439899aa586"
     },
     {
       "path": "top/animations/open_idle/spritesheet_000.webp",
@@ -138,8 +138,8 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 1148,
+      "sha256": "1cd661a2b6b8d0678ace36f3571cb98ef7e339222a98ee00699899564f92cf48"
     },
     {
       "path": "top/occlusion/height_open_idle.webp",
@@ -148,8 +148,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2811,
-      "sha256": "812e55949aae867b9c1ceeb1a340ee0421aba06fad85dd44817acc32679bcf65"
+      "bytes": 3285,
+      "sha256": "5455e8d27f66355ef8893525d22cb73a26dc5037b85e029e717bc4806336a0a7"
     }
   ]
 }

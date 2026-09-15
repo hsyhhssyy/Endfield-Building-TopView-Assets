@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256",
+  "building": "log_hongs_bus",
+  "fileCount": 20,
+  "totalBytes": 889997,
+  "contentHash": "810b4761c56c1f8ace412599f0cd4c1288cb41793b797d390fefeba6f9ef483a",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 5400,
+      "sha256": "fbf5de101c55446a4c78163a1f6bdf961d3e3e1fc3d5b237e6c770e9029f2a62"
+    },
+    {
+      "path": "variants.json",
+      "bytes": 882,
+      "sha256": "7955edb0de6dd598b44f538fedf02f97d7bcd40a02415660bd9a1874537a74a8"
+    },
+    {
+      "path": "preview/grass-background.json",
+      "bytes": 752,
+      "sha256": "8aec7bcd56cbe816fb764d1f8b9d03c467026d89811c45c9017d874daea796d8"
+    },
+    {
+      "path": "preview/grass-base.webp",
+      "bytes": 8874,
+      "sha256": "b21359f3ec429fb0ea15a1be87d33dcf5d3696c34b639353ac3cf80bcb8f142f"
+    },
+    {
+      "path": "preview/pixi-building-preview.js",
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
+    },
+    {
+      "path": "preview/preview-data.js",
+      "bytes": 5142,
+      "sha256": "e36b1263dc5cc85c401d5317bb11f2caa410423d7dda1c54e9158f9fb0c31b48"
+    },
+    {
+      "path": "preview/preview.css",
+      "bytes": 3510,
+      "sha256": "dfbf0dbc6849d68cd80e78ed9ef2c00063b13f38bbf45440eda602648e961b77"
+    },
+    {
+      "path": "preview/vendor/LICENSE.txt",
+      "bytes": 1085,
+      "sha256": "530a014b36db249b1c169a2d698469e1c8c3e35bf48548b00b5031ffdd8a2b93"
+    },
+    {
+      "path": "preview/vendor/pixi.min.js",
+      "bytes": 785850,
+      "sha256": "66a99b6475ce96a46ea7ed841749773eee5ca74ddea1638a34ef115dbb8db768"
+    },
+    {
+      "path": "top/package.json",
+      "bytes": 2321,
+      "sha256": "50be14904961cd46e33835854526617df8fb630c2d28fa2d36cb8f5171a45571"
+    },
+    {
+      "path": "top/ports.json",
+      "bytes": 3887,
+      "sha256": "a39dc8e99a690e2d39704d59eb34b43bde1f88233999e788c929b209b5af6229"
+    },
+    {
+      "path": "top/sequence.json",
+      "bytes": 1041,
+      "sha256": "5eb5d9e597281f1bbfa4b461a6312a88787cee2678a54713f9fe843bbc6d6e7e"
+    },
+    {
+      "path": "top/sheet-sizes.json",
+      "bytes": 973,
+      "sha256": "892b7401b9d7ed9afb42eb9acd478473c84462a0b37a7a688c40febba52898cc"
+    },
+    {
+      "path": "top/spatial.json",
+      "bytes": 1782,
+      "sha256": "ccdc7bb0e877f1002ea671b6b3b07ddd24c328d28b993d8382c786cb1b76c99c"
+    },
+    {
+      "path": "top/animations/static/animation.json",
+      "bytes": 3817,
+      "sha256": "c2f48fa7c739644b5129118d7b016b62882efa44e483c43e88be0397e0507748"
+    },
+    {
+      "path": "top/animations/static/spritesheet.json",
+      "bytes": 1452,
+      "sha256": "7b63adcb1106180377426566b2c3b6ef3c2fe4b83a9296259d4eaec842223a07"
+    },
+    {
+      "path": "top/animations/static/spritesheet_000.webp",
+      "bytes": 12490,
+      "sha256": "fa15cd059993ba11630063b643671e04f2ba41221c4a4f55e619bb3c4afca9c6"
+    },
+    {
+      "path": "top/effects/resources.json",
+      "bytes": 1147,
+      "sha256": "c7ad33fecf3b48401fc835fcc4eedd0573e0d8bd76f41c64650a7f3afb5a6787"
+    },
+    {
+      "path": "top/occlusion/height_static.webp",
+      "bytes": 9490,
+      "sha256": "74890c4c88b47213631b589665b24ca345fccc9a6a6d54ee2c9c8f51a17d1ba0"
+    },
+    {
+      "path": "top/occlusion/occlusion.json",
+      "bytes": 2781,
+      "sha256": "4a491ce9947b123f746c4b418f7ad3c787ea6914a948fb697130e33fef3cd9f6"
+    }
+  ]
+}

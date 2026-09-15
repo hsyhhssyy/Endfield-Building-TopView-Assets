@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "log_converger",
   "fileCount": 20,
-  "totalBytes": 1835189,
-  "contentHash": "c1717f56c7c7d98b0ce6f774fe3109ac37445fab5ebfd4d33c7b05f396dbaf39",
+  "totalBytes": 1841869,
+  "contentHash": "19c0553c6f69f7c5dd3ab7dbafdefe02ebee7710dfb7d53d9568520047224dd8",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4759,
-      "sha256": "ebfe6ed2218513cc7df280f5b1e0da5f842332a62b31517e81400bada424d4de"
+      "bytes": 5357,
+      "sha256": "e7691073d22936c821b824cc5df018777314142806f2bc6fcbe58103e52d0420"
     },
     {
       "path": "variants.json",
-      "bytes": 497,
-      "sha256": "ad6a75e37354e6b4a45e35b6947ba684bdce414624cdbf1df58c4385c7249bd3"
+      "bytes": 877,
+      "sha256": "8c8515b3394eca546622df53fe173a187474952906204fabe74babd2acbd78cf"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 2593,
-      "sha256": "5f1821bad8f5f3a0dfd9fa92316ad5176492796912b66998250de8c48a2fc47a"
+      "bytes": 3083,
+      "sha256": "7aade0892787399223375b5cc83ed4dfdc22dc1a1a08cef2853693320cc238c5"
     },
     {
       "path": "top/ports.json",
-      "bytes": 11299,
-      "sha256": "d31ac9c211749daf83102a3d0c48dd4facc82bf0322a13d44ae037cc5861d549"
+      "bytes": 12072,
+      "sha256": "dc6fa48c70afdf6d4e3e5a913bc5d8ecd2acd26964013262576237159bab41e4"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 632,
-      "sha256": "f7ac8300e3cd62af66c70503e52dda268666a2de1a8c5ee858194676221bbdca"
+      "bytes": 1041,
+      "sha256": "7c4bb59554d2878cb8e4e908ca05a40615c7ac5b9a17648f26ccde95e66ee701"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 447,
-      "sha256": "64bb9a56d6b7ccc841e672b533fb7855e2139a2f18d0542ad94e52a9ea7841ed"
+      "bytes": 827,
+      "sha256": "59028ece5f13f898621ff574b840037457cf290264194e15b6dd7e91bb484da2"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 2464,
-      "sha256": "9efa814a4b675fb64e217cdf63fb3e33af4a39d209572608dcd83c21ae2ff0e4"
+      "bytes": 2967,
+      "sha256": "0e4dc2d3a6e774370623b89eeb0fb98cf8a386fbcba3458c5652050c6b5a9a79"
     },
     {
       "path": "top/animations/static/animation.json",
-      "bytes": 4123,
-      "sha256": "e89d0298230bb835795cb24fc5f11f204e2a81e0987cfcb1dedea6880983f958"
+      "bytes": 4682,
+      "sha256": "b33dd1c0ed897152295e4e4383266b8858e441bf74b3a228ac1a93d72c9ffda4"
     },
     {
       "path": "top/animations/static/spritesheet.json",
-      "bytes": 903,
-      "sha256": "a9fee4eb002c376001b61f1490bbf75ad87b07fabf414a3c711bbec859b7d5bd"
+      "bytes": 1332,
+      "sha256": "4e9e72242b6953244c4b4dac8421e315b53f46315173789780c22f8ae9c826ed"
     },
     {
       "path": "top/animations/static/spritesheet_000.webp",
@@ -93,8 +93,8 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 1148,
+      "sha256": "1cd661a2b6b8d0678ace36f3571cb98ef7e339222a98ee00699899564f92cf48"
     },
     {
       "path": "top/occlusion/height_static.webp",
@@ -103,8 +103,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2307,
-      "sha256": "24ed9976b2be4f91e4e80756904a989f436952aa8b6b515b5b5af0c0bdb0d077"
+      "bytes": 2769,
+      "sha256": "1281b68c05bfba5833f6f3039928c4c07bd9c2c9c39bc831dc963bbac0bd488e"
     }
   ]
 }

@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 2,
+  "taskId": "20260915-pump-light-strip",
+  "label": "底座灯带 · 细条图集",
+  "atlas": "../buildings/pump_1/preview/light-mesh/light-atlas.webp",
+  "geometry": "./128-7bd913a5fc24285234d0f226.json",
+  "heightMetadata": "./128-f98eb7267a810e48bfcff00f.json",
+  "atlasSize": [
+    516,
+    100
+  ],
+  "states": [
+    {
+      "id": "yellow",
+      "label": "黄色",
+      "color": [
+        255,
+        202,
+        45
+      ],
+      "frame": [
+        2.0,
+        2.0,
+        512.0,
+        16.0
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.02,
+        0.9922480620155039,
+        0.16
+      ],
+      "logicalFrame": [
+        2,
+        2,
+        512,
+        16
+      ],
+      "physicalRect": [
+        2.0,
+        2.0,
+        512.0,
+        16.0
+      ]
+    },
+    {
+      "id": "red",
+      "label": "红色",
+      "color": [
+        255,
+        69,
+        52
+      ],
+      "frame": [
+        2.0,
+        22.0,
+        512.0,
+        16.0
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.22,
+        0.9922480620155039,
+        0.16
+      ],
+      "logicalFrame": [
+        2,
+        22,
+        512,
+        16
+      ],
+      "physicalRect": [
+        2.0,
+        22.0,
+        512.0,
+        16.0
+      ]
+    },
+    {
+      "id": "green",
+      "label": "绿色",
+      "color": [
+        65,
+        235,
+        126
+      ],
+      "frame": [
+        2.0,
+        42.0,
+        512.0,
+        16.0
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.42,
+        0.9922480620155039,
+        0.16
+      ],
+      "logicalFrame": [
+        2,
+        42,
+        512,
+        16
+      ],
+      "physicalRect": [
+        2.0,
+        42.0,
+        512.0,
+        16.0
+      ]
+    },
+    {
+      "id": "cyan",
+      "label": "蓝色",
+      "color": [
+        53,
+        185,
+        255
+      ],
+      "frame": [
+        2.0,
+        62.0,
+        512.0,
+        16.0
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.62,
+        0.9922480620155039,
+        0.16
+      ],
+      "logicalFrame": [
+        2,
+        62,
+        512,
+        16
+      ],
+      "physicalRect": [
+        2.0,
+        62.0,
+        512.0,
+        16.0
+      ]
+    },
+    {
+      "id": "white",
+      "label": "白色",
+      "color": [
+        244,
+        247,
+        255
+      ],
+      "frame": [
+        2.0,
+        82.0,
+        512.0,
+        16.0
+      ],
+      "uvRect": [
+        0.003875968992248062,
+        0.82,
+        0.9922480620155039,
+        0.16
+      ],
+      "logicalFrame": [
+        2,
+        82,
+        512,
+        16
+      ],
+      "physicalRect": [
+        2.0,
+        82.0,
+        512.0,
+        16.0
+      ]
+    }
+  ],
+  "defaultState": "yellow",
+  "atlasLayout": "five horizontal strips stacked vertically; yellow/red/green/blue/white",
+  "stripSize": [
+    512.0,
+    16.0
+  ],
+  "atlasGpuRGBA8Bytes": 206400,
+  "uvPreparation": "offline source UV resampling; runtime consumes saved positions/indices/uvs",
+  "stateMapping": "review palette only; game status codes not decoded",
+  "geometryIsStatic": true,
+  "heightPolicy": "existing representative building height; interpolated source mesh Y",
+  "epsilon": 0.003,
+  "compositing": "normal premultiplied alpha over existing neutral lamp beauty; no additive doubling",
+  "consumerContract": {
+    "draw": "Use indexed triangle Mesh geometry, not a rectangular Sprite. One atlas TextureSource is shared by every palette state.",
+    "position": "pixelX = spatial.pivotPixels.x + sourceX * pixelsPerCell.x; pixelY = spatial.pivotPixels.y + sourceZ * pixelsPerCell.y; apply the same stage transform as the building.",
+    "textureUV": "atlasUV = state.uvRect.xy + mesh.uvs * state.uvRect.zw; color is already baked into the atlas, no runtime tint.",
+    "heightUV": "heightUV = pixelPosition / spatial.framePixels; nearest filtering, no mipmaps, no color conversion.",
+    "heightDecode": "sceneY = heightMin + (256 * round(R*255) + round(G*255)) / 65535 * (heightMax-heightMin); A=0 means no surface.",
+    "occlusion": "Interpolate source position Y across each mesh triangle; discard only when height A is valid and lightY + baseElevation + heightOffset + epsilon < sceneY.",
+    "blend": "Atlas is straight-alpha; shader outputs RGB*alpha and alpha for normal premultiplied-alpha blending.",
+    "scope": "Fixed top camera; authored static pedestal light; existing representative open_idle building height. Rebuild scene height for neighbor placements; moving occluders require matching pose heights when greater accuracy is needed."
+  },
+  "sourceHashes": {
+    "mesh-data.json.gz": "c80c84aafed43b8ba2095973f68ace95205143d416692549c7dc863cb96ec15b",
+    "T_fac_build_specialelectrictower+1_001_01_E.png": "321f9482152ec98457504fcb8ff43020632f87b33705ba398a1a7d1a563662c9"
+  },
+  "atlasPage": {
+    "url": "../buildings/pump_1/preview/light-mesh/light-atlas.webp",
+    "width": 516,
+    "height": 100,
+    "originalWidth": 516,
+    "originalHeight": 100,
+    "resolution": 1.0,
+    "profile": "offline-grid-v1",
+    "sourceSha256": "e69c1761d1141e61fd0a2e0ea0b8f70a69c7c163abf9dc0014a7d431c844ae29",
+    "kind": "light",
+    "bytes": 1688,
+    "sha256": "e69c1761d1141e61fd0a2e0ea0b8f70a69c7c163abf9dc0014a7d431c844ae29"
+  },
+  "logicalStripSize": [
+    512,
+    16
+  ],
+  "textureProfile": {
+    "id": "offline-grid-v1",
+    "scale": 1.0,
+    "sourceResolution": 1.0,
+    "colorFilter": "formal Q85 WebP at selected size",
+    "dataFilter": "nearest for packed height/flow coordinates; box for continuous data",
+    "oddDimensions": "64px: pad odd right/bottom then halve; 128px: original",
+    "maskPolicy": "static height comparison offline; lossless WebP masks",
+    "geometry": "source logical pixels and world footprint unchanged",
+    "runtimeResize": false,
+    "runtimeHeightMaskCalculation": false,
+    "pixelsPerCell": 128
+  }
+}

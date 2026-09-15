@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "partCount": 2,
+  "totalBytes": 710994,
+  "pages": [
+    {
+      "animation": "emissive_belt",
+      "index": 0,
+      "image": "animations/emissive_belt/spritesheet_000.webp",
+      "width": 2048,
+      "height": 1920,
+      "columns": 8,
+      "rows": 10,
+      "frameStart": 0,
+      "frameCount": 80,
+      "bytes": 474440,
+      "sha256": "5a8143b54b1dae5503971587563be92196e58dccaa204081f0d5d2c974dd8b57",
+      "resolution": 0.5
+    },
+    {
+      "animation": "emissive_belt",
+      "index": 1,
+      "image": "animations/emissive_belt/spritesheet_001.webp",
+      "width": 2048,
+      "height": 960,
+      "columns": 8,
+      "rows": 5,
+      "frameStart": 80,
+      "frameCount": 40,
+      "bytes": 236554,
+      "sha256": "e78eafb20f70c3c5a275584ee657bac9eb4480b3eeabec9298bbdab6b7620920",
+      "resolution": 0.5
+    }
+  ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

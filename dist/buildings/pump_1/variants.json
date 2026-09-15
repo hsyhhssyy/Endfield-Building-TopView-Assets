@@ -4,6 +4,12 @@
   "displayName": "水泵",
   "taskId": "20260913-030300-pump-finalize-97c2d88b",
   "defaultVariant": "top",
+  "experiments": {
+    "lightMesh": {
+      "variant": "top",
+      "manifest": "preview/light-mesh/experiment.json"
+    }
+  },
   "variants": [
     {
       "key": "top",
@@ -16,5 +22,14 @@
       "sheetSizes": "top/sheet-sizes.json"
     }
   ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  },
   "integrity": "integrity.json"
 }

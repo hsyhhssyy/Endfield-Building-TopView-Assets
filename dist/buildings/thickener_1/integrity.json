@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "thickener_1",
   "fileCount": 36,
-  "totalBytes": 10776504,
-  "contentHash": "e8a16338156e857dae9f78468513a18bdee882939f2c955f706043336ca847ae",
+  "totalBytes": 10802234,
+  "contentHash": "d0e414e247490c2f83fdc7a0f46ba03650ad9f2ce4a7d10a29738830570c93d5",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4755,
-      "sha256": "4bdee3bc20f3368934a9e2eb840d4c3b3dcdfd7e1d4c19786f7939c202e1663b"
+      "bytes": 5353,
+      "sha256": "b4275087758115957f41cdb8c01ef05e9dcc67b681f6d090e6d0d9075701ec80"
     },
     {
       "path": "variants.json",
-      "bytes": 495,
-      "sha256": "7236cdf98a3242ab96d04eea8cf2c9e6df98b6862fd7b2fc495d50ee125d4e12"
+      "bytes": 875,
+      "sha256": "6de6d0637951da2b34f75017791914f1352b6d0bb840b8885e82c95bb42f0b80"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 6557,
-      "sha256": "792a5890466f8c36ea467bada9aac967e1d1a40b266843b0acea7ed9ed65513b"
+      "bytes": 7225,
+      "sha256": "1a133cc47f10f158ae49ef0627edba8c3eb7f5f5dc479aa662f5ed7845040436"
     },
     {
       "path": "top/ports.json",
-      "bytes": 28265,
-      "sha256": "5467b3a64c72cb0b07595a8407d011bb5f915a50bb80291e0ee9f3e11cd40cc2"
+      "bytes": 29621,
+      "sha256": "6757bc2cf70b2882e4550966e606d80c4521170df99cd7ad5e2a276cbdbf2b49"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 1676,
-      "sha256": "2c305923e6f9c6030a6117809a06cf9102ca9a28b0de7a77028f15bf94f27c14"
+      "bytes": 2124,
+      "sha256": "e6260a9ae44d3976e6e188cc3e3bda6786e9fbe5803bf0a8bb2b61ada0094568"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 4504,
-      "sha256": "5ddfcbcfa9ea7b39ced77a47d985a1d785c8e567d7815762d03c51b1f71fad05"
+      "bytes": 4884,
+      "sha256": "967abec64d3463d517c784580ed172551f373a241c3251fc1610d8e43afc1e03"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 5620,
-      "sha256": "7ab0f3a12048725cb6fc2501e41b89617dff2152411e6cf44598c6b8c3c3495c"
+      "bytes": 6288,
+      "sha256": "11ede2f4651865b401581b20ec47a1325221b38f61592d7f931cd638a32ae94f"
     },
     {
       "path": "top/animations/close/animation.json",
-      "bytes": 56545,
-      "sha256": "27e5f6d703065047af32478aa352755b621c8edcdb77f0a0bf5a84df08fe0784"
+      "bytes": 59616,
+      "sha256": "535a9e2e8ec84ae800289ae13f27aaa7e64ddfaa1682acdf500a7bc5df5fc6db"
     },
     {
       "path": "top/animations/close/spritesheet.json",
-      "bytes": 73736,
-      "sha256": "65ce24680a755152bb4e76e718e4bc79d907b4c1b941d62b4c809fe76d241a3d"
+      "bytes": 77713,
+      "sha256": "c24c5279e26adf92cf14d061a94acc85abd59d35ea760ea97e56f390ea944cf0"
     },
     {
       "path": "top/animations/close/spritesheet_000.webp",
@@ -108,13 +108,13 @@
     },
     {
       "path": "top/animations/close_idle/animation.json",
-      "bytes": 5004,
-      "sha256": "82b75eb4a83c9029bd28a9674cd879578a59f633c08e5fee112072abdddb88fb"
+      "bytes": 5595,
+      "sha256": "9fed13eacfd413bdee90a7a915cd2fa9669de20e3e1b186a670d4fc94002f994"
     },
     {
       "path": "top/animations/close_idle/spritesheet.json",
-      "bytes": 1745,
-      "sha256": "dd831fc212b5b6af87a1bd138446f9edb947f53a890047f793af09c5b4b6e57b"
+      "bytes": 2214,
+      "sha256": "b5610fc54146573358493c5716f7dc8ba276089563118b22dff56eab7ff36e02"
     },
     {
       "path": "top/animations/close_idle/spritesheet_000.webp",
@@ -123,13 +123,13 @@
     },
     {
       "path": "top/animations/open/animation.json",
-      "bytes": 54673,
-      "sha256": "a9f6b89c6829708e9c555fd9c7a40496e0eb5e80d1335ade0acb3aff69f132e5"
+      "bytes": 57644,
+      "sha256": "a0dfd684ada6408beac4e97ab4ca16f25a4da5ac10382dfb83e0be71185e8e08"
     },
     {
       "path": "top/animations/open/spritesheet.json",
-      "bytes": 71083,
-      "sha256": "f286b721d73fdf97c04789ed07b352c615029699e7f748e1fe45692fedf47331"
+      "bytes": 74920,
+      "sha256": "2981775aad54b05a36daa33719c009cc7ac5ef2724e776121facd29db7939a59"
     },
     {
       "path": "top/animations/open/spritesheet_000.webp",
@@ -153,13 +153,13 @@
     },
     {
       "path": "top/animations/open_idle/animation.json",
-      "bytes": 31516,
-      "sha256": "dfb37328c4d0578a3043b9028dbd0aea664d47571383080d1404df1f1b5d4db6"
+      "bytes": 33387,
+      "sha256": "05077c11ea3e99d4487ddb62e2bc2e5049ed3531061163a86705fc6c16deedaa"
     },
     {
       "path": "top/animations/open_idle/spritesheet.json",
-      "bytes": 38628,
-      "sha256": "2ce625f79607252f10e9a78517eb09ce6b4adf9c1bb179e981fc7f183e7135ef"
+      "bytes": 40901,
+      "sha256": "b4b429e4eba47c8aa0004f4e1c646471071b2114980c42a43771c048a4ee8f35"
     },
     {
       "path": "top/animations/open_idle/spritesheet_000.webp",
@@ -173,8 +173,8 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 1148,
+      "sha256": "1cd661a2b6b8d0678ace36f3571cb98ef7e339222a98ee00699899564f92cf48"
     },
     {
       "path": "top/occlusion/height_open_idle.webp",
@@ -183,8 +183,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2845,
-      "sha256": "b88da78a9bdb8882faf4a81d9a0fa964731c1a52e6381615784903c722bf8080"
+      "bytes": 3320,
+      "sha256": "d5555a498c64ccbf1a029dbd3ca81d8102829ecfc8cc8a90f0f0df5c2e2cccd4"
     }
   ]
 }

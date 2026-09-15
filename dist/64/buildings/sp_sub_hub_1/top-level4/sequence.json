@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "spatialMetadata": "spatial.json",
+  "fps": 30,
+  "width": 1408,
+  "height": 1152,
+  "order": [
+    "close",
+    "close_idle",
+    "open",
+    "open_idle"
+  ],
+  "phases": [
+    {
+      "clip": "close",
+      "animation": "animations/close/animation.json",
+      "startFrame": 0,
+      "frameCount": 202,
+      "sourceFrameCount": 202,
+      "repeatCount": 1,
+      "startMs": 0,
+      "durationMs": 6730,
+      "holdLastMs": 0,
+      "spritesheet": "animations/close/spritesheet.json"
+    },
+    {
+      "clip": "close_idle",
+      "animation": "animations/close_idle/animation.json",
+      "startFrame": 202,
+      "frameCount": 2,
+      "sourceFrameCount": 2,
+      "repeatCount": 1,
+      "startMs": 6730,
+      "durationMs": 70,
+      "holdLastMs": 0,
+      "spritesheet": "animations/close_idle/spritesheet.json"
+    },
+    {
+      "clip": "open",
+      "animation": "animations/open/animation.json",
+      "startFrame": 204,
+      "frameCount": 200,
+      "sourceFrameCount": 200,
+      "repeatCount": 1,
+      "startMs": 6800,
+      "durationMs": 6670,
+      "holdLastMs": 0,
+      "spritesheet": "animations/open/spritesheet.json"
+    },
+    {
+      "clip": "open_idle",
+      "animation": "animations/open_idle/animation.json",
+      "startFrame": 404,
+      "frameCount": 402,
+      "sourceFrameCount": 402,
+      "repeatCount": 1,
+      "startMs": 13470,
+      "durationMs": 13400,
+      "holdLastMs": 0,
+      "spritesheet": "animations/open_idle/spritesheet.json"
+    }
+  ],
+  "playback": "once",
+  "totalDurationMs": 26870,
+  "sourcePlaybackFrameCount": 806,
+  "retainedPlaybackFrameCount": 806,
+  "previewRenderer": "pixi-spritesheet-v1",
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

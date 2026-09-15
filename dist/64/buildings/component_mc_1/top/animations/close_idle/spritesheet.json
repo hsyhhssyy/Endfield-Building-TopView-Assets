@@ -1,0 +1,77 @@
+{
+  "cellWidth": 384,
+  "cellHeight": 384,
+  "frameCount": 1,
+  "playbackFrameCount": 1,
+  "maximumPartPixels": [
+    4096,
+    4096
+  ],
+  "pageCapacity": 100,
+  "pages": [
+    {
+      "index": 0,
+      "image": "spritesheet_000.webp",
+      "width": 192,
+      "height": 192,
+      "columns": 1,
+      "rows": 1,
+      "frameStart": 0,
+      "frameCount": 1,
+      "bytes": 6366,
+      "sha256": "586c21f601086be990af70578434b5cb3132a64be9ab128de60eb729c170c2a2",
+      "resolution": 0.5
+    }
+  ],
+  "frames": [
+    {
+      "vatRow": 0,
+      "vatPhysicalRow": 152,
+      "durationMs": 67,
+      "sourceSpan": {
+        "startIndex": 0,
+        "endIndexInclusive": 1,
+        "count": 2,
+        "vatRows": {
+          "start": 0,
+          "endInclusive": 1,
+          "step": 1
+        },
+        "vatPhysicalRows": {
+          "start": 152,
+          "endInclusive": 151,
+          "step": -1
+        }
+      },
+      "index": 0,
+      "page": 0,
+      "localIndex": 0,
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 384,
+      "playable": true,
+      "physicalRect": [
+        0.0,
+        0.0,
+        192.0,
+        192.0
+      ]
+    }
+  ],
+  "encoding": {
+    "format": "WebP",
+    "quality": 85,
+    "alphaQuality": 100,
+    "losslessAlpha": true
+  },
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}

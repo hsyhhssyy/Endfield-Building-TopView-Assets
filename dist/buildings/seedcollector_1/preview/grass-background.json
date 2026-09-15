@@ -7,5 +7,14 @@
   "worldWidth": 16,
   "worldHeight": 16,
   "repeat": true,
-  "encoding": "lossless WebP, baked display sRGB"
+  "encoding": "lossless WebP, baked display sRGB",
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 128,
+    "logicalPixelsPerCell": 128,
+    "resolution": 1.0,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
 }

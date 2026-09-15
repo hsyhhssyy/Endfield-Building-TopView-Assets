@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "udpipe_unloader_1",
   "fileCount": 29,
-  "totalBytes": 4213710,
-  "contentHash": "be95b62c42a5e040ccfcc15c6668359c8171bc0233578837c0ffe759ffa9e959",
+  "totalBytes": 4232147,
+  "contentHash": "13a2a9e589323d2cbd32d20d27abf6321088c0b4ded86e6f3a6c2b2122cc284a",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4776,
-      "sha256": "4384edd6f6e45e353f8e5caf6eb256d6d6cb355bea7fbd6dacf83eb744bbdf95"
+      "bytes": 5374,
+      "sha256": "6847c829fe3a118eeb69daf6a8604620617eeefc28533a69a2a6d2774501033b"
     },
     {
       "path": "variants.json",
-      "bytes": 504,
-      "sha256": "0c974eb6fcd4786205c57585f8415b56757186c81698ef784b89ff558ff9e0a7"
+      "bytes": 884,
+      "sha256": "85a27bd841d78959c09a0126955eb990cce0fdfece62bcc91d7b9fe803d2702c"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 2879,
-      "sha256": "e3bde65ca7ca388c47edbb33bc1760c5d241ed828199ed422f241b990658f7b2"
+      "bytes": 3375,
+      "sha256": "1b4e56ff75cdc02759c536aa57b5659176974f14dcc269df3a7ae31e88097207"
     },
     {
       "path": "top/ports.json",
-      "bytes": 9103,
-      "sha256": "5f4ebb8acfbce8ea04b464a2a732fafcc73160047e404377d974d79ad5d64feb"
+      "bytes": 9814,
+      "sha256": "cb9b2324b1a90da468b504bc4b99bf4e85cf65974e93714442518362f01d64db"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 672,
-      "sha256": "3ffbc46408b13066127489767bc65c7ec9074a9ab245bff92e5023522374d73b"
+      "bytes": 1081,
+      "sha256": "c2272f08b1ed69ebb731317e4ae970eaaee467922ec6310dc3eadc9d5689806f"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 849,
-      "sha256": "ec7871ede1facfaa0bfac6c3bde185c1a287f7c46beaccd7dd000ff7c95830c3"
+      "bytes": 1229,
+      "sha256": "1fa679cde4e726fcdf9b8c37851b60c7d715967ac3905a9d2cb1ed1b5f6e5b0c"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 2449,
-      "sha256": "dabdeb036a083db29ec4690d4d5e68814efd589e630957a52fbf67b4bd2c307a"
+      "bytes": 2955,
+      "sha256": "5959361480214f03a02f4ccaa2c3655b9be3ddf8ff5231f91f6679ccd4ec7dcb"
     },
     {
       "path": "top/animations/emissive_belt/animation.json",
-      "bytes": 28072,
-      "sha256": "ef4c7f660685f7b4ca5fe39a8d8cd71b248e081865885832ee10e71b59f8c78e"
+      "bytes": 29752,
+      "sha256": "c7b84da492d21cf88005cabc26138de79ec33ec77371b303175abd283c78a6d8"
     },
     {
       "path": "top/animations/emissive_belt/spritesheet.json",
-      "bytes": 42544,
-      "sha256": "72e5f6b6086fbce7e405db769d48ecb639062c75beae04b6462f97f22bc7bef6"
+      "bytes": 45009,
+      "sha256": "ada366d3de6caed35718b1d1e3efcb8db094100e6f2aaba7745a1f6e9a3841d0"
     },
     {
       "path": "top/animations/emissive_belt/spritesheet_000.webp",
@@ -98,13 +98,13 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 2115,
-      "sha256": "dccdfb51cd9a19039941e5ef501980d6265a0c20a9e40cab340ffd9f1a82e870"
+      "bytes": 2570,
+      "sha256": "5684fd7a577f92a5b5827277a14b1a546310a4ea62c5715675fc1fc0113b93b7"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/effect.json",
-      "bytes": 45549,
-      "sha256": "cf3e41b047feb955d3146bf63f617e960cdcff05e3b38016507748a1690dd9fa"
+      "bytes": 48126,
+      "sha256": "dcaa29b3e944721efd7eb678a18efd69aab909dc426fe7c58f8f45ec0a8fe4f4"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/height.webp",
@@ -113,8 +113,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet.json",
-      "bytes": 41967,
-      "sha256": "bdfa4367102a4a88703c118f185fc54ff62515034d07424524267f8589da2ac6"
+      "bytes": 44409,
+      "sha256": "0882b3181288849f128150fd073cd2978707fefd247d75a862af5909b4d09869"
     },
     {
       "path": "top/effects/P_interactive_large_pipeoff_out_01/spritesheet_000.webp",
@@ -123,8 +123,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/effect.json",
-      "bytes": 30232,
-      "sha256": "b7165f90e5dcbb49c94a034844c5a60fbf01c5c4988b2b19958ab765f4374551"
+      "bytes": 32094,
+      "sha256": "f2215bf36472d2b1f98db366c35f3a6f5240e7ca3f122b560caa3953785fa04d"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/height.webp",
@@ -133,8 +133,8 @@
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet.json",
-      "bytes": 26725,
-      "sha256": "27af6e7a35d7f61e37bf18cbf51fec92b9a3365800f4d145756cd1ad16f1a1ef"
+      "bytes": 28452,
+      "sha256": "689b58afe8e5e113829a0ab7c4f5c8fe3490c97ef17f832287725f21ac7376b1"
     },
     {
       "path": "top/effects/P_interactive_large_pipeon_out_01/spritesheet_000.webp",
@@ -148,8 +148,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2580,
-      "sha256": "7ae357d5c3af99b9f7069798c0402a097e58dcb670212dfd72806e4d8745117f"
+      "bytes": 3045,
+      "sha256": "eb6e024e65a7b423c3c9c529ce915b6743456e751db7a0057361eb26d81c4656"
     }
   ]
 }

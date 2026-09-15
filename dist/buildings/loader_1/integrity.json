@@ -3,23 +3,23 @@
   "algorithm": "sha256",
   "building": "loader_1",
   "fileCount": 20,
-  "totalBytes": 1828320,
-  "contentHash": "c0ae8ec3de749d3d9255f1f480b8329cf8601a6577bacab463e48797da6dc31e",
+  "totalBytes": 1834550,
+  "contentHash": "20bdc002f10b1ea49a9a4500d34f62c09700748be8713397b3fe13851a5ca829",
   "files": [
     {
       "path": "index.html",
-      "bytes": 4767,
-      "sha256": "de54e09b474881c47f1b7f5178c6a726fa1a98f6a6e4cf403704c9aa4f7ea023"
+      "bytes": 5365,
+      "sha256": "14da1a20afe9b481d3f248416bf862e468ca0f2ad6b2f706f26fe14a351c7c47"
     },
     {
       "path": "variants.json",
-      "bytes": 498,
-      "sha256": "61cad5c1d4e79cc54c750151f4b32f48b0e9d099a445b6da9a1ffdb1eed26706"
+      "bytes": 878,
+      "sha256": "2e176fbf673709b6f2282102a4336674a1c392dd4df340b9518e3742302bb265"
     },
     {
       "path": "preview/grass-background.json",
-      "bytes": 259,
-      "sha256": "8dd7d7877e636b0585606ca9441fa1c9056d3f5f372f139bc03260aae5e58309"
+      "bytes": 650,
+      "sha256": "98b40a4b4eab925e019d6f9cc6176e2eda378adeef06fdeda3d5ee4f24874fdf"
     },
     {
       "path": "preview/grass-base.webp",
@@ -28,8 +28,8 @@
     },
     {
       "path": "preview/pixi-building-preview.js",
-      "bytes": 36428,
-      "sha256": "61b64d3096d0eb6ea3382380b0f466dac1535975b033a4f79be67e726124f328"
+      "bytes": 37321,
+      "sha256": "cb93dfbb9e2665f84f0992e1eb5d006eeca8d45afbe0c4872bdbe4c8186db326"
     },
     {
       "path": "preview/preview-data.js",
@@ -53,38 +53,38 @@
     },
     {
       "path": "top/package.json",
-      "bytes": 1408,
-      "sha256": "307d4a59bf29f37314d78ec8f1f127720d69bcaa89ed65b26e9a31d5d574fdf7"
+      "bytes": 1848,
+      "sha256": "b1efc7716bd5574f33424546a84bcb3bd3f392f4f5661b6ad6be2705508e200f"
     },
     {
       "path": "top/ports.json",
-      "bytes": 2976,
-      "sha256": "588038460010938c6685c31ce3b06d1b9591d7b68a3e55c8740a3a96c1325d3d"
+      "bytes": 3464,
+      "sha256": "08a12acbab2dd9602de4087ccd65e6b5526b0db049885104012d3c20221cc98a"
     },
     {
       "path": "top/sequence.json",
-      "bytes": 644,
-      "sha256": "efdb43b4ca7d84e6813ce1cb678f2345374253caed14327daf48a23a94cba53f"
+      "bytes": 1053,
+      "sha256": "28e9e0a82ab2dccaae34409e79c1d12443b0e5b30b4ee2525b36d87075eccb8a"
     },
     {
       "path": "top/sheet-sizes.json",
-      "bytes": 627,
-      "sha256": "398b899df6e1ed8475f0618799c25236f4e9b0206a3d4f061f32c7d1baaaa345"
+      "bytes": 1007,
+      "sha256": "c4d18ceb7398713b606a17e9dd82c0461146590a34041e4dbe64ebaa3de8ee4f"
     },
     {
       "path": "top/spatial.json",
-      "bytes": 1307,
-      "sha256": "efe5c11d8bd25f710e9f5d09a63135cc0b3fea84f042f329e1c3f50d10282c79"
+      "bytes": 1753,
+      "sha256": "9c1a5d6b04470eafdc7861a5f9ebdf1c7ef59aa9d691e342b85f4b2993b36cae"
     },
     {
       "path": "top/animations/bind_pose/animation.json",
-      "bytes": 2787,
-      "sha256": "86fcbc756e3daf07674f04fe1a7e64d5ef2c7929796d830dd44a45ebf72b2d4a"
+      "bytes": 3286,
+      "sha256": "853f158eaf79015831ee622691ddff37366b27e7576d8abd80ce75b87e9afe1f"
     },
     {
       "path": "top/animations/bind_pose/spritesheet.json",
-      "bytes": 1017,
-      "sha256": "7467bef9d8f63085f4ea3e7de178fdff9934fc80774f6a98402e9e2019990c4f"
+      "bytes": 1453,
+      "sha256": "b04a611b4ea1e7d7e5478553802bfc1e4b1a3467233094157400d32b6829b5f4"
     },
     {
       "path": "top/animations/bind_pose/spritesheet_000.webp",
@@ -93,8 +93,8 @@
     },
     {
       "path": "top/effects/resources.json",
-      "bytes": 735,
-      "sha256": "0cbd5f2e93ea24f71c18d6a08d2c2d42c6b1539332f97ccdb70d908964e5c825"
+      "bytes": 1148,
+      "sha256": "1cd661a2b6b8d0678ace36f3571cb98ef7e339222a98ee00699899564f92cf48"
     },
     {
       "path": "top/occlusion/height_bind_pose.webp",
@@ -103,8 +103,8 @@
     },
     {
       "path": "top/occlusion/occlusion.json",
-      "bytes": 2204,
-      "sha256": "17cd2f012b5158226dae94511fefc3f7c88100faedc94401dcb1d9c78e7c5c86"
+      "bytes": 2661,
+      "sha256": "d34af2a15683f807fe1796b500e5998a5fc1eee0a7e5cb3f3d58ed0027067883"
     }
   ]
 }

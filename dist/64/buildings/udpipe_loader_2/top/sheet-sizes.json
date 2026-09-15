@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "partCount": 3,
+  "totalBytes": 942528,
+  "pages": [
+    {
+      "animation": "emissive_belt",
+      "index": 0,
+      "image": "animations/emissive_belt/spritesheet_000.webp",
+      "width": 2048,
+      "height": 1920,
+      "columns": 8,
+      "rows": 6,
+      "frameStart": 0,
+      "frameCount": 48,
+      "bytes": 376796,
+      "sha256": "d692e8ef77f5aad0682970e1f243ade2fb17bcb9ff1848359b02103ff2bf94e4",
+      "resolution": 0.5
+    },
+    {
+      "animation": "emissive_belt",
+      "index": 1,
+      "image": "animations/emissive_belt/spritesheet_001.webp",
+      "width": 2048,
+      "height": 1920,
+      "columns": 8,
+      "rows": 6,
+      "frameStart": 48,
+      "frameCount": 48,
+      "bytes": 377246,
+      "sha256": "b5fb0c540ac509f9076e7e02217f36a8f868a7c98628fd613997363507388a04",
+      "resolution": 0.5
+    },
+    {
+      "animation": "emissive_belt",
+      "index": 2,
+      "image": "animations/emissive_belt/spritesheet_002.webp",
+      "width": 2048,
+      "height": 960,
+      "columns": 8,
+      "rows": 3,
+      "frameStart": 96,
+      "frameCount": 24,
+      "bytes": 188486,
+      "sha256": "21fd6e354b801dd095b818fcf85f9cd6ebdeb4389c35860284845234311d2189",
+      "resolution": 0.5
+    }
+  ],
+  "textureProfile": {
+    "id": "grid-textures-v1",
+    "pixelsPerCell": 64,
+    "logicalPixelsPerCell": 128,
+    "resolution": 0.5,
+    "coordinates": "logical pixels; physicalRect and image dimensions are physical pixels",
+    "colorFilter": "premultiplied-alpha 2x2 box",
+    "dataFilter": "nearest packed height/flow coordinates; channel box continuous fields"
+  }
+}
