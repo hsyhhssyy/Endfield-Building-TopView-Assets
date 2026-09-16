@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  
   <meta name="building-display-name" content="扩容反应池">
   <meta name="building-variant" content="液体模式">
-  <meta name="building-task-id" content="20260913-single-device-pages-all">
+  <meta name="building-task-id" content="20260916-full-building-release">
   <meta name="building-id" content="mix_pool_2">
   <meta name="building-view" content="top">
   <title>扩容反应池 · 建筑预览</title>
   <link rel="stylesheet" href="preview/preview.css">
 <link rel="building-audio" href="../../../audio/buildings/mix_pool_2/audio.json">
 <meta name="asset-resolution" content="0.5"></head>
-<body><nav style="position:relative;z-index:20;padding:12px;background:#17232d;color:#edf3fa"><label>素材尺寸 <select id="site-size"><option value="128">128px / 格</option><option value="64" selected>64px / 格</option></select></label>　<button data-download-size="128">下载 128px 素材包</button> <button data-download-size="64">下载 64px 素材包</button>　<a href="../../../benchmark/">性能测试</a> <span id="download-status" role="status"></span></nav>
+<body><nav style="position:relative;z-index:20;padding:12px;background:#17232d;color:#edf3fa"><label>素材尺寸 <select id="site-size" style="color:#17232d;background:#fff"><option value="128">128px / 格</option><option value="64" selected>64px / 格</option></select></label>　<button data-download-size="128" style="color:#17232d;background:#fff">下载 128px 素材包</button> <button data-download-size="64" style="color:#17232d;background:#fff">下载 64px 素材包</button>　<a style="color:#9bc7ff" href="../../../benchmark/">性能测试</a> <span id="download-status" role="status"></span></nav>
   <main class="page">
     <a class="back" href="../../../?size=64">← 返回总览首页</a>
     <h1 id="page-title">扩容反应池 · 建筑预览</h1>
-    <p class="subtle">任务 ID：<span id="page-task-id">20260913-single-device-pages-all</span> · 由 PixiJS 直接播放 WebP spritesheet，不加载 GIF。</p>
+    <p class="subtle">任务 ID：<span id="page-task-id">20260916-full-building-release</span> · 由 PixiJS 直接播放 WebP spritesheet，不加载 GIF。</p>
     <nav id="delivery-variant-navigation" class="variant-navigation" aria-label="设备运行模式" hidden><label for="delivery-variant-select">运行模式</label><select id="delivery-variant-select"><option value="top" selected>液体模式</option></select><span class="subtle">切换模式会在本页加载对应素材包。</span></nav>
     <a id="delivery-archive" class="download" hidden></a>
 
@@ -27,6 +28,15 @@
       </section>
 
       <aside class="controls">
+        <section class="panel status-panel" id="status-panel" hidden>
+          <h2>设备状态</h2>
+          <div class="control-row">
+            <label for="status-code">StatusCode</label>
+            <select id="status-code"></select>
+          </div>
+          <p id="status-code-info" class="subtle"></p>
+        </section>
+
         <section class="panel" id="animation-panel">
           <h2>建筑动画</h2>
           <div class="control-row">
@@ -76,7 +86,7 @@
               <select id="ring-status"></select>
             </div>
           </div>
-          <p class="subtle">端口 ON/OFF 与建筑动画使用独立时钟；端口环按状态绑定去重叠加。</p>
+          <p id="effects-info" class="subtle">端口 ON/OFF 与建筑动画使用独立时钟；端口环按状态绑定去重叠加。</p>
         </section>
 
         <section class="panel">

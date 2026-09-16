@@ -11,6 +11,7 @@ import {
   resourcePath,
   ringsForStatus,
   ringStatusKeys,
+  selectedStatusCode,
   selectedVariant,
 } from './preview-data.js';
 
@@ -337,8 +338,13 @@ export class StaticHeightMasker {
       canvas.width = effect.width;
       canvas.height = effect.height;
       canvas.getContext('2d').putImageData(new ImageData(mask, effect.width, effect.height), 0, 0);
-      const texture = PIXI.Texture.from(canvas);
-      texture.source.resolution = effectDoc.value.textureProfile?.resolution ?? 1;
+      // Set resolution before Texture captures its logical frame dimensions.
+      // Changing only source.resolution afterwards leaves a half-sized mask
+      // paired with the full-size port pivot, hiding 64px port effects.
+      const texture = new PIXI.Texture({ source: new PIXI.CanvasSource({
+        resource: canvas,
+        resolution: effectDoc.value.textureProfile?.resolution ?? 1,
+      }) });
       return texture;
     })();
     this.maskCache.set(key, promise);
@@ -434,8 +440,11 @@ class EffectInstance {
 }
 
 class BuildingPreview {
-  constructor(rootUrl = ROOT_URL) {
+  constructor(rootUrl = ROOT_URL, statusControl = null) {
     this.rootUrl = rootUrl;
+    this.statusControl = statusControl;
+    this.statusListeners = new Set();
+    this.currentStatus = null;
     this.pages = new PageStore(10, (message) => this.status(message));
     this.documents = new Map();
     this.effects = [];
@@ -495,6 +504,7 @@ class BuildingPreview {
     this.bindAnimationControls();
     await this.selectClip(this.defaultClip());
     await this.selectPortsVariant();
+    await this.configureStatusControl();
 
     this.app.ticker.add(() => this.tick(performance.now()));
     $('#loading')?.remove();
@@ -636,10 +646,14 @@ class BuildingPreview {
     $('#play-toggle').onclick = () => {
       this.playing = !this.playing;
       this.buildingTrack.setPlaying(this.playing);
-      $('#play-toggle').textContent = this.playing ? '暂停' : '继续';
-      $('#play-toggle').setAttribute('aria-pressed', String(this.playing));
+      this.updatePlayButton();
     };
     $('#restart').onclick = () => this.buildingTrack.restart();
+  }
+
+  updatePlayButton() {
+    $('#play-toggle').textContent = this.playing ? '暂停' : '继续';
+    $('#play-toggle').setAttribute('aria-pressed', String(this.playing));
   }
 
   async selectClip(clip) {
@@ -702,6 +716,7 @@ class BuildingPreview {
         select.add(new Option(`${state.toUpperCase()}${suffix}`, state));
       }
       select.value = 'off';
+      select.disabled = Boolean(this.statusControl);
       select.setAttribute('aria-label', `${portLabel(port)} 状态`);
       select.addEventListener('change', () => void instance.setPortState(select.value));
       instance.control = select;
@@ -721,10 +736,11 @@ class BuildingPreview {
       await instance.setPortState(select.value);
     }
 
-    $('#all-port-actions').hidden = this.portInstances.length === 0;
-    $('#all-off').onclick = () => this.setAllPorts('off');
-    $('#all-on').onclick = () => this.setAllPorts('on');
+    $('#all-port-actions').hidden = this.portInstances.length === 0 || Boolean(this.statusControl);
+    $('#all-off').onclick = () => void this.setAllPorts('off');
+    $('#all-on').onclick = () => void this.setAllPorts('on');
     await this.configureRings(statuses);
+    if (this.currentStatus) await this.applyStatusCode(this.currentStatus.code, false);
     document.documentElement.dataset.portCount = String(this.portInstances.length);
     document.documentElement.dataset.ringCount = String(this.ringInstances.length);
   }
@@ -735,13 +751,15 @@ class BuildingPreview {
     document.documentElement.dataset.ringCount = '0';
   }
 
-  setAllPorts(state) {
+  async setAllPorts(state) {
+    const pending = [];
     for (const instance of this.portInstances ?? []) {
       if ([...instance.control.options].some((option) => option.value === state)) {
         instance.control.value = state;
-        void instance.setPortState(state);
+        pending.push(instance.setPortState(state));
       }
     }
+    await Promise.all(pending);
   }
 
   async configureRings(statuses) {
@@ -754,7 +772,7 @@ class BuildingPreview {
     const select = $('#ring-status');
     select.replaceChildren(...statuses.map((key) => new Option(key, key)));
     const row = $('#ring-status-row');
-    row.hidden = statuses.length < 2;
+    row.hidden = statuses.length < 2 || Boolean(this.statusControl);
     select.onchange = () => void this.rebuildRings(select.value);
     const checkbox = $('#ring-visible');
     checkbox.checked = this.ringsVisible;
@@ -763,6 +781,53 @@ class BuildingPreview {
       for (const instance of this.ringInstances ?? []) instance.sprite.visible = this.ringsVisible;
     };
     await this.rebuildRings(statuses[0]);
+  }
+
+  async configureStatusControl() {
+    const status = selectedStatusCode(this.statusControl);
+    const panel = $('#status-panel');
+    if (!status) {
+      panel.hidden = true;
+      return;
+    }
+    panel.hidden = false;
+    const select = $('#status-code');
+    select.replaceChildren(...this.statusControl.codes.map((item) => new Option(item.code, item.code)));
+    select.onchange = () => void this.applyStatusCode(select.value);
+    $('#effects-info').textContent = '端口 ON/OFF、端口环、建筑动画和设备灯带均由上方 StatusCode 联动。';
+    await this.applyStatusCode(status.code);
+  }
+
+  async applyStatusCode(requestedCode, notify = true) {
+    const status = selectedStatusCode(this.statusControl, requestedCode);
+    if (!status) return;
+    this.currentStatus = status;
+    $('#status-code').value = status.code;
+    if (status.portState) await this.setAllPorts(status.portState);
+    if (status.ringStatusKey !== undefined && status.ringStatusKey !== null) {
+      await this.rebuildRings(status.ringStatusKey);
+    }
+    const animation = status.animation ?? {};
+    if (animation.clip && $('#clip-select').value !== animation.clip) {
+      await this.selectClip(animation.clip);
+    }
+    if (animation.restart === true) this.buildingTrack.restart();
+    if (typeof animation.playing === 'boolean') {
+      this.playing = animation.playing;
+      this.buildingTrack.setPlaying(this.playing);
+      this.updatePlayButton();
+    }
+    $('#status-code-info').textContent = status.description ?? `${status.code} 已应用到全部可控表现。`;
+    document.documentElement.dataset.statusCode = status.code;
+    if (notify) {
+      for (const listener of this.statusListeners) listener(status);
+    }
+  }
+
+  onStatusCodeChange(listener) {
+    this.statusListeners.add(listener);
+    if (this.currentStatus) listener(this.currentStatus);
+    return () => this.statusListeners.delete(listener);
   }
 
   async rebuildRings(statusKey) {
@@ -793,7 +858,8 @@ class BuildingPreview {
     const canvas = this.spatial.value.canvasCells;
     const sizeEntries = this.sheetSizes?.value.pages ?? this.sheetSizes?.value.parts ?? [];
     const sheetBytes = sizeEntries.reduce((sum, page) => sum + finiteNumber(page.bytes), 0);
-    $('#sheet-summary').textContent = `${canvas.width}×${canvas.height} 格 · ${this.spatial.value.pixelsPerCell.x} px/格 · ${packageData.webpPageCount ?? sizeEntries.length ?? '?'} 个建筑图集页${sheetBytes ? ` · ${formatBytes(sheetBytes)}` : ''}`;
+    const texturePixelsPerCell = packageData.textureProfile?.pixelsPerCell ?? this.spatial.value.pixelsPerCell.x;
+    $('#sheet-summary').textContent = `${canvas.width}×${canvas.height} 格 · ${texturePixelsPerCell} px/格 · ${packageData.webpPageCount ?? sizeEntries.length ?? '?'} 个建筑图集页${sheetBytes ? ` · ${formatBytes(sheetBytes)}` : ''}`;
     const links = [
       ['package.json', 'package.json'],
       ['sequence.json', this.package.value.sequence ?? 'sequence.json'],
@@ -827,6 +893,7 @@ class BuildingPreview {
       this.fpsWindowFrames = 0;
     }
     this.buildingTrack.tick(now);
+    this.statusLights?.tick(now);
     const effectElapsed = now - this.effectStartedAt;
     for (const instance of this.effects) instance.tick(effectElapsed);
     const pinned = new Set([
@@ -838,7 +905,9 @@ class BuildingPreview {
   }
 
   dispose() {
+    this.statusLights?.dispose();
     this.lightMeshExperiment?.dispose();
+    this.statusListeners.clear();
     this.clearEffects();
     this.buildingTrack?.dispose();
     if (this.app) this.app.destroy(true, { children: true, texture: false, textureSource: false });
@@ -861,6 +930,9 @@ function resetPreviewDom() {
   $('#clip-select').replaceChildren();
   $('#port-list').replaceChildren();
   $('#effects-panel').hidden = true;
+  $('#status-panel').hidden = true;
+  $('#status-code').replaceChildren();
+  $('#status-code-info').textContent = '';
   $('#identity').textContent = '';
   $('#sheet-summary').textContent = '';
   $('#metadata-links').replaceChildren();
@@ -931,13 +1003,22 @@ export async function mountBuildingPreviewPage(rootUrl = ROOT_URL) {
     }
     resetPreviewDom();
     setPageIdentity(manifest, variant, rootUrl);
-    const preview = new BuildingPreview(assetUrl(variant.root, rootUrl));
+    const configuredStatus = manifest.statusControl ?? manifest.experiments?.statusControl;
+    const statusControl = configuredStatus
+      && (!configuredStatus.variant || configuredStatus.variant === variant.key)
+      ? configuredStatus : null;
+    const preview = new BuildingPreview(assetUrl(variant.root, rootUrl), statusControl);
     try {
       await preview.init();
       const lightMesh = manifest.experiments?.lightMesh;
       if (lightMesh?.manifest && (!lightMesh.variant || lightMesh.variant === variant.key)) {
         const { mountLightMeshExperiment } = await import('./factory-light-mesh-preview.js');
         preview.lightMeshExperiment = await mountLightMeshExperiment(preview, assetUrl(lightMesh.manifest, rootUrl));
+      }
+      const statusLights = manifest.experiments?.statusLights;
+      if (statusLights?.manifest && (!statusLights.variant || statusLights.variant === variant.key)) {
+        const { mountStatusLights } = await import('./status-lights-preview.js');
+        preview.statusLights = await mountStatusLights(preview, assetUrl(statusLights.manifest, rootUrl));
       }
       if (request !== generation) {
         preview.dispose();

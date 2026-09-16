@@ -140,7 +140,6 @@ export async function mountLightMeshExperiment(preview, manifestUrl) {
   panel.id = 'light-mesh-panel';
   panel.innerHTML = `
     <h2>底座灯带 · 细条图集</h2>
-    <div class="control-row"><label for="light-mesh-color">灯带颜色</label><select id="light-mesh-color"></select></div>
     <div class="button-row"><label><input type="checkbox" id="light-mesh-occlusion" checked> 高度遮挡</label>
       <label><input type="checkbox" id="light-mesh-wire"> 网格线</label></div>
     <div class="button-row"><label><input type="checkbox" id="light-mesh-isolate"> 仅看灯带</label></div>
@@ -148,28 +147,26 @@ export async function mountLightMeshExperiment(preview, manifestUrl) {
       <input id="light-mesh-height" type="range" min="-0.2" max="3" step="0.01" value="0" style="min-width:0;width:110px">
       <output id="light-mesh-height-value">0.00</output></div>
     <p class="subtle" id="light-mesh-info"></p>
-    <p class="subtle">颜色为实验样本。关闭高度遮挡可检查完整灯环；“原始”显示现有建筑图中的白灯。动画沿用当前静态高度近似。</p>
+    <p class="subtle">灯带颜色由页面 StatusCode 自动决定；无状态配置时使用清单默认色。关闭高度遮挡可检查完整灯环。</p>
     <details><summary>查看细条图集与预计算 UV</summary>
       <img id="light-mesh-atlas" alt="从上到下为黄、红、绿、蓝、白五条灯带" style="width:100%;margin:10px 0;background:repeating-conic-gradient(#46515b 0% 25%,#303c46 0% 50%) 0/12px 12px">
       <p class="subtle">从上到下：黄、红、绿、蓝、白。每条展开完整灯环；加载时直接读取预计算的顶点与 UV。</p>
       <p class="metadata"><a id="light-mesh-data-link">顶点与 UV</a> · <a id="light-mesh-manifest-link">颜色图集配置</a></p>
     </details>`;
   document.querySelector('#animation-panel').before(panel);
-  const colorSelect = panel.querySelector('#light-mesh-color');
-  for (const state of manifest.states) colorSelect.add(new Option(state.label, state.id));
-  colorSelect.add(new Option('原始（不叠加）', 'original'));
   panel.querySelector('#light-mesh-atlas').src = atlasUrl.href;
   panel.querySelector('#light-mesh-data-link').href = geometryUrl.href;
   panel.querySelector('#light-mesh-manifest-link').href = manifestUrl.href;
   const uniforms = shader.resources.lightOptions.uniforms;
-  const audit = { ready: true, taskId: manifest.taskId, state: manifest.defaultState, occlusion: true,
+  let selectedStateId = manifest.defaultState;
+  const audit = { ready: true, taskId: manifest.taskId, state: selectedStateId, statusCode: null, occlusion: true,
     wire: false, isolate: false, heightOffset: 0, atlasSources: 1, atlasSize: manifest.atlasSize,
     sourceVertices: data.positions.length, triangles: data.indices.length / 3,
     geometry: data.parameterization?.kind ?? 'authored nonrectangular light mesh',
     gpuVertices: data.positions.length, gpuColorBytes: manifest.atlasSize[0] * manifest.atlasSize[1] * 4,
     runtimeUVAnalysis: false, sourceHeight: heights[0], staticPose: field.name };
   function update() {
-    const id = colorSelect.value;
+    const id = selectedStateId;
     const state = manifest.states.find((item) => item.id === id);
     mesh.visible = Boolean(state);
     if (state) uniforms.uAtlasRect = new Float32Array(state.uvRect);
@@ -189,11 +186,17 @@ export async function mountLightMeshExperiment(preview, manifestUrl) {
     document.documentElement.dataset.lightMeshState = id;
     preview.app.render();
   }
-  colorSelect.value = manifest.defaultState;
   panel.addEventListener('input', update);
   panel.addEventListener('change', update);
+  const unsubscribe = preview.onStatusCodeChange?.((status) => {
+    const mapping = manifest.stateByStatus ?? {};
+    selectedStateId = Object.hasOwn(mapping, status.code) ? mapping[status.code] : manifest.defaultState;
+    audit.statusCode = status.code;
+    update();
+  });
   const experiment = { audit, mesh, geometry, shader, atlas, height, update, preview,
     dispose() {
+      unsubscribe?.();
       panel.remove();
       mesh.removeFromParent();
       mesh.destroy(); geometry.destroy(); wireGeometry?.destroy(); shader.destroy();

@@ -92,6 +92,27 @@ export function selectedVariant(ports, requestedKey = null) {
   return variants.find((item) => item.rendererTemplateKey === key) ?? variants[0] ?? null;
 }
 
+export function statusCodeOptions(statusControl) {
+  const result = [];
+  const seen = new Set();
+  for (const item of statusControl?.codes ?? []) {
+    const code = typeof item?.code === 'string' ? item.code.trim() : '';
+    if (!code || seen.has(code)) continue;
+    seen.add(code);
+    result.push({ ...item, code });
+  }
+  return result;
+}
+
+export function selectedStatusCode(statusControl, requestedCode = null) {
+  const options = statusCodeOptions(statusControl);
+  const code = requestedCode ?? statusControl?.defaultCode;
+  return options.find((item) => item.code === code)
+    ?? options.find((item) => item.code === statusControl?.defaultCode)
+    ?? options[0]
+    ?? null;
+}
+
 function validTransform(item, requireEnabledBinding = false) {
   const transform = item?.resolvedTransform;
   return Array.isArray(transform?.position)
