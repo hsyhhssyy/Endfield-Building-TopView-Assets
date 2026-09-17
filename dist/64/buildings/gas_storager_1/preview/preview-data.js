@@ -113,6 +113,13 @@ export function selectedStatusCode(statusControl, requestedCode = null) {
     ?? null;
 }
 
+export function statusCodeForClip(statusControl, clip) {
+  if (typeof clip !== 'string' || !clip) return null;
+  return statusCodeOptions(statusControl).find(
+    (item) => (item.animation?.clip ?? item.code) === clip,
+  ) ?? null;
+}
+
 function validTransform(item, requireEnabledBinding = false) {
   const transform = item?.resolvedTransform;
   return Array.isArray(transform?.position)

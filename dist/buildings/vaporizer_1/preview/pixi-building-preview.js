@@ -13,6 +13,7 @@ import {
   ringStatusKeys,
   selectedStatusCode,
   selectedVariant,
+  statusCodeForClip,
 } from './preview-data.js';
 
 const ROOT_URL = new URL('../', import.meta.url);
@@ -445,6 +446,7 @@ class BuildingPreview {
     this.statusControl = statusControl;
     this.statusListeners = new Set();
     this.currentStatus = null;
+    this.activeClip = null;
     this.pages = new PageStore(10, (message) => this.status(message));
     this.documents = new Map();
     this.effects = [];
@@ -504,7 +506,7 @@ class BuildingPreview {
     this.bindAnimationControls();
     await this.selectClip(this.defaultClip());
     await this.selectPortsVariant();
-    await this.configureStatusControl();
+    await this.configureStatusBinding();
 
     this.app.ticker.add(() => this.tick(performance.now()));
     $('#loading')?.remove();
@@ -642,7 +644,7 @@ class BuildingPreview {
     const select = $('#clip-select');
     select.replaceChildren();
     for (const clip of clips) select.add(new Option(clip, clip));
-    select.onchange = () => void this.selectClip(select.value);
+    select.onchange = () => void this.selectAnimationSelection(select.value);
     $('#play-toggle').onclick = () => {
       this.playing = !this.playing;
       this.buildingTrack.setPlaying(this.playing);
@@ -656,6 +658,15 @@ class BuildingPreview {
     $('#play-toggle').setAttribute('aria-pressed', String(this.playing));
   }
 
+  async selectAnimationSelection(clip) {
+    const status = statusCodeForClip(this.statusControl, clip);
+    if (status) {
+      await this.applyStatusCode(status.code);
+      return;
+    }
+    await this.selectClip(clip);
+  }
+
   async selectClip(clip) {
     if (!clip) throw new Error('交付中没有可播放的动画片段。');
     $('#clip-select').value = clip;
@@ -663,6 +674,7 @@ class BuildingPreview {
     const { animation, sheet } = await this.animationDocuments(clip);
     const mode = animation.value.playback?.mode ?? 'loop';
     await this.buildingTrack.setSheet(sheet, { loop: mode === 'loop', reset: true });
+    this.activeClip = clip;
     this.buildingTrack.setPlaying(this.playing);
     const sourceFps = finiteNumber(animation.value.fps, finiteNumber(this.sequence.value.fps));
     $('#source-fps').textContent = sourceFps > 0 ? `${sourceFps.toFixed(2).replace(/\.00$/, '')} FPS` : '未标注';
@@ -783,18 +795,10 @@ class BuildingPreview {
     await this.rebuildRings(statuses[0]);
   }
 
-  async configureStatusControl() {
+  async configureStatusBinding() {
     const status = selectedStatusCode(this.statusControl);
-    const panel = $('#status-panel');
-    if (!status) {
-      panel.hidden = true;
-      return;
-    }
-    panel.hidden = false;
-    const select = $('#status-code');
-    select.replaceChildren(...this.statusControl.codes.map((item) => new Option(item.code, item.code)));
-    select.onchange = () => void this.applyStatusCode(select.value);
-    $('#effects-info').textContent = '端口 ON/OFF、端口环、建筑动画和设备灯带均由上方 StatusCode 联动。';
+    if (!status) return;
+    $('#effects-info').textContent = '端口 ON/OFF、端口环和设备灯光随所选动画片段联动。';
     await this.applyStatusCode(status.code);
   }
 
@@ -802,13 +806,12 @@ class BuildingPreview {
     const status = selectedStatusCode(this.statusControl, requestedCode);
     if (!status) return;
     this.currentStatus = status;
-    $('#status-code').value = status.code;
     if (status.portState) await this.setAllPorts(status.portState);
     if (status.ringStatusKey !== undefined && status.ringStatusKey !== null) {
       await this.rebuildRings(status.ringStatusKey);
     }
     const animation = status.animation ?? {};
-    if (animation.clip && $('#clip-select').value !== animation.clip) {
+    if (animation.clip && this.activeClip !== animation.clip) {
       await this.selectClip(animation.clip);
     }
     if (animation.restart === true) this.buildingTrack.restart();
@@ -817,7 +820,6 @@ class BuildingPreview {
       this.buildingTrack.setPlaying(this.playing);
       this.updatePlayButton();
     }
-    $('#status-code-info').textContent = status.description ?? `${status.code} 已应用到全部可控表现。`;
     document.documentElement.dataset.statusCode = status.code;
     if (notify) {
       for (const listener of this.statusListeners) listener(status);
@@ -930,9 +932,6 @@ function resetPreviewDom() {
   $('#clip-select').replaceChildren();
   $('#port-list').replaceChildren();
   $('#effects-panel').hidden = true;
-  $('#status-panel').hidden = true;
-  $('#status-code').replaceChildren();
-  $('#status-code-info').textContent = '';
   $('#identity').textContent = '';
   $('#sheet-summary').textContent = '';
   $('#metadata-links').replaceChildren();

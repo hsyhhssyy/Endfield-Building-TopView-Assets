@@ -86,8 +86,6 @@ h1 { margin: 4px 0 6px; font-size: clamp(24px, 4vw, 36px); }
 
 .controls { display: grid; gap: 12px; }
 .panel { padding: 14px; }
-.status-panel { border-color: #d7b94a; background: #fffdf4; }
-.status-panel select { width: 100%; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-weight: 700; }
 .panel h2 { margin: 0 0 12px; font-size: 17px; }
 .control-row { display: grid; gap: 6px; margin: 9px 0; }
 .button-row { display: flex; flex-wrap: wrap; gap: 7px; }
