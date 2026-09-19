@@ -131,19 +131,65 @@ function buildRoute() {
   });
 }
 
+function pipeLogoPlacements(segments) {
+  const selected = new Set();
+  const spacing = 9; // round(1 / the recovered staticDensity .11)
+  const supportSpacing = Math.max(1, Number(ui.spacing.value) || 6);
+  for (let start = 0; start < segments.length;) {
+    if (segments[start].shape !== 'straight') { start += 1; continue; }
+    let end = start + 1;
+    while (end < segments.length && segments[end].shape === 'straight'
+      && segments[end].rotation === segments[start].rotation) end += 1;
+    const run = segments.slice(start, end);
+    // A complete label is atomic. Short runs between two bends get no label;
+    // this prevents the source phase strip from leaving a clipped tail.
+    if (run.length >= 3) {
+      const count = Math.max(1, Math.round(run.length / spacing));
+      const used = new Set();
+      for (let slot = 0; slot < count; slot += 1) {
+        const ideal = Math.min(run.length - 2, Math.max(1, Math.floor((slot + .5) * run.length / count)));
+        const candidates = [ideal];
+        for (let delta = 1; delta < run.length; delta += 1) candidates.push(ideal - delta, ideal + delta);
+        const local = candidates.find(value => value >= 1 && value < run.length - 1
+          && !used.has(value) && run[value].index % supportSpacing !== 0);
+        if (local !== undefined) { used.add(local); selected.add(run[local].index); }
+      }
+    }
+    start = end;
+  }
+  return selected;
+}
+
 function tex(key) {
   const texture = textures.get(`static/${key}`);
   if (!texture) throw new Error(`Missing static resource ${key}`);
   return texture;
 }
 
-function sprite(key, container, tint) {
+function sprite(key, container, tint, layer) {
   const value = new PIXI.Sprite(tex(key));
   value.anchor.set(0.5);
   value.width = value.height = 64;
+  value.logisticsLayer = layer || key.split('.').slice(2).join('.') || key;
   if (tint) value.tint = tint;
   container.addChild(value);
   return value;
+}
+
+function dynamicPipeMarks(segment, container) {
+  dynamicNodes.push(animation.mesh('pipe', segment, container, waterTime, false, 'chevron'));
+}
+
+function staticPipeChevron(key, container) {
+  if (!textures.has(`static/${key}.static-chevron`)) { sprite(`${key}.static-marker`, container); return; }
+  sprite(`${key}.static-chevron`, container);
+}
+
+function staticPipeLogo(container) {
+  for (const layer of ['logo-glow', 'logo-core']) {
+    const key = `pipe.straight.static-${layer}`;
+    if (textures.has(`static/${key}`)) sprite(key, container, undefined, layer);
+  }
 }
 
 function clear() {
@@ -157,7 +203,7 @@ function clear() {
   app.stage.removeChildren().forEach((child) => child.destroy({ children: true }));
 }
 
-function drawBakedFlowRoute(routeLayer) {
+function drawBakedFlowRoute(routeLayer, logoSegments) {
   const back = new PIXI.Container(), fluid = new PIXI.Container(), front = new PIXI.Container();
   routeLayer.addChild(back, fluid, front);
   let corners = 0;
@@ -172,7 +218,8 @@ function drawBakedFlowRoute(routeLayer) {
     if (supported && textures.has(`static/${key}.support-back`)) sprite(`${key}.support-back`, behind);
     if (supported && textures.has(`static/${key}.support-middle`)) sprite(`${key}.support-middle`, above);
     sprite(`${key}.shell`, above);
-    dynamicNodes.push(animation.mesh('pipe',segment,above,waterTime,ui.fluid.value!=='none'));
+    dynamicPipeMarks(segment, above);
+    if (logoSegments.has(segment.index)) staticPipeLogo(above);
     if (supported && textures.has(`static/${key}.support-front`)) sprite(`${key}.support-front`, above);
   }
   if (ui.fluid.value !== 'none') dynamicNodes.push(animation.route(nodes,fluid,fluidProfile()));
@@ -208,10 +255,11 @@ function draw() {
   nodes = buildRoute();
   const cycle = fluidCycleState();
   const fillBounds = new Float32Array([cycle.start, cycle.end, animation?.cycle?.edgeWidth ?? FALLBACK_FLUID_CYCLE.edgeWidth, boundaryShape(cycle)]);
+  const logoSegments = targetKind === 'pipe' ? pipeLogoPlacements(nodes) : new Set();
   let corners = 0;
   const routeLayer = new PIXI.Container();
   app.stage.addChild(routeLayer);
-  if (animation?.flowField && targetKind === 'pipe') corners = drawBakedFlowRoute(routeLayer);
+  if (animation?.flowField && targetKind === 'pipe') corners = drawBakedFlowRoute(routeLayer, logoSegments);
   else for (const segment of nodes) {
     const box = new PIXI.Container();
     const offsetX = 44;
@@ -239,8 +287,9 @@ function draw() {
       }
       if (supported && textures.has(`static/${key}.support-middle`)) sprite(`${key}.support-middle`, box);
       sprite(`${key}.shell`, box);
-      if (animation) dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, (ui.fluid.value !== 'none')));
-      else if (segment.index % 6 === 3) sprite(`${key}.static-marker`, box);
+      if (animation) dynamicPipeMarks(segment, box);
+      else if (segment.index % 6 === 3) staticPipeChevron(key, box);
+      if (logoSegments.has(segment.index)) staticPipeLogo(box);
       if (supported && textures.has(`static/${key}.support-front`)) sprite(`${key}.support-front`, box);
     } else {
       sprite(`${key}${animation ? '.base' : '.static'}`, box);
@@ -249,6 +298,7 @@ function draw() {
   }
   drawPipeEndpoints(routeLayer);
   audit.segments = nodes.map((segment) => ({ ...segment }));
+  audit.logoPlacements = [...logoSegments];
   audit.cornerSupports = corners;
   syncFluidUniforms(cycle);
   app.render();

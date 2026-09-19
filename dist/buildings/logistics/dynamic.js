@@ -8,6 +8,7 @@ in vec2 vUV;out vec4 finalColor;
 uniform sampler2D uMap;uniform sampler2D uGlyph;uniform sampler2D uFlow;uniform sampler2D uPattern;uniform sampler2D uFluidMap;
 uniform float uTime;uniform float uStart;uniform float uKind;uniform float uCorner;uniform float uFilled;uniform float uDirection;uniform float uLayer;
 uniform float uAtlasHalfTexel;
+uniform vec2 uPatternTexel;
 uniform sampler2D uBase;
 uniform sampler2D uSplash;
 uniform float uFluidType;
@@ -36,10 +37,29 @@ void main(){vec4 map=texture(uMap,vUV);if(map.a<.5){finalColor=vec4(0.);return;}
   // Unwrap the top seam continuously. Folding U and mixing R/G splices
   // oppositely oriented halves of the label. Keep the chevron UV above.
   float patternU=fract(.5+across*(2.*uDirection-1.));
-  float pv=remap(q,uPipe.x,uWidths.x);vec4 pattern=src(uPattern,vec2(patternU,clamp(pv,0.,1.)));
- float pat=(uCorner<.5&&pv>0.&&pv<1.)?pattern.r:0.;
- float marks=clamp(max(glyph,pat)*.9,0.,1.);
-  if(uLayer<.5){finalColor=vec4(vec3(.72,.91,1.)*marks,marks)*map.a*uColor;return;}
+  float pv=remap(q,uPipe.x,uWidths.x);vec2 patternUV=vec2(patternU,clamp(pv,0.,1.));
+  float patternEnabled=(uCorner<.5&&pv>0.&&pv<1.)?1.:0.;
+  float pat=src(uPattern,patternUV).r*patternEnabled;
+  // The authored logo is a separate HDR-white material signal in the game.
+  // Keep its crisp core independent from the pale-blue moving chevrons, and
+  // build only a restrained one-texel halo from the original data texture.
+  vec2 logoStep=uPatternTexel*1.5;
+  float logoNear=max(max(src(uPattern,patternUV+vec2(logoStep.x,0.)).r,src(uPattern,patternUV-vec2(logoStep.x,0.)).r),
+                     max(src(uPattern,patternUV+vec2(0.,logoStep.y)).r,src(uPattern,patternUV-vec2(0.,logoStep.y)).r))*patternEnabled;
+  float logoCore=clamp(smoothstep(.10,.54,pat)*1.04,0.,1.);
+  float logoGlow=clamp(smoothstep(.035,.36,max(pat,logoNear))*.24-logoCore*.08,0.,.24);
+  float chevron=clamp(glyph*.9,0.,1.);
+  if(uLayer<.5){finalColor=vec4(vec3(.72,.91,1.)*chevron,chevron)*map.a*uColor;return;}
+  if(uLayer>3.5&&uLayer<4.5){finalColor=vec4(vec3(.78,.92,1.)*logoGlow,logoGlow)*map.a*uColor;return;}
+  if(uLayer>4.5&&uLayer<5.5){finalColor=vec4(vec3(1.)*logoCore,logoCore)*map.a*uColor;return;}
+  // Compatibility layer for consumers that still request the former combined
+  // "marks" pass. Its result is chevron, then halo, then opaque white core.
+  if(uLayer>5.5){
+   float a=chevron;vec3 prem=vec3(.72,.91,1.)*a;
+   prem=vec3(.78,.92,1.)*logoGlow+prem*(1.-logoGlow);a=logoGlow+a*(1.-logoGlow);
+   prem=vec3(1.)*logoCore+prem*(1.-logoCore);a=logoCore+a*(1.-logoCore);
+   finalColor=vec4(prem,a)*map.a*uColor;return;
+  }
   if(uFilled<=0.){finalColor=vec4(0.);return;}
   vec4 fm=texture(uFluidMap,vUV);float fv=(fm.g*255.*256.+fm.b*255.)/65535.;float fluidS=uStart+fv;
   // Unwrap around the visible top seam before transverse deformation/noise.
@@ -179,7 +199,7 @@ export async function loadDynamic(PIXI,collection,signal){
    uFlow:sampler(kind==='pipe'?'pipe.fluid-motion':'conveyor.highlight'),
    uPattern:sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow'),uFluidMap:sampler(key+(kind==='pipe'?'.fluid-mapping':'.mapping')),
    uBase:base,uSplash:sampler(kind==='pipe'?'pipe.splash-noise':'conveyor.highlight'),
-   effect:{uFluidType:{value:profile?.phase==='gas'?1:0,type:'f32'},uSkin:{value:color('skin'),type:'vec4<f32>'},uSkin2:{value:color('skin2'),type:'vec4<f32>'},uFoam:{value:color('splash'),type:'vec4<f32>'},uAtlasHalfTexel:{value:.5/sampler(kind==='pipe'?'pipe.chevron':'conveyor.arrow').width,type:'f32'},uTime:{value:time,type:'f32'},uStart:{value:seg.start+5,type:'f32'},uKind:{value:kind==='pipe'?1:0,type:'f32'},uCorner:{value:seg.shape==='straight'?0:1,type:'f32'},uFilled:{value:filled?1:0,type:'f32'},uDirection:{value:p.waterDirection??0,type:'f32'},uLayer:{value:{marks:0,fluid:1,'fluid-body':2,'fluid-specular':3}[layer]??0,type:'f32'},uParams:{value:new Float32Array([p.arrowSpeed??1,p.flowSpeed??1.25,p.timeOffset??0,p.arrowSpace??1]),type:'vec4<f32>'},uPipe:{value:new Float32Array([p.staticDensity??.11,p.flowDensity??.18,p.flowOffset??0,p.flowSpeed??1.23]),type:'vec4<f32>'},uWidths:{value:new Float32Array([p.staticWidth??.922,p.flowWidth??.88,p.waterWaveSpeed??.8,p.flowSpace??.27]),type:'vec4<f32>'},uFillBounds:{value:fillBounds,type:'vec4<f32>'},uTint:{value:options.tint?tint(options.tint):color('body'),type:'vec4<f32>'}}
+   effect:{uFluidType:{value:profile?.phase==='gas'?1:0,type:'f32'},uSkin:{value:color('skin'),type:'vec4<f32>'},uSkin2:{value:color('skin2'),type:'vec4<f32>'},uFoam:{value:color('splash'),type:'vec4<f32>'},uAtlasHalfTexel:{value:.5/sampler(kind==='pipe'?'pipe.chevron':'conveyor.arrow').width,type:'f32'},uPatternTexel:{value:new Float32Array([1/sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow').width,1/sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow').height]),type:'vec2<f32>'},uTime:{value:time,type:'f32'},uStart:{value:seg.start+5,type:'f32'},uKind:{value:kind==='pipe'?1:0,type:'f32'},uCorner:{value:seg.shape==='straight'?0:1,type:'f32'},uFilled:{value:filled?1:0,type:'f32'},uDirection:{value:p.waterDirection??0,type:'f32'},uLayer:{value:{chevron:0,fluid:1,'fluid-body':2,'fluid-specular':3,'logo-glow':4,'logo-core':5,marks:6}[layer]??6,type:'f32'},uParams:{value:new Float32Array([p.arrowSpeed??1,p.flowSpeed??1.25,p.timeOffset??0,p.arrowSpace??1]),type:'vec4<f32>'},uPipe:{value:new Float32Array([p.staticDensity??.11,p.flowDensity??.18,p.flowOffset??0,p.flowSpeed??1.23]),type:'vec4<f32>'},uWidths:{value:new Float32Array([p.staticWidth??.922,p.flowWidth??.88,p.waterWaveSpeed??.8,p.flowSpace??.27]),type:'vec4<f32>'},uFillBounds:{value:fillBounds,type:'vec4<f32>'},uTint:{value:options.tint?tint(options.tint):color('body'),type:'vec4<f32>'}}
   }});
   const mesh=new PIXI.Mesh({geometry,shader});mesh.logisticsLayer=layer;container.addChild(mesh);return mesh;
  }};

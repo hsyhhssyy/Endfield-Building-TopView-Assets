@@ -5,7 +5,7 @@ import {CANVAS,CELL,resolveDevices,packScene,makeTimeline,frameAt,randomGenerato
 
 const $=id=>document.getElementById(id), params=new URLSearchParams(location.search);
 let version=params.get('version');
-let requestedSize=Number(params.get('size') || 64);
+let requestedSize=64;
 const bytes=n=>n>=1073741824?`${(n/1073741824).toFixed(2)} GiB`:`${(n/1048576).toFixed(1)} MiB`;
 const number=(n,d=2)=>Number.isFinite(n)?n.toFixed(d):'—';
 const absolute=(file,base=location.href)=>new URL(file,base).href;
@@ -443,8 +443,7 @@ function defaultConfig(preset='all'){
 }
 function validateConfig(input){
   const c={...defaultConfig(),...input};
-  c.assetSize=input.assetSize??(input.textureScale===1?128:input.textureScale===.5?64:requestedSize);
-  if(![64,128].includes(c.assetSize))throw Error('assetSize 必须为 64 或 128');
+  c.assetSize=64;
   c.textureScale=c.assetSize/128;
   if(!['scene','catalog','all-clips'].includes(c.residency))throw Error('residency 必须为 scene、catalog 或 all-clips');
   if(!['strip','original'].includes(c.lights))throw Error('lights 必须为 strip 或 original');

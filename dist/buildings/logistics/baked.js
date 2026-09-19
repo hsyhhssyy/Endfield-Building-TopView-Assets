@@ -32,7 +32,7 @@ async function loadPages(PIXI, manifest, include, signal) {
       if (signal?.aborted) throw new DOMException('Aborted', 'AbortError');
       sources.set(id, new PIXI.ImageSource({resource: bitmap, alphaMode: raw ? 'no-premultiply-alpha' : 'premultiplied-alpha',
         resolution: manifest.textureProfile?.resolution ?? 1,
-        autoGenerateMipmaps: false, scaleMode: 'linear', addressMode: 'clamp-to-edge'}));
+        autoGenerateMipmaps: false, scaleMode: page.filter || 'linear', addressMode: 'clamp-to-edge'}));
     }
     for (const [key, frame] of Object.entries(manifest.frames)) {
       if (!sources.has(frame.page)) continue;
@@ -110,7 +110,7 @@ export async function loadDynamic(PIXI, collection, signal) {
         profile: options.profile, a: sprite(holder)};
       // The profiles use dictionary keys as item IDs; allow callers to pass it.
       holder.bakedData.fluid = options.fluidId || Object.entries(manifest.fluidProfiles).find(([, profile]) => profile.name === options.profile?.name)?.[0];
-      if (kind === 'conveyor' || layer === 'marks') holder.bakedData.b = sprite(holder);
+      if (kind === 'conveyor') holder.bakedData.b = sprite(holder);
       return holder;
     },
     update(node, state, time) {
@@ -124,9 +124,12 @@ export async function loadDynamic(PIXI, collection, signal) {
         assign(b, prefix + 'arrow', phaseFrame(start - time * p.arrowSpeed, manifest.clips[prefix + 'arrow'].phaseSamples));
       } else if (layer === 'marks') {
         const q = start * (2 * p.waterDirection - 1) - p.flowOffset;
-        a.visible = segment.shape === 'straight';
-        if (a.visible) assign(a, 'pipe/straight/pattern', phaseFrame(q * p.staticDensity, 128));
-        assign(b, `pipe/${segment.shape}/chevron`, phaseFrame((q + p.flowSpeed * time) * p.flowDensity, 128));
+        const clip = `pipe/${segment.shape}/chevron`, sequence = manifest.clips[clip];
+        assign(a, clip, phaseFrame((q + p.flowSpeed * time) * p.flowDensity, sequence.phaseSamples));
+      } else if (layer === 'chevron') {
+        const q = start * (2 * p.waterDirection - 1) - p.flowOffset;
+        const clip = `pipe/${segment.shape}/chevron`, sequence = manifest.clips[clip];
+        assign(a, clip, phaseFrame((q + p.flowSpeed * time) * p.flowDensity, sequence.phaseSamples));
       } else {
         const localHead = state.end - start;
         node.visible = state.thickness > 0 && (!state.hasHead || localHead > 0);
