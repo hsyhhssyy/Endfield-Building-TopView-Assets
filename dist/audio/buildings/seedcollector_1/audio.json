@@ -32,6 +32,44 @@
       "working"
     ]
   },
+  "clipStateMapEvidence": {
+    "build": {
+      "certainty": "confirmed",
+      "source": "audioBuild"
+    },
+    "close": {
+      "certainty": "unconfirmed",
+      "source": "preview-clip-adapter"
+    },
+    "close_idle": {
+      "certainty": "unconfirmed",
+      "source": "preview-clip-adapter"
+    },
+    "idle": {
+      "certainty": "confirmed",
+      "source": "audioIdle"
+    },
+    "open": {
+      "certainty": "unconfirmed",
+      "source": "preview-clip-adapter"
+    },
+    "open_idle": {
+      "certainty": "unconfirmed",
+      "source": "preview-clip-adapter"
+    },
+    "remove": {
+      "certainty": "confirmed",
+      "source": "audioRemove"
+    },
+    "uiOpen": {
+      "certainty": "confirmed",
+      "source": "audioUiOpen"
+    },
+    "working": {
+      "certainty": "confirmed",
+      "source": "audioWorking"
+    }
+  },
   "clockModel": "state-entry-independent-loop",
   "profile": "endfield-building-audio-v1",
   "schemaVersion": 1,
@@ -42,6 +80,17 @@
       "configField": "audioBuild",
       "eventId": 2258412057,
       "signedEventId": -2036555239,
+      "stateBinding": {
+        "certainty": "confirmed",
+        "source": "AudioFactory",
+        "state": "build",
+        "trigger": "state-entry"
+      },
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -71,6 +120,17 @@
       "configField": "audioIdle",
       "eventId": 3055192626,
       "signedEventId": -1239774670,
+      "stateBinding": {
+        "certainty": "confirmed",
+        "source": "AudioFactory",
+        "state": "idle",
+        "trigger": "state-entry"
+      },
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -101,6 +161,17 @@
       "configField": "audioRemove",
       "eventId": 194827719,
       "signedEventId": 194827719,
+      "stateBinding": {
+        "certainty": "confirmed",
+        "source": "AudioFactory",
+        "state": "remove",
+        "trigger": "state-entry"
+      },
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -130,6 +201,17 @@
       "configField": "audioUiOpen",
       "eventId": 3833731869,
       "signedEventId": -461235427,
+      "stateBinding": {
+        "certainty": "confirmed",
+        "source": "AudioFactory",
+        "state": "uiOpen",
+        "trigger": "state-entry"
+      },
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -156,6 +238,17 @@
       "configField": "audioWorking",
       "eventId": 1815229760,
       "signedEventId": 1815229760,
+      "stateBinding": {
+        "certainty": "confirmed",
+        "source": "AudioFactory",
+        "state": "working",
+        "trigger": "state-entry"
+      },
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,

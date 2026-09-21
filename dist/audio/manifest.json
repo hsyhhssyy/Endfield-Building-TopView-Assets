@@ -539,6 +539,11 @@
         52516034
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -569,6 +574,11 @@
         96719448
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -600,6 +610,11 @@
         100119430
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -631,6 +646,11 @@
         100135627
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -662,6 +682,11 @@
         114084012
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -690,6 +715,11 @@
         151069158
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -727,6 +757,11 @@
         183010341
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -755,6 +790,11 @@
         191006110
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -786,6 +826,11 @@
         194827719
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -817,6 +862,11 @@
         209059331
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -845,6 +895,11 @@
         219526793
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -873,6 +928,11 @@
         250036031
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -901,6 +961,11 @@
         256757089
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -934,6 +999,11 @@
         287838765
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -967,6 +1037,11 @@
         295885913
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -995,6 +1070,11 @@
         296733588
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1026,6 +1106,11 @@
         428505561
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1054,6 +1139,11 @@
         446786860
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1085,6 +1175,11 @@
         503912662
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1113,6 +1208,11 @@
         512088996
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1146,6 +1246,11 @@
         555287265
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1177,6 +1282,11 @@
         560328091
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1209,6 +1319,11 @@
         631939574
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1240,6 +1355,11 @@
         640404220
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1270,6 +1390,11 @@
         643654139
       ],
       "variantCount": 7,
+      "variantSelection": {
+        "certainty": "unconfirmed",
+        "mode": "round-robin-on-state-entry",
+        "reason": "wwise-selector-unavailable"
+      },
       "variants": [
         {
           "available": true,
@@ -1406,6 +1531,11 @@
         653430922
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1437,6 +1567,11 @@
         674672818
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1472,6 +1607,11 @@
         729098873
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1503,6 +1643,11 @@
         742258116
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1534,6 +1679,11 @@
         746019999
       ],
       "variantCount": 0,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "none",
+        "reason": "no-available-variant"
+      },
       "variants": []
     },
     {
@@ -1543,6 +1693,11 @@
         780286333
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1572,6 +1727,11 @@
         827570103
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1603,6 +1763,11 @@
         850958881
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1634,6 +1799,11 @@
         929746862
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1663,6 +1833,11 @@
         967502406
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1698,6 +1873,11 @@
         969299470
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1729,6 +1909,11 @@
         1040775137
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1757,6 +1942,11 @@
         1090846031
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1788,6 +1978,11 @@
         1105976536
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1819,6 +2014,11 @@
         1118712465
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1850,6 +2050,11 @@
         1125985113
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1882,6 +2087,11 @@
         1126141632
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1916,6 +2126,11 @@
         1127497802
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1947,6 +2162,11 @@
         1136297570
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -1979,6 +2199,11 @@
         1161893728
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2007,6 +2232,11 @@
         1163719606
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2038,6 +2268,11 @@
         1212463411
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2066,6 +2301,11 @@
         1215062438
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2097,6 +2337,11 @@
         1247673198
       ],
       "variantCount": 7,
+      "variantSelection": {
+        "certainty": "unconfirmed",
+        "mode": "round-robin-on-state-entry",
+        "reason": "wwise-selector-unavailable"
+      },
       "variants": [
         {
           "available": true,
@@ -2233,6 +2478,11 @@
         1270699854
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2265,6 +2515,11 @@
         1271445578
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2293,6 +2548,11 @@
         1304557193
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2321,6 +2581,11 @@
         1308079804
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2352,6 +2617,11 @@
         1316913412
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2380,6 +2650,11 @@
         1317844331
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2408,6 +2683,11 @@
         1319291401
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2441,6 +2721,11 @@
         1346617932
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2472,6 +2757,11 @@
         1367028231
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2505,6 +2795,11 @@
         1374282465
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2533,6 +2828,11 @@
         1376577148
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2564,6 +2864,11 @@
         1377098000
       ],
       "variantCount": 7,
+      "variantSelection": {
+        "certainty": "unconfirmed",
+        "mode": "round-robin-on-state-entry",
+        "reason": "wwise-selector-unavailable"
+      },
       "variants": [
         {
           "available": true,
@@ -2721,6 +3026,11 @@
         1399380619
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2754,6 +3064,11 @@
         1404942228
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2782,6 +3097,11 @@
         1415161554
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2810,6 +3130,11 @@
         1459709335
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2841,6 +3166,11 @@
         1463241710
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -2872,6 +3202,11 @@
         1493195689
       ],
       "variantCount": 7,
+      "variantSelection": {
+        "certainty": "unconfirmed",
+        "mode": "round-robin-on-state-entry",
+        "reason": "wwise-selector-unavailable"
+      },
       "variants": [
         {
           "available": true,
@@ -3008,6 +3343,11 @@
         1532016907
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3039,6 +3379,11 @@
         1576926504
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3070,6 +3415,11 @@
         1631973820
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3101,6 +3451,11 @@
         1662651230
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3132,6 +3487,11 @@
         1709434538
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3163,6 +3523,11 @@
         1726675596
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3194,6 +3559,11 @@
         1729192795
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3222,6 +3592,11 @@
         1771493039
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3250,6 +3625,11 @@
         1815229760
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3281,6 +3661,11 @@
         1867477576
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3313,6 +3698,11 @@
         1867712504
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3341,6 +3731,11 @@
         1871248999
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3372,6 +3767,11 @@
         1879428054
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3406,6 +3806,11 @@
         1887012726
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3437,6 +3842,11 @@
         1909592316
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3468,6 +3878,11 @@
         1987966184
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3496,6 +3911,11 @@
         2029835627
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3524,6 +3944,11 @@
         2040332840
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3555,6 +3980,11 @@
         2070749700
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3588,6 +4018,11 @@
         2073985402
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3619,6 +4054,11 @@
         2096410393
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3647,6 +4087,11 @@
         2143610006
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3678,6 +4123,11 @@
         -2144660992
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3711,6 +4161,11 @@
         -2097258422
       ],
       "variantCount": 7,
+      "variantSelection": {
+        "certainty": "unconfirmed",
+        "mode": "round-robin-on-state-entry",
+        "reason": "wwise-selector-unavailable"
+      },
       "variants": [
         {
           "available": true,
@@ -3847,6 +4302,11 @@
         -2042945644
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3875,6 +4335,11 @@
         -2036555239
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3906,6 +4371,11 @@
         -1976692115
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3936,6 +4406,11 @@
         -1934124022
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -3967,6 +4442,11 @@
         -1928862798
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4000,6 +4480,11 @@
         -1908446989
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4028,6 +4513,11 @@
         -1901422205
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4061,6 +4551,11 @@
         -1894878343
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4092,6 +4587,11 @@
         -1831750861
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4120,6 +4620,11 @@
         -1813918894
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4151,6 +4656,11 @@
         -1784392733
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4182,6 +4692,11 @@
         -1772523098
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4217,6 +4732,11 @@
         -1751402765
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4248,6 +4768,11 @@
         -1714616579
       ],
       "variantCount": 0,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "none",
+        "reason": "no-available-variant"
+      },
       "variants": []
     },
     {
@@ -4257,6 +4782,11 @@
         -1700016516
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4288,6 +4818,11 @@
         -1679001261
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4322,6 +4857,11 @@
         -1662800821
       ],
       "variantCount": 7,
+      "variantSelection": {
+        "certainty": "unconfirmed",
+        "mode": "round-robin-on-state-entry",
+        "reason": "wwise-selector-unavailable"
+      },
       "variants": [
         {
           "available": true,
@@ -4479,6 +5019,11 @@
         -1629347323
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4510,6 +5055,11 @@
         -1608585540
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4541,6 +5091,11 @@
         -1594012461
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4569,6 +5124,11 @@
         -1583160128
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4600,6 +5160,11 @@
         -1571797675
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4631,6 +5196,11 @@
         -1489062955
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4662,6 +5232,11 @@
         -1483079327
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4690,6 +5265,11 @@
         -1459452858
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4718,6 +5298,11 @@
         -1392544257
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4752,6 +5337,11 @@
         -1389877898
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4783,6 +5373,11 @@
         -1288456587
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4814,6 +5409,11 @@
         -1265069229
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4845,6 +5445,11 @@
         -1247762896
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4876,6 +5481,11 @@
         -1239774670
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4908,6 +5518,11 @@
         -1230981315
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4939,6 +5554,11 @@
         -1230566646
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -4970,6 +5590,11 @@
         -1209466336
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5001,6 +5626,11 @@
         -1204414706
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5029,6 +5659,11 @@
         -1183385224
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5060,6 +5695,11 @@
         -1167352106
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5091,6 +5731,11 @@
         -1164350404
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5121,6 +5766,11 @@
         -1152751980
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5152,6 +5802,11 @@
         -1108319014
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5183,6 +5838,11 @@
         -1088692677
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5211,6 +5871,11 @@
         -1088493667
       ],
       "variantCount": 0,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "none",
+        "reason": "no-available-variant"
+      },
       "variants": []
     },
     {
@@ -5220,6 +5885,11 @@
         -1068671382
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5251,6 +5921,11 @@
         -1059229428
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5281,6 +5956,11 @@
         -1053490671
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5312,6 +5992,11 @@
         -1045529121
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5343,6 +6028,11 @@
         -1042583321
       ],
       "variantCount": 0,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "none",
+        "reason": "no-available-variant"
+      },
       "variants": []
     },
     {
@@ -5352,6 +6042,11 @@
         -1034247011
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5383,6 +6078,11 @@
         -1014865720
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5411,6 +6111,11 @@
         -1001976611
       ],
       "variantCount": 0,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "none",
+        "reason": "no-available-variant"
+      },
       "variants": []
     },
     {
@@ -5420,6 +6125,11 @@
         -984566937
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5450,6 +6160,11 @@
         -879065887
       ],
       "variantCount": 0,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "none",
+        "reason": "no-available-variant"
+      },
       "variants": []
     },
     {
@@ -5459,6 +6174,11 @@
         -860305919
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5490,6 +6210,11 @@
         -854075874
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5518,6 +6243,11 @@
         -801723414
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5549,6 +6279,11 @@
         -735673209
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5580,6 +6315,11 @@
         -718772942
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5611,6 +6351,11 @@
         -708712528
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5639,6 +6384,11 @@
         -668974282
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5670,6 +6420,11 @@
         -649753771
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5704,6 +6459,11 @@
         -649198814
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5739,6 +6499,11 @@
         -640713654
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5770,6 +6535,11 @@
         -598770989
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5801,6 +6571,11 @@
         -593552389
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5831,6 +6606,11 @@
         -567876170
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5860,6 +6640,11 @@
         -541844516
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5893,6 +6678,11 @@
         -495061132
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5921,6 +6711,11 @@
         -461235427
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5949,6 +6744,11 @@
         -439996820
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -5977,6 +6777,11 @@
         -372481097
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6010,6 +6815,11 @@
         -353269344
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6041,6 +6851,11 @@
         -295316582
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6072,6 +6887,11 @@
         -291077333
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6103,6 +6923,11 @@
         -271609821
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6133,6 +6958,11 @@
         -256721281
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6168,6 +6998,11 @@
         -228840294
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6199,6 +7034,11 @@
         -186156478
       ],
       "variantCount": 0,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "none",
+        "reason": "no-available-variant"
+      },
       "variants": []
     },
     {
@@ -6208,6 +7048,11 @@
         -135394762
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6236,6 +7081,11 @@
         -105690429
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6269,6 +7119,11 @@
         -88740000
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6297,6 +7152,11 @@
         -64814811
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6325,6 +7185,11 @@
         -39151743
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,
@@ -6355,6 +7220,11 @@
         -21092409
       ],
       "variantCount": 1,
+      "variantSelection": {
+        "certainty": "confirmed",
+        "mode": "single",
+        "reason": "single-available-variant"
+      },
       "variants": [
         {
           "available": true,

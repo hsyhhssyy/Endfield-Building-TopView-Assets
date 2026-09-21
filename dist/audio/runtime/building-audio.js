@@ -13,6 +13,7 @@ if (metadataLink && !globalThis.__endfieldBuildingAudio) {
     currentKey: '',
     requestToken: 0,
     buffers: new Map(),
+    variantCursors: new Map(),
     suppressRestartEvent: false,
     panel: null,
     status: null,
@@ -40,9 +41,18 @@ if (metadataLink && !globalThis.__endfieldBuildingAudio) {
 
   const availableVariants = (entry) => (entry?.variants || []).filter((variant) => variant.available && variant.file);
 
-  const refreshVariants = (variants) => {
+  const automaticSelection = (entry) => entry?.variantSelection?.mode === 'round-robin-on-state-entry';
+
+  const refreshVariants = (entry, variants) => {
     const previous = state.variant.value;
+    const previousEvent = state.variant.dataset.eventId;
     state.variant.replaceChildren();
+    if (automaticSelection(entry)) {
+      const option = document.createElement('option');
+      option.value = '__auto__';
+      option.textContent = '自动轮换（选择条件未确认）';
+      state.variant.append(option);
+    }
     variants.forEach((variant, index) => {
       const option = document.createElement('option');
       option.value = variant.key;
@@ -50,7 +60,23 @@ if (metadataLink && !globalThis.__endfieldBuildingAudio) {
       state.variant.append(option);
     });
     state.variant.closest('[data-audio-variant-row]').hidden = variants.length < 2;
-    if (variants.some((variant) => variant.key === previous)) state.variant.value = previous;
+    if (previousEvent === String(entry.eventId)
+        && (previous === '__auto__' || variants.some((variant) => variant.key === previous))) {
+      state.variant.value = previous;
+    } else if (automaticSelection(entry)) {
+      state.variant.value = '__auto__';
+    }
+    state.variant.dataset.eventId = String(entry.eventId);
+  };
+
+  const selectVariant = (entry, variants) => {
+    if (state.variant.value !== '__auto__') {
+      return variants.find((item) => item.key === state.variant.value) || variants[0];
+    }
+    const cursor = state.variantCursors.get(entry.eventId) || 0;
+    const variant = variants[cursor % variants.length];
+    state.variantCursors.set(entry.eventId, (cursor + 1) % variants.length);
+    return variant;
   };
 
   const loadBuffer = async (variant) => {
@@ -79,15 +105,16 @@ if (metadataLink && !globalThis.__endfieldBuildingAudio) {
     const clip = document.querySelector('#clip-select')?.value || '';
     const entry = resolveState(clip);
     const variants = availableVariants(entry);
-    refreshVariants(variants);
+    if (entry) refreshVariants(entry, variants);
     if (!variants.length) {
       stop();
       setStatus(`片段 ${clip || '—'} 没有可用声音`);
       return;
     }
-    const variant = variants.find((item) => item.key === state.variant.value) || variants[0];
+    const stateKey = `${clip}:${entry.eventId}:`;
+    if (!restart && state.source && state.currentKey.startsWith(stateKey)) return;
+    const variant = selectVariant(entry, variants);
     const key = `${clip}:${entry.eventId}:${variant.key}`;
-    if (!restart && key === state.currentKey && state.source) return;
 
     stop();
     const token = state.requestToken;
@@ -120,7 +147,10 @@ if (metadataLink && !globalThis.__endfieldBuildingAudio) {
           setStatus('声音播放完成');
         }
       };
-      setStatus(`${clip} · 事件 ${entry.eventId}${source.loop ? ' · 独立循环' : ''}`);
+      const uncertain = entry.variantSelection?.certainty === 'unconfirmed'
+        ? ' · 变体条件未确认，自动轮换'
+        : '';
+      setStatus(`${clip} · 事件 ${entry.eventId}${source.loop ? ' · 独立循环' : ''}${uncertain}`);
     } catch (error) {
       if (token !== state.requestToken) return;
       state.buffers.clear();
