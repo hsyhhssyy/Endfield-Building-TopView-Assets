@@ -1,8 +1,9 @@
 import * as PIXI from './vendor/pixi.min.js';
 let playback = new URLSearchParams(location.search).get('renderer') === 'baked' ? 'baked' : 'draw';
 
-const ids = ['family', 'layout', 'animate', 'fluid', 'no-wait', 'spacing', 'pause', 'restart', 'zoom', 'status', 'loading', 'error', 'render-fps', 'source-fps'];
+const ids = ['family', 'layout', 'animate', 'fluid', 'no-wait', 'spacing', 'pause', 'restart', 'zoom', 'background', 'status', 'loading', 'error', 'render-fps', 'source-fps'];
 const ui = Object.fromEntries(ids.map((id) => [id, document.getElementById(id)]));
+const beltTint = part => document.getElementById('tint-'+part).value;
 let targetKind = ui.family?.value || 'pipe';
 const audit = window.logisticsAudit = {
   ready: false, mode: 'static', frames: 0, dynamicTextures: 0, rafActive: false,
@@ -15,6 +16,63 @@ const resources = new Map();
 const textures = new Map();
 const staticSets = new Map();
 let app;
+let grassBackground;
+let opticalMap, glassFilter;
+// Source LitFactoryTube composes SceneColor and reflected radiance in linear
+// light. A conventional translucent Sprite cannot preserve this relationship.
+export const glassVertex = `
+in vec2 aPosition;
+out vec2 vTextureCoord;out vec2 vSceneUV;
+uniform vec4 uInputSize;uniform vec4 uOutputFrame;uniform vec4 uOutputTexture;
+uniform vec2 uSceneSize;
+void main(){
+ vec2 position=aPosition*uOutputFrame.zw+uOutputFrame.xy;
+ vSceneUV=position/uSceneSize;
+ vTextureCoord=aPosition*(uOutputFrame.zw*uInputSize.zw);
+ position.x=position.x*(2./uOutputTexture.x)-1.;
+ position.y=position.y*(2.*uOutputTexture.z/uOutputTexture.y)-uOutputTexture.z;
+ gl_Position=vec4(position,0.,1.);
+}`;
+export const glassFragment = `
+in vec2 vTextureCoord;in vec2 vSceneUV;out vec4 finalColor;
+uniform sampler2D uTexture;uniform sampler2D uOptics;
+uniform vec3 uGlassTint;uniform float uReflectionScale;
+vec3 toLinear(vec3 c){return mix(c/12.92,pow((c+.055)/1.055,vec3(2.4)),step(vec3(.04045),c));}
+vec3 toDisplay(vec3 c){c=max(c,vec3(0.));return mix(c*12.92,1.055*pow(c,vec3(1./2.4))-.055,step(vec3(.0031308),c));}
+void main(){
+ vec4 scene=texture(uTexture,vTextureCoord),optics=texture(uOptics,vSceneUV);
+ vec3 radiance=optics.rgb/max(optics.a,.00001)/uReflectionScale;
+ vec3 color=toDisplay(toLinear(scene.rgb/max(scene.a,.00001))*uGlassTint+radiance);
+ finalColor=vec4(mix(scene.rgb,color*scene.a,optics.a),scene.a);
+}`;
+
+function initializeGlass() {
+  const material=manifests.get(collection.entries['pipe.straight'].id).pipeSurfaceMaterial;
+  opticalMap=PIXI.RenderTexture.create({width:app.screen.width,height:app.screen.height,resolution:1});
+  glassFilter=new PIXI.Filter({
+    glProgram:PIXI.GlProgram.from({vertex:glassVertex,fragment:glassFragment,name:'pipe-scene-transmission'}),
+    padding:0,resolution:1,antialias:false,
+    resources:{uOptics:opticalMap.source,glassUniforms:{
+      uSceneSize:{value:new Float32Array([app.screen.width,app.screen.height]),type:'vec2<f32>'},
+      uGlassTint:{value:new Float32Array(material.glass.colors._GlassColor.slice(0,3)),type:'vec3<f32>'},
+      uReflectionScale:{value:material.opticalCalibration.reflectionEncodingScale,type:'f32'},
+    }},
+  });
+}
+
+function drawGround(container) {
+  let ground;
+  if(ui.background.value==='grass'&&grassBackground){
+    ground=new PIXI.TilingSprite({texture:grassBackground.texture,width:app.screen.width,height:app.screen.height});
+    ground.tileScale.set(grassBackground.worldWidth*64/grassBackground.texture.width);
+    audit.background='grass';
+  }else{
+    ground=new PIXI.Sprite(PIXI.Texture.WHITE);ground.width=app.screen.width;ground.height=app.screen.height;
+    ground.tint=0x34463c;audit.background='solid';
+  }
+  ground.logisticsLayer='background';container.addChild(ground);
+  audit.backgroundWorldWidth=grassBackground?.worldWidth;
+}
 let animation = null;
 let raf = 0;
 let previous = 0;
@@ -44,6 +102,13 @@ function fluidCycleState() {
 }
 
 function fluidProfile() { return manifests.get(collection.entries['pipe.straight'].id).fluidProfiles[ui.fluid.value]; }
+function staticWaterTint(role) {
+  const colors = fluidProfile().colors;
+  const rgb = key => {const n=parseInt(colors[key].hex.slice(1),16);return [n>>16&255,n>>8&255,n&255];};
+  const body=rgb('body'),skin=rgb('skin'),skin2=rgb('skin2');
+  const values=body.map((_,i)=>role==='body' ? (skin2[i]*1.8+skin[i]*.02+body[i]*.005)*[.70,1.,.90][i] : skin[i]*.65*[.93,.90,.94][i]);
+  return values.reduce((result,c)=>(result<<8)|Math.round(Math.min(255,Math.max(0,c))),0);
+}
 function boundaryShape(state) { return state.hasHead ? Math.min(1, state.progress * state.total * 2, (1 - state.progress) * state.total * 2) : 0; }
 
 function syncFluidUniforms(state = fluidCycleState()) {
@@ -203,9 +268,9 @@ function clear() {
   app.stage.removeChildren().forEach((child) => child.destroy({ children: true }));
 }
 
-function drawBakedFlowRoute(routeLayer, logoSegments) {
-  const back = new PIXI.Container(), fluid = new PIXI.Container(), front = new PIXI.Container();
-  routeLayer.addChild(back, fluid, front);
+function drawPipeRoute(underlay, front, optics, logoSegments, fillBounds) {
+  const back = new PIXI.Container(), fluid = new PIXI.Container(), middle = new PIXI.Container();
+  underlay.addChild(back, fluid, middle);
   let corners = 0;
   for (const segment of nodes) {
     const holder = layer => {
@@ -216,13 +281,29 @@ function drawBakedFlowRoute(routeLayer, logoSegments) {
     const supported = segment.shape !== 'straight' || segment.index % Number(ui.spacing.value) === 0;
     if (supported && segment.shape !== 'straight') corners++;
     if (supported && textures.has(`static/${key}.support-back`)) sprite(`${key}.support-back`, behind);
-    if (supported && textures.has(`static/${key}.support-middle`)) sprite(`${key}.support-middle`, above);
-    sprite(`${key}.shell`, above);
-    dynamicPipeMarks(segment, above);
+    if(ui.fluid.value!=='none'&&!animation?.flowField){
+      const water=holder(fluid);
+      if(animation){
+        dynamicNodes.push(animation.mesh('pipe',segment,water,waterTime,true,'fluid-body',{texture:tex(`${key}.fluid-body`),profile:fluidProfile(),fillBounds}));
+        if(!animation.baked){
+          dynamicNodes.push(animation.mesh('pipe',segment,water,waterTime,true,'fluid',{profile:fluidProfile(),fillBounds}));
+          dynamicNodes.push(animation.mesh('pipe',segment,water,waterTime,true,'fluid-specular',{texture:tex(`${key}.fluid-specular`),profile:fluidProfile(),fillBounds}));
+        }
+      }else if(fluidProfile().phase==='gas')sprite(`${key}.gas-body`,water);
+      else{
+        sprite(`${key}.fluid-static-body`,water,staticWaterTint('body'));
+        sprite(`${key}.fluid-static-skin`,water,staticWaterTint('skin'));
+        sprite(`${key}.fluid-static-specular`,water);
+      }
+    }
+    if (supported && textures.has(`static/${key}.support-middle`)) sprite(`${key}.support-middle`, holder(middle));
+    sprite(`${key}.optical-reflection`,holder(optics));
+    if(animation)dynamicPipeMarks(segment, above);
+    else if(segment.index%6===3)staticPipeChevron(key,above);
     if (logoSegments.has(segment.index)) staticPipeLogo(above);
     if (supported && textures.has(`static/${key}.support-front`)) sprite(`${key}.support-front`, above);
   }
-  if (ui.fluid.value !== 'none') dynamicNodes.push(animation.route(nodes,fluid,fluidProfile()));
+  if (ui.fluid.value !== 'none'&&animation?.flowField) dynamicNodes.push(animation.route(nodes,fluid,fluidProfile()));
   return corners;
 }
 
@@ -251,6 +332,7 @@ function drawPipeEndpoints(routeLayer) {
 }
 
 function draw() {
+  document.getElementById('belt-colors').hidden = targetKind !== 'conveyor';
   clear();
   nodes = buildRoute();
   const cycle = fluidCycleState();
@@ -258,8 +340,16 @@ function draw() {
   const logoSegments = targetKind === 'pipe' ? pipeLogoPlacements(nodes) : new Set();
   let corners = 0;
   const routeLayer = new PIXI.Container();
-  app.stage.addChild(routeLayer);
-  if (animation?.flowField && targetKind === 'pipe') corners = drawBakedFlowRoute(routeLayer, logoSegments);
+  const underlay=new PIXI.Container();drawGround(underlay);
+  app.stage.addChild(underlay,routeLayer);
+  if (targetKind === 'pipe') {
+    const optics=new PIXI.Container();
+    corners=drawPipeRoute(underlay,routeLayer,optics,logoSegments,fillBounds);
+    app.renderer.render({container:optics,target:opticalMap,clear:true});
+    optics.destroy({children:true});
+    underlay.filters=[glassFilter];underlay.filterArea=app.screen;
+    underlay.logisticsSceneTransmission=true;
+  }
   else for (const segment of nodes) {
     const box = new PIXI.Container();
     const offsetX = 44;
@@ -267,34 +357,14 @@ function draw() {
     box.position.set(offsetX + segment.x * 64, offsetY + segment.y * 64);
     box.rotation = segment.rotation;
     routeLayer.addChild(box);
-    const pipe = targetKind === 'pipe';
-    const key = `${pipe ? 'pipe' : 'conveyor'}.${segment.shape}`;
-    const supported = pipe && (segment.shape !== 'straight' || segment.index % Number(ui.spacing.value) === 0);
-    if (supported && segment.shape !== 'straight') corners += 1;
-    if (supported && textures.has(`static/${key}.support-back`)) sprite(`${key}.support-back`, box);
-    if (pipe) {
-      if ((ui.fluid.value !== 'none')) {
-        if (animation) {
-          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid-body', { texture: tex(`${key}.fluid-body`), profile: fluidProfile(), fillBounds }));
-          if (!animation.baked) {
-          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid', { profile: fluidProfile(), fillBounds }));
-          dynamicNodes.push(animation.mesh('pipe', segment, box, waterTime, true, 'fluid-specular', { texture: tex(`${key}.fluid-specular`), profile: fluidProfile(), fillBounds }));
-          }
-        } else {
-          if (fluidProfile().phase === 'gas') sprite(`${key}.gas-body`, box);
-          else { sprite(`${key}.fluid-body`, box, fluidProfile().colors.body.hex); sprite(`${key}.fluid-specular`, box); }
-        }
-      }
-      if (supported && textures.has(`static/${key}.support-middle`)) sprite(`${key}.support-middle`, box);
-      sprite(`${key}.shell`, box);
-      if (animation) dynamicPipeMarks(segment, box);
-      else if (segment.index % 6 === 3) staticPipeChevron(key, box);
-      if (logoSegments.has(segment.index)) staticPipeLogo(box);
-      if (supported && textures.has(`static/${key}.support-front`)) sprite(`${key}.support-front`, box);
-    } else {
-      sprite(`${key}${animation ? '.base' : '.static'}`, box);
-      if (animation) dynamicNodes.push(animation.mesh('conveyor', segment, box, beltTime, false));
-    }
+    const key=`conveyor.${segment.shape}`;
+    if (textures.has(`static/${key}.surface-tint`)) {
+      for (const part of ['surface', 'edge-glow', 'edge-core']) sprite(`${key}.${part}-tint`, box, beltTint(part));
+      if (!animation) sprite(`${key}.arrow-static-tint`, box, beltTint('arrow'));
+    } else sprite(`${key}${animation ? '.base' : '.static'}`, box);
+    if (animation) dynamicNodes.push(animation.mesh('conveyor', segment, box, beltTime, false, 'marks', {
+      arrowTint: beltTint('arrow'), highlightTint: beltTint('highlight'),
+    }));
   }
   drawPipeEndpoints(routeLayer);
   audit.segments = nodes.map((segment) => ({ ...segment }));
@@ -364,7 +434,7 @@ function syncPlaybackUI() {
 function syncURL(push = false) {
   const url = new URL(location.href);
   url.searchParams.set('renderer', playback);
-  for (const id of ['fluid', 'layout', 'zoom', 'family', 'spacing']) url.searchParams.set(id, ui[id].value);
+  for (const id of ['fluid', 'layout', 'zoom', 'family', 'spacing', 'background']) url.searchParams.set(id, ui[id].value);
   for (const [key, id] of [['animate', 'animate'], ['noWait', 'no-wait']]) {
     if (ui[id].checked) url.searchParams.set(key, '1'); else url.searchParams.delete(key);
   }
@@ -452,6 +522,7 @@ async function setAnimation({ preserve = false } = {}) {
 }
 
 function setupControls() {
+  ui.background.addEventListener('change', () => draw());
   const syncFamily = () => {
     targetKind = ui.family.value;
     const pipe = targetKind === 'pipe';
@@ -470,6 +541,7 @@ function setupControls() {
   }
   ui.layout?.addEventListener('change', () => { fluidCycleTime = 0; flowCycle = null; draw(); });
   ui.fluid?.addEventListener('change', () => draw());
+  document.getElementById('belt-colors').addEventListener('input', () => draw());
   ui['no-wait'].addEventListener('change', () => {
     flowCycle?.setEarlyRefill(ui['no-wait'].checked);
     draw();
@@ -534,13 +606,25 @@ async function init() {
   await app.init({ width: 1088, height: 488, backgroundAlpha: 0, antialias: true, preference: 'webgl', autoStart: false, sharedTicker: false });
   app.stop();
   document.getElementById('stage').appendChild(app.canvas);
+  if (collection.previewBackground) {
+    const url = new URL(collection.previewBackground, location.href);
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Cannot load preview grass metadata');
+    const config = await response.json();
+    const image = new Image();image.src = new URL(config.file, url).href;
+    await image.decode();
+    const texture=await PIXI.Assets.load(image.src);
+    texture.source.autoGenerateMipmaps=true;
+    grassBackground = {...config, url:image.src, texture};
+  }
+  initializeGlass();
   audit.pixiVersion = PIXI.VERSION;
   audit.renderer = 'webgl';
   ui.loading.textContent = '';
   // Review links can start directly on an effect; the normal entry stays
   // static and does not load any dynamic assets until explicitly enabled.
   const query = new URLSearchParams(location.search);
-  for (const id of ['fluid', 'layout', 'zoom', 'family', 'spacing']) {
+  for (const id of ['fluid', 'layout', 'zoom', 'family', 'spacing', 'background']) {
     if ([...ui[id].options].some(option => option.value === query.get(id))) ui[id].value = query.get(id);
   }
   ui.animate.checked = query.get('animate') === '1';

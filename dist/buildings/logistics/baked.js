@@ -52,14 +52,16 @@ export async function loadBakedStatic(PIXI) {
 export async function loadDynamic(PIXI, collection, signal) {
   const manifest = await getManifest();
   const flowModule = manifest.fluidPlayback ? await import('./baked-flow.js') : null;
-  const loaded = await loadPages(PIXI, manifest, page => page.group !== 'static', signal);
+  const loaded = await loadPages(PIXI, manifest, page => page.group !== 'static'
+    && !(manifest.tintableConveyor && page.group === 'conveyor'), signal);
   const {textures} = loaded;
   const levels = manifest.body?.thicknessLevels;
   const routes = new Set();
   const frameTexture = (clip, frame) => {
     const sequence = manifest.clips[clip];
     if (!sequence) throw Error('Missing baked clip ' + clip);
-    return textures.get(sequence.frames[Math.min(sequence.frames.length - 1, Math.max(0, frame))]);
+    const frames = sequence.tintFrames || sequence.frames;
+    return textures.get(frames[Math.min(frames.length - 1, Math.max(0, frame))]);
   };
   const sprite = container => {
     const node = new PIXI.Sprite();
@@ -110,7 +112,13 @@ export async function loadDynamic(PIXI, collection, signal) {
         profile: options.profile, a: sprite(holder)};
       // The profiles use dictionary keys as item IDs; allow callers to pass it.
       holder.bakedData.fluid = options.fluidId || Object.entries(manifest.fluidProfiles).find(([, profile]) => profile.name === options.profile?.name)?.[0];
-      if (kind === 'conveyor') holder.bakedData.b = sprite(holder);
+      if (kind === 'conveyor') {
+        holder.bakedData.b = sprite(holder);
+        if (manifest.tintableConveyor) {
+          holder.bakedData.a.tint = options.highlightTint || '#ff961f';
+          holder.bakedData.b.tint = options.arrowTint || '#ffc74d';
+        }
+      }
       return holder;
     },
     update(node, state, time) {

@@ -23,8 +23,10 @@ export function createFlowRoute(PIXI, manifest, sources, segments, parent, profi
   };
   const {vertex,fragment}=manifest.fluidPlayback.referenceShader;
   const shader=PIXI.Shader.from({gl:{vertex,fragment},resources:{
-    uData:sources.get('fluid-data'),uFog:sources.get('gas-field'),
+    uData:sources.get('fluid-data'),uFog:sources.get('gas-field'),uWater:sources.get('water-field'),
     flow:{uTime:{value:0,type:'f32'},uThickness:{value:1,type:'f32'},uGas:{value:profile.phase==='gas'?1:0,type:'f32'},
+      uSkinSpeed:{value:manifest.parametersByResourceId?.[manifest.entries['pipe.straight'].id]?.waterSkinSpeed??.7,type:'f32'},
+      uMapSize:{value:manifest.pages['fluid-data'].width/8,type:'f32'},
       uBounds:{value:new Float32Array([4,5,.012,1]),type:'vec4<f32>'},
       uBody:{value:color('body'),type:'vec4<f32>'},uSkin:{value:color('skin'),type:'vec4<f32>'},
       uSkin2:{value:color('skin2'),type:'vec4<f32>'},uFoam:{value:color('splash'),type:'vec4<f32>'}}

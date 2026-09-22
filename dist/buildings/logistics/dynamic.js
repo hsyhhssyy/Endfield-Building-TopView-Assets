@@ -10,10 +10,12 @@ uniform float uTime;uniform float uStart;uniform float uKind;uniform float uCorn
 uniform float uAtlasHalfTexel;
 uniform vec2 uPatternTexel;
 uniform sampler2D uBase;
-uniform sampler2D uSplash;
+uniform sampler2D uSplash;uniform sampler2D uWater;
 uniform float uFluidType;
+uniform float uSkinSpeed;
 uniform vec4 uSkin;uniform vec4 uSkin2;uniform vec4 uFoam;
 uniform vec4 uParams;uniform vec4 uPipe;uniform vec4 uWidths;uniform vec4 uFillBounds;uniform vec4 uTint;uniform vec4 uColor;
+uniform vec4 uArrowTint;uniform vec4 uHighlightTint;
 vec4 src(sampler2D tex,vec2 uv){return texture(tex,vec2(fract(uv.x),1.-fract(uv.y)));}
 float remap(float q,float density,float width){return (fract(q*density)*width-.5)/(width-1.);}
 float hash21(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
@@ -22,6 +24,18 @@ float fog(vec2 p){return .57*noise(p)+.28*noise(p*2.03+7.)+.15*noise(p*4.01+19.)
 // Authored top-view radius, radius variation, spatial frequency and time rate.
 // The game's thickness-driven inset is recovered; these viewing values are not.
 const vec4 WATER_SURFACE=vec4(.78,.028,.65,.8);
+vec4 waterSurface(float s,float across){
+ vec2 size=vec2(4096.,132.);float y=2.+clamp(across*.5+.5,0.,1.)*128.;
+ vec4 a=texture(uWater,(vec2(2.+fract((s-uTime*.8)/128.)*4092.,y))/size);
+ vec4 b=texture(uWater,(vec2(2.+fract((s-uTime*uSkinSpeed)/128.)*4092.,y))/size);
+ return mix(a,b,.25);
+}
+vec3 wetColor(vec3 body,vec3 skin,vec3 skin2,float across,float radial,vec2 normal){
+ float band=smoothstep(.05,.60,abs(across+normal.x*.13));
+ vec3 center=(skin2*1.8+skin*.02+body*.005)*vec3(.70,1.,.90);
+ vec3 color=mix(center,skin*.65*vec3(.93,.90,.94),band);
+ return color*(1.+normal.y*.04);
+}
 void main(){vec4 map=texture(uMap,vUV);if(map.a<.5){finalColor=vec4(0.);return;}
  float across=map.r;float along=(map.g*255.*256.+map.b*255.)/65535.;float s=uStart+along;
  vec3 rgb=vec3(0.);float alpha=0.;
@@ -29,8 +43,9 @@ void main(){vec4 map=texture(uMap,vUV);if(map.a<.5){finalColor=vec4(0.);return;}
   float phase=fract(s-uTime*uParams.x);float atlasU=clamp(across/8.,uAtlasHalfTexel,1./8.-uAtlasHalfTexel);float arrow=clamp((src(uGlyph,vec2(atlasU,phase*uParams.w)).r-.55)*3.,0.,1.);
   float flow=src(uFlow,vec2(across,fract((s-uTime*uParams.y+uParams.z)*uWidths.w))).r;
   float light=clamp(pow(max(flow,0.),1.15)*.78,0.,1.);float arrowAlpha=arrow*.9;
+  arrowAlpha*=uArrowTint.a;light*=uHighlightTint.a;
   alpha=arrowAlpha+light*(1.-arrowAlpha);
-  rgb=(vec3(1.,.78,.30)*arrowAlpha+vec3(1.,.59,.12)*light*(1.-arrowAlpha))/max(alpha,.000001);
+  rgb=(uArrowTint.rgb*arrowAlpha+uHighlightTint.rgb*light*(1.-arrowAlpha))/max(alpha,.000001);
  }else{
   float q=s*(2.*uDirection-1.)-uPipe.z;float u=min(abs(across-.5),1.);float av=remap(q+uPipe.w*uTime,uPipe.y,uWidths.y);
   float glyph=(av>0.&&av<1.)?src(uGlyph,vec2(u,av)).r:0.;
@@ -71,7 +86,9 @@ void main(){vec4 map=texture(uMap,vUV);if(map.a<.5){finalColor=vec4(0.);return;}
   float wave=.72*sin(6.283185307*(fluidS*WATER_SURFACE.z-uTime*WATER_SURFACE.w))
              +.28*sin(6.283185307*(fluidS*WATER_SURFACE.z*2.17-uTime*WATER_SURFACE.w*.63)+1.4);
   float thickness=clamp(uFilled,0.,1.);
-  float radius=(WATER_SURFACE.x+WATER_SURFACE.y*wave)*thickness;
+  vec4 water=waterSurface(fluidS,transverse);
+  float side=transverse<0.?water.r:water.g;
+  float radius=(.88+.06*(side*2.-1.))*thickness;
   // About one source-map pixel of coverage; also works on WebGL1 contexts
   // where the optional derivatives extension is not enabled by Pixi.
   float aa=.025;
@@ -80,6 +97,7 @@ void main(){vec4 map=texture(uMap,vUV);if(map.a<.5){finalColor=vec4(0.);return;}
   interior*=smoothstep(0.,.07,thickness);
   float surfaceAcross=crossSection/max(radius,.1);float surfaceRadial=abs(surfaceAcross);
   vec2 normal=src(uFlow,vec2(fm.r*2.,fluidS-uTime*uWidths.z)).rg*2.-1.;
+  vec2 skinNormal=water.ba*2.-1.;
   float turbulence=fog(vec2(transverse*2.6,fluidS*1.65-uTime*.85));
   float shape=uFillBounds.w;float edge=max(uFillBounds.z*shape,.0001);
   // The in-game screenshot shows a planar cross-section, with a broad white
@@ -109,17 +127,14 @@ void main(){vec4 map=texture(uMap,vUV);if(map.a<.5){finalColor=vec4(0.);return;}
    rgb=(vec3(1.)*whiteAlpha+uFoam.rgb*foamAlpha*(1.-whiteAlpha))/max(alpha,.000001);
   }
   else if(uLayer<2.5){
-   vec4 base=texture(uBase,vUV);
-   base.rgb*=mix(uTint.rgb,uSkin.rgb,.22+.10*normal.x);
-   base.rgb=mix(base.rgb,uSkin2.rgb*base.a,.09*surfaceRadial*surfaceRadial);
-   finalColor=base*occupied*uColor;return;
+   vec3 waterColor=wetColor(uTint.rgb,uSkin.rgb,uSkin2.rgb,surfaceAcross,radial,skinNormal);
+   float a=.98*occupied;
+   finalColor=vec4(waterColor*a,a)*uColor;return;
   }else{
-   // Surface reflection follows the moving inset edge; the old baked
-   // reflection alone lies at the undeformed mesh boundary.
-   float rim=exp(-pow((surfaceRadial-.91)/.065,2.));
-   float lighting=.65+.35*clamp(-surfaceAcross,0.,1.);
-   alpha=occupied*(texture(uBase,vUV).a*.35+rim*.17*lighting);
-   rgb=vec3(.82,.94,1.);
+   float skinAcross=surfaceAcross+skinNormal.x*.035;
+   float rim=exp(-pow((abs(skinAcross)-.96)/.055,2.));
+   alpha=occupied*rim*(.095+.03*skinNormal.y);
+   rgb=vec3(.70,.94,1.);
   }
  }
  alpha*=map.a;finalColor=vec4(rgb*alpha,alpha)*uColor;
@@ -198,8 +213,8 @@ export async function loadDynamic(PIXI,collection,signal){
    uMap:sampler(key+'.mapping'),uGlyph:sampler(kind==='pipe'?'pipe.chevron':'conveyor.arrow'),
    uFlow:sampler(kind==='pipe'?'pipe.fluid-motion':'conveyor.highlight'),
    uPattern:sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow'),uFluidMap:sampler(key+(kind==='pipe'?'.fluid-mapping':'.mapping')),
-   uBase:base,uSplash:sampler(kind==='pipe'?'pipe.splash-noise':'conveyor.highlight'),
-   effect:{uFluidType:{value:profile?.phase==='gas'?1:0,type:'f32'},uSkin:{value:color('skin'),type:'vec4<f32>'},uSkin2:{value:color('skin2'),type:'vec4<f32>'},uFoam:{value:color('splash'),type:'vec4<f32>'},uAtlasHalfTexel:{value:.5/sampler(kind==='pipe'?'pipe.chevron':'conveyor.arrow').width,type:'f32'},uPatternTexel:{value:new Float32Array([1/sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow').width,1/sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow').height]),type:'vec2<f32>'},uTime:{value:time,type:'f32'},uStart:{value:seg.start+5,type:'f32'},uKind:{value:kind==='pipe'?1:0,type:'f32'},uCorner:{value:seg.shape==='straight'?0:1,type:'f32'},uFilled:{value:filled?1:0,type:'f32'},uDirection:{value:p.waterDirection??0,type:'f32'},uLayer:{value:{chevron:0,fluid:1,'fluid-body':2,'fluid-specular':3,'logo-glow':4,'logo-core':5,marks:6}[layer]??6,type:'f32'},uParams:{value:new Float32Array([p.arrowSpeed??1,p.flowSpeed??1.25,p.timeOffset??0,p.arrowSpace??1]),type:'vec4<f32>'},uPipe:{value:new Float32Array([p.staticDensity??.11,p.flowDensity??.18,p.flowOffset??0,p.flowSpeed??1.23]),type:'vec4<f32>'},uWidths:{value:new Float32Array([p.staticWidth??.922,p.flowWidth??.88,p.waterWaveSpeed??.8,p.flowSpace??.27]),type:'vec4<f32>'},uFillBounds:{value:fillBounds,type:'vec4<f32>'},uTint:{value:options.tint?tint(options.tint):color('body'),type:'vec4<f32>'}}
+   uWater:sampler(kind==='pipe'?'pipe.water-field':'conveyor.highlight'),uBase:base,uSplash:sampler(kind==='pipe'?'pipe.splash-noise':'conveyor.highlight'),
+   effect:{uSkinSpeed:{value:p.waterSkinSpeed??.7,type:'f32'},uArrowTint:{value:options.arrowTint?tint(options.arrowTint):new Float32Array([1,.78,.30,1]),type:'vec4<f32>'},uHighlightTint:{value:options.highlightTint?tint(options.highlightTint):new Float32Array([1,.59,.12,1]),type:'vec4<f32>'},uFluidType:{value:profile?.phase==='gas'?1:0,type:'f32'},uSkin:{value:color('skin'),type:'vec4<f32>'},uSkin2:{value:color('skin2'),type:'vec4<f32>'},uFoam:{value:color('splash'),type:'vec4<f32>'},uAtlasHalfTexel:{value:.5/sampler(kind==='pipe'?'pipe.chevron':'conveyor.arrow').width,type:'f32'},uPatternTexel:{value:new Float32Array([1/sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow').width,1/sampler(kind==='pipe'?'pipe.pattern':'conveyor.arrow').height]),type:'vec2<f32>'},uTime:{value:time,type:'f32'},uStart:{value:seg.start+5,type:'f32'},uKind:{value:kind==='pipe'?1:0,type:'f32'},uCorner:{value:seg.shape==='straight'?0:1,type:'f32'},uFilled:{value:filled?1:0,type:'f32'},uDirection:{value:p.waterDirection??0,type:'f32'},uLayer:{value:{chevron:0,fluid:1,'fluid-body':2,'fluid-specular':3,'logo-glow':4,'logo-core':5,marks:6}[layer]??6,type:'f32'},uParams:{value:new Float32Array([p.arrowSpeed??1,p.flowSpeed??1.25,p.timeOffset??0,p.arrowSpace??1]),type:'vec4<f32>'},uPipe:{value:new Float32Array([p.staticDensity??.11,p.flowDensity??.18,p.flowOffset??0,p.flowSpeed??1.23]),type:'vec4<f32>'},uWidths:{value:new Float32Array([p.staticWidth??.922,p.flowWidth??.88,p.waterWaveSpeed??.8,p.flowSpace??.27]),type:'vec4<f32>'},uFillBounds:{value:fillBounds,type:'vec4<f32>'},uTint:{value:options.tint?tint(options.tint):color('body'),type:'vec4<f32>'}}
   }});
   const mesh=new PIXI.Mesh({geometry,shader});mesh.logisticsLayer=layer;container.addChild(mesh);return mesh;
  }};
