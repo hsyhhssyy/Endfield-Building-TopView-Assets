@@ -1,7 +1,7 @@
 import * as PIXI from './vendor/pixi.min.js';
 let playback = new URLSearchParams(location.search).get('renderer') === 'baked' ? 'baked' : 'draw';
 
-const ids = ['family', 'layout', 'animate', 'fluid', 'no-wait', 'spacing', 'pause', 'restart', 'zoom', 'background', 'status', 'loading', 'error', 'render-fps', 'source-fps'];
+const ids = ['family', 'layout', 'animate', 'cargo', 'fluid', 'no-wait', 'spacing', 'pause', 'restart', 'zoom', 'background', 'status', 'loading', 'error', 'render-fps', 'source-fps'];
 const ui = Object.fromEntries(ids.map((id) => [id, document.getElementById(id)]));
 const beltTint = part => document.getElementById('tint-'+part).value;
 let targetKind = ui.family?.value || 'pipe';
@@ -9,6 +9,7 @@ const audit = window.logisticsAudit = {
   ready: false, mode: 'static', frames: 0, dynamicTextures: 0, rafActive: false,
   errors: [], segments: [], waterTime: 0, beltTime: 0, sourceFps: null, family: targetKind,
   supportRotations: {}, fluidCycleTime: 0, fluidCycle: { state: 'static-full', supply: true, occupancy: 1 },
+  cargo: { visible: false, count: 0, itemId: null, speedCellsPerSecond: 0, secondsPerCell: 0, positions: [] },
 };
 const collection = await fetch('./collection.json').then((response) => response.json());
 const manifests = new Map();
@@ -84,6 +85,7 @@ let paused = false;
 let generation = 0;
 let controller = null;
 let dynamicNodes = [];
+let cargoNodes = [];
 let nodes = [];
 let fpsStarted = performance.now();
 let fpsFrames = 0;
@@ -147,7 +149,8 @@ function status() {
     holding: '持续供应 · 满管', empty: '已排空，即将重新供水', disabled: '空管', 'static-full': '满管',
   };
   const fluid = targetKind !== 'pipe' ? '' : ` · ${fluidLabels[cycle.state]}`;
-  const family = targetKind === 'pipe' ? `管道 · ${fluidProfile()?.name || '无'}` : '传送带';
+  const family = targetKind === 'pipe' ? `管道 · ${fluidProfile()?.name || '无'}`
+    : `传送带${audit.cargo.visible ? ` · ${audit.cargo.count} 个源矿盒` : ''}`;
   ui.status.textContent = `${mode} · ${family} · ${nodes.length} 个组件 · ${running}${fluid}`;
   audit.mode = animation ? 'dynamic' : 'static';
   audit.playback = playback;
@@ -194,6 +197,76 @@ function buildRoute() {
     const shape = cross === 0 ? 'straight' : cross > 0 ? 'left' : 'right';
     return { x, y, index, shape, rotation: Math.atan2(incoming[1], incoming[0]) - Math.PI / 2, start: index, incoming, outgoing };
   });
+}
+
+function cargoRoutePosition(distance) {
+  if (!nodes.length) return null;
+  const length = nodes.length;
+  const phase = ((distance % length) + length) % length;
+  const coordinate = phase - 0.5;
+  let x, y, direction;
+  if (coordinate < 0) {
+    const segment = nodes[0];direction = segment.incoming;
+    x = segment.x + direction[0] * coordinate;
+    y = segment.y + direction[1] * coordinate;
+  } else if (coordinate >= length - 1) {
+    const segment = nodes[length - 1];direction = segment.outgoing;
+    const local = coordinate - (length - 1);
+    x = segment.x + direction[0] * local;
+    y = segment.y + direction[1] * local;
+  } else {
+    const index = Math.floor(coordinate), local = coordinate - index;
+    const first = nodes[index], second = nodes[index + 1];
+    direction = [second.x - first.x, second.y - first.y];
+    x = first.x + direction[0] * local;
+    y = first.y + direction[1] * local;
+  }
+  return { phase, coordinate, x, y,
+    rotation: Math.atan2(direction[1], direction[0]) - Math.PI / 2 };
+}
+
+function updateCargoPositions() {
+  const transport = collection.cargoTransport;
+  const positions = [];
+  for (const cargo of cargoNodes) {
+    const point = cargoRoutePosition(
+      beltTime * transport.speedCellsPerSecond + cargo.offsetCells);
+    if (!point) continue;
+    cargo.sprite.position.set(44 + point.x * 64, 44 + point.y * 64);
+    cargo.sprite.rotation = point.rotation;
+    positions.push({ offsetCells: cargo.offsetCells,
+      routeDistanceCells: point.phase, xCells: point.x, yCells: point.y,
+      rotationRadians: point.rotation });
+  }
+  audit.cargo = {
+    visible: cargoNodes.length > 0,
+    count: cargoNodes.length,
+    itemId: transport?.itemId || null,
+    itemName: transport?.itemName || null,
+    speedCellsPerSecond: transport?.speedCellsPerSecond || 0,
+    secondsPerCell: transport?.secondsPerCell || 0,
+    spacingCells: transport?.spacingCells || 0,
+    routeLengthCells: nodes.length,
+    positions,
+  };
+}
+
+function drawCargoRoute(routeLayer) {
+  cargoNodes = [];
+  const transport = collection.cargoTransport;
+  if (!transport || targetKind !== 'conveyor' || !ui.cargo.checked
+      || !textures.has(transport.resource)) {
+    updateCargoPositions();return;
+  }
+  const spacing = Math.max(1, Number(transport.spacingCells) || 4);
+  const count = Math.max(1, Math.floor(nodes.length / spacing));
+  for (let index = 0; index < count; index += 1) {
+    const cargo = new PIXI.Sprite(tex(transport.resource.replace(/^static\//, '')));
+    cargo.anchor.set(0.5);cargo.width = cargo.height = 64;
+    cargo.logisticsLayer = 'cargo-source-ore';routeLayer.addChild(cargo);
+    cargoNodes.push({ sprite: cargo, offsetCells: index * spacing });
+  }
+  updateCargoPositions();
 }
 
 function pipeLogoPlacements(segments) {
@@ -264,6 +337,7 @@ function clear() {
     node.shader.destroy();
   }
   dynamicNodes = [];
+  cargoNodes = [];
   animation?.clearScene?.();
   app.stage.removeChildren().forEach((child) => child.destroy({ children: true }));
 }
@@ -350,27 +424,31 @@ function draw() {
     underlay.filters=[glassFilter];underlay.filterArea=app.screen;
     underlay.logisticsSceneTransmission=true;
   }
-  else for (const segment of nodes) {
-    const box = new PIXI.Container();
-    const offsetX = 44;
-    const offsetY = 44;
-    box.position.set(offsetX + segment.x * 64, offsetY + segment.y * 64);
-    box.rotation = segment.rotation;
-    routeLayer.addChild(box);
-    const key=`conveyor.${segment.shape}`;
-    if (textures.has(`static/${key}.surface-tint`)) {
-      for (const part of ['surface', 'edge-glow', 'edge-core']) sprite(`${key}.${part}-tint`, box, beltTint(part));
-      if (!animation) sprite(`${key}.arrow-static-tint`, box, beltTint('arrow'));
-    } else sprite(`${key}${animation ? '.base' : '.static'}`, box);
-    if (animation) dynamicNodes.push(animation.mesh('conveyor', segment, box, beltTime, false, 'marks', {
-      arrowTint: beltTint('arrow'), highlightTint: beltTint('highlight'),
-    }));
+  else {
+    for (const segment of nodes) {
+      const box = new PIXI.Container();
+      const offsetX = 44;
+      const offsetY = 44;
+      box.position.set(offsetX + segment.x * 64, offsetY + segment.y * 64);
+      box.rotation = segment.rotation;
+      routeLayer.addChild(box);
+      const key=`conveyor.${segment.shape}`;
+      if (textures.has(`static/${key}.surface-tint`)) {
+        for (const part of ['surface', 'edge-glow', 'edge-core']) sprite(`${key}.${part}-tint`, box, beltTint(part));
+        if (!animation) sprite(`${key}.arrow-static-tint`, box, beltTint('arrow'));
+      } else sprite(`${key}${animation ? '.base' : '.static'}`, box);
+      if (animation) dynamicNodes.push(animation.mesh('conveyor', segment, box, beltTime, false, 'marks', {
+        arrowTint: beltTint('arrow'), highlightTint: beltTint('highlight'),
+      }));
+    }
+    drawCargoRoute(routeLayer);
   }
   drawPipeEndpoints(routeLayer);
   audit.segments = nodes.map((segment) => ({ ...segment }));
   audit.logoPlacements = [...logoSegments];
   audit.cornerSupports = corners;
   syncFluidUniforms(cycle);
+  updateCargoPositions();
   app.render();
   audit.frames += 1;
   if (!animation) ui['render-fps'].textContent = '1.0 FPS（静态）';
@@ -400,6 +478,7 @@ function tick(now) {
   const time = targetKind === 'pipe' ? waterTime : beltTime;
   if (!animation.baked) for (const node of dynamicNodes) node.shader.resources.effect.uniforms.uTime = time;
   syncFluidUniforms();
+  updateCargoPositions();
   app.render();
   audit.frames += 1;
   updateFps(now);
@@ -438,13 +517,23 @@ function syncURL(push = false) {
   for (const [key, id] of [['animate', 'animate'], ['noWait', 'no-wait']]) {
     if (ui[id].checked) url.searchParams.set(key, '1'); else url.searchParams.delete(key);
   }
+  if (ui.cargo.checked) url.searchParams.delete('cargo'); else url.searchParams.set('cargo', '0');
   history[push ? 'pushState' : 'replaceState'](null, '', url);
 }
 
 function loadStatic(mode) {
   if (!staticSets.has(mode)) {
     const pending = mode === 'baked'
-      ? import('./baked.js').then(module => module.loadBakedStatic(PIXI))
+      ? import('./baked.js').then(async module => {
+          const loaded = await module.loadBakedStatic(PIXI);
+          const cargo = collection.cargoTransport && resources.get(collection.cargoTransport.resource);
+          if (cargo && !loaded.textures.has(collection.cargoTransport.resource)) {
+            const texture = await PIXI.Assets.load(cargo.url);
+            texture.source.resolution = collection.textureProfile?.resolution ?? 1;
+            loaded.textures.set(collection.cargoTransport.resource, texture);
+          }
+          return loaded;
+        })
       : Promise.all([...resources].map(async ([key, item]) => {
           const texture = await PIXI.Assets.load(item.url);
           texture.source.resolution = collection.textureProfile?.resolution ?? 1;
@@ -529,6 +618,9 @@ function setupControls() {
     for (const id of ['fluid-control', 'fluid-note', 'no-wait-control', 'spacing-control']) {
       document.getElementById(id)?.toggleAttribute('hidden', !pipe);
     }
+    for (const id of ['cargo-control', 'cargo-note']) {
+      document.getElementById(id)?.toggleAttribute('hidden', pipe);
+    }
     document.documentElement.dataset.logisticsKind = targetKind;
     draw();
   };
@@ -537,6 +629,9 @@ function setupControls() {
     targetKind = ui.family.value;
     for (const id of ['fluid-control', 'fluid-note', 'no-wait-control', 'spacing-control']) {
       document.getElementById(id)?.toggleAttribute('hidden', targetKind !== 'pipe');
+    }
+    for (const id of ['cargo-control', 'cargo-note']) {
+      document.getElementById(id)?.toggleAttribute('hidden', targetKind === 'pipe');
     }
   }
   ui.layout?.addEventListener('change', () => { fluidCycleTime = 0; flowCycle = null; draw(); });
@@ -547,6 +642,7 @@ function setupControls() {
     draw();
   });
   ui.spacing?.addEventListener('change', () => draw());
+  ui.cargo?.addEventListener('change', () => draw());
   const zoom = () => { app.canvas.style.width = `${Number(ui.zoom.value) * 100}%`; };
   ui.zoom.addEventListener('change', zoom);
   zoom();
@@ -628,13 +724,14 @@ async function init() {
     if ([...ui[id].options].some(option => option.value === query.get(id))) ui[id].value = query.get(id);
   }
   ui.animate.checked = query.get('animate') === '1';
+  ui.cargo.checked = query.get('cargo') !== '0';
   ui['no-wait'].checked = query.get('noWait') === '1';
   setupControls();
   await setAnimation({ preserve: true });
   audit.ready = true;
   document.documentElement.dataset.previewReady = 'true';
   document.documentElement.dataset.logisticsKind = targetKind;
-  window.logisticsExample = { draw, setAnimation, setPlayback, app, resources, collection, setFluidCycleTime(value) { fluidCycleTime = Math.max(0, Number(value) || 0); flowCycle?.seek(fluidCycleTime); draw(); }, setWaterTime(value) { waterTime = Math.max(0, Number(value) || 0); draw(); } };
+  window.logisticsExample = { draw, setAnimation, setPlayback, app, resources, collection, setFluidCycleTime(value) { fluidCycleTime = Math.max(0, Number(value) || 0); flowCycle?.seek(fluidCycleTime); draw(); }, setWaterTime(value) { waterTime = Math.max(0, Number(value) || 0); draw(); }, setBeltTime(value) { beltTime = Math.max(0, Number(value) || 0); draw(); } };
 }
 
 init().catch(showError);
