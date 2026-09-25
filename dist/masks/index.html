@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>遮罩专题 · Endfield Assets</title>
+  <style>
+    :root{color-scheme:dark;background:#0b1118;color:#eef7ff;font:15px/1.6 system-ui,sans-serif}
+    *{box-sizing:border-box}body{margin:auto;max-width:1080px;padding:24px 22px 72px}a{color:#8edcff}
+    header{margin:30px 0 24px}header p{max-width:760px;color:#9fb2c5}.back{text-decoration:none}
+    article{overflow:hidden;border:1px solid #29445a;border-radius:14px;background:#111c26;box-shadow:0 24px 70px #0008}
+    .stage{display:grid;place-items:center;min-height:360px;padding:24px;background-color:#07131d;background-image:linear-gradient(#15334988 1px,transparent 1px),linear-gradient(90deg,#15334988 1px,transparent 1px),radial-gradient(circle at 50% 45%,#0d3b55 0,#07131d 68%);background-size:32px 32px,32px 32px,auto}
+    .stage img{display:block;width:min(100%,896px);height:auto;filter:drop-shadow(0 0 18px #24cfff70)}
+    .copy{padding:24px 28px 28px}.eyebrow{margin:0;color:#60dcff;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:34px;margin:8px 0}h2{font-size:24px;margin:4px 0 8px}.copy>p{color:#b6c7d8}
+    dl{display:grid;gap:8px;margin:20px 0}dl div{display:grid;grid-template-columns:92px 1fr;gap:12px}dt{color:#7890a5}dd{margin:0}code{color:#9be7ff;overflow-wrap:anywhere}
+    .direct{display:inline-block;padding:9px 13px;border:1px solid #37769c;border-radius:7px;text-decoration:none;background:#12354b;color:#d9f6ff}
+    .note{margin-top:18px;padding:13px 16px;border-left:3px solid #3fc9ef;background:#102531;color:#b9d5e2}
+  </style>
+<meta name="asset-resolution" content="0.5"><meta name="preview-pixels-per-cell" content="64"></head>
+<body><nav style="position:relative;z-index:20;padding:12px;background:#17232d;color:#edf3fa"><strong>在线预览：64px / 格</strong>　<a class="download" href="https://github.com/hsyhhssyy/Endfield-Building-TopView-Assets/releases/download/assets-v1.5-20260924-20260925-180146-cst/endfield-assets-128px-v1.5-20260924-20260925-180146-cst.zip" rel="noopener">下载完整 128px 素材包</a>　<a class="download" href="https://github.com/hsyhhssyy/Endfield-Building-TopView-Assets/releases/download/assets-v1.5-20260924-20260925-180146-cst/endfield-assets-64px-v1.5-20260924-20260925-180146-cst.zip" rel="noopener">下载完整 64px 素材包</a>　<a style="color:#9bc7ff" href="../downloads/">全部大文件</a>　<a style="color:#9bc7ff" href="../benchmark/">性能测试</a></nav>
+  <header><a class="back" href="../">← 返回素材首页</a><h1>遮罩</h1>
+  <p>设备选择与放置状态使用的视觉遮罩素材。当前仅收录蓝图遮罩，扫描线暂不加入。</p></header>
+  <main><article><div class="stage"><img src="assets/blueprint/blueprint-mask.webp" alt="蓝图遮罩" width="448" height="320"></div><div class="copy"><p class="eyebrow">静态 · 无材质动画参数</p><h2>蓝图遮罩</h2><p>按 bp_movingoutline 轮廓材质参数重建的蓝图选择效果，以反应池 mix_pool_1 为示例。</p><dl><div><dt>示例设备</dt><dd>mix_pool_1</dd></div><div><dt>素材性质</dt><dd>按解包材质参数重建的透明 WebP</dd></div><div><dt>包内路径</dt><dd><code>masks/blueprint/blueprint-mask.webp</code></dd></div></dl><p><a class="direct" href="assets/blueprint/blueprint-mask.webp" download>下载 64px 透明 WebP</a></p></div></article></main>
+  <p class="note">蓝图遮罩不是解包中可直接导出的独立贴图；它依据 <code>bp_movingoutline</code> 材质参数和反应池渲染重建。该材质未发现时间、速度或动画纹理参数，因此本素材按静态遮罩提供。</p>
+<script src="../download-delivery.js" data-deployment-config="../deployment-mode.json" defer></script>
+</body>
+</html>
