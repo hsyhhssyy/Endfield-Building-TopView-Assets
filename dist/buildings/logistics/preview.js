@@ -150,7 +150,7 @@ function status() {
   };
   const fluid = targetKind !== 'pipe' ? '' : ` · ${fluidLabels[cycle.state]}`;
   const family = targetKind === 'pipe' ? `管道 · ${fluidProfile()?.name || '无'}`
-    : `传送带${audit.cargo.visible ? ` · ${audit.cargo.count} 个源矿盒` : ''}`;
+    : `传送带${audit.cargo.visible ? ` · ${audit.cargo.count} 个空盒` : ''}`;
   ui.status.textContent = `${mode} · ${family} · ${nodes.length} 个组件 · ${running}${fluid}`;
   audit.mode = animation ? 'dynamic' : 'static';
   audit.playback = playback;
@@ -263,7 +263,7 @@ function drawCargoRoute(routeLayer) {
   for (let index = 0; index < count; index += 1) {
     const cargo = new PIXI.Sprite(tex(transport.resource.replace(/^static\//, '')));
     cargo.anchor.set(0.5);cargo.width = cargo.height = 64;
-    cargo.logisticsLayer = 'cargo-source-ore';routeLayer.addChild(cargo);
+    cargo.logisticsLayer = 'cargo-empty-box';routeLayer.addChild(cargo);
     cargoNodes.push({ sprite: cargo, offsetCells: index * spacing });
   }
   updateCargoPositions();
