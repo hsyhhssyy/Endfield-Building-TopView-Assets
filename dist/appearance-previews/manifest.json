@@ -18,6 +18,38 @@
       ],
       "deviceCount": 4,
       "vatApplied": false,
+      "portAnimation": {
+        "status": "appearance-preview-estimated-placement",
+        "metadata": "port-effects.json",
+        "runtimePlacementVerified": false,
+        "files": [
+          {
+            "file": "port-effects/P_interactive_large_pipeoff_in_01.webp",
+            "bytes": 590198,
+            "sha256": "613b7549b38116c104e4497bbfe9310fcfc632387407a61a9585cec6e0aa83f7"
+          },
+          {
+            "file": "port-effects/P_interactive_large_pipeon_in_01.webp",
+            "bytes": 246814,
+            "sha256": "d0a3fa8f0acdca586a63e1e50dd1de63a0a213431fa902177bf0c1afda63af83"
+          },
+          {
+            "file": "port-effects/P_interactive_large_pipeoff_out_01.webp",
+            "bytes": 617764,
+            "sha256": "19614522bf555155d327434f9ab2073742172a26351a99b77e68ae24c77396e6"
+          },
+          {
+            "file": "port-effects/P_interactive_large_pipeon_out_01.webp",
+            "bytes": 255860,
+            "sha256": "1e106a02cdd8931a8d2241bdf67546bf706c35d10e7044a6d89789c06077e57e"
+          },
+          {
+            "file": "port-effects.json",
+            "bytes": 74942,
+            "sha256": "d5ac54339c48eeedf224f122d0afd32adab3e223607d539350d54f9b54bb4f9f"
+          }
+        ]
+      },
       "image": {
         "file": "liquidcleanfactory_005_1.webp",
         "width": 1920,
