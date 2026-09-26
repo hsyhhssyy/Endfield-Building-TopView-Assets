@@ -719,13 +719,20 @@ class BuildingPreview {
     for (const port of ports) {
       const bindings = port.resourceBinding ?? {};
       const states = ['off', 'on'];
+      const stateLabels = {
+        off: 'OFF',
+        on: 'ON',
+      };
       const instance = new EffectInstance(this, port, 'port');
       this.effects.push(instance);
       this.portInstances.push(instance);
       const select = document.createElement('select');
       for (const state of states) {
+        const resourceId = bindings[state]?.resourceId;
+        const color = this.resourceById.get(resourceId)?.color;
+        const colorLabel = color === 'green' ? ' · 黄绿色' : color === 'orange' ? ' · 橙黄色' : '';
         const suffix = bindings[state]?.resourceId ? '' : '（无特效资源）';
-        select.add(new Option(`${state.toUpperCase()}${suffix}`, state));
+        select.add(new Option(`${stateLabels[state]}${colorLabel}${suffix}`, state));
       }
       select.value = 'off';
       select.disabled = Boolean(this.statusControl);
@@ -740,7 +747,7 @@ class BuildingPreview {
       const detail = document.createElement('small');
       const unavailable = states.filter((state) => !bindings[state]?.resourceId);
       detail.textContent = `位置 ${port.resolvedTransform.position.map((value) => finiteNumber(value).toFixed(2)).join(', ')}${
-        unavailable.length ? ` · ${unavailable.map((state) => state.toUpperCase()).join('/')} 无特效资源` : ''
+        unavailable.length ? ` · ${unavailable.map((state) => stateLabels[state]).join('/')} 无特效资源` : ''
       }`;
       label.appendChild(detail);
       row.append(label, select);

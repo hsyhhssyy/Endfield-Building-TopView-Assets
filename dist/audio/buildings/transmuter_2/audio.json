@@ -80,7 +80,7 @@
   "clockModel": "state-entry-independent-loop",
   "profile": "endfield-building-audio-v1",
   "schemaVersion": 1,
-  "sourceVersion": "v1.5-20260924",
+  "sourceVersion": "v1.5",
   "states": {
     "build": {
       "available": true,
