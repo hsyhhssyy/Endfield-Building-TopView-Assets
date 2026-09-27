@@ -1,6 +1,6 @@
 // Minimal native WebGL consumer. Atlas RGB is grayscale sRGB, A is straight alpha.
 const $=id=>document.getElementById(id);
-const get=async path=>{const r=await fetch(path);if(!r.ok)throw Error(path+': HTTP '+r.status);return r.json();};
+const get=async path=>{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error(path+': HTTP '+r.status);return r.json();};
 const toSrgb=x=>x<=.0031308?12.92*x:1.055*x**(1/2.4)-.055;
 const toLinear=x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4;
 const hex=rgb=>'#'+rgb.map(x=>Math.round(Math.min(1,toSrgb(x))*255).toString(16).padStart(2,'0')).join('');
@@ -42,9 +42,27 @@ for(const gas of palette.colors){const b=document.createElement('button');b.clas
 choose(palette.colors[0]);
 $('tint').oninput=()=>{const s=$('tint').value;tint=[1,3,5].map(i=>toLinear(parseInt(s.slice(i,i+2),16)/255));for(const b of $('gases').children)b.setAttribute('aria-pressed','false');};
 for(const profile of manifest.profiles){const o=document.createElement('option');o.value=profile.size;o.textContent=profile.size+' 档';o.selected=profile.size===manifest.defaultSize;$('size').append(o);}
-async function loadSize(){const sequence=++loadSequence;$('status').textContent='正在载入图集…';const profile=manifest.profiles.find(p=>p.size===Number($('size').value));const data=await get(profile.animation);const base=new URL(profile.animation,location.href);const images=await Promise.all(data.pages.map(p=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(Error('图集加载失败: '+p.file));im.src=new URL(p.file,base).href;})));if(sequence!==loadSequence)return;
+async function loadSize(){const sequence=++loadSequence;$('status').textContent='正在载入图集…';const profile=manifest.profiles.find(p=>p.size===Number($('size').value));const data=await get(profile.animation);const base=new URL(profile.animation,location.href);const images=await Promise.all(data.pages.map(p=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(Error('图集加载失败: '+p.file));const url=new URL(p.file,base);url.searchParams.set('v',p.sha256);im.src=url.href;})));if(sequence!==loadSequence)return;
 for(const tx of textures)gl.deleteTexture(tx);
-textures=images.map(im=>{if(im.width>gl.getParameter(gl.MAX_TEXTURE_SIZE)||im.height>gl.getParameter(gl.MAX_TEXTURE_SIZE))throw Error('设备支持的图集尺寸不足');const tx=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tx);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);gl.pixelStorei(gl.UNPACK_COLORSPACE_CONVERSION_WEBGL,gl.NONE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,im);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);return tx;});animation=data;const stats=manifest.statistics[String(profile.size)];$('stats').textContent=mesh.positions.length+' 顶点 / '+mesh.indices.length/3+' 三角形 · 每帧 '+data.stripPixels.join(' × ')+' · '+data.frameCount+' 帧 / '+data.fps+' fps · 图集 '+(stats.webpBytes/1048576).toFixed(2)+' MiB · 显存 '+(stats.gpuRGBA8Bytes/1048576).toFixed(1)+' MiB（四种共用）';$('animation').href=profile.animation;$('atlas').src=images[0].src;$('status').textContent='已就绪 · 颜色实时切换';document.body.dataset.ready='true';}
+textures=images.map(im=>{if(im.width>gl.getParameter(gl.MAX_TEXTURE_SIZE)||im.height>gl.getParameter(gl.MAX_TEXTURE_SIZE))throw Error('设备支持的图集尺寸不足');const tx=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tx);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);gl.pixelStorei(gl.UNPACK_COLORSPACE_CONVERSION_WEBGL,gl.NONE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,im);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);return tx;});animation=data;drawFrameAudit(data,images);const stats=manifest.statistics[String(profile.size)];$('stats').textContent=mesh.positions.length+' 顶点 / '+mesh.indices.length/3+' 三角形 · 每帧 '+data.stripPixels.join(' × ')+' · '+data.frameCount+' 帧 / '+data.fps+' fps · 图集 '+(stats.webpBytes/1048576).toFixed(2)+' MiB · 显存 '+(stats.gpuRGBA8Bytes/1048576).toFixed(1)+' MiB（四种共用）';$('animation').href=profile.animation;$('atlas').src=images[0].src;$('status').textContent='已就绪 · 颜色实时切换';document.body.dataset.ready='true';}
+function setFrame(index){
+ if(!animation)return;const i=(index+animation.frameCount)%animation.frameCount;
+ time=(i+1e-7)/animation.fps;running=false;$('play').textContent='播放';$('seek').value=time;
+}
+if($('previous-frame'))$('previous-frame').onclick=()=>setFrame(Math.floor(time*animation.fps)%animation.frameCount-1);
+if($('next-frame'))$('next-frame').onclick=()=>setFrame(Math.floor(time*animation.fps)%animation.frameCount+1);
+function drawFrameAudit(data,images){
+ if(!$('frame-audit'))return;
+ $('frame-audit').replaceChildren();
+ for(const i of [0,20,40,60]){
+  const frame=data.frames[i], [x,y,w,h]=frame.rect;
+  const figure=document.createElement('figure');figure.className='audit-frame';
+  const label=document.createElement('figcaption');label.textContent='第 '+i+' 帧 · '+(i/data.fps).toFixed(2)+' 秒';
+  const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;
+  canvas.getContext('2d').drawImage(images[frame.page],x,y,w,h,0,0,w,h);
+  figure.append(label,canvas);$('frame-audit').append(figure);
+ }
+}
 $('size').onchange=()=>loadSize().catch(showError);
 $('background').onchange=()=>{const v=$('background').value;$('stage').style.backgroundImage=v==='checker'?'':'none';$('stage').style.backgroundColor=v==='checker'?'':v;};
 $('seek').oninput=()=>{time=Number($('seek').value);running=false;$('play').textContent='播放';};
@@ -52,7 +70,7 @@ $('play').onclick=()=>{running=!running;$('play').textContent=running?'暂停':'
 $('source').textContent='来源版本：'+manifest.sourceVersion+' · P_fxfac_vaporizer_scope_*_2501 · 素材类型：灰度 RGBA 动画图集 + 顶点 UV';
 if(manifest.home)$('home').href=manifest.home;
 if(manifest.downloads)for(const download of manifest.downloads){const a=document.createElement('a');a.href=download.url;a.textContent='下载 '+download.size+' 档完整素材包';a.style.marginRight='16px';$('downloads').append(a);}
-function render(now){const dt=last?Math.min((now-last)/1000,.1):0;last=now;if(running)time+=dt*Number($('speed').value);const size=Math.min(1600,Math.round(canvas.clientWidth*devicePixelRatio));if(canvas.width!==size){canvas.width=size;canvas.height=size;gl.viewport(0,0,size,size);}drawGrid(size,Number($('zoom').value));gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);if(animation){const pos=(time%animation.durationSeconds)*animation.fps,first=Math.floor(pos)%animation.frameCount,second=(first+1)%animation.frameCount;for(const [unit,index] of [[0,first],[1,second]]){const frame=animation.frames[index],page=animation.pages[frame.page];gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,textures[frame.page]);gl.uniform1i(uniforms['uPage'+unit],unit);gl.uniform4fv(uniforms['uRect'+unit],frame.rect);gl.uniform2f(uniforms['uSize'+unit],page.width,page.height);}gl.uniform1f(uniforms.uMix,pos-Math.floor(pos));gl.uniform1f(uniforms.uZoom,Number($('zoom').value));gl.uniform3fv(uniforms.uTint,tint);gl.drawElements(gl.TRIANGLES,mesh.indices.length,gl.UNSIGNED_SHORT,0);if(running)$('seek').value=time%animation.durationSeconds;$('clock').textContent=(time%animation.durationSeconds).toFixed(2)+' / '+animation.durationSeconds.toFixed(2)+' 秒';}requestAnimationFrame(render);}
+function render(now){const dt=last?Math.min((now-last)/1000,.1):0;last=now;if(running)time+=dt*Number($('speed').value);const size=Math.min(1600,Math.round(canvas.clientWidth*devicePixelRatio));if(canvas.width!==size){canvas.width=size;canvas.height=size;gl.viewport(0,0,size,size);}drawGrid(size,Number($('zoom').value));gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);if(animation){const pos=(time%animation.durationSeconds)*animation.fps,first=Math.floor(pos)%animation.frameCount,second=(first+1)%animation.frameCount;for(const [unit,index] of [[0,first],[1,second]]){const frame=animation.frames[index],page=animation.pages[frame.page];gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,textures[frame.page]);gl.uniform1i(uniforms['uPage'+unit],unit);gl.uniform4fv(uniforms['uRect'+unit],frame.rect);gl.uniform2f(uniforms['uSize'+unit],page.width,page.height);}gl.uniform1f(uniforms.uMix,pos-Math.floor(pos));gl.uniform1f(uniforms.uZoom,Number($('zoom').value));gl.uniform3fv(uniforms.uTint,tint);gl.drawElements(gl.TRIANGLES,mesh.indices.length,gl.UNSIGNED_SHORT,0);if($('frame-number'))$('frame-number').textContent='第 '+first+' / '+(animation.frameCount-1)+' 帧';if(running)$('seek').value=time%animation.durationSeconds;$('clock').textContent=(time%animation.durationSeconds).toFixed(2)+' / '+animation.durationSeconds.toFixed(2)+' 秒';}requestAnimationFrame(render);}
 $('background').dispatchEvent(new Event('change'));await loadSize();requestAnimationFrame(render);
 }catch(error){showError(error);}
 function showError(error){$('status').textContent=error.message;$('status').classList.add('error');console.error(error);}
