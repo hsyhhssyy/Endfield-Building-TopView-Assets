@@ -6,7 +6,9 @@ Generated GitHub Pages 64px preview of baked Endfield building top-view assets.
 - Current source version: `v1.5-20260924`
 - Public payload: 64px browser preview, mask topic pages, validated building MP3, and the scoped render-parameter comparison
 - Integrity: `dist/integrity.json` with SHA-256 hashes for exact file bytes
-- Large files: immutable Release assets on Pages; same-origin `downloads/` on Kubernetes
+- Large files: immutable Release assets on Pages; optional archived Kubernetes deployment supports same-origin `downloads/`
+- Ground topic: soil and grass at `terrain/`; crop fields are ordinary building entries
+- Default publishing targets GitHub Pages only; Kubernetes deployment is opt-in
 
 The Pages payload intentionally excludes 128px delivery assets, raw models, source
 extraction files, PNG/GIF frames and diagnostics. Complete 128px/64px packages,
