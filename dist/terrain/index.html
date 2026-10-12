@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixi 草地素材 v1 · 四方向柔光</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #11191b; color: #dbe4df; font: 14px/1.6 system-ui,sans-serif; }
+  header { padding: 14px 20px; border-bottom: 1px solid #34423e; }
+  h1 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+  button, input[type=number] { padding: 5px 10px; border: 1px solid #506759; border-radius: 4px; background: #223329; color: inherit; }
+  button { cursor: pointer; }
+  input[type=number] { width: 100px; }
+  #view { height: calc(100vh - 164px); min-height: 420px; overflow: hidden; touch-action: none; }
+  canvas { display: block; }
+  footer { padding: 8px 20px; font-size: 12px; color: #9eafa3; }
+  #status.error { color: #ffbd9f; }
+  a { color: #a6d6b7; }
+</style><meta name="asset-resolution" content="0.5"><meta name="preview-pixels-per-cell" content="64"></head>
+<body><nav style="position:relative;z-index:20;padding:12px;background:#17232d;color:#edf3fa"><strong>在线预览：64px / 格</strong>　<a class="download" href="https://github.com/hsyhhssyy/Endfield-Building-TopView-Assets/releases/download/assets-v1.5-20260924-20261012-174534-cst/endfield-assets-128px-v1.5-20260924-20261012-174534-cst.zip" rel="noopener">下载完整 128px 素材包</a>　<a class="download" href="https://github.com/hsyhhssyy/Endfield-Building-TopView-Assets/releases/download/assets-v1.5-20260924-20261012-174534-cst/endfield-assets-64px-v1.5-20260924-20261012-174534-cst.zip" rel="noopener">下载完整 64px 素材包</a>　<a style="color:#9bc7ff" href="../downloads/">全部大文件</a>　<a style="color:#9bc7ff" href="../benchmark/">性能测试</a></nav><header>
+  <h1>Pixi 草地素材 v1 <small>仅 WebP 叠图 · 无实时 3D / 光照</small></h1>
+  <div class="controls">
+    <label>种子 <input id="seed" type="number" value="47031"></label>
+    <button id="shuffle">换一组分布</button>
+    <label><input id="patches" type="checkbox" checked> <span id="patch-label">大草斑</span></label>
+    <label id="gravel-control"><input id="gravel" type="checkbox" checked> 碎石</label>
+    <label><input id="building" type="checkbox" checked> <span id="building-label">建筑参考</span></label>
+    <label><input id="grid" type="checkbox"> 底图边界辅助线</label>
+    <button id="fit">适应窗口</button>
+    <button id="native">素材 1:1</button>
+  </div>
+</header>
+<main id="view"></main>
+<footer>
+  <span id="status">加载中…</span><br>
+  拖动平移 / 滚轮缩放。仅“换一组分布”改变地形；平移缩放不重新随机。
+  <a href="previews/contact-sheet.webp" target="_blank">素材总览</a> ·
+  <a href="previews/building-on-ground.webp" target="_blank">建筑搭配图</a> ·
+  <a href="README.txt" target="_blank">接入说明</a>
+</footer>
+<script src="vendor/pixi-8.20.1.min.js"></script>
+<script src="pixi-ground.js"></script>
+<script>
+(async function () {
+  const $ = id => document.getElementById(id);
+  const status = $('status');
+  try {
+    if (location.protocol === 'file:') {
+      throw new Error('请在本目录运行 python -m http.server 8765 --bind 127.0.0.1，再打开 http://127.0.0.1:8765/preview.html。所有依赖已附带，不需要 CDN。');
+    }
+    const app = new PIXI.Application();
+    await app.init({ resizeTo: $('view'), background: '#11191b', preference: 'webgl',
+      resolution: Math.min(devicePixelRatio || 1, 2), antialias: false });
+    $('view').appendChild(app.canvas);
+    let ground;
+    let grid;
+    let rebuilding = false;
+    const render = () => app.render();
+    function report() {
+      status.textContent = `Pixi ${PIXI.VERSION} · ${ground.placements.length} 个装饰 · 种子 ${ground.seed} · 缩放 ${Math.round(ground.root.scale.x * 100)}%`;
+    }
+    function center(scale) {
+      ground.root.scale.set(scale);
+      ground.root.position.set((app.screen.width - ground.width * scale) / 2,
+        (app.screen.height - ground.height * scale) / 2);
+      report(); render();
+    }
+    function fit() { center(Math.min(app.screen.width / ground.width, app.screen.height / ground.height) * 0.97); }
+    function layers() {
+      ground.layers.patches.visible = $('patches').checked;
+      ground.layers.gravel.visible = $('gravel').checked;
+      ground.layers.buildings.visible = $('building').checked;
+      grid.visible = $('grid').checked;
+      render();
+    }
+    async function rebuild() {
+      if (rebuilding) return;
+      rebuilding = true;
+      try {
+        const next = await PixiGround.createGround(PIXI, { seed: Number($('seed').value) | 0 });
+        const soil = next.manifest.profile === 'farmland-soil';
+        document.title = soil ? '田块土地素材包' : 'Pixi 草地素材';
+        document.querySelector('h1').textContent = `${document.title} · ${next.manifest.pixelsPerWorldUnit} 像素/格`;
+        $('patch-label').textContent = soil ? '土色变化' : '大草斑';
+        $('building-label').textContent = soil ? '正式田块参考' : '建筑参考';
+        $('gravel-control').hidden = soil;
+        const refs = next.manifest.previewReferences?.length ? next.manifest.previewReferences :
+          [[19, 17, 0], [37, 28, 90], [48, 16, 180]].map(([x,y,rotation]) => ({
+            file: 'previews/building-reference.webp', position: [x,y], rotation,
+            worldSize: next.manifest.previewBuildingWorldSize ?? 5.903646469116211
+          }));
+        for (const ref of refs) {
+          const texture = await PIXI.Assets.load({src: ref.file,
+            data: {autoGenerateMipmaps: true, scaleMode: 'linear', mipmapFilter: 'linear'}});
+          const [x,y] = ref.position;
+          const building = new PIXI.Sprite(texture);
+          building.anchor.set(0.5);
+          building.label = ref.name ?? 'reference';
+          building.position.set((x - next.bounds[0]) * next.pixelsPerUnit, (y - next.bounds[1]) * next.pixelsPerUnit);
+          building.scale.set(ref.worldSize * next.pixelsPerUnit / texture.width);
+          building.rotation = (ref.rotation ?? 0) * Math.PI / 180;
+          next.layers.buildings.addChild(building);
+        }
+        if (ground) {
+          app.stage.removeChild(ground.root);
+          ground.root.destroy({ children: true }); // Preserve shared cached textures.
+        }
+        ground = next;
+        app.stage.addChild(ground.root);
+        grid = new PIXI.Graphics();
+        for (let x = 0; x <= ground.width; x += (ground.manifest.baseWorldSize ?? 16) * ground.pixelsPerUnit) grid.moveTo(x, 0).lineTo(x, ground.height);
+        for (let y = 0; y <= ground.height; y += (ground.manifest.baseWorldSize ?? 16) * ground.pixelsPerUnit) grid.moveTo(0, y).lineTo(ground.width, y);
+        grid.stroke({ width: 2, color: 0xe3ca6e, alpha: 0.65 });
+        ground.root.addChild(grid);
+        window.groundDemo = { app, ground, fit, center, layers, rebuild };
+        layers(); fit();
+        document.body.dataset.status = 'ready';
+        document.body.dataset.seed = ground.seed;
+        document.body.dataset.placements = ground.placements.length;
+      } finally { rebuilding = false; }
+    }
+    await rebuild();
+    app.stop();
+    $('shuffle').onclick = () => {
+      $('seed').value = (Number($('seed').value) + 7919) >>> 0;
+      rebuild().catch(fail);
+    };
+    $('seed').onchange = () => rebuild().catch(fail);
+    for (const key of ['patches', 'gravel', 'building', 'grid']) $(key).onchange = layers;
+    $('fit').onclick = fit;
+    $('native').onclick = () => center(1);
+    let previous = null;
+    app.canvas.onpointerdown = event => {
+      previous = [event.clientX, event.clientY];
+      app.canvas.setPointerCapture(event.pointerId);
+    };
+    app.canvas.onpointermove = event => {
+      if (!previous) return;
+      ground.root.x += event.clientX - previous[0];
+      ground.root.y += event.clientY - previous[1];
+      previous = [event.clientX, event.clientY]; render();
+    };
+    app.canvas.onpointerup = app.canvas.onpointercancel = () => { previous = null; };
+    app.canvas.addEventListener('wheel', event => {
+      event.preventDefault();
+      const rect = app.canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const old = ground.root.scale.x;
+      const next = Math.max(0.08, Math.min(3, old * Math.exp(-event.deltaY * 0.001)));
+      ground.root.position.set(x - (x - ground.root.x) * next / old,
+        y - (y - ground.root.y) * next / old);
+      ground.root.scale.set(next); report(); render();
+    }, { passive: false });
+    window.addEventListener('resize', () => { app.resize(); fit(); });
+    function fail(error) {
+      document.body.dataset.status = 'error';
+      status.className = 'error'; status.textContent = error.message;
+      console.error(error);
+    }
+  } catch (error) {
+    document.body.dataset.status = 'error';
+    status.className = 'error'; status.textContent = error.message;
+    console.error(error);
+  }
+})();
+</script>
+</html>
+
+<nav><a href="../">返回素材库</a> · 正式田块：<a href="../buildings/soil_bbflower_1/">酮化灌木田块</a> · <a href="../buildings/soil_grass_1/">锦草田块</a> · <a href="../buildings/soil_grass_2/">芽针田块</a> · <a href="../buildings/soil_moss_1/">荞花田块</a> · <a href="../buildings/soil_moss_2/">柑实田块</a> · <a href="../buildings/soil_moss_3/">砂叶田块</a> · <a href="../buildings/soil_sp_1/">灰芦麦田块</a> · <a href="../buildings/soil_sp_2/">苦叶椒田块</a> · <a href="../buildings/soil_sp_3/">琼叶参田块</a> · <a href="../buildings/soil_sp_4/">金石稻田块</a></nav><nav>仅下载土地：<a href="https://github.com/hsyhhssyy/Endfield-Building-TopView-Assets/releases/download/assets-v1.5-20260924-20261012-174534-cst/endfield-farmland-soil-128px-v1.5-20260924-20261012-174534-cst.zip">128 像素/格</a> · <a href="https://github.com/hsyhhssyy/Endfield-Building-TopView-Assets/releases/download/assets-v1.5-20260924-20261012-174534-cst/endfield-farmland-soil-64px-v1.5-20260924-20261012-174534-cst.zip">64 像素/格</a></nav><script src="../download-delivery.js" data-deployment-config="../deployment-mode.json" defer></script>
+</body></html>

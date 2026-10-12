@@ -272,6 +272,18 @@ export class StaticHeightMasker {
     return this.imageCache.get(url.href);
   }
 
+  async selectPose(clip) {
+    if (!this.occlusion) return;
+    const pose = this.occlusion.value.stateMapping?.[clip];
+    if (!pose || pose === this.sceneField?.name) return;
+    const field = (this.occlusion.value.fields ?? []).find((item) => item.name === pose);
+    if (!field?.file) throw new Error(`缺少 ${clip} 的高度数据。`);
+    const pixels = await this.loadPixels(assetUrl(field.file, this.occlusion.url));
+    this.sceneField = field;
+    this.scene = pixels;
+    this.maskCache.clear();
+  }
+
   async maskFor(effectDoc, transform) {
     if (!this.scene || !this.sceneField) return null;
     const height = effectDoc.value.heightTemplate ?? {};
@@ -573,6 +585,8 @@ class BuildingPreview {
     try {
       if (mode === 'grass' && !this.grassSprite) {
         const config = await readJson(assetUrl('preview/grass-background.json', ROOT_URL));
+        this.grassLabel = config.value.label ?? BACKGROUND_LABELS.grass;
+        select.querySelector('option[value="grass"]').textContent = this.grassLabel;
         const textureUrl = assetUrl(config.value.file ?? 'grass-base.webp', config.url);
         const page = await this.pages.load(textureUrl);
         const metrics = this.previewMetrics;
@@ -591,9 +605,9 @@ class BuildingPreview {
       document.documentElement.dataset.previewBackground = mode;
       const metrics = this.previewMetrics;
       $('#background-info').textContent = mode === 'grass'
-        ? `草地以 ${this.spatial.value.pixelsPerCell?.x ?? 128} px/格连续铺设；预览尺寸 ${metrics.width}×${metrics.height} px。`
+        ? `${this.grassLabel ?? BACKGROUND_LABELS.grass}以 ${this.spatial.value.pixelsPerCell?.x ?? 128} px/格连续铺设；预览尺寸 ${metrics.width}×${metrics.height} px。`
         : `透明区域以${mode === 'transparent' ? '浅灰棋盘格' : BACKGROUND_LABELS[mode]}显示；设备四周各外扩 ${metrics.paddingCells} 格。`;
-      this.status(`${BACKGROUND_LABELS[mode]}背景已就绪。`);
+      this.status(`${mode === 'grass' ? (this.grassLabel ?? BACKGROUND_LABELS.grass) : BACKGROUND_LABELS[mode]}背景已就绪。`);
       try {
         localStorage.setItem('endfield-building-preview-background', mode);
       } catch {
@@ -622,6 +636,9 @@ class BuildingPreview {
 
   defaultClip() {
     const order = this.sequence.value.order ?? this.package.value.animations ?? [];
+    if (this.package.value.assetKind === 'factory-soil-building' && order.includes('soil_0_mature')) {
+      return 'soil_0_mature';
+    }
     return order.includes('open_idle') ? 'open_idle' : order[0];
   }
 
@@ -643,7 +660,10 @@ class BuildingPreview {
     const clips = this.sequence.value.order ?? this.package.value.animations ?? [];
     const select = $('#clip-select');
     select.replaceChildren();
-    for (const clip of clips) select.add(new Option(clip, clip));
+    for (const clip of clips) {
+      const form = this.package.value.modelForms?.find((item) => item.name === clip);
+      select.add(new Option(form?.label ?? clip, clip));
+    }
     select.onchange = () => void this.selectAnimationSelection(select.value);
     $('#play-toggle').onclick = () => {
       this.playing = !this.playing;
@@ -675,6 +695,7 @@ class BuildingPreview {
     const mode = animation.value.playback?.mode ?? 'loop';
     await this.buildingTrack.setSheet(sheet, { loop: mode === 'loop', reset: true });
     this.activeClip = clip;
+    await this.masker.selectPose(clip);
     this.buildingTrack.setPlaying(this.playing);
     const sourceFps = finiteNumber(animation.value.fps, finiteNumber(this.sequence.value.fps));
     $('#source-fps').textContent = sourceFps > 0 ? `${sourceFps.toFixed(2).replace(/\.00$/, '')} FPS` : '未标注';
@@ -682,6 +703,14 @@ class BuildingPreview {
     $('#animation-info').textContent = `${sheet.value.frames?.length ?? 0} 帧 · ${mode} · ${formatBytes(
       (sheet.value.pages ?? []).reduce((sum, page) => sum + finiteNumber(page.bytes), 0),
     )}`;
+    if (this.package.value.assetKind === 'factory-soil-building') {
+      $('#animation-info').textContent += ' · 模型形态快照，种植阶段对应与风摆动画尚未还原';
+      if (this.package.value.appearanceApproximation?.status === 'artistic-trial') {
+        $('#animation-info').textContent += ' · 圆角、地面融合及凹面选择为近似试作';
+      } else if (this.package.value.appearanceApproximation?.status === 'user-approved-approximation') {
+        $('#animation-info').textContent += ' · 已确认的圆角凹面外观';
+      }
+    }
     this.status(`${clip} 已就绪；图集页会按播放进度加载。`);
   }
 
@@ -719,13 +748,20 @@ class BuildingPreview {
     for (const port of ports) {
       const bindings = port.resourceBinding ?? {};
       const states = ['off', 'on'];
+      const stateLabels = {
+        off: 'OFF',
+        on: 'ON',
+      };
       const instance = new EffectInstance(this, port, 'port');
       this.effects.push(instance);
       this.portInstances.push(instance);
       const select = document.createElement('select');
       for (const state of states) {
+        const resourceId = bindings[state]?.resourceId;
+        const color = this.resourceById.get(resourceId)?.color;
+        const colorLabel = color === 'green' ? ' · 黄绿色' : color === 'orange' ? ' · 橙黄色' : '';
         const suffix = bindings[state]?.resourceId ? '' : '（无特效资源）';
-        select.add(new Option(`${state.toUpperCase()}${suffix}`, state));
+        select.add(new Option(`${stateLabels[state]}${colorLabel}${suffix}`, state));
       }
       select.value = 'off';
       select.disabled = Boolean(this.statusControl);
@@ -740,7 +776,7 @@ class BuildingPreview {
       const detail = document.createElement('small');
       const unavailable = states.filter((state) => !bindings[state]?.resourceId);
       detail.textContent = `位置 ${port.resolvedTransform.position.map((value) => finiteNumber(value).toFixed(2)).join(', ')}${
-        unavailable.length ? ` · ${unavailable.map((state) => state.toUpperCase()).join('/')} 无特效资源` : ''
+        unavailable.length ? ` · ${unavailable.map((state) => stateLabels[state]).join('/')} 无特效资源` : ''
       }`;
       label.appendChild(detail);
       row.append(label, select);
