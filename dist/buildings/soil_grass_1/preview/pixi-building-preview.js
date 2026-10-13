@@ -636,6 +636,9 @@ class BuildingPreview {
 
   defaultClip() {
     const order = this.sequence.value.order ?? this.package.value.animations ?? [];
+    if (order.includes(this.package.value.preferredPreviewClip)) {
+      return this.package.value.preferredPreviewClip;
+    }
     if (this.package.value.assetKind === 'factory-soil-building' && order.includes('soil_0_mature')) {
       return 'soil_0_mature';
     }
@@ -704,7 +707,9 @@ class BuildingPreview {
       (sheet.value.pages ?? []).reduce((sum, page) => sum + finiteNumber(page.bytes), 0),
     )}`;
     if (this.package.value.assetKind === 'factory-soil-building') {
-      $('#animation-info').textContent += ' · 模型形态快照，种植阶段对应与风摆动画尚未还原';
+      $('#animation-info').textContent += animation.value.animationType === 'standing-water'
+        ? ' · 浅积水循环（重建），原生种植阶段对应尚未确认'
+        : ' · 模型形态快照，种植阶段对应与风摆动画尚未还原';
       if (this.package.value.appearanceApproximation?.status === 'artistic-trial') {
         $('#animation-info').textContent += ' · 圆角、地面融合及凹面选择为近似试作';
       } else if (this.package.value.appearanceApproximation?.status === 'user-approved-approximation') {
