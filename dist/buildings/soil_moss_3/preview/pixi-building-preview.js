@@ -1,6 +1,7 @@
 import * as PIXI from './vendor/pixi.min.js';
 import {
   activePipePorts,
+  animationRoute,
   assetUrl,
   buildTimeline,
   frameIndexAt,
@@ -459,6 +460,10 @@ class BuildingPreview {
     this.statusListeners = new Set();
     this.currentStatus = null;
     this.activeClip = null;
+    this.animationRequest = 0;
+    this.animationQueue = [];
+    this.routeLoading = false;
+    this.transitionSnapshot = null;
     this.pages = new PageStore(10, (message) => this.status(message));
     this.documents = new Map();
     this.effects = [];
@@ -667,13 +672,16 @@ class BuildingPreview {
       const form = this.package.value.modelForms?.find((item) => item.name === clip);
       select.add(new Option(form?.label ?? clip, clip));
     }
-    select.onchange = () => void this.selectAnimationSelection(select.value);
+    select.onchange = () => void this.selectAnimationSelection(select.value).catch((error) => this.warn(error.message));
     $('#play-toggle').onclick = () => {
       this.playing = !this.playing;
       this.buildingTrack.setPlaying(this.playing);
       this.updatePlayButton();
     };
-    $('#restart').onclick = () => this.buildingTrack.restart();
+    $('#restart').onclick = () => {
+      this.finishTransitionBlend();
+      this.buildingTrack.restart();
+    };
   }
 
   updatePlayButton() {
@@ -687,19 +695,90 @@ class BuildingPreview {
       await this.applyStatusCode(status.code);
       return;
     }
-    await this.selectClip(clip);
+    await this.requestAnimation(clip);
   }
 
-  async selectClip(clip) {
+  async requestAnimation(clip, requestId = ++this.animationRequest) {
+    if (requestId !== this.animationRequest) return;
+    this.animationQueue = animationRoute(this.package.value.animationTransitions, this.activeClip, clip);
+    this.routeLoading = false;
+    if (this.animationQueue[0] === this.activeClip) {
+      this.animationQueue.shift();
+      return;
+    }
+    await this.advanceAnimationRoute(requestId);
+  }
+
+  async advanceAnimationRoute(requestId = this.animationRequest) {
+    if (requestId !== this.animationRequest || this.routeLoading || !this.animationQueue.length) return;
+    const clip = this.animationQueue.shift();
+    this.routeLoading = true;
+    try {
+      await this.selectClip(clip, {
+        requestId,
+        blendMs: finiteNumber(this.package.value.animationTransitions?.blendMs),
+      });
+    } finally {
+      if (requestId === this.animationRequest) this.routeLoading = false;
+    }
+  }
+
+  finishTransitionBlend() {
+    const snapshot = this.transitionSnapshot;
+    if (snapshot) {
+      snapshot.sprite.destroy({ texture: true, textureSource: false });
+      this.transitionSnapshot = null;
+    }
+    if (this.buildingSprite) this.buildingSprite.alpha = 1;
+  }
+
+  async selectClip(clip, { requestId = null, blendMs = 0 } = {}) {
     if (!clip) throw new Error('交付中没有可播放的动画片段。');
-    $('#clip-select').value = clip;
     this.status(`正在加载建筑动画 ${clip}…`);
     const { animation, sheet } = await this.animationDocuments(clip);
+    // Load the first page while the current animation continues. A later
+    // selection cancels this route before it can replace the visible track.
+    if (sheet.value.frames?.length) {
+      const first = sheet.value.frames[0];
+      const page = sheet.value.pages[first.page ?? 0];
+      await this.pages.load(assetUrl(pageImage(page), sheet.url));
+    }
+    if (requestId !== null && requestId !== this.animationRequest) return;
+    const reversing = (this.package.value.animationTransitions?.reversePairs ?? []).some(
+      (pair) => pair.includes(this.activeClip) && pair.includes(clip) && this.activeClip !== clip,
+    );
+    const reverseProgress = reversing
+      ? 1 - Math.min(1, this.buildingTrack.elapsedMs / this.buildingTrack.durationMs) : null;
+    this.finishTransitionBlend();
+    if (blendMs > 0 && this.buildingTrack.frameTexture) {
+      const current = this.buildingTrack.frameTexture;
+      const sprite = new PIXI.Sprite(new PIXI.Texture({
+        source: current.source,
+        frame: new PIXI.Rectangle(current.frame.x, current.frame.y, current.frame.width, current.frame.height),
+      }));
+      sprite.position.copyFrom(this.buildingSprite.position);
+      this.app.stage.addChildAt(sprite, this.app.stage.getChildIndex(this.buildingSprite) + 1);
+      this.transitionSnapshot = { sprite, pageKey: this.buildingTrack.currentPageKey, durationMs: blendMs };
+      this.buildingSprite.alpha = 0;
+    }
     const mode = animation.value.playback?.mode ?? 'loop';
     await this.buildingTrack.setSheet(sheet, { loop: mode === 'loop', reset: true });
+    if (requestId !== null && requestId !== this.animationRequest) return;
+    if (reverseProgress !== null) {
+      this.buildingTrack.elapsedMs = reverseProgress * this.buildingTrack.durationMs;
+      this.buildingTrack.startedAt = performance.now() - this.buildingTrack.elapsedMs;
+      await this.buildingTrack.setFrame(frameIndexAt(
+        this.buildingTrack.timeline, this.buildingTrack.durationMs, this.buildingTrack.elapsedMs, false,
+      ));
+      if (requestId !== null && requestId !== this.animationRequest) return;
+    }
     this.activeClip = clip;
+    $('#clip-select').value = clip;
+    document.documentElement.dataset.activeClip = clip;
     await this.masker.selectPose(clip);
+    if (requestId !== null && requestId !== this.animationRequest) return;
     this.buildingTrack.setPlaying(this.playing);
+    if (this.transitionSnapshot) this.transitionSnapshot.startMs = this.buildingTrack.elapsedMs;
     const sourceFps = finiteNumber(animation.value.fps, finiteNumber(this.sequence.value.fps));
     $('#source-fps').textContent = sourceFps > 0 ? `${sourceFps.toFixed(2).replace(/\.00$/, '')} FPS` : '未标注';
     document.documentElement.dataset.sourceFps = sourceFps > 0 ? String(sourceFps) : '';
@@ -846,15 +925,19 @@ class BuildingPreview {
   async applyStatusCode(requestedCode, notify = true) {
     const status = selectedStatusCode(this.statusControl, requestedCode);
     if (!status) return;
+    const requestId = ++this.animationRequest;
     this.currentStatus = status;
     if (status.portState) await this.setAllPorts(status.portState);
+    if (requestId !== this.animationRequest) return;
     if (status.ringStatusKey !== undefined && status.ringStatusKey !== null) {
       await this.rebuildRings(status.ringStatusKey);
     }
+    if (requestId !== this.animationRequest) return;
     const animation = status.animation ?? {};
-    if (animation.clip && this.activeClip !== animation.clip) {
-      await this.selectClip(animation.clip);
+    if (animation.clip) {
+      await this.requestAnimation(animation.clip, requestId);
     }
+    if (requestId !== this.animationRequest) return;
     if (animation.restart === true) this.buildingTrack.restart();
     if (typeof animation.playing === 'boolean') {
       this.playing = animation.playing;
@@ -936,11 +1019,24 @@ class BuildingPreview {
       this.fpsWindowFrames = 0;
     }
     this.buildingTrack.tick(now);
+    if (this.transitionSnapshot && this.transitionSnapshot.startMs !== undefined) {
+      const blend = Math.min(1, Math.max(0,
+        (this.buildingTrack.elapsedMs - this.transitionSnapshot.startMs) / this.transitionSnapshot.durationMs,
+      ));
+      this.buildingSprite.alpha = blend;
+      this.transitionSnapshot.sprite.alpha = 1 - blend;
+      if (blend >= 1) this.finishTransitionBlend();
+    }
+    if (this.playing && !this.buildingTrack.loop
+        && this.buildingTrack.elapsedMs >= this.buildingTrack.durationMs) {
+      void this.advanceAnimationRoute().catch((error) => this.warn(error.message));
+    }
     this.statusLights?.tick(now);
     const effectElapsed = now - this.effectStartedAt;
     for (const instance of this.effects) instance.tick(effectElapsed);
     const pinned = new Set([
       this.buildingTrack.currentPageKey,
+      this.transitionSnapshot?.pageKey,
       this.grassTextureKey,
       ...this.effects.map((item) => item.track.currentPageKey),
     ].filter(Boolean));
@@ -948,6 +1044,9 @@ class BuildingPreview {
   }
 
   dispose() {
+    this.animationRequest += 1;
+    this.animationQueue = [];
+    this.finishTransitionBlend();
     this.statusLights?.dispose();
     this.lightMeshExperiment?.dispose();
     this.statusListeners.clear();

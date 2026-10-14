@@ -38,6 +38,18 @@ export function frameIndexAt(timeline, durationMs, elapsedMs, loop = true) {
   return timeline[low].index;
 }
 
+export function animationRoute(transitions, from, to) {
+  if (!to || from === to) return [];
+  const matches = (values, name) => values?.includes('*') || values?.includes(name);
+  const rule = (transitions?.rules ?? []).find(
+    (item) => matches(item.from, from) && matches(item.to, to),
+  );
+  const route = [...(rule?.via ?? []), to];
+  const next = transitions?.after?.[to];
+  if (next && next !== to) route.push(next);
+  return route.filter((clip, index) => index === 0 || clip !== route[index - 1]);
+}
+
 export const PREVIEW_PADDING_CELLS = 1;
 
 function finitePositive(value, fallback) {
