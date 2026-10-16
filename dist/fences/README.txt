@@ -1,16 +1,16 @@
 围栏专题：武陵 + 缘缘庄
 
-两个布局共用2类设备：rail（栏杆）和post（立柱）。rail2/rail3/rail5是同一栏杆设备的长度变体，post是独立附属层；全专题只保存4套顶视/高度贴图，两个像素密度各一份。
-核对两地长栏、短栏、立柱：源顶点距离为0，三角面与UV在1e-5精度匹配，两张D/NRO贴图文件哈希完全相同。复用依据见reuse.json。
-共用贴图沿用武陵已发布的版本。两地单独渲染的细微色差不作为新设备类型。
+共用 2 类设备：rail 栏杆（1×2、1×3、1×5 三种固定长度）与 post 立柱（1×1 附属件）。共 4 套贴图/高度图，各有 64 和 128 像素/格。
+两地源网格、UV 和纹理的复用证据见 reuse.json。整格重建不会新增设备类型，也不使用实例缩放。
 
-manifest.json列出两个layouts与64/128资源入口。每个placement用deviceId与sprite引用共用定义。
-spriteTransform=[a,b,c,d,tx,tz]，将共用精灵局部米制坐标(x,z)变换为布局坐标：X=a*x+c*z+tx，Z=b*x+d*z+tz。
-精灵x=(pixelX-pivotX)/pixelsPerCell，z=(pixelY-pivotY)/pixelsPerCell。顶视图片+X向右、+Z向下；北朝上显示时对最终Z翻转，不改布局坐标。
-heightTransform把解码高度变成布局相对地面的高度：H=scale*h+offset。高度图RG16按R*256+G解码并映射heightMin/heightMax，A>0有效，最近邻采样。
-武陵：保留既有46×46整数格布局、38件与两处10格入口，栏杆占地不重叠，立柱可与栏杆共享附属格。
-缘缘庄：保留原场景25件连续位置、旋转和非均匀缩放及三处开口；没有虚构整数占地。长栏复用rail5，短栏复用rail3，矩阵已补偿长度归一化。
-原始sourceLocalToWorldMatrix仍为Unity列主序。不可在已应用spriteTransform后再次应用原矩阵。
+manifest.json 给出两份布局及资源入口。武陵维持 46×46、38 件、两处 10 格入口的既有方案。
+缘缘庄改为 40×40 整数占地、36 件（31 栏杆 + 5 立柱），中心线范围为 39×39；保留南 7 格、东 8 格、西 3 格开口。
+缘缘庄运行时只读取 placements：gridX/gridZ 是占地左下角的整数格，width/depth 是整数占地，yawDegrees 仅为 0/90/180/270。
+使用 sizes/*/assets.json 中固定 gridPlacement 锚点：栏杆的视觉中心相对占地中心沿本地 +X 固定半格，随旋转一同转动，以使四角端点衔接；立柱使用占地中心。该枢轴属于共用组件，不是实例自由位移。
+spriteTransform 是上述整数格及固定枢轴推导出的绘图矩阵；可直接使用，不能再次叠加 gridX/gridZ。无需识别或应用任何原场景缩放。
+spriteTransform=[a,b,c,d,tx,tz]：X=a*x+c*z+tx，Z=b*x+d*z+tz。局部 x=(pixelX-pivotX)/pixelsPerCell，z=(pixelY-pivotY)/pixelsPerCell；图片 +X 向右、+Z 向下，北朝上时翻转最终 Z。
+heightTransform 恒为 scale=1、offset=0；RG16 高度按 R*256+G 解码并映射 heightMin/heightMax，A>0 有效，最近邻采样。
+栏杆占地不重叠；立柱放在附属层，可与栏杆格重叠。禁止重叠的引擎应将立柱作为格内附件。
+缘缘庄 sourceReference 完整保留原 25 件及原始矩阵，仅供来源核对，不能用来摆放整格布局。sourceEntityIds 是分拆、合并前的来源映射，并非新的实例 ID。
 
-来源分别为武陵v1.5-20261014-irrigation、缘缘庄v1.6；共用草地仅为背景示意，来自v1.4，不是两地地面导出。
-三维源模型与归一化OBJ只保存一套；两地模型布局分别放在models/layouts。下载包按64/128分开，模型单独打包。
+武陵来源 v1.5-20261014-irrigation，缘缘庄来源 v1.6；草地背景仅为 v1.4 示意。三维模型单独打包；models/layouts 的缘缘庄布局同样是整格版，内含原始来源记录。斜视预览按当前整格布局生成。
